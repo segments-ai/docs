@@ -2,7 +2,7 @@
 
 ## Image
 
-A single image .
+A single image.
 
 {% code title="Sample type: IMAGE" %}
 ```javascript
