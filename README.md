@@ -1,2 +1,4 @@
-# docs
-Documentation
+# Introduction
+
+Welcome to Segments.ai!
+
