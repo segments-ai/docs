@@ -18,12 +18,6 @@ An API key can be created on your user account page.
 GET /datasets/:owner/:dataset/samples
 ```
 
-#### Parameters
-
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| `task` | `string` | Indicates the ... |
-
 #### Response
 
 {% code title="Status: 200 OK" %}
@@ -32,6 +26,12 @@ GET /datasets/:owner/:dataset/samples
   {
     "uuid": "10130ecd-790e-463d-86ce-747f5c545c77",
     "name": "image.png"
+    "data_type": "IMAGE",
+    "attributes": {
+        "image": {"url": "https://example.com/image.png"}
+      }
+    "created_at": "2011-04-10T20:09:31Z"
+    "created_by": "jane"
   }
 ]
 ```
@@ -50,6 +50,12 @@ GET /samples/:sample_uuid
 {
   "uuid": "10130ecd-790e-463d-86ce-747f5c545c77",
   "name": "image.png"
+  "data_type": "IMAGE",
+  "attributes": {
+    "image": {"url": "https://example.com/image.png"}
+  }
+  "created_at": "2011-04-10T20:09:31Z"
+  "created_by": "jane"
 }
 ```
 {% endcode %}
@@ -57,7 +63,7 @@ GET /samples/:sample_uuid
 ### Create a sample
 
 ```bash
-POST /samples
+POST /datasets/:owner/:dataset/samples
 ```
 
 #### Input
@@ -65,13 +71,16 @@ POST /samples
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `name` | `string` | **Required.** The name of the sample. |
-|  |  |  |
+| `attributes` | `object` | Sample contents. |
 
 #### Example
 
 ```bash
 {
-  "name": "myimage.png"
+  "name": "flowers.png",
+  "attributes": {
+    "image": {"url": "https://example.com/image.png"}
+  }
 }
 ```
 
@@ -81,8 +90,13 @@ POST /samples
 ```bash
 {
   "uuid": "10130ecd-790e-463d-86ce-747f5c545c77",
-  "name": "myimage.png",
-  "created_at": "2011-04-10T20:09:31Z",
+  "name": "image.png"
+  "data_type": "IMAGE",
+  "attributes": {
+    "image": {"url": "https://example.com/image.png"}
+  }
+  "created_at": "2011-04-10T20:09:31Z"
+  "created_by": "jane"
 }
 ```
 {% endcode %}
@@ -91,9 +105,31 @@ POST /samples
 
 ### Get a label
 
-### Create a label
+```bash
+GET /labels/:sample_uuid/:task_name
+```
 
-### Update a label
+#### Response
 
-
+{% code title="Status: 200 OK" %}
+```bash
+{
+  "label_type": "segmentation-bitmap",
+  "label_status": "LABELED",
+  "attributes": {
+    "annotations": [
+      {
+        "id": 1, 
+        "category_id": 0
+      }
+    ],
+    "segmentation_bitmap": {
+      "url": "https://segmentsai-staging.s3.eu-west-2.amazonaws.com/assets/davy/ddf55e99-1a6f-42d2-83e9-8657de3259a1.png"
+    }
+  },
+  "created_at": "2011-04-10T20:09:31Z",
+  "created_by": "jane"
+}
+```
+{% endcode %}
 
