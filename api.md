@@ -1,8 +1,14 @@
 # API
 
-The api is available at **https://api.segments.ai/**. You can create an api key on your user account page.
+The API is available at **https://api.segments.ai/**. 
 
-Authentication ...
+To authenticate, add an API key in the header of each request:
+
+```bash
+curl -H "Authorization: APIKey YOUR_API_KEY"
+```
+
+An API key can be created on your user account page.
 
 ## Samples
 
