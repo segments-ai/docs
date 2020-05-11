@@ -71,7 +71,7 @@ POST /datasets/:owner/:dataset/samples
 | Name | Type | Description |
 | :--- | :--- | :--- |
 | `name` | `string` | **Required.** The name of the sample. |
-| `attributes` | `object` | Sample contents. |
+| `attributes` | `object` | Sample data. |
 
 #### Example
 
@@ -79,7 +79,9 @@ POST /datasets/:owner/:dataset/samples
 {
   "name": "flowers.png",
   "attributes": {
-    "image": {"url": "https://example.com/image.png"}
+    "image": {
+      "url": "https://example.com/image.png"
+    }
   }
 }
 ```
@@ -93,7 +95,9 @@ POST /datasets/:owner/:dataset/samples
   "name": "image.png"
   "data_type": "IMAGE",
   "attributes": {
-    "image": {"url": "https://example.com/image.png"}
+    "image": {
+      "url": "https://example.com/image.png"
+    }
   }
   "created_at": "2011-04-10T20:09:31Z"
   "created_by": "jane"
