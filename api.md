@@ -12,9 +12,7 @@ An API key can be created on your user account page.
 
 ## Samples
 
-### List dataset samples
-
-Lists the samples in a dataset.
+### List samples of a dataset
 
 ```bash
 GET /datasets/:owner/:dataset/samples
@@ -96,4 +94,6 @@ POST /samples
 ### Create a label
 
 ### Update a label
+
+
 
