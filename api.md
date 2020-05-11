@@ -89,3 +89,11 @@ POST /samples
 ```
 {% endcode %}
 
+## Labels
+
+### Get a label
+
+### Create a label
+
+### Update a label
+

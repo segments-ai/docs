@@ -1,4 +1,4 @@
 # Introduction
 
-Welcome to the Segments.ai documentation!
+Welcome to Segments.ai!
 
