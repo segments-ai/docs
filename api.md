@@ -8,7 +8,7 @@ To authenticate, add an API key in the header of each request:
 curl -H "Authorization: APIKey YOUR_API_KEY"
 ```
 
-An API key can be created on your user account page.
+An API key can be created on your [user account page](https://segments.ai/account).
 
 ## Samples
 
