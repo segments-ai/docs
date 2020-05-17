@@ -12,7 +12,7 @@ An API key can be created on your [user account page](https://segments.ai/accoun
 
 ## Samples
 
-### List samples of a dataset
+### Get all samples in a dataset
 
 ```bash
 GET /datasets/:owner/:dataset/samples

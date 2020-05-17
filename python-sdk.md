@@ -17,7 +17,26 @@ api_key = "eabdde840de8c8853329c086bc4165591cb3d74c"
 client = SegmentsClient(api_key)
 ```
 
-## Add a sample to a dataset
+## Samples
+
+### Get all samples in a dataset
+
+```python
+dataset = "jane/flowers"
+samples = client.get_samples(dataset)
+
+for sample in samples:
+    print(sample["name"], sample["uuid"])
+```
+
+### Get a sample
+
+```python
+sample = client.get_sample(uuid="602a3eec-a61c-4a77-9fcc-3037ce5e9606")
+print(sample)
+```
+
+### Create a sample
 
 ```python
 dataset = "jane/flowers"
@@ -34,14 +53,19 @@ print(sample)
 
 If the image is on your local computer, you should first upload it to a cloud storage service like Amazon S3, Google Cloud Storage, Imgur, or [our asset storage service](python-sdk.md#upload-a-file-as-an-asset).
 
-## Get a sample by id
+## Labels
+
+### Get a label
 
 ```python
-sample = client.get_sample(uuid="602a3eec-a61c-4a77-9fcc-3037ce5e9606")
-print(sample)
+sample_uuid = "602a3eec-a61c-4a77-9fcc-3037ce5e9606"
+task = "segmentation"
+
+label = client.get_label(sample_uuid, task)
+print(label)
 ```
 
-## Add a label to a sample
+### Create or update a label for a sample
 
 A label can be added to a sample in relation to a _task_ defined on the dataset, such as an image classification task or an image segmentation task.
 
@@ -65,16 +89,6 @@ attributes = {
 }
 
 client.add_label(sample_uuid, task_name, attributes)
-```
-
-## Get all samples in a dataset
-
-```python
-dataset = "jane/flowers"
-samples = client.get_samples(dataset)
-
-for sample in samples:
-    print(sample["name"], sample["uuid"])
 ```
 
 ## Upload a file as an asset
