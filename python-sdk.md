@@ -8,7 +8,7 @@ First install the SDK.
 pip install segments-ai --upgrade
 ```
 
-Import the `segments` package in your python file and and set up a client with an API key.
+Import the `segments` package in your python file and and set up a client with an API key. An API key can be created on your [user account page](https://segments.ai/account).
 
 ```python
 from segments import SegmentsClient
