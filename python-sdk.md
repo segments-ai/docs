@@ -53,6 +53,10 @@ print(sample)
 
 If the image is on your local computer, you should first upload it to a cloud storage service like Amazon S3, Google Cloud Storage, Imgur, or [our asset storage service](python-sdk.md#upload-a-file-as-an-asset).
 
+{% hint style="warning" %}
+If you create a sample with a URL from a public S3 bucket and you see an error on the platform, make sure to [properly configure your bucket's CORS settings](https://docs.aws.amazon.com/AmazonS3/latest/dev/cors.html).
+{% endhint %}
+
 ## Labels
 
 ### Get a label
