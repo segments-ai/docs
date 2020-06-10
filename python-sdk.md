@@ -73,7 +73,7 @@ print(label)
 
 A label can be added to a sample in relation to a _task_ defined on the dataset, such as an image classification task or an image segmentation task.
 
-The task type specifies the format that is required for the label: for a classification task, the attributes field should contain different fields than for a segmentation task.
+The task specifies the format that is required for the label: for a classification task, the `attributes`field should contain different fields than for a segmentation task.
 
 ```python
 sample_uuid = "602a3eec-a61c-4a77-9fcc-3037ce5e9606"
@@ -94,6 +94,10 @@ attributes = {
 
 client.add_label(sample_uuid, task_name, attributes)
 ```
+
+{% hint style="info" %}
+For a segmentation task, the`segmentation_bitmap_url`field should refer to a 32-bit RGBA png image with alpha channel set to 255 and values corresponding to`instance_id`
+{% endhint %}
 
 ## Upload a file as an asset
 
