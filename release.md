@@ -1,10 +1,12 @@
-# Release
+# Exporting data
 
-A release contains a snapshot of the dataset and can be used to download the labeled samples. The format is JSON.
+## Releases
 
-The release contains information about the dataset, tasks and a list of samples together with its labels. The general structure is as follows:
+To export and download your labeled data, you need to create a release on the Releases tab. A release is a snapshot of your dataset at a specific point in time.
 
-{% code %}
+By clicking the download link of a release, you obtain a JSON file. This file contains all information about the tasks, samples, and labels in your dataset. The general structure of the JSON file is as follows:
+
+{% code title="" %}
 ```bash
 {
     "name": "first release",
@@ -20,11 +22,11 @@ The release contains information about the dataset, tasks and a list of samples 
 ```
 {% endcode %}
 
-## Task
+### Task
 
-Each task entry contains the task's name, description and its defined categories (with name and id):
+Each task entry contains the task's name, description and its defined categories \(with name and id\):
 
-{% code %}
+{% code title="" %}
 ```bash
 {
     "name": "segmentation",
@@ -46,11 +48,11 @@ Each task entry contains the task's name, description and its defined categories
 ```
 {% endcode %}
 
-## Sample
+### Sample
 
-Each sample entry contains information about the sample (name, image url, ...) and a list of labels.
+Each sample entry contains information about the sample \(name, image URL, ...\) and a list of labels.
 
-{% code %}
+{% code title="" %}
 ```bash
 {
     "name": "donuts.jpg",
@@ -69,9 +71,9 @@ Each sample entry contains information about the sample (name, image url, ...) a
 
 ### Label
 
-Each label contains information about the label_status (LABELED or REVIEWED) and provides a list of annotations (labeled objects) together with a segmentation bitmap.
+Each label contains information about the label\_status \(LABELED or REVIEWED\) and provides a list of annotations \(labeled objects\) together with a segmentation bitmap.
 
-{% code %}
+{% code title="" %}
 ```bash
 {
     "label_status": "LABELED",
@@ -104,6 +106,5 @@ Each label contains information about the label_status (LABELED or REVIEWED) and
 ```
 {% endcode %}
 
-To retrieve the bitmask of each annotation, you can index the segmentation bitmap (a 32-bit RGBA png) with the annotation id.
-
+To retrieve the bitmask of each annotation, you can index the segmentation bitmap \(a 32-bit RGBA png\) with the annotation id.
 
