@@ -22,7 +22,7 @@ The release contains information about the dataset, tasks and a list of samples 
 
 ## Task
 
-Each task entry contains information the task and the defined categories (with its name and id):
+Each task entry contains information the task and its defined categories (with name and id):
 
 {% code %}
 ```bash
@@ -69,7 +69,7 @@ Each sample entry contains information about the sample (name, image url, ...) a
 
 ### Label
 
-Each label contains information about the label_status (LABELED or REVIEWED), a list of annotations (labeled objects) together with the segmentation bitmap.
+Each label contains information about the label_status (LABELED or REVIEWED) and provides a list of annotations (labeled objects) together with a segmentation bitmap.
 
 {% code %}
 ```bash
