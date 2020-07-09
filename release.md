@@ -22,7 +22,7 @@ The release contains information about the dataset, tasks and a list of samples 
 
 ## Task
 
-Each task entry contains information the task and its defined categories (with name and id):
+Each task entry contains the task's name, description and its defined categories (with name and id):
 
 {% code %}
 ```bash
