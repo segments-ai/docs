@@ -17,6 +17,15 @@ api_key = "eabdde840de8c8853329c086bc4165591cb3d74c"
 client = SegmentsClient(api_key)
 ```
 
+## Datasets
+
+### Get a dataset
+
+```python
+dataset = client.get_dataset("jane/flowers")
+print(dataset)
+```
+
 ## Samples
 
 ### Get all samples in a dataset
