@@ -10,56 +10,6 @@ curl -H "Authorization: APIKey YOUR_API_KEY"
 
 An API key can be created on your [user account page](https://segments.ai/account).
 
-## Datasets
-
-### Get a dataset
-
-```bash
-GET /datasets/:owner_name/:dataset_name
-```
-
-#### Response
-
-{% code title="Status: 200 OK" %}
-```bash
-{
-    "name": "cats",
-    "description": "A dataset of cat images.",
-    "data_type": "IMAGE",
-    "category": "other",
-    "public": false,
-    "owner": {
-        "username": "bert",
-        "email": "bert@segments.ai",
-        "created_at": "2020-05-11T14:00:53.763278Z"
-    },
-    "created_at": "2020-07-20T14:59:36.242218Z",
-    "collaborators_count": 0,
-    "samples_count": 94,
-    "tasks": [
-        {
-            "name": "segmentation",
-            "task_type": "segmentation-bitmap",
-            "attributes": {
-                "format_version": "0.1",
-                "categories": [
-                    {
-                        "name": "cat",
-                        "id": 0
-                    },
-                    {
-                        "name": "dog",
-                        "id": 1
-                    }
-                ]
-            },
-            "created_at": "2020-07-20T14:59:42.675157Z"
-        }
-    ]
-}
-```
-{% endcode %}
-
 ## Samples
 
 ### Get all samples in a dataset

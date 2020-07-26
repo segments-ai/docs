@@ -1,10 +1,26 @@
 # Exporting data
 
-## Releases
+To download your labeled data, you need to create a release on the Releases tab. A release is a snapshot of your dataset at a specific point in time.
 
-To export and download your labeled data, you need to create a release on the Releases tab. A release is a snapshot of your dataset at a specific point in time.
+By clicking the download link of a release, you obtain a release file in JSON format. This release file contains all information about the dataset, tasks, samples, and labels in the release.
 
-By clicking the download link of a release, you obtain a JSON file. This file contains all information about the tasks, samples, and labels in your dataset. The general structure of the JSON file is as follows:
+## Exporting the release file to COCO format
+
+You can export the release file to COCO format with the Python SDK:
+
+```python
+# pip install segments-ai
+from segments import SegmentsDataset
+from segments.utils import export_dataset
+
+release_file = 'flowers-v1.0.json'
+dataset = SegmentsDataset(release_file, task='segmentation', filter_by=['labeled', 'reviewed'])
+export_dataset(dataset, 'coco')
+```
+
+## Structure of the release file
+
+The general structure of the release file is as follows:
 
 {% code title="" %}
 ```bash
@@ -12,12 +28,16 @@ By clicking the download link of a release, you obtain a JSON file. This file co
     "name": "first release",
     "description": "This is a first release of Segments.ai playground dataset",
     "created_at": "2020-07-09 10:20:19.888887+00:00",
-    "tasks": [
-        ** list of tasks **
-    ],
-    "samples": [
-        ** list of samples **
-    ]
+    "dataset": {
+        "name": "flowers",
+        "tasks": [
+            ** list of tasks **
+        ],
+        "samples": {
+            ** list of samples **
+        }
+    }
+    
 }
 ```
 {% endcode %}
