@@ -98,7 +98,20 @@ client.add_label(sample_uuid, task_name, attributes)
 ```
 
 {% hint style="info" %}
-For a segmentation task, the`segmentation_bitmap_url`field should refer to a 32-bit RGBA png image with alpha channel set to 255 and values corresponding to`instance_id`
+For a segmentation task, the`segmentation_bitmap_url`field should refer to a 32-bit RGBA png image with alpha channel set to 255 and values corresponding to`instance_id.`
+
+The easiest way to transform a segmentation bitmap into this format and upload it is by using the util function`bitmap2file`:
+
+```python
+from segments.utils import bitmap2file
+
+# segmentation_bitmap is a numpy array of type np.uint32, with values corresponding to instance_ids
+file = bitmap2file(segmentation_bitmap, is_segmentation_bitmap=True)
+asset = client.upload_asset(file, "label.png")
+segmentation_bitmap_url = asset["url"]
+```
+
+For a full example of uploading model-generated labels to Segments.ai, please refer to [this blogpost](https://segments.ai/blog/speed-up-image-segmentation-with-model-assisted-labeling).
 {% endhint %}
 
 ## Upload a file as an asset
@@ -111,7 +124,7 @@ from io import BytesIO
 
 image = Image.open("/home/jane/flowers/violet.jpg")
 file = BytesIO()
-image.save(file, 'PNG')
+image.save(file, "PNG")
 
 asset = client.upload_asset(file, filename="violet.jpg")
 image_url = asset["url"]
