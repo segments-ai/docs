@@ -106,7 +106,7 @@ The easiest way to transform a segmentation bitmap into this format and upload i
 from segments.utils import bitmap2file
 
 # segmentation_bitmap is a numpy array of type np.uint32, with values corresponding to instance_ids
-file = bitmap2file(segmentation_bitmap, is_segmentation_bitmap=True)
+file = bitmap2file(segmentation_bitmap)
 asset = client.upload_asset(file, "label.png")
 segmentation_bitmap_url = asset["url"]
 ```
@@ -119,14 +119,10 @@ For a full example of uploading model-generated labels to Segments.ai, please re
 Example with an image:
 
 ```python
-from PIL import Image
-from io import BytesIO
-
-image = Image.open("/home/jane/flowers/violet.jpg")
-file = BytesIO()
-image.save(file, "PNG")
-
-asset = client.upload_asset(file, filename="violet.jpg")
+filename = "/home/jane/flowers/violet.jpg"
+with open(filename, "rb") as f:
+    asset = client.upload_asset(f, filename="violet.jpg")
+    
 image_url = asset["url"]
 ```
 
