@@ -134,3 +134,5 @@ Each label contains information about the label\_status \(LABELED or REVIEWED\) 
 
 The`segmentation_bitmap_url`refers to a 32-bit RGBA png image. The alpha channel is set to 255, and the remaining 24-bit values in the RGB channels correspond to`instance_ids.`Because of this large dynamic range, these png images appear black in an image viewer.
 
+Please refer to [this blog post](https://segments.ai/blog/speed-up-image-segmentation-with-model-assisted-labeling) for an example of training a model on exported data.
+
