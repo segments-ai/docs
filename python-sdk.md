@@ -1,10 +1,10 @@
 # Python SDK
 
+## Setup
+
 {% hint style="success" %}
 Please refer to [this blog post](https://segments.ai/blog/speed-up-image-segmentation-with-model-assisted-labeling) for a full example of working with the Python SDK.
 {% endhint %}
-
-## Setup
 
 First install the SDK.
 
