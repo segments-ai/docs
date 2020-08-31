@@ -98,7 +98,7 @@ client.add_label(sample_uuid, task_name, attributes)
 ```
 
 {% hint style="info" %}
-For a segmentation task, the`segmentation_bitmap_url`field should refer to a 32-bit RGBA png image with alpha channel set to 255 and values corresponding to`instance_id.`
+The`segmentation_bitmap_url`refers to a 32-bit RGBA png image. The alpha channel is set to 255, and the remaining 24-bit values in the RGB channels correspond to`instance_ids.`
 
 The easiest way to transform a segmentation bitmap into this format and upload it is by using the util function`bitmap2file`:
 

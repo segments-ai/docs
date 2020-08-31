@@ -4,6 +4,10 @@ To download your labeled data, you need to create a release on the Releases tab.
 
 By clicking the download link of a release, you obtain a release file in JSON format. This release file contains all information about the dataset, tasks, samples, and labels in the release.
 
+{% hint style="info" %}
+Note that the segmentation masks are encoded as a png image that appears black when opened in an image viewer. The png image contains all necessary information though. [Read more below](export.md#segmentation-bitmap).
+{% endhint %}
+
 ## Exporting the release file to COCO format
 
 You can export the release file to COCO format with the Python SDK:
@@ -126,5 +130,7 @@ Each label contains information about the label\_status \(LABELED or REVIEWED\) 
 ```
 {% endcode %}
 
-To retrieve the bitmask of each annotation, you can index the segmentation bitmap \(a 32-bit RGBA png\) with the annotation id.
+### Segmentation bitmap
+
+The`segmentation_bitmap_url`refers to a 32-bit RGBA png image. The alpha channel is set to 255, and the remaining 24-bit values in the RGB channels correspond to`instance_ids.`Because of this large dynamic range, these png images appear black in an image viewer.
 
