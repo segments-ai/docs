@@ -10,9 +10,200 @@ curl -H "Authorization: APIKey YOUR_API_KEY"
 
 An API key can be created on your [user account page](https://segments.ai/account).
 
+## Datasets
+
+### List datasets
+
+```bash
+GET /users/:owner_name/datasets
+```
+
+To get all datasets of the currently logged in users, you can use this shortcut:
+
+```bash
+GET /user/datasets
+```
+
+{% hint style="info" %}
+Note that this will only return datasets which are public, and datasets which are private but where the logged in user is a collaborator.
+{% endhint %}
+
+#### Response
+
+{% code title="Status: 200 OK" %}
+```bash
+[
+    {
+        "name": "cats",
+        "description": "A dataset of cat images.",
+        "data_type": "IMAGE",
+        "category": "other",
+        "public": false,
+        "owner": {
+            "username": "bert",
+            "email": "bert@segments.ai",
+            "created_at": "2020-05-11T14:00:53.763278Z"
+        },
+        "created_at": "2020-04-10T20:09:31Z",
+        "collaborators_count": 0,
+        "samples_count": 94        
+    }
+]
+```
+{% endcode %}
+
+### Get a dataset
+
+```bash
+GET /datasets/:owner_name/:dataset_name
+```
+
+#### Response
+
+{% code title="Status: 200 OK" %}
+```bash
+{
+    "name": "cats",
+    "description": "A dataset of cat images.",
+    "data_type": "IMAGE",
+    "category": "other",
+    "public": false,
+    "owner": {
+        "username": "bert",
+        "email": "bert@segments.ai",
+        "created_at": "2020-05-11T14:00:53.763278Z"
+    },
+    "created_at": "2020-07-20T14:59:36.242218Z",
+    "collaborators_count": 0,
+    "samples_count": 94,
+    "tasks": [
+        {
+            "name": "segmentation",
+            "task_type": "segmentation-bitmap",
+            "attributes": {
+                "format_version": "0.1",
+                "categories": [
+                    {
+                        "name": "cat",
+                        "id": 0
+                    },
+                    {
+                        "name": "dog",
+                        "id": 1
+                    }
+                ]
+            },
+            "created_at": "2020-07-20T14:59:42.675157Z"
+        }
+    ]
+}
+```
+{% endcode %}
+
+### Create a dataset
+
+```bash
+POST /user/datasets
+```
+
+#### Input
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Name</th>
+      <th style="text-align:left">Type</th>
+      <th style="text-align:left">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left"><code>name</code>
+      </td>
+      <td style="text-align:left"><code>string</code>
+      </td>
+      <td style="text-align:left"><b>Required. </b>The name of the dataset.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>description</code>
+      </td>
+      <td style="text-align:left"><code>string</code>
+      </td>
+      <td style="text-align:left">The description of the dataset.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>category</code>
+      </td>
+      <td style="text-align:left"><code>string</code>
+      </td>
+      <td style="text-align:left">Category of the data.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>public</code>
+      </td>
+      <td style="text-align:left"><code>boolean</code>
+      </td>
+      <td style="text-align:left">
+        <p>Sets the visibility of a dataset.
+          <br />
+        </p>
+        <p>Can be one of:</p>
+        <ul>
+          <li><code>true</code> - Anyone can see the dataset.</li>
+          <li><code>false</code> - Only the owner and collaborators can view the dataset.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>readme</code>
+      </td>
+      <td style="text-align:left"><code>string</code>
+      </td>
+      <td style="text-align:left">The readme of the dataset, displayed on the overview tab.</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Example
+
+```bash
+{
+  "name": "cats",
+  "description": "A dataset of cat images."
+}
+```
+
+#### Response
+
+{% code title="Status: 201 Created" %}
+```bash
+{
+    "name": "cats",
+    "description": "A dataset of cat images.",
+    "data_type": "IMAGE",
+    "category": "other",
+    "public": false,
+    "owner": {
+        "username": "bert",
+        "email": "bert@segments.ai",
+        "created_at": "2020-05-11T14:00:53.763278Z"
+    },
+    "created_at": "2020-07-20T14:59:36.242218Z",
+    "collaborators_count": 0,
+    "samples_count": 94
+}
+```
+{% endcode %}
+
+### Delete a dataset
+
+```bash
+DELETE /datasets/:owner_name/:dataset_name
+```
+
 ## Samples
 
-### Get all samples in a dataset
+### List samples
 
 ```bash
 GET /datasets/:owner/:dataset/samples
@@ -54,7 +245,7 @@ GET /samples/:sample_uuid
   "attributes": {
     "image": {"url": "https://example.com/image.png"}
   }
-  "created_at": "2011-04-10T20:09:31Z"
+  "created_at": "2020-04-10T20:09:31Z"
   "created_by": "jane"
 }
 ```
@@ -105,6 +296,12 @@ POST /datasets/:owner/:dataset/samples
 ```
 {% endcode %}
 
+### Delete a sample
+
+```bash
+DELETE /samples/:sample_uuid
+```
+
 ## Labels
 
 ### Get a label
@@ -131,9 +328,97 @@ GET /labels/:sample_uuid/:task_name
       "url": "https://segmentsai-staging.s3.eu-west-2.amazonaws.com/assets/davy/ddf55e99-1a6f-42d2-83e9-8657de3259a1.png"
     }
   },
-  "created_at": "2011-04-10T20:09:31Z",
+  "created_at": "2020-04-10T20:09:31Z",
   "created_by": "jane"
 }
 ```
 {% endcode %}
+
+### Create or update a label
+
+```bash
+    PUT /labels/:sample_uuid/:task_name
+```
+
+#### Input
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Name</th>
+      <th style="text-align:left">Type</th>
+      <th style="text-align:left">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left"><code>attributes</code>
+      </td>
+      <td style="text-align:left"><code>object</code>
+      </td>
+      <td style="text-align:left">Label data.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>label_status</code>
+      </td>
+      <td style="text-align:left"><code>string</code>
+      </td>
+      <td style="text-align:left">
+        <p>Status of the label.</p>
+        <p></p>
+        <p>Can be one of: <code>LABELED</code>, <code>REVIEWED</code>, <code>REJECTED</code>, <code>PRELABELED</code>, <code>SKIPPED</code>
+        </p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+#### Example
+
+```bash
+{
+  "attributes": {
+    "format_version": "0.1",
+    "annotations": [
+      {
+        "id": 1,
+        "category_id": 0,
+      }
+    ],
+    "segmentation_bitmap": {
+      "url": "https://example.com/label.png"
+    }
+  },
+  "label_status": "PRELABELED"
+}
+```
+
+#### Response
+
+{% code title="Status: 201 Created" %}
+```bash
+{
+  "attributes": {
+    "format_version": "0.1",
+    "annotations": [
+      {
+        "id": 1,
+        "category_id": 0,
+      }
+    ],
+    "segmentation_bitmap": {
+      "url": "https://example.com/label.png"
+    }
+  },
+  "label_status": "PRELABELED",
+  "created_at": "2011-04-10T20:09:31Z"
+}
+```
+{% endcode %}
+
+### Delete a label
+
+```bash
+DELETE /labels/:sample_uuid/:task_name
+```
 

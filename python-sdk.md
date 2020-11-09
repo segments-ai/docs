@@ -1,6 +1,14 @@
+---
+description: The Python SDK is a convenient wrapper for the API.
+---
+
 # Python SDK
 
 ## Setup
+
+{% hint style="success" %}
+Please refer to [this blog post](https://segments.ai/blog/speed-up-image-segmentation-with-model-assisted-labeling) for a full example of working with the Python SDK.
+{% endhint %}
 
 First install the SDK.
 
@@ -17,9 +25,47 @@ api_key = "eabdde840de8c8853329c086bc4165591cb3d74c"
 client = SegmentsClient(api_key)
 ```
 
+## Datasets
+
+### List datasets
+
+```python
+user = "jane"
+datasets = client.get_datasets(user)
+
+for dataset in datasets:
+    print(dataset["name"], dataset["description"])
+```
+
+### Get a dataset
+
+```python
+dataset_identifier = "jane/flowers"
+dataset = client.get_dataset(dataset_identifier)
+print(dataset)
+```
+
+### Create a dataset
+
+```python
+dataset_name = "flowers"
+description = "A dataset containing flowers of all kinds."
+category = "garden"
+
+dataset = client.add_dataset(dataset_name, description, category)
+print(sample)
+```
+
+### Delete a dataset
+
+```python
+dataset_identifier = "jane/flowers"
+client.delete_dataset(dataset_identifier)
+```
+
 ## Samples
 
-### Get all samples in a dataset
+### List samples
 
 ```python
 dataset = "jane/flowers"
@@ -57,6 +103,12 @@ If the image is on your local computer, you should first upload it to a cloud st
 If you create a sample with a URL from a public S3 bucket and you see an error on the platform, make sure to [properly configure your bucket's CORS settings](https://docs.aws.amazon.com/AmazonS3/latest/dev/cors.html).
 {% endhint %}
 
+### Delete a sample
+
+```python
+client.delete_sample(uuid="602a3eec-a61c-4a77-9fcc-3037ce5e9606")
+```
+
 ## Labels
 
 ### Get a label
@@ -69,7 +121,7 @@ label = client.get_label(sample_uuid, task)
 print(label)
 ```
 
-### Create or update a label for a sample
+### Create or update a label
 
 A label can be added to a sample in relation to a _task_ defined on the dataset, such as an image classification task or an image segmentation task.
 
@@ -84,11 +136,11 @@ attributes = {
     },
     "annotations": [
         {
-            "id": 1
+            "id": 1,
             "category_id": 2
         },
         {
-            "id": 2
+            "id": 2,
             "category_id": 3
         }
     ]
@@ -113,6 +165,14 @@ segmentation_bitmap_url = asset["url"]
 
 For a full example of uploading model-generated labels to Segments.ai, please refer to [this blogpost](https://segments.ai/blog/speed-up-image-segmentation-with-model-assisted-labeling).
 {% endhint %}
+
+### Delete a label
+
+```python
+sample_uuid = "602a3eec-a61c-4a77-9fcc-3037ce5e9606"
+task_name = "segmentation"
+client.delete_label(sample_uuid, task)
+```
 
 ## Upload a file as an asset
 
