@@ -123,13 +123,11 @@ print(label)
 
 ### Create or update a label
 
-A label can be added to a sample in relation to a _task_ defined on the dataset, such as an image classification task or an image segmentation task.
-
-The task specifies the format that is required for the label: for a classification task, the `attributes`field should contain different fields than for a segmentation task.
+A label can be added to a sample in relation to a _label set_, such as the default ground-truth label set, or a newly created label set for model predictions.
 
 ```python
 sample_uuid = "602a3eec-a61c-4a77-9fcc-3037ce5e9606"
-task_name = "segmentation"
+task_name = "ground-truth" # name of the label set
 attributes = {
     "segmentation_bitmap": {
         "url": "https://segmentsai-prod.s3.eu-west-2.amazonaws.com/assets/bert/49f6aa10-8967-4305-985c-cdc1e8f89b93.png"
