@@ -21,7 +21,7 @@ Import the `segments` package in your python file and and set up a client with a
 ```python
 from segments import SegmentsClient
 
-api_key = "eabdde840de8c8853329c086bc4165591cb3d521"
+api_key = "eabdde840de8c8853329c086bc4165591cb3d74c"
 client = SegmentsClient(api_key)
 ```
 
@@ -115,19 +115,19 @@ client.delete_sample(uuid="602a3eec-a61c-4a77-9fcc-3037ce5e9606")
 
 ```python
 sample_uuid = "602a3eec-a61c-4a77-9fcc-3037ce5e9606"
-labelset = "ground-truth"
+task = "segmentation"
 
-label = client.get_label(sample_uuid, labelset)
+label = client.get_label(sample_uuid, task)
 print(label)
 ```
 
 ### Create or update a label
 
-A label can be added to a sample in relation to a _label set_, such as the default ground-truth label set, or a newly created label set for model predictions. You can create a new label set by clicking the "Add new label set" link on the Samples tab.
+A label can be added to a sample in relation to a _label set_, such as the default ground-truth label set, or a newly created label set for model predictions.
 
 ```python
 sample_uuid = "602a3eec-a61c-4a77-9fcc-3037ce5e9606"
-labelset = "ground-truth"
+task_name = "ground-truth" # name of the label set
 attributes = {
     "segmentation_bitmap": {
         "url": "https://segmentsai-prod.s3.eu-west-2.amazonaws.com/assets/bert/49f6aa10-8967-4305-985c-cdc1e8f89b93.png"
@@ -144,7 +144,7 @@ attributes = {
     ]
 }
 
-client.add_label(sample_uuid, labelset, attributes)
+client.add_label(sample_uuid, task_name, attributes)
 ```
 
 {% hint style="info" %}
@@ -168,8 +168,8 @@ For a full example of uploading model-generated labels to Segments.ai, please re
 
 ```python
 sample_uuid = "602a3eec-a61c-4a77-9fcc-3037ce5e9606"
-labelset = "ground-truth"
-client.delete_label(sample_uuid, labelset)
+task_name = "segmentation"
+client.delete_label(sample_uuid, task)
 ```
 
 ## Upload a file as an asset
