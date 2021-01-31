@@ -65,38 +65,36 @@ GET /datasets/:owner_name/:dataset_name
 {
     "name": "cats",
     "description": "A dataset of cat images.",
+    "data_type": "IMAGE",
     "category": "other",
     "public": false,
     "owner": {
         "username": "bert",
+        "email": "bert@segments.ai",
         "created_at": "2020-05-11T14:00:53.763278Z"
     },
     "created_at": "2020-07-20T14:59:36.242218Z",
     "collaborators_count": 0,
     "samples_count": 94,
-    "task_type": "segmentation-bitmap",
-    "task_attributes": {
-        "format_version": "0.1",
-        "categories": [
-            {
-                "name": "cat",
-                "id": 0
+    "tasks": [
+        {
+            "name": "segmentation",
+            "task_type": "segmentation-bitmap",
+            "attributes": {
+                "format_version": "0.1",
+                "categories": [
+                    {
+                        "name": "cat",
+                        "id": 0
+                    },
+                    {
+                        "name": "dog",
+                        "id": 1
+                    }
+                ]
             },
-            {
-                "name": "dog",
-                "id": 1
-            }
-        ]
-    },
-    "labelsets": [
-        {
-            "name": "ground-truth",
-            "description": "Ground truth labels.",
-        },
-        {
-            "name": "predictions",
-            "description": "My model predictions.",
-        },
+            "created_at": "2020-07-20T14:59:42.675157Z"
+        }
     ]
 }
 ```
@@ -182,6 +180,7 @@ POST /user/datasets
 {
     "name": "cats",
     "description": "A dataset of cat images.",
+    "data_type": "IMAGE",
     "category": "other",
     "public": false,
     "owner": {
@@ -308,7 +307,7 @@ DELETE /samples/:sample_uuid
 ### Get a label
 
 ```bash
-GET /labels/:sample_uuid/:labelset
+GET /labels/:sample_uuid/:task_name
 ```
 
 #### Response
@@ -338,7 +337,7 @@ GET /labels/:sample_uuid/:labelset
 ### Create or update a label
 
 ```bash
-    PUT /labels/:sample_uuid/:labelset
+    PUT /labels/:sample_uuid/:task_name
 ```
 
 #### Input
@@ -420,6 +419,6 @@ GET /labels/:sample_uuid/:labelset
 ### Delete a label
 
 ```bash
-DELETE /labels/:sample_uuid/:labelset
+DELETE /labels/:sample_uuid/:task_name
 ```
 

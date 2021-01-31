@@ -123,7 +123,7 @@ print(label)
 
 ### Create or update a label
 
-A label can be added to a sample in relation to a _label set_, such as the default ground-truth label set, or a newly created label set for model predictions.
+A label can be added to a sample in relation to a _label set_, such as the default ground-truth label set, or a newly created label set for model predictions. You can create a new label set by clicking the "Add new label set" link on the Samples tab.
 
 ```python
 sample_uuid = "602a3eec-a61c-4a77-9fcc-3037ce5e9606"
