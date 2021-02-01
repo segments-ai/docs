@@ -19,7 +19,7 @@ from segments.utils import export_dataset
 
 # Initialize a SegmentsDataset from the release file
 release_file = 'flowers-v1.0.json'
-dataset = SegmentsDataset(release_file, task='segmentation', filter_by=['labeled', 'reviewed'])
+dataset = SegmentsDataset(release_file, labelset='ground-truth', filter_by=['labeled', 'reviewed'])
 
 # Export to COCO format
 export_dataset(dataset, 'coco')

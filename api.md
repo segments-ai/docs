@@ -65,38 +65,36 @@ GET /datasets/:owner_name/:dataset_name
 {
     "name": "cats",
     "description": "A dataset of cat images.",
+    "data_type": "IMAGE",
     "category": "other",
     "public": false,
     "owner": {
         "username": "bert",
+        "email": "bert@segments.ai",
         "created_at": "2020-05-11T14:00:53.763278Z"
     },
     "created_at": "2020-07-20T14:59:36.242218Z",
     "collaborators_count": 0,
     "samples_count": 94,
-    "task_type": "segmentation-bitmap",
-    "task_attributes": {
-        "format_version": "0.1",
-        "categories": [
-            {
-                "name": "cat",
-                "id": 0
+    "tasks": [
+        {
+            "name": "segmentation",
+            "task_type": "segmentation-bitmap",
+            "attributes": {
+                "format_version": "0.1",
+                "categories": [
+                    {
+                        "name": "cat",
+                        "id": 0
+                    },
+                    {
+                        "name": "dog",
+                        "id": 1
+                    }
+                ]
             },
-            {
-                "name": "dog",
-                "id": 1
-            }
-        ]
-    },
-    "labelsets": [
-        {
-            "name": "ground-truth",
-            "description": "Ground truth labels.",
-        },
-        {
-            "name": "predictions",
-            "description": "My model predictions.",
-        },
+            "created_at": "2020-07-20T14:59:42.675157Z"
+        }
     ]
 }
 ```
@@ -182,6 +180,7 @@ POST /user/datasets
 {
     "name": "cats",
     "description": "A dataset of cat images.",
+    "data_type": "IMAGE",
     "category": "other",
     "public": false,
     "owner": {
@@ -247,8 +246,7 @@ GET /samples/:sample_uuid
     "image": {"url": "https://example.com/image.png"}
   }
   "created_at": "2020-04-10T20:09:31Z"
-  "created_by": "jane",
-  "metadata": {}
+  "created_by": "jane"
 }
 ```
 {% endcode %}
@@ -265,7 +263,6 @@ POST /datasets/:owner/:dataset/samples
 | :--- | :--- | :--- |
 | `name` | `string` | **Required.** The name of the sample. |
 | `attributes` | `object` | Sample data. |
-| `metadata` | `object` | User-defined metadata. |
 
 #### Example
 
@@ -276,11 +273,6 @@ POST /datasets/:owner/:dataset/samples
     "image": {
       "url": "https://example.com/image.png"
     }
-  },
-  "metadata": {
-    "city": "London",
-    "weather": "cloudy",
-    "robot_id": 3
   }
 }
 ```
@@ -315,7 +307,7 @@ DELETE /samples/:sample_uuid
 ### Get a label
 
 ```bash
-GET /labels/:sample_uuid/:labelset
+GET /labels/:sample_uuid/:task_name
 ```
 
 #### Response
@@ -337,7 +329,7 @@ GET /labels/:sample_uuid/:labelset
     }
   },
   "created_at": "2020-04-10T20:09:31Z",
-  "created_by": "jane",
+  "created_by": "jane"
 }
 ```
 {% endcode %}
@@ -345,7 +337,7 @@ GET /labels/:sample_uuid/:labelset
 ### Create or update a label
 
 ```bash
-    PUT /labels/:sample_uuid/:labelset
+    PUT /labels/:sample_uuid/:task_name
 ```
 
 #### Input
@@ -378,13 +370,6 @@ GET /labels/:sample_uuid/:labelset
         </p>
       </td>
     </tr>
-    <tr>
-      <td style="text-align:left"><code>score</code>
-      </td>
-      <td style="text-align:left"><code>float</code>
-      </td>
-      <td style="text-align:left">Prediction score.</td>
-    </tr>
   </tbody>
 </table>
 
@@ -404,8 +389,7 @@ GET /labels/:sample_uuid/:labelset
       "url": "https://example.com/label.png"
     }
   },
-  "label_status": "PRELABELED",
-  "score": 0.9254
+  "label_status": "PRELABELED"
 }
 ```
 
@@ -435,6 +419,6 @@ GET /labels/:sample_uuid/:labelset
 ### Delete a label
 
 ```bash
-DELETE /labels/:sample_uuid/:labelset
+DELETE /labels/:sample_uuid/:task_name
 ```
 
