@@ -62,8 +62,10 @@ The general structure of the release file is as follows:
     "created_at": "2020-07-09 10:20:19.888887+00:00",
     "dataset": {
         "name": "flowers",
-        "tasks": [
-            ** list of tasks **
+        "task_type": "segmentation-bitmap",
+        "task_attributes": {...} # the categories etc.
+        "labelsets": [
+            ** list of labelsets **
         ],
         "samples": {
             ** list of samples **
@@ -74,28 +76,15 @@ The general structure of the release file is as follows:
 ```
 {% endcode %}
 
-### Task
+### Label set
 
-Each task entry contains the task's name, description and its defined categories \(with name and id\):
+Each `labelset` entry contains the labelset's name and description:
 
 {% code title="" %}
 ```bash
 {
-    "name": "segmentation",
-    "description": "",
-    "task_type": "segmentation-bitmap",
-    "attributes": {
-        "categories": [
-            {
-                "name": "person",
-                "id": 0
-            },
-            {
-                "name": "donut",
-                "id": 1
-            }
-        ]
-    }
+    "name": "ground-truth",
+    "description": ""
 }
 ```
 {% endcode %}
@@ -108,14 +97,13 @@ Each sample entry contains information about the sample \(name, image URL, ...\)
 ```bash
 {
     "name": "donuts.jpg",
-    "data_type": "IMAGE",
     "attributes": {
         "image": {
             "url": "https://segmentsai-prod.s3.eu-west-2.amazonaws.com/assets/segments/3b8b3da2-f09a-494b-999e-37250dfbf5b6.jpg"
         }
     },
     "labels": {
-        /** list of labels **/    
+        /** list of labels, indexed by labelset **/    
     }
 }
 ```
@@ -129,7 +117,6 @@ Each label contains information about the label\_status \(LABELED or REVIEWED\) 
 ```bash
 {
     "label_status": "LABELED",
-    "label_type": "segmentation-bitmap",
     "attributes": {
         "format_version": "0.1",
         "annotations": [
