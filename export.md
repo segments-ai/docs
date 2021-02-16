@@ -21,8 +21,8 @@ from segments.utils import export_dataset
 release_file = 'flowers-v1.0.json'
 dataset = SegmentsDataset(release_file, labelset='ground-truth', filter_by=['labeled', 'reviewed'])
 
-# Export to COCO format
-export_dataset(dataset, 'coco')
+# Export to COCO panoptic format
+export_dataset(dataset, export_format='coco-panoptic')
 ```
 
 Alternatively, you can use the initialized SegmentsDataset to loop through the samples and labels, and visualize or process them in any way you please:
