@@ -10,7 +10,7 @@ Note that the segmentation masks are encoded as a png image that appears black w
 
 ## Exporting the release file to COCO format
 
-You can export the release file to COCO format with the Python SDK:
+You can export the release file to [COCO format](https://cocodataset.org/#format-data) with the Python SDK. Set `export_format` to `coco-instance` for the object detection format, or to `coco-panoptic` for the panoptic segmentation format.
 
 ```python
 # pip install segments-ai
@@ -111,7 +111,7 @@ Each sample entry contains information about the sample \(name, image URL, ...\)
 
 ### Label
 
-Each label contains information about the label\_status \(LABELED or REVIEWED\) and provides a list of annotations \(labeled objects\) together with a segmentation bitmap.
+Each label contains basic information such as the time it was created, the user who created it, its status \(e.g. LABELED\). The `attributes` field contains all info about the labeled objects. Its contents depend on the labeling type \(segmentation or bounding boxes\) and are described in more detail [here](label-types.md).
 
 {% code title="" %}
 ```bash
@@ -144,10 +144,6 @@ Each label contains information about the label\_status \(LABELED or REVIEWED\) 
 }
 ```
 {% endcode %}
-
-### Segmentation bitmap
-
-The`segmentation_bitmap_url`refers to a 32-bit RGBA png image. The alpha channel is set to 255, and the remaining 24-bit values in the RGB channels correspond to`instance_ids.`Because of this large dynamic range, these png images appear black in an image viewer.
 
 Please refer to [this blog post](https://segments.ai/blog/speed-up-image-segmentation-with-model-assisted-labeling) for an example of training a model on exported data.
 

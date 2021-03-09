@@ -133,13 +133,13 @@ print(label)
 
 A label can be added to a sample in relation to a _label set_, such as the default ground-truth label set, or a newly created label set for model predictions. You can create a new label set by clicking the "Add new label set" link on the Samples tab.
 
+The content of the `attributes` field depends on the [label type](label-types.md).
+
 ```python
 sample_uuid = "602a3eec-a61c-4a77-9fcc-3037ce5e9606"
 labelset = "ground-truth"
 attributes = {
-    "segmentation_bitmap": {
-        "url": "https://segmentsai-prod.s3.eu-west-2.amazonaws.com/assets/bert/49f6aa10-8967-4305-985c-cdc1e8f89b93.png"
-    },
+    "format_version": "0.1",
     "annotations": [
         {
             "id": 1,
@@ -149,7 +149,10 @@ attributes = {
             "id": 2,
             "category_id": 3
         }
-    ]
+    ],
+    "segmentation_bitmap": {
+        "url": "https://segmentsai-prod.s3.eu-west-2.amazonaws.com/assets/bert/49f6aa10-8967-4305-985c-cdc1e8f89b93.png"
+    },
 }
 
 client.add_label(sample_uuid, labelset, attributes)
