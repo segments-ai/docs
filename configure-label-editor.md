@@ -2,7 +2,7 @@
 
 Once you've created a dataset, you can further configure the labeling interface by editing the configuration file under **Settings** -&gt; **Labeling**.
 
-You can also easily copy-paste this configuration file from one dataset to another.
+You can also copy-paste this configuration file from one dataset to another.
 
 ```javascript
 {

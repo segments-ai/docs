@@ -337,7 +337,6 @@ GET /labels/:sample_uuid/:labelset
   "label_type": "segmentation-bitmap",
   "label_status": "LABELED",
   "attributes": {
-    "format_version": "0.1",
     "annotations": [
       {
         "id": 1, 
@@ -376,7 +375,7 @@ GET /labels/:sample_uuid/:labelset
       </td>
       <td style="text-align:left"><code>object</code>
       </td>
-      <td style="text-align:left">Label data. Format depends on the label type, see <a href="label-types.md">label formats</a>.</td>
+      <td style="text-align:left">Label data.</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>label_status</code>
