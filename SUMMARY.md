@@ -5,5 +5,6 @@
 * [Python SDK](python-sdk.md)
 * [Configuring the label editor](configure-label-editor.md)
 * [Label types](label-types.md)
+* [Search functionality](search-functionality.md)
 * [Exporting data](export.md)
 
