@@ -15,7 +15,7 @@ An API key can be created on your [user account page](https://segments.ai/accoun
 ### List datasets
 
 ```bash
-GET /users/:owner_name/datasets
+GET /users/:owner/datasets
 ```
 
 To get all datasets of the currently logged in users, you can use this shortcut:
@@ -55,7 +55,7 @@ Note that this will only return datasets which are public, and datasets which ar
 ### Get a dataset
 
 ```bash
-GET /datasets/:owner_name/:dataset_name
+GET /datasets/:owner/:dataset
 ```
 
 #### Response
@@ -199,7 +199,7 @@ POST /user/datasets
 ### Delete a dataset
 
 ```bash
-DELETE /datasets/:owner_name/:dataset_name
+DELETE /datasets/:owner/:dataset
 ```
 
 ## Samples
@@ -252,6 +252,7 @@ GET /samples/:sample_uuid
   "priority": 0,
   "created_at": "2020-04-10T20:09:31Z"
   "created_by": "jane",
+  "dataset": "jane/cats"
 }
 ```
 {% endcode %}
@@ -337,6 +338,7 @@ GET /labels/:sample_uuid/:labelset
   "label_type": "segmentation-bitmap",
   "label_status": "LABELED",
   "attributes": {
+    "format_version": "0.1",
     "annotations": [
       {
         "id": 1, 
@@ -375,7 +377,7 @@ GET /labels/:sample_uuid/:labelset
       </td>
       <td style="text-align:left"><code>object</code>
       </td>
-      <td style="text-align:left">Label data.</td>
+      <td style="text-align:left">Label data. Format depends on the label type, see <a href="label-types.md">label formats</a>.</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>label_status</code>
