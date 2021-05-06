@@ -6,9 +6,9 @@
 
 If your data is stored in a private AWS S3 bucket, you can submit images as S3 protocol URIs. For example, instead of `https://s3-us-west-1.amazonaws.com/bucket/image001.png` you would submit `s3://bucket/image001.png`.
 
-We will then use the S3 API to fetch data from your S3 bucket, using AWS account ID `931508227573` \(canonical ID `a2c85e730d80dcb51a2c0e1a8f852cf6dc8d6e04d9e00f49239c324de3c1e3e1`\). 
+We will then use the S3 API to access data from your S3 bucket, using AWS account ID `931508227573` \(canonical ID `a2c85e730d80dcb51a2c0e1a8f852cf6dc8d6e04d9e00f49239c324de3c1e3e1`\). We generate temporary [presigned URLs](https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-presigned-url.html) to serve the images from your S3 bucket in our frontend. These URLs expire after 24 hours.
 
-This requires that you give the Segments.ai AWS account read-only access to the data in your bucket. You can do this by granting us [cross-account access](https://aws.amazon.com/premiumsupport/knowledge-center/cross-account-access-s3/) through setting an appropriate [bucket policy](https://docs.aws.amazon.com/AmazonS3/latest/dev/example-bucket-policies.html):
+This setup requires that you give the Segments.ai AWS account read-only access to the data in your bucket. You can do this by granting us [cross-account access](https://aws.amazon.com/premiumsupport/knowledge-center/cross-account-access-s3/) through setting an appropriate [bucket policy](https://docs.aws.amazon.com/AmazonS3/latest/dev/example-bucket-policies.html):
 
 1. In your AWS account, go to the S3 Management Console.
 2. Go to your bucket.
