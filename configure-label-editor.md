@@ -29,7 +29,7 @@ You can also copy-paste this configuration file from one dataset to another.
                     "values": [
                         "green",
                         "yellow",
-                        "red",
+                        "red"
                     ]
                 },
                 {
