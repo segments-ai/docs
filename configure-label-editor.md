@@ -10,18 +10,18 @@ You can also copy-paste this configuration file from one dataset to another.
     "categories": [
         { // At the minimum, a category should have a name and category_id
             "name": "person",
-            "category_id": 1
+            "id": 1
         },
         {
             "name": "car",
-            "category_id": 2,
+            "id": 2,
             "has_instances": true, // Whether category contains instances (person, car) or not (sky, road)
             "color": [33, 138, 33], // RGB color of the category
             "foo": "bar" // You can add custom key-value pairs that will be ignored
         },
         {
             "name": "traffic-light",
-            "category_id": 3,
+            "id": 3,
             "attributes": [ // Optional object-level attributes
                 {
                     "name": "color",
