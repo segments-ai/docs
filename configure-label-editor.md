@@ -2,7 +2,7 @@
 
 Once you've created a dataset, you can further configure the labeling interface by editing the configuration file under **Settings** -&gt; **Labeling**.
 
-You can also copy-paste this configuration file from one dataset to another.
+You can also copy-paste configuration files from one dataset to another, or update them through the API or SDK.
 
 ```javascript
 {
@@ -65,4 +65,8 @@ You can also copy-paste this configuration file from one dataset to another.
     ]
 }
 ```
+
+{% hint style="warning" %}
+Note that the inline comments in this example configuration file should be left out, as comments of the form`//…` or `/*…*/` are not allowed in JSON.
+{% endhint %}
 
