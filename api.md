@@ -134,18 +134,6 @@ POST /user/datasets
       <td style="text-align:left">The description of the dataset.</td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>task_type</code>
-      </td>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left">The task type of the dataset.</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>task_attributes</code>
-      </td>
-      <td style="text-align:left">dict</td>
-      <td style="text-align:left">The task attributes. See <a href="configure-label-editor.md">Configuring the label editor</a>.</td>
-    </tr>
-    <tr>
       <td style="text-align:left"><code>category</code>
       </td>
       <td style="text-align:left"><code>string</code>
@@ -208,52 +196,11 @@ POST /user/datasets
 ```
 {% endcode %}
 
-### Update a dataset
-
-```bash
-PATCH /datasets/:owner/:dataset
-```
-
-Same fields as previous.
-
 ### Delete a dataset
 
 ```bash
 DELETE /datasets/:owner/:dataset
 ```
-
-### Add a collaborator to a dataset
-
-```bash
-POST /datasets/:owner/:dataset/collaborators
-```
-
-#### Input
-
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| `user` | `string` | **Required.** The username of the collaborator to be added. |
-| `role` | `string` | The role of the collaborator. Can be one of: `labeler`, `reviewer`, `admin` |
-
-#### Example
-
-```bash
-{
-  "user": "jane",
-  "role": "reviewer"
-}
-```
-
-#### Response
-
-{% code title="Status: 201 Created" %}
-```bash
-{
-  "user": "jane",
-  "role": "reviewer"
-}
-```
-{% endcode %}
 
 ## Samples
 
@@ -369,14 +316,6 @@ POST /datasets/:owner/:dataset/samples
 ```
 {% endcode %}
 
-### Update a sample
-
-```bash
-PATCH /samples/:sample_uuid
-```
-
-Same fields as previous.
-
 ### Delete a sample
 
 ```bash
@@ -419,7 +358,7 @@ GET /labels/:sample_uuid/:labelset
 ### Create or update a label
 
 ```bash
-PUT /labels/:sample_uuid/:labelset
+    PUT /labels/:sample_uuid/:labelset
 ```
 
 #### Input
@@ -511,95 +450,4 @@ PUT /labels/:sample_uuid/:labelset
 ```bash
 DELETE /labels/:sample_uuid/:labelset
 ```
-
-## Releases
-
-### List releases
-
-```bash
-GET /datasets/:owner/:dataset/releases
-```
-
-#### Response
-
-{% code title="Status: 200 OK" %}
-```bash
-[
-  {
-    "name": "v0.1",
-    "description": "My first release.",
-    "attributes": {
-      "url": "https://segmentsai-prod.s3.eu-west-2.amazonaws.com/releases/f0b0a34b-93ca-41a3-06ee-96ce6436dd41.json"
-    },
-    "status": "SUCCEEDED",
-    "created_at": "2020-07-20T14:59:36.242218Z"
-  }
-]
-```
-{% endcode %}
-
-### Get a release
-
-```bash
-GET /datasets/:owner/:dataset/releases/:release_name
-```
-
-#### Response
-
-{% code title="Status: 200 OK" %}
-```bash
-{
-  "name": "v0.1",
-  "description": "My first release.",
-  "attributes": {
-    "url": "https://segmentsai-prod.s3.eu-west-2.amazonaws.com/releases/f0b0a34b-93ca-41a3-06ee-96ce6436dd41.json"
-  },
-  "status": "SUCCEEDED",
-  "created_at": "2020-07-20T14:59:36.242218Z"
-}
-```
-{% endcode %}
-
-### Create a release
-
-```bash
-POST /datasets/:owner/:dataset/releases
-```
-
-#### Input
-
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| `name` | `string` | **Required.** The name of the release. |
-| `description` | `string` | The description of the release. |
-
-#### Example
-
-```bash
-{
-  "name": "v0.1",
-  "description": "My first release."
-}
-```
-
-#### Response
-
-{% code title="Status: 201 Created" %}
-```bash
-{
-  "name": "v0.1",
-  "description": "My first release.",
-  "status": "PENDING",
-  "created_at": "2020-07-20T14:59:36.242218Z"
-}
-```
-{% endcode %}
-
-### Delete a release
-
-```bash
-DELETE /datasets/:owner/:dataset/releases/:release_name
-```
-
-## 
 
