@@ -8,7 +8,7 @@ You can also copy-paste configuration files from one dataset to another, or upda
 {
     "format_version": "0.1",
     "categories": [
-        { // At the minimum, a category should have a name and category_id
+        { // At the minimum, a category should have a name and id
             "name": "person",
             "id": 1
         },
