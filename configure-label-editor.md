@@ -15,9 +15,9 @@ You can also copy-paste configuration files from one dataset to another, or upda
         {
             "name": "car",
             "id": 2,
-            "has_instances": true, // Whether category contains instances (person, car) or not (sky, road)
+            "has_instances": true, // Whether the category contains instances (person, car) or not (sky, road)
             "color": [33, 138, 33], // RGB color of the category
-            "foo": "bar" // You can add custom key-value pairs that will be ignored
+            "foo": "bar" // You can add custom key-value pairs. These will be ignored.
         },
         {
             "name": "traffic-light",
