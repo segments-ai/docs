@@ -27,7 +27,9 @@ When downloading or uploading labels using the API or Python SDK, the format of 
 }
 ```
 
+{% hint style="info" %}
 The`segmentation_bitmap`url refers to a 32-bit RGBA png image which contains the segmentation masks. The alpha channel is set to 255, and the remaining 24-bit values in the RGB channels correspond to the object ids in the `annotations` list. Because of the large dynamic range, these png images may appear black in an image viewer.
+{% endhint %}
 
 ## Bounding boxes
 
