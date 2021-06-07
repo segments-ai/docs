@@ -5,7 +5,7 @@ To download your labeled data, you need to create a release on the Releases tab.
 By clicking the download link of a release, you obtain a release file in JSON format. This release file contains all information about the dataset, tasks, samples, and labels in the release.
 
 {% hint style="info" %}
-Note that the segmentation masks are encoded as a png image that appears black when opened in an image viewer. The png image contains all necessary information though. [Read more below](export.md#segmentation-bitmap).
+Note that the segmentation masks are encoded as a png image that appears black when opened in an image viewer. The png image contains all necessary information though. [Read more here](label-types.md#segmentation-masks).
 {% endhint %}
 
 ## Exporting the release file to COCO format
