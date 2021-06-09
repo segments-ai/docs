@@ -73,7 +73,7 @@ You can also copy-paste configuration files from one dataset to another, or upda
         {
             "name": "visibility",
             "input_type": "number",
-            "min": "0.0"
+            "min": "0.0",
             "max": "1.0",
             "step": "0.01",
             "default_value": 0.8 // optional
