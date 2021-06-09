@@ -25,20 +25,31 @@ You can also copy-paste configuration files from one dataset to another, or upda
             "attributes": [ // Optional object-level attributes
                 {
                     "name": "color",
-                    "input_type": "radio",
+                    "input_type": "select",
                     "values": [
                         "green",
                         "yellow",
                         "red"
-                    ]
+                    ],
+                    "default_value": "red" // optional
                 },
                 {
-                    "name": "visibility",
-                    "input_type": "radio",
-                    "values": [
-                        "good",
-                        "bad"
-                    ]
+                    "name": "description",
+                    "input_type": "text",
+                    "default_value": "A nice car." // optional
+                },
+                {
+                    "name": "number_of_wheels",
+                    "input_type": "number",
+                    "min": "1",
+                    "max": "20",
+                    "step": "1",
+                    "default_value": 4 // optional
+                },
+                {
+                    "name": "is_",
+                    "input_type": "checkbox",
+                    "default_value": false // optional
                 }
             ]
         }
@@ -46,21 +57,31 @@ You can also copy-paste configuration files from one dataset to another, or upda
     "image_attributes": [ // Optional image-level attributes
         {
             "name": "scene_type",
-            "input_type": "radio",
+            "input_type": "select",
             "values": [
                 "highway",
                 "urban",
                 "countryside"
-            ]
+            ],
+            "default_value": "highway" // optional
         },
         {
-            "name": "weather",
-            "input_type": "radio",
-            "values": [
-                "sunny",
-                "cloudy",
-                "rainy"
-            ]
+            "name": "description",
+            "input_type": "text",
+            "default_value": "A nice sunny highway scene." // optional
+        },
+        {
+            "name": "visibility",
+            "input_type": "number",
+            "min": "0.0"
+            "max": "1.0",
+            "step": "0.01",
+            "default_value": 0.8 // optional
+        },
+        {
+            "name": "sunny",
+            "input_type": "checkbox",
+            "default_value": true // optional
         }
     ]
 }
