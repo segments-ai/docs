@@ -68,6 +68,40 @@ The`segmentation_bitmap`url refers to a 32-bit RGBA png image which contains the
 }
 ```
 
+## Keypoints
+
+```javascript
+"attributes": {
+  "format_version": "0.1",
+  "annotations": [
+    {
+      "id": 1, // this is an object id
+      "category_id": 1, // this is a category id
+      "type": "point", // this refers to the label type (keypoint)
+      "points": [
+        [12.34, 56.78] // x, y (coordinates of keypoint)
+      ]
+    },
+    {
+      "id": 2, 
+      "category_id": 1,
+      "type": "point",
+      "points": [
+        [12.34, 56.78]
+      ]
+    },
+    {
+      "id": 3, 
+      "category_id": 4,
+      "type": "point",
+      "points": [
+        [12.34, 56.78]
+      ]
+    }
+  ],
+}
+```
+
 ## Object attributes
 
 Objects in the annotations list can optionally also contain an attributes field to store object-level attributes. Make sure to properly [configure the label editor](configure-label-editor.md) if you're using object-level attributes.
