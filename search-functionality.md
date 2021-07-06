@@ -6,7 +6,7 @@ description: >-
 
 # Search functionality
 
-![Search for images by label content](.gitbook/assets/image.png)
+![Search by metadata attributes and label content](.gitbook/assets/image%20%282%29.png)
 
 ## Search syntax
 
