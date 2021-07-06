@@ -6,6 +6,8 @@ description: >-
 
 # Search functionality
 
+![Search for images by label content](.gitbook/assets/image.png)
+
 ## Search syntax
 
 To search by sample name, just type the full or partial name of a sample.
