@@ -20,7 +20,7 @@ You can export the release file to different formats with the Python SDK. Use th
 | `instance` | Grayscale PNGs where the values correspond to instance ids |
 | `semantic` | Grayscale PNGs where the values correspond to category ids |
 | `instance-color` | Colored PNGs where the colors correspond to different instances |
-| `semantic-color` | Colored PNGs where the colors correspond to different categories with colors as configured in the [label editor settings](https://docs.segments.ai/configure-label-editor) when available. |
+| `semantic-color` | Colored PNGs where the colors correspond to different categories with colors as configured in the [label editor settings](configure-label-editor.md) when available. |
 
 Example:
 
