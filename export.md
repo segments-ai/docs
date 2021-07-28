@@ -18,9 +18,9 @@ You can export the release file to different formats with the Python SDK. Use th
 | `coco-panoptic` | [COCO panoptic](https://cocodataset.org/#format-data) segmentation format |
 | `yolo` | [Yolo Darknet](https://github.com/AlexeyAB/darknet) object detection format |
 | `instance` | Grayscale PNGs where the values correspond to instance ids |
-| `instance-colored` | Colored PNGs where the colors correspond to different instances |
 | `semantic` | Grayscale PNGs where the values correspond to category ids |
-| `semantic-colored` | Colored PNGs where the colors correspond to different categories |
+| `instance-color` | Colored PNGs where the colors correspond to different instances |
+| `semantic-color` | Colored PNGs where the colors correspond to different categories |
 
 Example:
 
