@@ -8,9 +8,21 @@ By clicking the download link of a release, you obtain a release file in JSON fo
 Note that the segmentation masks are encoded as a png image that appears black when opened in an image viewer. The png image contains all necessary information though. [Read more here](label-types.md#segmentation-masks).
 {% endhint %}
 
-## Exporting the release file to COCO format
+## Exporting the release file to different formats
 
-You can export the release file to [COCO format](https://cocodataset.org/#format-data) with the Python SDK. Set `export_format` to `coco-instance` for the object detection format, or to `coco-panoptic` for the panoptic segmentation format. For bounding box datasets, you can set the export format to `yolo`.
+You can export the release file to different formats with the Python SDK. Use the `export_dataset`util function for this, setting the `export_format` parameter to one of the following:
+
+| Value | Description |
+| :--- | :--- |
+| `coco-instance` | [COCO instance](https://cocodataset.org/#format-data) segmentation format |
+| `coco-panoptic` | [COCO panoptic](https://cocodataset.org/#format-data) segmentation format |
+| `yolo` | [Yolo Darknet](https://github.com/AlexeyAB/darknet) object detection format |
+| `instance` | Grayscale PNGs where the values correspond to instance ids |
+| `instance-colored` | Colored PNGs where the colors correspond to different instances |
+| `semantic` | Grayscale PNGs where the values correspond to category ids |
+| `semantic-colored` | Colored PNGs where the colors correspond to different categories |
+
+Example:
 
 ```python
 # pip install segments-ai
