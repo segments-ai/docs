@@ -16,9 +16,12 @@ You can currently subscribe to following events:
 | :--- | :--- |
 | `dataset.created` | Occurs whenever a dataset is created. |
 | `dataset.updated` | Occurs whenever a dataset property has changed. |
+| `dataset.deleted` | Occurs whenever a dataset is deleted. |
 | `sample.created` | Occurs whenever a sample is created. |
 | `sample.updated` | Occurs whenever a sample property has changed. |
+| `sample.deleted` | Occurs whenever a sample is deleted. |
 | `label.updated` | Occurs whenever a label property has changed. |
+| `label.deleted` | Occurs whenever a label is deleted. |
 | `issue.created` | Occurs whenever an issue is created. |
 | `issue.updated` | Occurs whenever an issue has received a reply or a property has changed. |
 
