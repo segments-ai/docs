@@ -30,7 +30,12 @@ The webhook payload looks as follows:
   "created_at": "2021-08-09T14:40:19.987691+00:00",
   "api_version": "2021-08-01",
   "dataset": "jane/flowers",
-  "object": { ... } // The dataset, sample, label or issue that was created or updated.
+  "object": { ... }, // The dataset, sample, label or issue that was created or updated.
+  "text": "Sample rose.png created in dataset jane/flowers." // Text summary, useful for Slack integration.
 }
 ```
+
+### Setting up a Slack integration
+
+Follow [these instructions](https://api.slack.com/messaging/webhooks) to set up a Slack integration using webhooks.
 
