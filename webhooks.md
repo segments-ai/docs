@@ -1,3 +1,9 @@
+---
+description: >-
+  Listen for events on your account so your integration can automatically
+  trigger reactions.
+---
+
 # Webhooks
 
 To enable webhooks, go to [your account page](https://segments.ai/account) and click the "Enable" button in the webhooks section. Then click the "Manage webhooks" button to add endpoints, subscribe to events, view and replay webhooks.
