@@ -6,7 +6,9 @@ description: >-
 
 # Webhooks
 
-To enable webhooks, go to [your account page](https://segments.ai/account) and click the "Enable" button in the webhooks section. Then click the "Manage webhooks" button to add endpoints, subscribe to events, view and replay webhooks.
+Webhooks are automated messages sent to your server when something happens. You can use webhooks to subscribe to certain events on your account and automatically trigger reactions.
+
+To enable webhooks for the datasets under your account, go to [your account page](https://segments.ai/account) and click the "Enable" button in the webhooks section. Then click the "Manage webhooks" button to add endpoints, subscribe to events, view and replay webhooks.
 
 Every webhook is signed with a unique key for increased security. Please refer to [these docs](https://docs.svix.com/receiving/verifying-payloads/how) to verify and validate your incoming webhooks.
 
