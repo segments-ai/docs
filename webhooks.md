@@ -46,14 +46,12 @@ This is a guided tutorial on how to set up a Slack integration using webhooks wi
 
 ### Create a Slack app, enable incoming webhooks and create an endpoint URL in Slack
 
-1. Create a Slack app, enable incoming webhooks and create an endpoint URL in Slack
+1. Create a Slack app, enable incoming webhooks and create an endpoint URL in Slack.
 2. You'll be redirected to its settings page. From here, select the Incoming Webhooks feature and toggle on the Activate Incoming Webhooks.
-3. Some extra options will now appear. In the bottom of the page, click the Add New Webhook to Workspace button and choose a channel. Make sure the channel is a [public channel](https://slack.com/intl/en-be/help/articles/360017938993-What-is-a-channel) within your Slack workspace.
-4. You'll be sent back to your app settings, and you should now see a new Webhook URL entry with an endpoint URL resembling something like `https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX`
+3. Some extra options will now appear. In the bottom of the page, click the Add New Webhook to Workspace button and choose a channel.
+4. You'll be sent back to your app settings, and you should now see a new Webhook URL entry with an endpoint URL formatted like`https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX`
 
-{% hint style="warning" %}
 You've now created an endpoint URL for the incoming webhook, specific to a single user and a single channel.
-{% endhint %}
 
 ### Configure your webhooks in Segments.ai using the Slack endpoint URL
 
@@ -64,7 +62,7 @@ You've now created an endpoint URL for the incoming webhook, specific to a singl
    * An optional version number and description
    * Which events to send notifications about to the Slack channel
 
-The webhook will then be created.
+The webhook integration is now set up.
 
 {% hint style="info" %}
 You will start to receive notifications, but only for those events within datasets of which you're an owner.
