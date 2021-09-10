@@ -364,22 +364,21 @@ Args:
 
 ```python
 sample_uuid = "602a3eec-a61c-4a77-9fcc-3037ce5e9606"
-labelset = "ground-truth"
 
-label = client.get_label(sample_uuid, labelset)
+label = client.get_label(sample_uuid)
 print(label)
 ```
 
 #### Signature
 
 ```python
-client.get_label(sample_uuid, labelset)
+client.get_label(sample_uuid, labelset='ground-truth')
 
 """Get a label.
 
 Args:
     sample_uuid (str): The sample uuid.
-    labelset (str): The labelset this label belongs to.
+    labelset (str): The labelset this label belongs to. Defaults to 'ground-truth'.
 
 Returns:
     dict: a dictionary representing the label.
