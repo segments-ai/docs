@@ -26,12 +26,13 @@ Example:
 
 ```python
 # pip install segments-ai
-from segments import SegmentsDataset
+from segments import SegmentsClient, SegmentsDataset
 from segments.utils import export_dataset
 
 # Initialize a SegmentsDataset from the release file
-release_file = 'flowers-v1.0.json'
-dataset = SegmentsDataset(release_file, labelset='ground-truth', filter_by=['labeled', 'reviewed'])
+client = SegmentsClient('YOUR_API_KEY')
+release = client.get_release('jane/flowers', 'v1.0') # Alternatively: release = 'flowers-v1.0.json'
+dataset = SegmentsDataset(release, labelset='ground-truth', filter_by=['labeled', 'reviewed'])
 
 # Export to COCO panoptic format
 export_dataset(dataset, export_format='coco-panoptic')
