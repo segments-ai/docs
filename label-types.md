@@ -68,6 +68,40 @@ The`segmentation_bitmap`url refers to a 32-bit RGBA png image which contains the
 }
 ```
 
+## Polygons and polylines
+
+```javascript
+"attributes": {
+  "format_version": "0.1",
+  "annotations": [
+    {
+      "id": 1, // this is an object id
+      "category_id": 1, // this is a category id
+      "type": "polygon", // this refers to the label type (polygon)
+      "points": [
+        [12.34, 56.78], // x0, y0 (starting point of the polygon)
+        [90.12, 34.56], // x1, y1
+        [78.91, 23.45], // x2, y2
+        [67.89, 98.76], // x3, y3
+        [54.32, 10.01]  // x4, y4
+      ]
+    },
+    {
+      "id": 2, 
+      "category_id": 1,
+      "type": "polyline", // this refers to the label type (polyline)
+      "points": [
+        [12.34, 56.78], // x0, y0 (starting point of the polyline)
+        [90.12, 34.56], // x1, y1
+        [78.91, 23.45], // x2, y2
+        [67.89, 98.76], // x3, y3
+        [54.32, 10.01]  // x4, y4
+      ]
+    },
+  ],
+}
+```
+
 ## Keypoints
 
 ```javascript
