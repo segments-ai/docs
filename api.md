@@ -137,7 +137,14 @@ POST /user/datasets
       <td style="text-align:left"><code>task_type</code>
       </td>
       <td style="text-align:left">string</td>
-      <td style="text-align:left">The task type of the dataset.</td>
+      <td style="text-align:left">
+        <p>The task type of the dataset. Can be one of:</p>
+        <ul>
+          <li><code>segmentation-bitmap</code>: Semantic, panoptic and instance segmentation.</li>
+          <li><code>vector</code>: Polygons, polylines, bounding boxes, points.</li>
+          <li><code>bboxes</code>: Bounding boxes only.</li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left"><code>task_attributes</code>
@@ -158,10 +165,7 @@ POST /user/datasets
       <td style="text-align:left"><code>boolean</code>
       </td>
       <td style="text-align:left">
-        <p>Sets the visibility of a dataset.
-          <br />
-        </p>
-        <p>Can be one of:</p>
+        <p>Sets the visibility of a dataset. Can be one of:</p>
         <ul>
           <li><code>true</code> - Anyone can see the dataset.</li>
           <li><code>false</code> - Only the owner and collaborators can view the dataset.</li>

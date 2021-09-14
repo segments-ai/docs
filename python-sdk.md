@@ -102,7 +102,7 @@ client.add_dataset(name, description='', task_type='segmentation-bitmap', task_a
 Args:
     name (str): The dataset name. Example: flowers.
     description (str, optional): The dataset description. Defaults to ''.
-    task_type (str, optional): task_type (str, optional): The dataset's task type. One of 'segmentation-bitmap', 'segmentation-bitmap-highres', 'bboxes', 'keypoints'. Defaults to 'segmentation-bitmap'.
+    task_type (str, optional): task_type (str, optional): The dataset's task type. One of 'segmentation-bitmap', 'segmentation-bitmap-highres', 'vector', 'bboxes', 'keypoints'. Defaults to 'segmentation-bitmap'.
     task_attributes (dict, optional): The dataset's task attributes. Defaults to None.
     category (str, optional): The dataset category. Defaults to 'other'.
     public (bool, optional): The dataset visibility. Defaults to False.
@@ -135,7 +135,7 @@ client.update_dataset(dataset_identifier, description=None, task_type=None, task
 Args:
     dataset_identifier (str): The dataset identifier, consisting of the name of the dataset owner followed by the name of the dataset itself. Example: jane/flowers.
     description (str, optional): The dataset description.
-    task_type (str, optional): The dataset's task type. One of 'segmentation-bitmap', 'segmentation-bitmap-highres', 'bboxes', 'keypoints'.
+    task_type (str, optional): The dataset's task type. One of 'segmentation-bitmap', 'segmentation-bitmap-highres', 'vector', 'bboxes', 'keypoints'.
     task_attributes (dict, optional): The dataset's task attributes.
     category (str, optional): The dataset category.
     public (bool, optional): The dataset visibility.
