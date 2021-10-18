@@ -110,77 +110,15 @@ POST /user/datasets
 
 #### Input
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Name</th>
-      <th style="text-align:left">Type</th>
-      <th style="text-align:left">Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left"><code>name</code>
-      </td>
-      <td style="text-align:left"><code>string</code>
-      </td>
-      <td style="text-align:left"><b>Required. </b>The name of the dataset.</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>description</code>
-      </td>
-      <td style="text-align:left"><code>string</code>
-      </td>
-      <td style="text-align:left">The description of the dataset.</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>task_type</code>
-      </td>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left">
-        <p>The task type of the dataset. Can be one of:</p>
-        <ul>
-          <li><code>segmentation-bitmap</code>: Semantic, panoptic and instance segmentation.</li>
-          <li><code>vector</code>: Polygons, polylines, bounding boxes, points.</li>
-          <li><code>bboxes</code>: Bounding boxes only.</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>task_attributes</code>
-      </td>
-      <td style="text-align:left">dict</td>
-      <td style="text-align:left">The task attributes. See <a href="configure-label-editor.md">Configuring the label editor</a>.</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>category</code>
-      </td>
-      <td style="text-align:left"><code>string</code>
-      </td>
-      <td style="text-align:left">Category of the data.</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>public</code>
-      </td>
-      <td style="text-align:left"><code>boolean</code>
-      </td>
-      <td style="text-align:left">
-        <p>Sets the visibility of a dataset. Can be one of:</p>
-        <ul>
-          <li><code>true</code> - Anyone can see the dataset.</li>
-          <li><code>false</code> - Only the owner and collaborators can view the dataset.</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>readme</code>
-      </td>
-      <td style="text-align:left"><code>string</code>
-      </td>
-      <td style="text-align:left">The readme of the dataset, displayed on the overview tab.</td>
-    </tr>
-  </tbody>
-</table>
+| Name              | Type      | Description                                                                                                                                                                                                                                                                      |
+| ----------------- | --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `name`            | `string`  | **Required. **The name of the dataset.                                                                                                                                                                                                                                           |
+| `description`     | `string`  | The description of the dataset.                                                                                                                                                                                                                                                  |
+| `task_type`       | string    | <p>The task type of the dataset. Can be one of:</p><ul><li><code>segmentation-bitmap</code>: Semantic, panoptic and instance segmentation.</li><li><code>vector</code>: Polygons, polylines, bounding boxes, points.</li><li><code>bboxes</code>: Bounding boxes only.</li></ul> |
+| `task_attributes` | dict      | The task attributes. See [Configuring the label editor](configure-label-editor.md).                                                                                                                                                                                              |
+| `category`        | `string`  | Category of the data.                                                                                                                                                                                                                                                            |
+| `public`          | `boolean` | <p>Sets the visibility of a dataset. Can be one of:</p><ul><li><code>true</code> - Anyone can see the dataset.</li><li><code>false</code> - Only the owner and collaborators can view the dataset.</li></ul>                                                                     |
+| `readme`          | `string`  | The readme of the dataset, displayed on the overview tab.                                                                                                                                                                                                                        |
 
 #### Example
 
@@ -234,9 +172,9 @@ POST /datasets/:owner/:dataset/collaborators
 
 #### Input
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| `user` | `string` | **Required.** The username of the collaborator to be added. |
+| Name   | Type     | Description                                                                 |
+| ------ | -------- | --------------------------------------------------------------------------- |
+| `user` | `string` | **Required. **The username of the collaborator to be added.                 |
 | `role` | `string` | The role of the collaborator. Can be one of: `labeler`, `reviewer`, `admin` |
 
 #### Example
@@ -322,12 +260,12 @@ POST /datasets/:owner/:dataset/samples
 
 #### Input
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| `name` | `string` | **Required.** The name of the sample. |
-| `attributes` | `object` | Sample data. |
-| `metadata` | `object` | User-defined metadata. |
-| `priority` | `float` | Priority in the labeling queue. Samples with higher values will be labeled first. Default is 0. |
+| Name         | Type     | Description                                                                                     |
+| ------------ | -------- | ----------------------------------------------------------------------------------------------- |
+| `name`       | `string` | **Required. **The name of the sample.                                                           |
+| `attributes` | `object` | Sample data.                                                                                    |
+| `metadata`   | `object` | User-defined metadata.                                                                          |
+| `priority`   | `float`  | Priority in the labeling queue. Samples with higher values will be labeled first. Default is 0. |
 
 #### Example
 
@@ -428,43 +366,11 @@ PUT /labels/:sample_uuid/:labelset
 
 #### Input
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Name</th>
-      <th style="text-align:left">Type</th>
-      <th style="text-align:left">Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left"><code>attributes</code>
-      </td>
-      <td style="text-align:left"><code>object</code>
-      </td>
-      <td style="text-align:left">Label data. Format depends on the label type, see <a href="label-types.md">label formats</a>.</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>label_status</code>
-      </td>
-      <td style="text-align:left"><code>string</code>
-      </td>
-      <td style="text-align:left">
-        <p>Status of the label.</p>
-        <p></p>
-        <p>Can be one of: <code>LABELED</code>, <code>REVIEWED</code>, <code>REJECTED</code>, <code>PRELABELED</code>, <code>SKIPPED</code>
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>score</code>
-      </td>
-      <td style="text-align:left"><code>float</code>
-      </td>
-      <td style="text-align:left">Prediction score.</td>
-    </tr>
-  </tbody>
-</table>
+| Name           | Type     | Description                                                                                                                                                               |
+| -------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `attributes`   | `object` | Label data. Format depends on the label type, see [label formats](label-types.md).                                                                                        |
+| `label_status` | `string` | <p>Status of the label.</p><p></p><p>Can be one of: <code>LABELED</code>, <code>REVIEWED</code>, <code>REJECTED</code>, <code>PRELABELED</code>, <code>SKIPPED</code></p> |
+| `score`        | `float`  | Prediction score.                                                                                                                                                         |
 
 #### Example
 
@@ -572,10 +478,10 @@ POST /datasets/:owner/:dataset/releases
 
 #### Input
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| `name` | `string` | **Required.** The name of the release. |
-| `description` | `string` | The description of the release. |
+| Name          | Type     | Description                            |
+| ------------- | -------- | -------------------------------------- |
+| `name`        | `string` | **Required. **The name of the release. |
+| `description` | `string` | The description of the release.        |
 
 #### Example
 
@@ -605,5 +511,4 @@ POST /datasets/:owner/:dataset/releases
 DELETE /datasets/:owner/:dataset/releases/:release_name
 ```
 
-## 
-
+##

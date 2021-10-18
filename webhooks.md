@@ -14,18 +14,18 @@ Every webhook is signed with a unique key for increased security. Please refer t
 
 You can currently subscribe to following events:
 
-| Event type | Description |
-| :--- | :--- |
-| `dataset.created` | Occurs whenever a dataset is created. |
-| `dataset.updated` | Occurs whenever a dataset property has changed. |
-| `dataset.deleted` | Occurs whenever a dataset is deleted. |
-| `sample.created` | Occurs whenever a sample is created. |
-| `sample.updated` | Occurs whenever a sample property has changed. |
-| `sample.deleted` | Occurs whenever a sample is deleted. |
-| `label.updated` | Occurs whenever a label property has changed. |
-| `label.deleted` | Occurs whenever a label is deleted. |
-| `issue.created` | Occurs whenever an issue is created. |
-| `issue.updated` | Occurs whenever an issue has received a reply or a property has changed. |
+| Event type        | Description                                                              |
+| ----------------- | ------------------------------------------------------------------------ |
+| `dataset.created` | Occurs whenever a dataset is created.                                    |
+| `dataset.updated` | Occurs whenever a dataset property has changed.                          |
+| `dataset.deleted` | Occurs whenever a dataset is deleted.                                    |
+| `sample.created`  | Occurs whenever a sample is created.                                     |
+| `sample.updated`  | Occurs whenever a sample property has changed.                           |
+| `sample.deleted`  | Occurs whenever a sample is deleted.                                     |
+| `label.updated`   | Occurs whenever a label property has changed.                            |
+| `label.deleted`   | Occurs whenever a label is deleted.                                      |
+| `issue.created`   | Occurs whenever an issue is created.                                     |
+| `issue.updated`   | Occurs whenever an issue has received a reply or a property has changed. |
 
 The webhook payload looks as follows:
 
@@ -42,7 +42,7 @@ The webhook payload looks as follows:
 
 ## Setting up a Slack integration with webhooks
 
-This is a guided tutorial on how to set up a Slack integration using webhooks with [Segments.ai](http://segments.ai/). For more information, please refer to [Slack's instructions](https://api.slack.com/messaging/webhooks).
+This is a guided tutorial on how to set up a Slack integration using webhooks with [Segments.ai](http://segments.ai). For more information, please refer to [Slack's instructions](https://api.slack.com/messaging/webhooks).
 
 ### Create a Slack app, enable incoming webhooks and create an endpoint URL in Slack
 
@@ -67,4 +67,3 @@ The webhook integration is now set up.
 {% hint style="info" %}
 You will start to receive notifications, but only for those events within datasets of which you're an owner.
 {% endhint %}
-

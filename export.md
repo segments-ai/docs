@@ -12,15 +12,15 @@ Note that the segmentation masks are encoded as a png image that appears black w
 
 You can export the release file to different formats with the Python SDK. Use the `export_dataset`util function for this, setting the `export_format` parameter to one of the following:
 
-| Value | Description |
-| :--- | :--- |
-| `coco-instance` | [COCO instance](https://cocodataset.org/#format-data) segmentation format |
-| `coco-panoptic` | [COCO panoptic](https://cocodataset.org/#format-data) segmentation format |
-| `yolo` | [Yolo Darknet](https://github.com/AlexeyAB/darknet) object detection format |
-| `instance` | Grayscale PNGs where the values correspond to instance ids |
-| `semantic` | Grayscale PNGs where the values correspond to category ids |
-| `instance-color` | Colored PNGs where the colors correspond to different instances |
-| `semantic-color` | Colored PNGs where the colors correspond to different categories, with colors as configured in the [label editor settings](configure-label-editor.md) when available |
+| Value            | Description                                                                                                                                                                               |
+| ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `coco-instance`  | [COCO instance](https://cocodataset.org/#format-data) segmentation format                                                                                                                 |
+| `coco-panoptic`  | [COCO panoptic](https://cocodataset.org/#format-data) segmentation format                                                                                                                 |
+| `yolo`           | [Yolo Darknet](https://github.com/AlexeyAB/darknet) object detection format                                                                                                               |
+| `instance`       | Grayscale PNGs where the values correspond to instance ids                                                                                                                                |
+| `semantic`       | Grayscale PNGs where the values correspond to category ids                                                                                                                                |
+| `instance-color` | Colored PNGs where the colors correspond to different instances                                                                                                                           |
+| `semantic-color` | <p>Colored PNGs where the colors correspond to different categories, with colors<br>as configured in the <a href="configure-label-editor.md">label editor settings</a> when available</p> |
 
 Example:
 
@@ -104,7 +104,7 @@ Each `labelset` entry contains the labelset's name and description:
 
 ### Sample
 
-Each sample entry contains information about the sample \(name, image URL, ...\) and a list of labels.
+Each sample entry contains information about the sample (name, image URL, ...) and a list of labels.
 
 {% code title="" %}
 ```bash
@@ -124,7 +124,7 @@ Each sample entry contains information about the sample \(name, image URL, ...\)
 
 ### Label
 
-Each label contains basic information such as the time it was created, the user who created it, its status \(e.g. LABELED\). The `attributes` field contains all info about the labeled objects. Its contents depend on the labeling type \(segmentation or bounding boxes\) and are described in more detail [here](label-types.md).
+Each label contains basic information such as the time it was created, the user who created it, its status (e.g. LABELED). The `attributes` field contains all info about the labeled objects. Its contents depend on the labeling type (segmentation or bounding boxes) and are described in more detail [here](label-types.md).
 
 {% code title="" %}
 ```bash
@@ -159,4 +159,3 @@ Each label contains basic information such as the time it was created, the user 
 {% endcode %}
 
 Please refer to [this blog post](https://segments.ai/blog/speed-up-image-segmentation-with-model-assisted-labeling) for an example of training a model on exported data.
-
