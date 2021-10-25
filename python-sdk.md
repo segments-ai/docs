@@ -238,12 +238,13 @@ print(sample)
 #### Signature
 
 ```python
-client.get_sample(uuid)
+client.get_sample(uuid, labelset=None)
 
 """Get a sample.
 
 Args:
     uuid (str): The sample uuid.
+    labelset (str, optional): If defined, this additionally returns the label for the given labelset. Defaults to None. 
 
 Returns:
     dict: a dictionary representing the sample.
