@@ -175,7 +175,7 @@ Args:
 dataset_identifier = "jane/flowers"
 username = "john"
 role = "reviewer"
-client.delete_dataset(dataset_identifier, username, role)
+client.add_dataset_collaborator(dataset_identifier, username, role)
 ```
 
 #### Signature
