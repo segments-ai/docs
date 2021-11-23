@@ -2,7 +2,9 @@
 
 When downloading or uploading labels using the API or Python SDK, the format of the`attributes` field depends on the type of label. The different formats are described here.
 
-## Segmentation masks
+## Image
+
+### Segmentation
 
 ```javascript
 "attributes": {
@@ -35,7 +37,7 @@ Use the `utils.load_label_bitmap_from_url(url)` function in the Python SDK to lo
 
 
 
-## Bounding boxes
+### Bounding boxes
 
 ```javascript
 "attributes": {
@@ -72,7 +74,7 @@ Use the `utils.load_label_bitmap_from_url(url)` function in the Python SDK to lo
 }
 ```
 
-## Polygons and polylines
+### Polygons and polylines
 
 ```javascript
 "attributes": {
@@ -106,7 +108,7 @@ Use the `utils.load_label_bitmap_from_url(url)` function in the Python SDK to lo
 }
 ```
 
-## Keypoints
+### Keypoints
 
 ```javascript
 "attributes": {
@@ -137,6 +139,57 @@ Use the `utils.load_label_bitmap_from_url(url)` function in the Python SDK to lo
       ]
     }
   ],
+}
+```
+
+## 3D point cloud
+
+### Segmentation
+
+```json
+"attributes": {
+  "format_version": "0.1",
+  "annotations": [
+    {
+      "id": 1, // this is an instance id
+      "category_id": 1 // this is a category id
+    },
+    {
+      "id": 2, 
+      "category_id": 1
+    },
+    {
+      "id": 3, 
+      "category_id": 4
+    }
+  ],
+  "point_annotations": [0, 0, 0, 3, 2, 2, 2, 1, 3...], // instance ids
+}
+```
+
+### Cuboids
+
+```jsonp
+"attributes": {
+  "format_version": "0.1",
+  "annotations": [
+    {
+      "type": "cuboid",
+      "id": 1, // this is an instance id
+      "category_id": 1, // this is a category id
+      "position": {
+        "x": 0.0,
+        "y": 0.2,
+        "z": 0.5
+      },
+      "dimensions": {
+        "x": 1.2,
+        "y": 1,
+        "z": 1
+      },
+      "yaw": 1.63
+    }
+  ]
 }
 ```
 
