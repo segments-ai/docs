@@ -1,0 +1,95 @@
+# 3D point cloud cuboid interface
+
+## Cuboid editing
+
+### Create a new cuboid
+
+1. Select the "Draw cuboids" tool by clicking on the box icon in the toolbar on the left, or by pressing the hotkey (`c` by default).
+2. Click and drag in the perspective view or in the top view to draw a new cuboid. When you release the mouse, the new cuboid is added to the objects sidebar on the right.
+
+### Remove a cuboid
+
+1. Select the cuboid you want to remove.
+2. Press the hotkey (`Backspace` by default) or click the trash icon next to the object in the objects sidebar on the right.
+
+### Select a cuboid
+
+#### Using the "Select and edit" tool
+
+1. Select the "Select and edit" tool by clicking on the pointer icon in the toolbar on the left, or by pressing the hotkey (`Esc` by default).
+2. Click on the cuboid in any view.
+
+#### Using the objects sidebar
+
+1. Click on the object in the objects sidebar to select it.
+
+### Change the dimensions of a cuboid
+
+1. Select the "Select and edit" tool by clicking on the pointer icon in the toolbar on the left, or by pressing the hotkey (`Esc` by default).
+2. Select the cuboid you want to change.
+3. Change the cuboid's dimensions:
+   * In the perspective view: click and drag a face of the cuboid.
+   * In a side view: click and drag one of the edges of the cuboid.
+
+### Translate a cuboid
+
+1. Select the "Select and edit" tool by clicking on the pointer icon in the toolbar on the left, or by pressing the hotkey (`Esc` by default).
+2. Select the cuboid you want to translate.
+3. Click and drag the yellow cube in the middle of the cuboid to translate the cuboid freely.\
+   Hover over the yellow cube in the middle to see the translation axe. Click and drag on an axis to translate the cuboid along the selected axis.
+
+### Rotate a cuboid
+
+1. Select the "Select and edit" tool by clicking on the pointer icon in the toolbar on the left, or by pressing the hotkey (`Esc` by default).
+2. Select the cuboid you want to rotate.
+3. Click and drag the yellow rotation circle to rotate the cuboid.
+
+### Change the heading of a cuboid
+
+1. Select the "Select and edit" tool by clicking on the pointer icon in the toolbar on the left, or by pressing the hotkey (`Esc` by default).
+2. Select the cuboid you want to change.
+3. Change the heading of the cuboid (indicated by a red arrow):
+   * In the perspective view: double-click the face where you want the heading to be.
+   * In a side view: double-click the edge where you want the heading to be.
+
+### Cycle between cuboids / select the next cuboid
+
+Press the hotkey (`Tab` by default).
+
+## Viewing
+
+### Move the camera
+
+Hold the hotkey (`Ctrl/cmd` by default) and click and drag.
+
+#### Only in the perspective view
+
+* Use the keyboard navigation (by default: `w` to move forward, `a` to move left, `s` to move backward, and `d` to move right).
+
+### Rotate/orbit the camera in the perspective view
+
+Hold the hotkey (`Shift` by default) and click and drag.
+
+### Zoom to a cuboid
+
+1. Select the cuboid.
+2. Press the hotkey (`t` by default).
+
+### Enable intensity coloring
+
+1. Upload a point cloud with intensity labels.
+2. Press the sun icon in the toolbar on the right to toggle intensity coloring.
+
+### Pan to a bird's eye view in the perspective view
+
+Press the hotkey (`Ctrl/cmd + b` by default).
+
+### Change the size of the points
+
+1. Click/hover over the dot icon in the toolbar on the right.
+2. Drag the slider to adjust the point size.
+
+### Change the key pan speed
+
+1. Click/hover over the tachometer icon in the toolbar on the right.
+2. Drag the slider to adjust the key pan speed, i.e. the speed the camera moves when using keyboard navigation.

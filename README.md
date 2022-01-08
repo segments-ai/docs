@@ -4,5 +4,10 @@
 
 Segments.ai is the training data platform for computer vision engineers and labeling teams. Our powerful labeling interfaces, easy-to-use management features, and extensive API integrations help you iterate quickly between data labeling, model training and failure case discovery.
 
-These docs describe how you can use our [API](api.md) and [Python SDK](python-sdk.md) to programmatically manage datasets, samples and labels, and how you can export your data once labeled.
+The documentation is divided into 4 sections:
+
+* [Tutorials](broken-reference): end-to-end tutorials where you are guided through a complete project.
+* [How-to guides](broken-reference): recipes to solve a specific problem.
+* [Background](broken-reference): provides clarifying background knowledge on certain topics.
+* [Reference](broken-reference): description of the full Python SDK functionality and input and output formats.
 
