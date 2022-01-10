@@ -6,3 +6,4 @@ root: ./
 
 redirects:  
     tutorials: tutorials/model-assisted-labeling.md
+    test: tutorials/model-assisted-labeling.md
