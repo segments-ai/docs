@@ -5,4 +5,4 @@ root: ./
     summary: SUMMARY.md​
 
 redirects:  
-    tutorials: tutorials/getting-started.md
+    tutorials: tutorials/model-assisted-labeling.md
