@@ -218,6 +218,7 @@ Where each frames object has the following format:
 ```jsonp
 {
   "format_version": "0.2",
+  "timestamp": "00001", // this field is only included if the sample has a timestamp
   "annotations": [
     {
       "id": 1, // the object id
@@ -235,7 +236,7 @@ Where each frames object has the following format:
       },
       "yaw": 1.63,
       "is_keyframe": true, // whether this frame is a keyframe
-      "track_id": 6 // this id is used to links objects across frames
+      "track_id": 6, // this id is used to links objects across frames
     },
     {
       "id": 2,
