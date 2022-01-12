@@ -98,7 +98,78 @@ Coming soon.
 
 ### Vector labels (bounding box, polygon, polyline, keypoint)
 
-Coming soon.
+Format of the `attributes` field in [`client.get_label()`](../../python-sdk.md#get-a-label):
+
+```jsonp
+{
+  "format_version": "0.2",
+  "frames": [
+    { ... },
+    { ... },
+    { ... }
+  ]
+}
+```
+
+Where each frames object has the following format:
+
+```jsonp
+{
+  "format_version": "0.1",
+  "timestamp": "00001", // this field is only included if the sample has a timestamp
+  "annotations": [
+    {
+      "id": 1, // the object id
+      "category_id": 1, // the category id
+      "track_id": 6, // this id is used to links objects across frame
+      "is_keyframe": true, // whether this frame is a keyframe
+      "type": "bbox", // refers to the annotation type (bounding box)
+      "points": [
+        [12.34, 56.78], // x0, y0 (upper left corner of bbox)
+        [90.12, 34.56]  // x1, y1 (lower right corner of bbox)
+      ]
+    },
+    {
+      "id": 2,
+      "category_id": 2,
+      "track_id": 5, // this id is used to links objects across frame
+      "is_keyframe": true, // whether this frame is a keyframe
+      "type": "polygon", // refers to the annotation type (polygon)
+      "points": [
+        [12.34, 56.78], // x0, y0 (starting point of the polygon)
+        [90.12, 34.56], // x1, y1
+        [78.91, 23.45], // x2, y2
+        [67.89, 98.76], // x3, y3
+        [54.32, 10.01]  // x4, y4
+      ]
+    },
+    {
+      "id": 3, 
+      "category_id": 3,
+      "track_id": 4, // this id is used to links objects across frame
+      "is_keyframe": true, // whether this frame is a keyframe
+      "type": "polyline", // refers to the annotation type (polyline)
+      "points": [
+        [12.34, 56.78], // x0, y0 (starting point of the polyline)
+        [90.12, 34.56], // x1, y1
+        [78.91, 23.45], // x2, y2
+        [67.89, 98.76], // x3, y3
+        [54.32, 10.01]  // x4, y4
+      ]
+    },
+    {
+      "id": 4,
+      "category_id": 4,
+      "track_id": 3, // this id is used to links objects across frame
+      "is_keyframe": true, // whether this frame is a keyframe
+      "type": "point", // refers to the annotation type (keypoint)
+      "points": [
+        [12.34, 56.78] // x, y (coordinates of keypoint)
+      ]
+    },
+  ],
+}
+```
 
 ## 3D point cloud
 
