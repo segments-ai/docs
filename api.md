@@ -1,6 +1,6 @@
 # API
 
-The API is available at **https://api.segments.ai/**. 
+The API is available at **https://api.segments.ai/**.&#x20;
 
 To authenticate, add an API key in the header of each request:
 
@@ -110,15 +110,18 @@ POST /user/datasets
 
 #### Input
 
-| Name              | Type      | Description                                                                                                                                                                                                                                                                      |
-| ----------------- | --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `name`            | `string`  | **Required. **The name of the dataset.                                                                                                                                                                                                                                           |
-| `description`     | `string`  | The description of the dataset.                                                                                                                                                                                                                                                  |
-| `task_type`       | string    | <p>The task type of the dataset. Can be one of:</p><ul><li><code>segmentation-bitmap</code>: Semantic, panoptic and instance segmentation.</li><li><code>vector</code>: Polygons, polylines, bounding boxes, points.</li><li><code>bboxes</code>: Bounding boxes only.</li></ul> |
-| `task_attributes` | dict      | The task attributes. See [Configuring the label editor](configure-label-editor.md).                                                                                                                                                                                              |
-| `category`        | `string`  | Category of the data.                                                                                                                                                                                                                                                            |
-| `public`          | `boolean` | <p>Sets the visibility of a dataset. Can be one of:</p><ul><li><code>true</code> - Anyone can see the dataset.</li><li><code>false</code> - Only the owner and collaborators can view the dataset.</li></ul>                                                                     |
-| `readme`          | `string`  | The readme of the dataset, displayed on the overview tab.                                                                                                                                                                                                                        |
+| Name                    | Type      | Description                                                                                                                                                                                                                                                                      |
+| ----------------------- | --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `name`                  | `string`  | **Required.** The name of the dataset.                                                                                                                                                                                                                                           |
+| `description`           | `string`  | The description of the dataset.                                                                                                                                                                                                                                                  |
+| `task_type`             | string    | <p>The task type of the dataset. Can be one of:</p><ul><li><code>segmentation-bitmap</code>: Semantic, panoptic and instance segmentation.</li><li><code>vector</code>: Polygons, polylines, bounding boxes, points.</li><li><code>bboxes</code>: Bounding boxes only.</li></ul> |
+| `task_attributes`       | dict      | The task attributes. See [Configuring the label editor](configure-label-editor.md).                                                                                                                                                                                              |
+| `category`              | `string`  | Category of the data.                                                                                                                                                                                                                                                            |
+| `public`                | `boolean` | <p>Sets the visibility of a dataset. Can be one of:</p><ul><li><code>true</code> - Anyone can see the dataset.</li><li><code>false</code> - Only the owner and collaborators can view the dataset.</li></ul>                                                                     |
+| `readme`                | `string`  | The readme of the dataset, displayed on the overview tab.                                                                                                                                                                                                                        |
+| `enable_skip_labeling`  | `boolean` | Enable the skip button in the labeling workflow. Defaults to True.                                                                                                                                                                                                               |
+| `enable_skip_reviewing` | `boolean` | Enable the skip button in the reviewing workflow. Defaults to False.                                                                                                                                                                                                             |
+| `enable_ratings`        | `boolean` | Enable star-ratings for labeled images. Defaults to False.                                                                                                                                                                                                                       |
 
 #### Example
 
@@ -174,7 +177,7 @@ POST /datasets/:owner/:dataset/collaborators
 
 | Name   | Type     | Description                                                                 |
 | ------ | -------- | --------------------------------------------------------------------------- |
-| `user` | `string` | **Required. **The username of the collaborator to be added.                 |
+| `user` | `string` | **Required.** The username of the collaborator to be added.                 |
 | `role` | `string` | The role of the collaborator. Can be one of: `labeler`, `reviewer`, `admin` |
 
 #### Example
@@ -262,7 +265,7 @@ POST /datasets/:owner/:dataset/samples
 
 | Name         | Type     | Description                                                                                     |
 | ------------ | -------- | ----------------------------------------------------------------------------------------------- |
-| `name`       | `string` | **Required. **The name of the sample.                                                           |
+| `name`       | `string` | **Required.** The name of the sample.                                                           |
 | `attributes` | `object` | Sample data.                                                                                    |
 | `metadata`   | `object` | User-defined metadata.                                                                          |
 | `priority`   | `float`  | Priority in the labeling queue. Samples with higher values will be labeled first. Default is 0. |
@@ -368,7 +371,7 @@ PUT /labels/:sample_uuid/:labelset
 
 | Name           | Type     | Description                                                                                                                                                               |
 | -------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `attributes`   | `object` | Label data. Format depends on the label type, see [label formats](label-types.md).                                                                                        |
+| `attributes`   | `object` | Label data. Format depends on the label type, see [label formats](reference/sample-and-label-types/label-types.md).                                                       |
 | `label_status` | `string` | <p>Status of the label.</p><p></p><p>Can be one of: <code>LABELED</code>, <code>REVIEWED</code>, <code>REJECTED</code>, <code>PRELABELED</code>, <code>SKIPPED</code></p> |
 | `score`        | `float`  | Prediction score.                                                                                                                                                         |
 
@@ -480,7 +483,7 @@ POST /datasets/:owner/:dataset/releases
 
 | Name          | Type     | Description                            |
 | ------------- | -------- | -------------------------------------- |
-| `name`        | `string` | **Required. **The name of the release. |
+| `name`        | `string` | **Required.** The name of the release. |
 | `description` | `string` | The description of the release.        |
 
 #### Example

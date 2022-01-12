@@ -4,7 +4,7 @@ A **sample** is a data point you want to label. Samples come in different types,
 
 When you label a sample and press the save button, you've created a **label** for that sample. Labels also come in different types, with the available options determined by the sample type.
 
-When uploading and downloading samples and labels using the [Python SDK](../python-sdk.md), you need to know the format of the sample type and label types you're working with. These formats are described here.
+When uploading and downloading samples and labels using the [Python SDK](../../python-sdk.md), you need to know the format of the sample type and label types you're working with. These formats are described here.
 
 * [Image](sample-types.md#image)
   * [Segmentation labels](label-types.md#segmentation-labels)

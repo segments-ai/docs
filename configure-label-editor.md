@@ -1,8 +1,18 @@
-# Configuring the label editor
+# Configure the label editor
 
-Once you've created a dataset, you can further configure the labeling interface by editing the configuration file under **Settings** -> **Labeling**.
+Once you've created a dataset, you can further configure the labeling interface under **Settings** -> **Labeling** -> **Categories:**
 
-You can also copy-paste configuration files from one dataset to another, or update them through the API or SDK.
+![](<.gitbook/assets/image (11).png>)
+
+Here you can set the color, name and description for each category. You can also add one or more object-level attributes to a category by expanding its row, or add image-level attributes by clicking the button "Edit image attributes".&#x20;
+
+Attributes come in 4 types: select box, text, number and checkbox. You can optionally set a default value for each attribute or make them mandatory.
+
+### Editing the configuration file directly
+
+If you click on the "Raw" tab, you can see the configuration in JSON format. You can copy-paste this configuration from one dataset to another, or update it programmatically using the [Python SDK](python-sdk.md#create-a-dataset).
+
+The format is defined as follows:
 
 ```javascript
 {

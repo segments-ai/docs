@@ -12,4 +12,4 @@ To change the priority of a group of samples, select the samples you want to upd
 
 ### Set the priority programmatically
 
-You can also [set the priority value of a sample using the Python SDK](../reference/python-sdk.md#create-a-sample).
+You can also [set the priority value of a sample using the Python SDK](../python-sdk.md#create-a-sample).

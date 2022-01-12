@@ -1,12 +1,12 @@
 # Label types
 
-When downloading or uploading labels using the [Python SDK](../python-sdk.md), the format of the`attributes` field depends on the type of label. The different formats are described here.
+When downloading or uploading labels using the [Python SDK](../../python-sdk.md), the format of the`attributes` field depends on the type of label. The different formats are described here.
 
 ## Image
 
 ### Segmentation labels
 
-Format of the `attributes` field in [`client.get_label()`](../python-sdk.md#get-a-label):
+Format of the `attributes` field in [`client.get_label()`](../../python-sdk.md#get-a-label):
 
 ```javascript
 {
@@ -39,7 +39,7 @@ Use the `utils.load_label_bitmap_from_url(url)` function in the Python SDK to lo
 
 ### Vector labels (bounding box, polygon, polyline, keypoint)
 
-Format of the `attributes` field in [`client.get_label()`](../python-sdk.md#get-a-label):
+Format of the `attributes` field in [`client.get_label()`](../../python-sdk.md#get-a-label):
 
 ```javascript
 {
@@ -104,7 +104,7 @@ Coming soon.
 
 ### Segmentation labels
 
-Format of the `attributes` field in [`client.get_label()`](../python-sdk.md#get-a-label):
+Format of the `attributes` field in [`client.get_label()`](../../python-sdk.md#get-a-label):
 
 ```json
 {
@@ -129,7 +129,7 @@ Format of the `attributes` field in [`client.get_label()`](../python-sdk.md#get-
 
 ### Cuboid labels
 
-Format of the `attributes` field in [`client.get_label()`](../python-sdk.md#get-a-label):
+Format of the `attributes` field in [`client.get_label()`](../../python-sdk.md#get-a-label):
 
 ```jsonp
 {
@@ -159,7 +159,7 @@ Format of the `attributes` field in [`client.get_label()`](../python-sdk.md#get-
 
 ### Segmentation labels
 
-Format of the `attributes` field in [`client.get_label()`](../python-sdk.md#get-a-label):
+Format of the `attributes` field in [`client.get_label()`](../../python-sdk.md#get-a-label):
 
 ```jsonp
 {
@@ -200,7 +200,7 @@ Where each frames object has the following format:
 
 ### Cuboid labels
 
-Format of the `attributes` field in [`client.get_label()`](../python-sdk.md#get-a-label):
+Format of the `attributes` field in [`client.get_label()`](../../python-sdk.md#get-a-label):
 
 ```jsonp
 {
@@ -262,7 +262,7 @@ Where each frames object has the following format:
 
 ## Object attributes
 
-Objects in the annotations list can optionally also contain an attributes field to store object-level attributes. Make sure to properly [configure the label editor](../../guides/configure-label-editor.md) if you're using object-level attributes.
+Objects in the annotations list can optionally also contain an attributes field to store object-level attributes. Make sure to properly [configure the label editor](../../configure-label-editor.md) if you're using object-level attributes.
 
 ```javascript
 {
@@ -299,7 +299,7 @@ Objects in the annotations list can optionally also contain an attributes field 
 
 ## Image attributes
 
-You can also define image-level attributes. These can be useful in image classification tasks. Make sure to properly [configure the label editor](../../guides/configure-label-editor.md) if you're using image-level attributes.
+You can also define image-level attributes. These can be useful in image classification tasks. Make sure to properly [configure the label editor](../../configure-label-editor.md) if you're using image-level attributes.
 
 ```javascript
 {

@@ -14,4 +14,4 @@ Labelers and reviewers can only see the "Overview" tab of a dataset, where they 
 
 ### Adding collaborators programmatically
 
-You can also [add collaborators to a dataset using the Python SDK](../reference/python-sdk.md#add-a-collaborator-to-a-dataset).
+You can also [add collaborators to a dataset using the Python SDK](../python-sdk.md#add-a-collaborator-to-a-dataset).

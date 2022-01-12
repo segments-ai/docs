@@ -1,12 +1,8 @@
-# Exporting data
+# Export data
 
-To download your labeled data, you need to create a release on the Releases tab. A release is a snapshot of your dataset at a specific point in time.
+To download your labeled data, create a release on the Releases tab of your dataset. A release is a snapshot of your dataset at a specific point in time.
 
 By clicking the download link of a release, you obtain a release file in JSON format. This release file contains all information about the dataset, tasks, samples, and labels in the release.
-
-{% hint style="info" %}
-Note that the segmentation masks are encoded as a png image that appears black when opened in an image viewer. The png image contains all necessary information though. [Read more here](label-types.md#segmentation-masks).
-{% endhint %}
 
 ## Exporting the release file to different formats
 
@@ -17,8 +13,8 @@ You can export the release file to different formats with the Python SDK. Use th
 | `coco-instance`  | [COCO instance](https://cocodataset.org/#format-data) segmentation format                                                                                                                 |
 | `coco-panoptic`  | [COCO panoptic](https://cocodataset.org/#format-data) segmentation format                                                                                                                 |
 | `yolo`           | [Yolo Darknet](https://github.com/AlexeyAB/darknet) object detection format                                                                                                               |
-| `instance`       | Grayscale PNGs where the values correspond to instance ids                                                                                                                                |
-| `semantic`       | Grayscale PNGs where the values correspond to category ids                                                                                                                                |
+| `instance`       | Grayscale PNGs (16-bit) where the values correspond to instance ids                                                                                                                       |
+| `semantic`       | Grayscale PNGs (8-bit) where the values correspond to category ids                                                                                                                        |
 | `instance-color` | Colored PNGs where the colors correspond to different instances                                                                                                                           |
 | `semantic-color` | <p>Colored PNGs where the colors correspond to different categories, with colors<br>as configured in the <a href="configure-label-editor.md">label editor settings</a> when available</p> |
 
@@ -38,7 +34,7 @@ dataset = SegmentsDataset(release, labelset='ground-truth', filter_by=['labeled'
 export_dataset(dataset, export_format='coco-panoptic')
 ```
 
-Alternatively, you can use the initialized SegmentsDataset to loop through the samples and labels, and visualize or process them in any way you please:
+Alternatively, you can use the initialized `SegmentsDataset` to loop through the samples and labels, and visualize or process them in any way you please:
 
 ```python
 import matplotlib.pyplot as plt
@@ -124,7 +120,7 @@ Each sample entry contains information about the sample (name, image URL, ...) a
 
 ### Label
 
-Each label contains basic information such as the time it was created, the user who created it, its status (e.g. LABELED). The `attributes` field contains all info about the labeled objects. Its contents depend on the labeling type (segmentation or bounding boxes) and are described in more detail [here](label-types.md).
+Each label contains basic information such as the time it was created, the user who created it, its status (e.g. LABELED). The `attributes` field contains all info about the labeled objects. Its contents depend on the labeling type (segmentation or bounding boxes) and are described in more detail [here](reference/sample-and-label-types/label-types.md).
 
 {% code title="" %}
 ```bash

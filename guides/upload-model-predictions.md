@@ -4,7 +4,7 @@
 
 Once you've trained an initial machine learning model on your labeled data, you can upload the model predictions as _pre-labels_ to further speed up your labeling workflow.
 
-To add a label to a sample programmatically, use the [`client.add_label()`](../reference/python-sdk.md#create-a-label) function in the Python SDK. Note that the format of the `attributes` field depends on the [label type](../reference/sample-and-label-types/label-types.md).
+To add a label to a sample programmatically, use the [`client.add_label()`](../python-sdk.md#create-a-label) function in the Python SDK. Note that the format of the `attributes` field depends on the [label type](../reference/sample-and-label-types/label-types.md).
 
 ```json
 sample_uuid = "602a3eec-a61c-4a77-9fcc-3037ce5e9123"
@@ -36,7 +36,7 @@ Instead of uploading the labels as pre-labels of the ground truth label set, you
 * You can visualize the ground truth and predicted labels side by side.
 * When labeling, you can copy the label from any label set with the click of a button, to avoid labeling from scratch.
 * You can upload a prediction score along with the label, allowing you to sort and browse your predictions by accuracy.
-* You can search through the ground-truth and uploaded labels simultaneously. For example,  `ground-truth.car:>0 my-predictions.car:=0` matches samples where the "ground-truth" label contains strictly more than 0 "car" objects AND the "my-predictions" label contains 0 "car" objects. For more information, see [how to search through the dataset](search-functionality.md).
+* You can search through the ground-truth and uploaded labels simultaneously. For example,  `ground-truth.car:>0 my-predictions.car:=0` matches samples where the "ground-truth" label contains strictly more than 0 "car" objects AND the "my-predictions" label contains 0 "car" objects. For more information, see [how to search through the dataset](../search-functionality.md).
 
 ![](<../.gitbook/assets/image (5).png>)
 
@@ -49,7 +49,7 @@ First, create a new label set:
 3. Choose a name and optionally a description for the new label set.
 4. Click the "Create" button.
 
-Then, refer to this label set when adding a label to a sample using [`client.add_label()`](../reference/python-sdk.md#create-a-label):
+Then, refer to this label set when adding a label to a sample using [`client.add_label()`](../python-sdk.md#create-a-label):
 
 ```json
 sample_uuid = "602a3eec-a61c-4a77-9fcc-3037ce5e9123"

@@ -63,4 +63,4 @@ Press the "Create a new release button" and choose a name and description for th
 
 ![](<../.gitbook/assets/image (15).png>)
 
-For more details on exporting data to different formats, see the [Export data](../guides/export.md) section.
+For more details on exporting data to different formats, see the [Export data](../export.md) section.

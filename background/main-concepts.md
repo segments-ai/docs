@@ -18,4 +18,4 @@ You can optionally create additional label sets to [upload your model prediction
 
 ## Releases
 
-A **release** is a snapshot of a dataset at a specific point in time. Create a new release if you want to [export your data](../guides/export.md).
+A **release** is a snapshot of a dataset at a specific point in time. Create a new release if you want to [export your data](../export.md).

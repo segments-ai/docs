@@ -7,7 +7,7 @@ description: The Python SDK is a convenient wrapper for the API.
 ## Setup
 
 {% hint style="success" %}
-Please refer to [this blog post](https://segments.ai/blog/speed-up-image-segmentation-with-model-assisted-labeling) for a full example of working with the Python SDK.
+Please refer to the [Python SDK quickstart](tutorials/python-sdk-quickstart.md) for a full example of working with the Python SDK.
 {% endhint %}
 
 First install the SDK.
@@ -21,7 +21,7 @@ Import the `segments` package in your python file and and set up a client with a
 ```python
 from segments import SegmentsClient
 
-api_key = "eabdde840de8c8853329c086bc4165591cb3d521"
+api_key = "YOUR_API_KEY"
 client = SegmentsClient(api_key)
 ```
 
@@ -32,8 +32,7 @@ client = SegmentsClient(api_key)
 #### Example
 
 ```python
-user = "jane"
-datasets = client.get_datasets(user)
+datasets = client.get_datasets()
 
 for dataset in datasets:
     print(dataset["name"], dataset["description"])
@@ -86,27 +85,40 @@ Returns:
 ```python
 dataset_name = "flowers"
 description = "A dataset containing flowers of all kinds."
-category = "garden"
+task_type = "segmentation-bitmap"
 
-dataset = client.add_dataset(dataset_name, description, category)
+dataset = client.add_dataset(dataset_name, description, task_type)
 print(dataset)
 ```
+
+| Task type                                 | Value                              |
+| ----------------------------------------- | ---------------------------------- |
+| Image segmentation labels (bitmap)        | `segmentation-bitmap`              |
+| Image bounding box labels                 | `bboxes`                           |
+| Image vector labels                       | `vector`                           |
+| Pointcloud cuboid labels                  | `pointcloud-cuboid`                |
+| Pointcloud cuboid labels (sequence)       | `pointcloud-cuboid-sequence`       |
+| Pointcloud segmentation labels            | `pointcloud-segmentation`          |
+| Pointcloud segmentation labels (sequence) | `pointcloud-segmentation-sequence` |
 
 #### Signature
 
 ```python
-client.add_dataset(name, description='', task_type='segmentation-bitmap', task_attributes=None, category='other', public=False, readme='')
+client.add_dataset(self, name, description='', task_type='segmentation-bitmap', task_attributes=None, category='other', public=False, readme='', enable_skip_labeling=True, enable_skip_reviewing=False, enable_ratings=False)
 
 """Add a dataset.
 
 Args:
     name (str): The dataset name. Example: flowers.
     description (str, optional): The dataset description. Defaults to ''.
-    task_type (str, optional): task_type (str, optional): The dataset's task type. One of 'segmentation-bitmap', 'segmentation-bitmap-highres', 'vector', 'bboxes', 'keypoints'. Defaults to 'segmentation-bitmap'.
+    task_type (str, optional): The dataset's task type. One of 'segmentation-bitmap', 'segmentation-bitmap-highres', 'vector', 'bboxes', 'keypoints'. Defaults to 'segmentation-bitmap', 'pointcloud-segmentation', 'pointcloud-detection'.
     task_attributes (dict, optional): The dataset's task attributes. Defaults to None.
     category (str, optional): The dataset category. Defaults to 'other'.
     public (bool, optional): The dataset visibility. Defaults to False.
     readme (str, optional): The dataset readme. Defaults to ''.
+    enable_skip_labeling (bool, optional): Enable the skip button in the labeling workflow. Defaults to True.
+    enable_skip_reviewing (bool, optional): Enable the skip button in the reviewing workflow. Defaults to False.
+    enable_ratings: Enable star-ratings for labeled images. Defaults to False.
 
 Returns:
     dict: a dictionary representing the newly created dataset.
@@ -128,18 +140,21 @@ print(dataset)
 #### Signature
 
 ```python
-client.update_dataset(dataset_identifier, description=None, task_type=None, task_attributes=None, category=None, public=None, readme=None)
+client.update_dataset(self, dataset_identifier, description=None, task_type=None, task_attributes=None, category=None, public=None, readme=None, enable_skip_labeling=None, enable_skip_reviewing=None, enable_ratings=None)
 
 """Update a dataset.
 
 Args:
     dataset_identifier (str): The dataset identifier, consisting of the name of the dataset owner followed by the name of the dataset itself. Example: jane/flowers.
     description (str, optional): The dataset description.
-    task_type (str, optional): The dataset's task type. One of 'segmentation-bitmap', 'segmentation-bitmap-highres', 'vector', 'bboxes', 'keypoints'.
+    task_type (str, optional): The dataset's task type. One of 'segmentation-bitmap', 'segmentation-bitmap-highres', 'vector', 'bboxes', 'keypoints', 'pointcloud-segmentation', 'pointcloud-detection'.
     task_attributes (dict, optional): The dataset's task attributes.
     category (str, optional): The dataset category.
     public (bool, optional): The dataset visibility.
     readme (str, optional): The dataset readme.
+    enable_skip_labeling (bool, optional): Enable the skip button in the labeling workflow.
+    enable_skip_reviewing (bool, optional): Enable the skip button in the reviewing workflow.
+    enable_ratings: Enable star-ratings for labeled images.
 
 Returns:
     dict: a dictionary representing the updated dataset.
@@ -212,12 +227,17 @@ for sample in samples:
 #### Signature
 
 ```python
-client.get_samples(dataset_identifier, per_page=1000, page=1)
+get_samples(self, dataset_identifier, name=None, label_status=None, metadata=None, sort='name', direction='asc', per_page=1000, page=1)
 
 """Get the samples in a dataset.
 
 Args:
     dataset_identifier (str): The dataset identifier, consisting of the name of the dataset owner followed by the name of the dataset itself. Example: jane/flowers.
+    name (str, optional): Name to filter by. Defaults to None (no filtering).
+    label_status (list, optional): List of label statuses to filter by. Defaults to None (no filtering).
+    metadata (list, optional): List of 'key:value' metadata attributes to filter by. Defaults to None (no filtering).
+    sort (str, optional): What to sort results by. One of 'name', 'created', 'priority'. Defaults to 'name'.
+    direction (str, optional): Sorting direction. One of 'asc' (ascending) or 'desc' (descending). Defaults to 'asc'.
     per_page (int, optional): Pagination parameter indicating the maximum number of samples to return. Defaults to 1000.
     page (int, optional): Pagination parameter indicating the page to return. Defaults to 1.
 
@@ -390,7 +410,7 @@ Returns:
 
 A label can be added to a sample in relation to a _label set_, such as the default ground-truth label set, or a newly created label set for model predictions. You can create a new label set by clicking the "Add new label set" link on the Samples tab.
 
-The content of the `attributes` field depends on the [label type](label-types.md).
+The content of the `attributes` field depends on the [label type](reference/sample-and-label-types/label-types.md).
 
 #### Example
 

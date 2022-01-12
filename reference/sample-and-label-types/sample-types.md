@@ -1,10 +1,10 @@
 # Sample types
 
-When downloading or uploading samples using the [Python SDK](../python-sdk.md), the format of the`attributes` field depends on the type of sample. The different formats are described here.
+When downloading or uploading samples using the [Python SDK](../../python-sdk.md), the format of the`attributes` field depends on the type of sample. The different formats are described here.
 
 ## Image
 
-Format of the `attributes` field in [`client.get_sample()`](../python-sdk.md#get-a-sample):&#x20;
+Format of the `attributes` field in [`client.get_sample()`](../../python-sdk.md#get-a-sample):&#x20;
 
 ```json
 {
@@ -16,7 +16,7 @@ Format of the `attributes` field in [`client.get_sample()`](../python-sdk.md#get
 
 ## Image sequence
 
-Format of the `attributes` field in [`client.get_sample()`](../python-sdk.md#get-a-sample):&#x20;
+Format of the `attributes` field in [`client.get_sample()`](../../python-sdk.md#get-a-sample):&#x20;
 
 ```json
 { 
@@ -45,7 +45,7 @@ Format of the `attributes` field in [`client.get_sample()`](../python-sdk.md#get
 
 ## 3D point cloud
 
-Format of the `attributes` field in [`client.get_sample()`](../python-sdk.md#get-a-sample):&#x20;
+Format of the `attributes` field in [`client.get_sample()`](../../python-sdk.md#get-a-sample):&#x20;
 
 ```json
 {
@@ -72,7 +72,7 @@ Format of the `attributes` field in [`client.get_sample()`](../python-sdk.md#get
 
 ## 3D point cloud sequence
 
-Format of the `attributes` field in [`client.get_sample()`](../python-sdk.md#get-a-sample):&#x20;
+Format of the `attributes` field in [`client.get_sample()`](../../python-sdk.md#get-a-sample):&#x20;
 
 ```json
 { 
