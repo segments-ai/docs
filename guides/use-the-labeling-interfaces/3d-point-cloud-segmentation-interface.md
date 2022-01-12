@@ -51,6 +51,14 @@
 
 Press the hotkey (`Space` by default), or select another object.
 
+### Change the category of a**n object**
+
+1. Select the object.
+2. Open the category dropdown by clicking on the category name in the objects sidebar on the right, or by pressing the hotkey (`c` by default).
+3. Select a category by clicking on the desired category, **** or by pressing the hotkey of the desired category (keys `1` - `9`).
+
+When you memorized the hotkeys of the different categories, you can also use them directly and skip opening the category dropdown.
+
 ### Change the brush size
 
 1. Select the brush tool by clicking on the brush icon in the toolbar on the left, or by pressing the hotkey (`b` by default).

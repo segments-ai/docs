@@ -4,7 +4,14 @@
 
 ### Create a new cuboid
 
-1. Select the "Draw cuboids" tool by clicking on the box icon in the toolbar on the left, or by pressing the hotkey (`c` by default).
+#### Create a cuboid with default dimensions
+
+1. Select the "Create cuboid" tool by clicking on the box icon in the toolbar on the left, or by pressing the hotkey (`b` by default).
+2. Click in the perspective view or in the top view to create a new cuboid. This cuboid will have the default dimensions of the current category. When you change the category, the dimensions of the cuboid will change as well, given that you have not altered the dimensions of the cuboid yet.
+
+#### Draw a cuboid with custom dimensions
+
+1. Select the "Create cuboid" tool by clicking on the box icon in the toolbar on the left, or by pressing the hotkey (`b` by default).
 2. Click and drag in the perspective view or in the top view to draw a new cuboid. When you release the mouse, the new cuboid is added to the objects sidebar on the right.
 
 ### Remove a cuboid
@@ -51,6 +58,18 @@
 3. Change the heading of the cuboid (indicated by a red arrow):
    * In the perspective view: double-click the face where you want the heading to be.
    * In a side view: double-click the edge where you want the heading to be.
+
+### Change the category of a cuboid
+
+1. Select the cuboid.
+2. Open the category dropdown by clicking on the category name in the objects sidebar on the right, or by pressing the hotkey (`c` by default).
+3. Select a category by clicking on the desired category, **** or by pressing the hotkey of the desired category (keys `1` - `9`).
+
+When you memorized the hotkeys of the different categories, you can also use them directly and skip opening the category dropdown.
+
+{% hint style="info" %}
+If the selected cuboid was created with default dimensions, the dimensions of the cuboid will change to the default dimensions of the new category.
+{% endhint %}
 
 ### Cycle between cuboids / select the next cuboid
 
