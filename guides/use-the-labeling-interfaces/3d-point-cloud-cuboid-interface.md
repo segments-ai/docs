@@ -61,15 +61,20 @@
 
 ### Change the category of a cuboid
 
-1. Select the cuboid.
-2. Open the category dropdown by clicking on the category name in the objects sidebar on the right, or by pressing the hotkey (`c` by default).
-3. Select a category by clicking on the desired category, **** or by pressing the hotkey of the desired category (keys `1` - `9`).
-
-When you memorized the hotkeys of the different categories, you can also use them directly and skip opening the category dropdown.
-
 {% hint style="info" %}
 If the selected cuboid was created with default dimensions, the dimensions of the cuboid will change to the default dimensions of the new category.
 {% endhint %}
+
+#### Using the category dropdown
+
+1. Select the cuboid.
+2. Open the category dropdown by clicking on the category name in the objects sidebar on the right, or by pressing the hotkey (`c` by default).
+3. Select a category by clicking on the desired category, **** or by using the arrow keys and pressing `Enter` to confirm.
+
+#### Using the category hotkey
+
+1. Select the cuboid.
+2. Press the hotkey of the desired category (`1` - `9`).
 
 ### Cycle between cuboids / select the next cuboid
 
