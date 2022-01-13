@@ -32,9 +32,22 @@ Format of the `attributes` field in [`client.get_label()`](../../python-sdk.md#g
 ```
 
 {% hint style="info" %}
-The`segmentation_bitmap`url refers to a 32-bit RGBA png image which contains the segmentation masks. The alpha channel is set to 255, and the remaining 24-bit values in the RGB channels correspond to the object ids in the `annotations` list. Because of the large dynamic range, these png images may appear black in an image viewer.
+The`segmentation_bitmap_url`refers to a 32-bit RGBA png image which contains the segmentation masks. The alpha channel is set to 255, and the remaining 24-bit values in the RGB channels correspond to the object ids in the `annotations` list. Because of the large dynamic range, these png images may appear black in an image viewer.
 
-Use the `utils.load_label_bitmap_from_url(url)` function in the Python SDK to load the label bitmap as a numpy array containing object ids.
+**When downloading a label**, you can use the utility function `utils.load_label_bitmap_from_url(url)` in the Python SDK to load the label bitmap as a numpy array containing object ids.
+
+**When uploading a label**, the easiest way to transform a segmentation bitmap into this format and upload it is by using the util function`bitmap2file`:
+
+```python
+from segments.utils import bitmap2file
+
+# segmentation_bitmap is a numpy array of type np.uint32, with values corresponding to instance_ids
+file = bitmap2file(segmentation_bitmap)
+asset = client.upload_asset(file, "label.png")
+segmentation_bitmap_url = asset["url"]
+```
+
+For a full example of uploading model-generated labels to Segments.ai, please refer to [this blogpost](https://segments.ai/blog/speed-up-image-segmentation-with-model-assisted-labeling).
 {% endhint %}
 
 ### Vector labels (bounding box, polygon, polyline, keypoint)

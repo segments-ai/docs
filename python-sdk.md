@@ -422,37 +422,18 @@ attributes = {
     "annotations": [
         {
             "id": 1,
-            "category_id": 2
+            "category_id": 1,
+            "type": "bbox",
+            "points": [
+              [12.34, 56.78],
+              [90.12, 34.56]
+            ]
         },
-        {
-            "id": 2,
-            "category_id": 3
-        }
-    ],
-    "segmentation_bitmap": {
-        "url": "https://segmentsai-prod.s3.eu-west-2.amazonaws.com/assets/bert/49f6aa10-8967-4305-985c-cdc1e8f89b93.png"
-    },
+    ]
 }
 
 client.add_label(sample_uuid, labelset, attributes)
 ```
-
-{% hint style="info" %}
-The`segmentation_bitmap_url`refers to a 32-bit RGBA png image. The alpha channel is set to 255, and the remaining 24-bit values in the RGB channels correspond to`instance_ids.`
-
-The easiest way to transform a segmentation bitmap into this format and upload it is by using the util function`bitmap2file`:
-
-```python
-from segments.utils import bitmap2file
-
-# segmentation_bitmap is a numpy array of type np.uint32, with values corresponding to instance_ids
-file = bitmap2file(segmentation_bitmap)
-asset = client.upload_asset(file, "label.png")
-segmentation_bitmap_url = asset["url"]
-```
-
-For a full example of uploading model-generated labels to Segments.ai, please refer to [this blogpost](https://segments.ai/blog/speed-up-image-segmentation-with-model-assisted-labeling).
-{% endhint %}
 
 #### Signature
 
@@ -485,16 +466,14 @@ attributes = {
     "annotations": [
         {
             "id": 1,
-            "category_id": 2
+            "category_id": 1,
+            "type": "bbox",
+            "points": [
+              [12.34, 56.78],
+              [90.12, 34.56]
+            ]
         },
-        {
-            "id": 2,
-            "category_id": 3
-        }
-    ],
-    "segmentation_bitmap": {
-        "url": "https://segmentsai-prod.s3.eu-west-2.amazonaws.com/assets/bert/49f6aa10-8967-4305-985c-cdc1e8f89b93.png"
-    },
+    ]
 }
 
 client.update_label(sample_uuid, labelset, attributes)
