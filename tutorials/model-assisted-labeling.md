@@ -2,7 +2,7 @@
 
 One way to drastically speed up data labeling is by leveraging your machine learning models from the start. Instead of labeling the entire dataset manually, you can use a model to help you by iterating between image labeling and model training.
 
-![](<../.gitbook/assets/image (22).png>)
+![](<../.gitbook/assets/image (22) (1).png>)
 
 Segments.ai makes it easy to set up such model-assisted workflows.
 
