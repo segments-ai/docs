@@ -2,7 +2,7 @@
 
 Go to **Settings -> Collaborators** to add collaborators to your dataset.
 
-![](<../.gitbook/assets/image (21).png>)
+![](<../.gitbook/assets/image (21) (1).png>)
 
 ### Permissions
 

@@ -41,5 +41,6 @@
   * [Sample types](reference/sample-and-label-types/sample-types.md)
   * [Label types](reference/sample-and-label-types/label-types.md)
   * [File formats](reference/sample-and-label-types/file-formats.md)
+* [Categories and task attributes](reference/categories-and-task-attributes.md)
 * [Python SDK](python-sdk.md)
 * [API](api.md)
