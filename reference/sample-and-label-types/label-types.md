@@ -13,7 +13,7 @@ Format of the `attributes` field in [`client.get_label()`](../../python-sdk.md#g
   "format_version": "0.1",
   "annotations": [
     {
-      "id": 1, // this is an object id
+      "id": 1, // this is an object id. Should be > 0.
       "category_id": 1 // this is a category id
     },
     {
