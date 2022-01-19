@@ -40,6 +40,10 @@ In the context of interpolation, a **keyframe** is a marker that indicates that 
 2. In the timeline, click the keyframe you want to remove.
 3. Press the `Backspace` key to remove the keyframe. The interpolation will be recalculated immediately.
 
+{% hint style="info" %}
+When there exists only one keyframe, this keyframe cannot be removed.
+{% endhint %}
+
 ### View the remove-keyframes of an object
 
 A remove-keyframe is a visual indication of where an object was removed from the sample. A remove-keyframe means that the object is not present in that frame and all frames before the next normal keyframe.&#x20;
