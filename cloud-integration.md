@@ -1,4 +1,4 @@
-# Cloud integration
+# Cloud integrations
 
 ## AWS
 
@@ -56,7 +56,6 @@ You also need to configure [CORS](https://docs.aws.amazon.com/AmazonS3/latest/us
         ],
         "AllowedOrigins": [
             "https://segments.ai",
-            "https://api.segments.ai"
         ],
         "ExposeHeaders": []
     }
@@ -65,7 +64,26 @@ You also need to configure [CORS](https://docs.aws.amazon.com/AmazonS3/latest/us
 
 ## Google Cloud
 
+### Granting cross-account access
+
 Please [contact us](https://segments.ai/contact) to help you set this up.
+
+### CORS configuration
+
+You also need to configure [CORS](https://cloud.google.com/storage/docs/cross-origin) for your Cloud Storage bucket, using this JSON file:
+
+```
+[
+    {
+      "origin": ["https://segments.ai"],
+      "method": ["GET"],
+      "responseHeader": [],
+      "maxAgeSeconds": 3600
+    }
+]
+```
+
+
 
 ## Azure
 
