@@ -41,7 +41,7 @@
 #### Using the "View and select" tool
 
 1. Select the "View and select" tool by clicking on the cursor icon in the toolbar on the left, or use the hotkey (`Esc` by default).
-2. Click on the cuboid in any view.
+2. Click on a point of the object in any view.
 
 #### Using the objects sidebar
 
