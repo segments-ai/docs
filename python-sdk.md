@@ -273,6 +273,8 @@ Returns:
 
 ### Create a sample
 
+The content of the `attributes` field depends on the [sample type](reference/sample-and-label-types/sample-types.md).
+
 #### Example
 
 ```python

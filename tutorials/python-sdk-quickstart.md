@@ -33,12 +33,16 @@ client = SegmentsClient(api_key)
 
 Let's create a new image segmentation dataset programmatically using [`client.add_dataset()`](../python-sdk.md#create-a-dataset). Note that this dataset will be created under the user account corresponding to the API key.
 
+{% hint style="info" %}
+The format of the `task_attributes` field is documented [here](../reference/categories-and-task-attributes.md).
+{% endhint %}
+
 ```python
 name = "pets"
 description = "A dataset with images of cats and dogs."
 task_type = "segmentation-bitmap"
 
-task_attributes = { # Format is documented at https://docs.segments.ai/configure-label-editor
+task_attributes = {
  "format_version": "0.1",
  "categories": [
   {
