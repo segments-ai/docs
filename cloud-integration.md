@@ -55,7 +55,7 @@ You also need to configure [CORS](https://docs.aws.amazon.com/AmazonS3/latest/us
             "GET"
         ],
         "AllowedOrigins": [
-            "https://segments.ai",
+            "https://segments.ai"
         ],
         "ExposeHeaders": []
     }
