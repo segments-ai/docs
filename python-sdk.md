@@ -410,7 +410,7 @@ Returns:
 
 ### Create a label
 
-A label can be added to a sample in relation to a _label set_, such as the default ground-truth label set, or a newly created label set for model predictions. You can create a new label set by clicking the "Add new label set" link on the Samples tab.
+A label is added to a sample in relation to a _label set_, such as the default _ground-truth_ label set, or a newly created label set for [uploading model predictions](guides/upload-model-predictions.md). You can create a new label set by clicking the "Add new label set" link on the Samples tab.
 
 The content of the `attributes` field depends on the [label type](reference/sample-and-label-types/label-types.md).
 
@@ -520,6 +520,119 @@ client.delete_label(sample_uuid, labelset)
 Args:
     sample_uuid (str): The sample uuid.
     labelset (str): The labelset this label belongs to.
+"""
+```
+
+## Label sets
+
+A label is added to a sample in relation to a _label set_, such as the default _ground-truth_ label set, or a newly created label set for [uploading model predictions](guides/upload-model-predictions.md).
+
+### List label sets
+
+#### Example
+
+```python
+dataset_identifier = "jane/flowers"
+labelsets = client.get_labelsets(dataset_identifier)
+
+for labelset in labelsets:
+    print(labelset["name"], labelset["description"])
+```
+
+#### Signature
+
+```python
+client.get_labelsets(dataset_identifier)
+
+"""Get the labelsets in a dataset.
+
+Args:
+    dataset_identifier (str): The dataset identifier, consisting of the name of the dataset owner followed by the name of the dataset itself. Example: jane/flowers.
+
+Returns:
+    list: a list of dictionaries representing the labelsets.
+"""
+```
+
+### Get a label set
+
+#### Example
+
+```python
+dataset_identifier = "jane/flowers"
+name = "model-predictions"
+
+labelset = client.get_labelset(dataset_identifier, name)
+print(labelset)
+```
+
+#### Signature
+
+```python
+client.get_labelset(dataset_identifier, name)
+
+"""Get a labelset.
+
+Args:
+    dataset_identifier (str): The dataset identifier, consisting of the name of the dataset owner followed by the name of the dataset itself. Example: jane/flowers.
+    name (str): The name of the labelset.
+
+Returns:
+    dict: a dictionary representing the labelset.
+"""
+```
+
+### Create a label set
+
+You can also create a new label set by clicking the "Add new label set" link on the Samples tab.
+
+#### Example
+
+```python
+dataset_identifier = "jane/flowers"
+name = "model-predictions-resnet50"
+
+client.add_labelset(dataset_identifier, name)
+```
+
+#### Signature
+
+```python
+client.add_labelset(dataset_identifier, name, description='')
+
+"""Add a labelset to a dataset.
+
+Args:
+    dataset_identifier (str): The dataset identifier, consisting of the name of the dataset owner followed by the name of the dataset itself. Example: jane/flowers.
+    name (str): The name of the labelset.
+    description (str, optional): The labelset description.
+
+Returns:
+    dict: a dictionary representing the labelset.
+"""
+```
+
+### Delete a label set
+
+#### Example
+
+```python
+dataset_identifier = "jane/flowers"
+name = "model-predictions"
+
+client.delete_labelset(dataset_identifier, name)
+```
+
+#### Signature
+
+```python
+client.delete_labelset(dataset_identifier, name)
+
+"""Delete a labelset.
+
+Args:
+    dataset_identifier (str): The dataset identifier, consisting of the name of the dataset owner followed by the name of the dataset itself. Example: jane/flowers.
+    name (str): The name of the labelset.
 """
 ```
 
