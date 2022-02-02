@@ -76,7 +76,7 @@ When downloading ([`client.get_sample()`](../../python-sdk.md#get-a-sample)) or 
 
 ### Point cloud data
 
-See [#3d-point-cloud-formats](file-formats.md#3d-point-cloud-formats "mention") for the supported file formats.
+See [3D point cloud formats](file-formats.md#3d-point-cloud) for the supported file formats.
 
 ```json
 {

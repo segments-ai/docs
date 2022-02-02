@@ -1,6 +1,10 @@
 # File formats
 
-## 3D point cloud formats
+## Image
+
+Following image file formats are supported: jpeg, png, bmp.
+
+## 3D point cloud
 
 ### PCD (Point Cloud Data)
 
