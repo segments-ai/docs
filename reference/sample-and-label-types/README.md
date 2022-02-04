@@ -6,18 +6,18 @@ When you label a sample and press the save button, you've created a **label** fo
 
 When uploading and downloading samples and labels using the [Python SDK](../../python-sdk.md), you need to know the format of the sample type and label types you're working with. These formats are described here.
 
-* [Image](sample-types.md#image)
-  * [Segmentation labels](label-types.md#segmentation-labels)
-  * [Vector labels (bounding box, polygon, polyline, keypoint)](label-types.md#vector-labels-bounding-box-polygon-polyline-keypoint)
-* [Image sequence](sample-types.md#image-sequence)
-  * Segmentation labels (coming soon)
-  * Vector labels (coming soon)
-* [3D point cloud](sample-types.md#3d-point-cloud)
-  * [Segmentation labels](label-types.md#segmentation-labels-1)
-  * [Cuboid labels](label-types.md#cuboid-labels)
-* [3D point cloud sequence](sample-types.md#3d-point-cloud-sequence)
-  * [Segmentation labels](label-types.md#segmentation-labels-2)
-  * [Cuboid labels](label-types.md#cuboid-labels-1)
+
+
+| Sample type                                                        | Label type                                                                                                                       | Labeling interface                                                                                                          |
+| ------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| [Image](sample-types.md#image)                                     | [Segmentation labels](label-types.md#segmentation-labels)                                                                        | ``[`segmentation-bitmap`](../../guides/use-the-labeling-interfaces/image-segmentation-interface.md)``                       |
+|                                                                    | [Vector labels (bounding box, polygon, polyline, keypoint)](label-types.md#vector-labels-bounding-box-polygon-polyline-keypoint) | ``[`vector`](../../guides/use-the-labeling-interfaces/image-vector-interface.md)``                                          |
+| [Image sequence](sample-types.md#image-sequence)                   | [Segmentation labels (coming soon)](label-types.md#segmentation-labels-1)                                                        | coming soon                                                                                                                 |
+|                                                                    | [Vector labels (bounding box, polygon, polyline, keypoint)](label-types.md#vector-labels-bounding-box-polygon-polyline-keypoint) | ``[`image-vector-sequence`](../../guides/use-the-labeling-interfaces/image-vector-interface.md)``                           |
+| [3D point cloud](sample-types.md#3d-point-cloud)                   | [Segmentation labels](label-types.md#segmentation-labels-2)                                                                      | ``[`pointcloud-segmentation`](../../guides/use-the-labeling-interfaces/3d-point-cloud-segmentation-interface.md)``          |
+|                                                                    | [Cuboid labels](label-types.md#cuboid-labels)                                                                                    | ``[`pointcloud-cuboid`](../../guides/use-the-labeling-interfaces/3d-point-cloud-cuboid-interface.md)``                      |
+| [3D point cloud sequence](sample-types.md#3d-point-cloud-sequence) | [Segmentation labels](label-types.md#segmentation-labels-3)                                                                      | ``[`pointcloud-segmentation-sequence`](../../guides/use-the-labeling-interfaces/3d-point-cloud-segmentation-interface.md)`` |
+|                                                                    | [Cuboid labels](label-types.md#cuboid-labels-1)                                                                                  | ``[`pointcloud-cuboid-sequence`](../../guides/use-the-labeling-interfaces/3d-point-cloud-cuboid-interface.md)``             |
 
 Extra:
 
