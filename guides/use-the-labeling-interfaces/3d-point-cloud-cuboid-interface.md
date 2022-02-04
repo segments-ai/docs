@@ -1,5 +1,9 @@
 # 3D point cloud cuboid interface
 
+{% hint style="info" %}
+When [creating a dataset](../../python-sdk.md#create-a-dataset) through the Python SDK, choose `pointcloud-cuboid` or `pointcloud-cuboid-sequence` as the `task_type` to use this labeling interface.&#x20;
+{% endhint %}
+
 ## Cuboid editing
 
 ### Create a new cuboid

@@ -1,6 +1,8 @@
 # 3D point cloud segmentation interface
 
-
+{% hint style="info" %}
+When [creating a dataset](../../python-sdk.md#create-a-dataset) through the Python SDK, choose `pointcloud-segmentation` or `pointcloud-segmentation-sequence` as the `task_type` to use this labeling interface.&#x20;
+{% endhint %}
 
 ## Object editing
 
