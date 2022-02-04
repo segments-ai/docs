@@ -20,10 +20,10 @@ When [editing the category and task attribute configuration directly](https://do
 }
 ```
 
-| Name               | Type                                                                               | Description                                                                |
-| ------------------ | ---------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
-| `categories`       | `array` of [categories](categories-and-task-attributes.md#categories-format)       | **Required.** List of all possible categories for a label in this dataset. |
-| `image_attributes` | `array` of [attributes](categories-and-task-attributes.md#object-attribute-format) | List of image-level attributes.                                            |
+| Name               | Type                                                                  | Description                                                                |
+| ------------------ | --------------------------------------------------------------------- | -------------------------------------------------------------------------- |
+| `categories`       | `array` of [categories](categories-and-task-attributes.md#categories) | **Required.** List of all possible categories for a label in this dataset. |
+| `image_attributes` | `array` of [attributes](categories-and-task-attributes.md#attributes) | List of image-level attributes.                                            |
 
 ### Categories
 
