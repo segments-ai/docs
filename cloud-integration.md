@@ -35,6 +35,10 @@ This setup requires that you give the Segments.ai AWS account read-only access t
 }
 ```
 
+{% hint style="info" %}
+This integration works out-of-the-box if your S3 bucket is in `eu-west-2`. If your S3 bucket is in another AWS zone, please [contact us](https://segments.ai/contact) to help you get started.
+{% endhint %}
+
 ### CORS configuration
 
 You also need to configure [CORS](https://docs.aws.amazon.com/AmazonS3/latest/userguide/cors.html) for your S3 bucket:
