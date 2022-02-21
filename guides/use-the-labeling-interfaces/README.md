@@ -6,6 +6,8 @@ This section contains how-to guides for each of the labeling interfaces:
 * [3D point cloud cuboid interface](3d-point-cloud-cuboid-interface.md)
 * [Image segmentation interface (bitmap)](image-segmentation-interface.md)
 * [Image vector interface (bounding box, polygon, polyline, keypoint)](image-vector-interface.md)
+* [Text named entities interface](text-named-entities-interface.md)
+* [Text span categorization interface](text-span-categorization-interface.md)
 
 Additionally these two guides explain how to use the sequence interfaces:
 

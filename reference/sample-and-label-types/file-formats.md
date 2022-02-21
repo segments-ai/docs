@@ -19,3 +19,46 @@ Any other fields will be ignored.
 We also support the binary point cloud formats used by the [KITTI](http://www.cvlibs.net/datasets/kitti/index.php) and [nuScenes](https://www.nuscenes.org) datasets. These formats do not contain a header and have a fixed number of fields.
 
 <table><thead><tr><th>Field name</th><th data-type="number">Size (#bytes)</th><th>Type</th><th data-type="checkbox">Required</th></tr></thead><tbody><tr><td>x</td><td>4</td><td>float</td><td>true</td></tr><tr><td>y</td><td>4</td><td>float</td><td>true</td></tr><tr><td>z</td><td>4</td><td>float</td><td>true</td></tr><tr><td>intensity</td><td>4</td><td>float</td><td>true</td></tr><tr><td>ring index</td><td>4</td><td>float</td><td>false</td></tr></tbody></table>
+
+## Text
+
+When uploading text samples in bulk through the web platform, following file formats are supported.
+
+### txt
+
+{% code title="data.txt" %}
+```
+First text sample.
+Second text sample.
+```
+{% endcode %}
+
+### json
+
+{% code title="data.json" %}
+```json
+[
+    { "text": "First text sample." },
+    { "text": "Second text sample."},
+]
+```
+{% endcode %}
+
+### jsonl
+
+{% code title="data.jsonl" %}
+```json
+{ "text": "First text sample." }
+{ "text": "Second text sample." }
+```
+{% endcode %}
+
+### csv
+
+{% code title="data.csv" %}
+```
+text
+First text sample.
+Second text sample.
+```
+{% endcode %}

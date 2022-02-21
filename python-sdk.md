@@ -100,6 +100,8 @@ print(dataset)
 | Pointcloud cuboid labels (sequence)       | `pointcloud-cuboid-sequence`       |
 | Pointcloud segmentation labels            | `pointcloud-segmentation`          |
 | Pointcloud segmentation labels (sequence) | `pointcloud-segmentation-sequence` |
+| Text named entity labels                  | `text-named-entities`              |
+| Text span categorization labels           | `text-span-categorization`         |
 
 #### Signature
 

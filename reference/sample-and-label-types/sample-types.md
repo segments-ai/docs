@@ -130,3 +130,19 @@ The pose of the sensor used to capture the 3D point cloud data. This can be help
 | Name     | Type                                                         | Description                                                  |
 | -------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | `frames` | `array` of [3D point clouds](sample-types.md#3d-point-cloud) | **Required.** List of 3D point cloud frames in the sequence. |
+
+## Text
+
+```json
+{ 
+    "text": "Example text sample." 
+}
+```
+
+| Name   | Type     | Description              |
+| ------ | -------- | ------------------------ |
+| `text` | `string` | **Required.** Text data. |
+
+{% hint style="info" %}
+To upload text samples in bulk, see [file formats](file-formats.md#text).
+{% endhint %}

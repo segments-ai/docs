@@ -28,6 +28,8 @@
   * [3D point cloud cuboid interface](guides/use-the-labeling-interfaces/3d-point-cloud-cuboid-interface.md)
   * [Image segmentation interface](guides/use-the-labeling-interfaces/image-segmentation-interface.md)
   * [Image vector interface](guides/use-the-labeling-interfaces/image-vector-interface.md)
+  * [Text named entities interface](guides/use-the-labeling-interfaces/text-named-entities-interface.md)
+  * [Text span categorization interface](guides/use-the-labeling-interfaces/text-span-categorization-interface.md)
   * [Use track IDs in sequences](guides/use-the-labeling-interfaces/use-track-ids-in-sequences.md)
   * [Use keyframe interpolation](guides/use-the-labeling-interfaces/use-keyframe-interpolation.md)
 

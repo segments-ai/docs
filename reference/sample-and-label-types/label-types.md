@@ -344,6 +344,35 @@ Where each frames object has the following format:
 },
 ```
 
+## Text
+
+### Named entity recognition and span categorization
+
+Format of the `attributes` field in [`client.get_label()`](../../python-sdk.md#get-a-label):
+
+```json
+{
+    "format_version": "0.1",
+    "annotations": [
+        {
+            "start": 0, // the first character index of the label
+            "end": 5, // the last character index of the the label (exclusive)
+            "category_id": 1 // the category id
+        },
+        {
+            "start": 7, 
+            "end": 12, 
+            "category_id": 0
+        },
+        {
+            "start": 20, 
+            "end": 30, 
+            "category_id": 2
+        },
+    ]
+}
+```
+
 ## Object attributes
 
 Objects in the annotations list can optionally also contain an attributes field to store object-level attributes. Make sure to properly [configure the label editor](../../configure-label-editor.md) if you're using object-level attributes.
