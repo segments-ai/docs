@@ -22,9 +22,9 @@ We also support the binary point cloud formats used by the [KITTI](http://www.cv
 
 ## Text
 
-When uploading text samples in bulk through the web platform, following file formats are supported.
+When uploading text samples in bulk through the web platform, following file formats are supported:
 
-### txt
+#### txt
 
 {% code title="data.txt" %}
 ```
@@ -33,7 +33,7 @@ Second text sample.
 ```
 {% endcode %}
 
-### json
+#### json
 
 {% code title="data.json" %}
 ```json
@@ -44,7 +44,7 @@ Second text sample.
 ```
 {% endcode %}
 
-### jsonl
+#### jsonl
 
 {% code title="data.jsonl" %}
 ```json
@@ -53,7 +53,7 @@ Second text sample.
 ```
 {% endcode %}
 
-### csv
+#### csv
 
 {% code title="data.csv" %}
 ```
