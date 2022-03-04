@@ -4,7 +4,7 @@
 
 ### Granting cross-account access
 
-If your data is stored in a private AWS S3 bucket, you can submit images as S3 protocol URIs. For example, instead of `https://s3-us-west-1.amazonaws.com/bucket/image001.png` you would submit `s3://bucket/image001.png`.
+If your data is stored in a private AWS S3 bucket, you can submit your image URLs in _virtual-hosted-style format_: `https://<bucket-name>.s3.<region>.amazonaws.com/<key>`.
 
 We will then use the S3 API to access data from your S3 bucket, using AWS account ID `931508227573` (canonical ID `a2c85e730d80dcb51a2c0e1a8f852cf6dc8d6e04d9e00f49239c324de3c1e3e1`). We generate temporary [presigned URLs](https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-presigned-url.html) to serve the images from your S3 bucket in our frontend. These URLs expire after 24 hours.
 
@@ -36,7 +36,7 @@ This setup requires that you give the Segments.ai AWS account read-only access t
 ```
 
 {% hint style="info" %}
-This integration works out-of-the-box if your S3 bucket is in `eu-west-2`. If your S3 bucket is in another AWS zone, please [contact us](https://segments.ai/contact) to help you get started.
+If you run into any issues when setting up this integration, please [contact us](https://segments.ai/contact).
 {% endhint %}
 
 ### CORS configuration
