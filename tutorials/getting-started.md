@@ -33,7 +33,7 @@ Now that you've created a new dataset, let's add some images to it. In your data
 A sample can be an image, video or 3D pointcloud. In this tutorial we're working with images.
 {% endhint %}
 
-![](<../.gitbook/assets/image (24) (1).png>)
+![](<../.gitbook/assets/image (24) (1) (1).png>)
 
 Select a few images and upload them. The images appear as thumbnails in the Samples tab.
 

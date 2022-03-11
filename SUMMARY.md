@@ -23,6 +23,7 @@
 * [Work with issues](guides/work-with-issues.md)
 * [Upload model predictions](guides/upload-model-predictions.md)
 * [Upload sample embeddings](guides/upload-sample-embeddings.md)
+* [Customize hotkeys](guides/customize-hotkeys.md)
 * [Use the labeling interfaces](guides/use-the-labeling-interfaces/README.md)
   * [3D point cloud segmentation interface](guides/use-the-labeling-interfaces/3d-point-cloud-segmentation-interface.md)
   * [3D point cloud cuboid interface](guides/use-the-labeling-interfaces/3d-point-cloud-cuboid-interface.md)

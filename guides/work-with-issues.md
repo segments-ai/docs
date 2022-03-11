@@ -10,4 +10,4 @@ When labeling or reviewing a sample, you can create a new issue by clicking the 
 
 ![](<../.gitbook/assets/image (20).png>)
 
-![](<../.gitbook/assets/image (3).png>)
+![](<../.gitbook/assets/image (3) (1).png>)
