@@ -85,10 +85,10 @@ See [3D point cloud formats](file-formats.md#3d-point-cloud) for the supported f
 }
 ```
 
-| Name   | Type                                     | Description                                     |
-| ------ | ---------------------------------------- | ----------------------------------------------- |
-| `url`  | `string`                                 | **Required.** URL of the point cloud data.      |
-| `type` | `string`: "pcd" \| "kitti" \| "nuscenes" | Type of the point cloud data. "pcd" by default. |
+| Name   | Type                                                                        | Description                                                                                                                                                          |
+| ------ | --------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `url`  | `string`                                                                    | **Required.** URL of the point cloud data.                                                                                                                           |
+| `type` | `string`: "pcd" \| "binary-xyzi" \| "kitti" \| "binary-xyzir" \| "nuscenes" | Type of the point cloud data. "pcd" by default. See [#3d-point-cloud](file-formats.md#3d-point-cloud "mention") file formats for the list of supported file formats. |
 
 ### Ego pose
 
