@@ -47,15 +47,15 @@ When [editing the category and task attribute configuration directly](https://do
 }
 ```
 
-| Name            | Type                                                                                                                              | Description                                                                                      |
-| --------------- | --------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
-| `name`          | `string`                                                                                                                          | **Required.** Name of the category.                                                              |
-| `id`            | `int`                                                                                                                             | **Required.** Index of the category. <mark style="color:orange;">Should start at index 1!</mark> |
-| `color`         | `array` of 3 `float` values in \[0, 255]                                                                                          | RGB color of the category.                                                                       |
-| `has_instances` | `boolean`                                                                                                                         | Whether the category contains instances (person, car) or not (sky, road)                         |
-| `attributes`    | `array` of [attributes](categories-and-task-attributes.md#object-attribute-format)                                                | List of object-level attributes.                                                                 |
-| `dimensions`    | <p><code>object</code>: {<br>    "x": <code>float</code>,<br>    "y": <code>float</code>,<br>    "z": <code>float</code><br>}</p> | Default XYZ dimensions of a new cuboid. Only valid in the point cloud cuboid editor.             |
-| ...             | ...                                                                                                                               | Other key-value pairs can be supplied, but will be ignored.                                      |
+| Name            | Type                                                                                                                              | Description                                                                          |
+| --------------- | --------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
+| `name`          | `string`                                                                                                                          | **Required.** Name of the category.                                                  |
+| `id`            | `int`                                                                                                                             | **Required.** Index of the category.                                                 |
+| `color`         | `array` of 3 `float` values in \[0, 255]                                                                                          | RGB color of the category.                                                           |
+| `has_instances` | `boolean`                                                                                                                         | Whether the category contains instances (person, car) or not (sky, road)             |
+| `attributes`    | `array` of [attributes](categories-and-task-attributes.md#object-attribute-format)                                                | List of object-level attributes.                                                     |
+| `dimensions`    | <p><code>object</code>: {<br>    "x": <code>float</code>,<br>    "y": <code>float</code>,<br>    "z": <code>float</code><br>}</p> | Default XYZ dimensions of a new cuboid. Only valid in the point cloud cuboid editor. |
+| ...             | ...                                                                                                                               | Other key-value pairs can be supplied, but will be ignored.                          |
 
 ### Attributes
 
