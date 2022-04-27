@@ -28,3 +28,20 @@ You cannot change the track ID to a track ID that is already used by another obj
 
 1. Select the object.
 2. Click the "Remove track" button under the track ID. The object will then be removed from all frames.
+
+### Enable same-dimensions track constraint
+
+The same-dimensions track constraint forces objects to maintain the same dimensions in every frame. When changing the dimensions of an object with a certain track ID in one frame, the dimensions of the object will be updated in all other frames too. This can be useful when you want objects to keep their dimensions, regardless of occlusions or noise.
+
+{% hint style="info" %}
+The same-dimensions track constraint is only available for cuboid sequences.
+{% endhint %}
+
+You can enable the same-dimensions track constraint as follows:
+
+1. Open the dataset where you want to activate the constraint.
+2. Open the "Settings" tab.
+3. Click on the "Labeling" section.
+4. Tick the "Enable same-dimensions track constraint" checkbox.
+5. Save the labeling settings.
+
