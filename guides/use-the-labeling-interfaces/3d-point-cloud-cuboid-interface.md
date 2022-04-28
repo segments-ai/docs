@@ -10,6 +10,8 @@ When [creating a dataset](../../python-sdk.md#create-a-dataset) through the Pyth
 
 #### Create a cuboid with default dimensions
 
+If you've set up the default dimensions for your categories (see [#categories](../../reference/categories-and-task-attributes.md#categories "mention")), you can create a cuboid with default dimensions in one click.
+
 1. Select the "Create cuboid" tool by clicking on the box icon in the toolbar on the left, or by pressing the hotkey (`b` by default).
 2. Click in the perspective view or in the top view to create a new cuboid. This cuboid will have the default dimensions of the current category. When you change the category, the dimensions of the cuboid will change as well, given that you have not altered the dimensions of the cuboid yet.
 
