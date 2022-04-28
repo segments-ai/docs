@@ -45,7 +45,7 @@ Press the "Start labeling" button. This brings you into the labeling workflow, w
 
 Label all objects in the image and press "Submit", until all images are labeled. More details on effectively using the segmentation interface can be found [here](../guides/use-the-labeling-interfaces/image-segmentation-interface.md).
 
-![](<../.gitbook/assets/image (7).png>)
+![](<../.gitbook/assets/image (7) (1).png>)
 
 When done labeling, press the little cross icon in the top right corner to exit the labeling interface.
 

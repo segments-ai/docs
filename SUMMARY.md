@@ -33,6 +33,7 @@
   * [Text span categorization interface](guides/use-the-labeling-interfaces/text-span-categorization-interface.md)
   * [Use track IDs in sequences](guides/use-the-labeling-interfaces/use-track-ids-in-sequences.md)
   * [Use keyframe interpolation](guides/use-the-labeling-interfaces/use-keyframe-interpolation.md)
+* [Clone a dataset](guides/clone-a-dataset.md)
 
 ## Background
 
