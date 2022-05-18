@@ -1,7 +1,3 @@
----
-layout: landing
----
-
 # Sample and label types
 
 A **sample** is a data point you want to label. Samples come in different types, like an image, a 3D point cloud, or a video sequence.
