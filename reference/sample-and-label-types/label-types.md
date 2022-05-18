@@ -186,9 +186,7 @@ Where each frames object has the following format:
 
 ## 3D point cloud
 
-### Segmentation labels
-
-Format of the `attributes` field in [`client.get_label()`](../../python-sdk.md#get-a-label):
+### Segmentation label
 
 ```json
 {
@@ -211,18 +209,16 @@ Format of the `attributes` field in [`client.get_label()`](../../python-sdk.md#g
 }
 ```
 
-### Cuboid labels
-
-Format of the `attributes` field in [`client.get_label()`](../../python-sdk.md#get-a-label):
+### Cuboid label
 
 ```jsonp
 {
-  "format_version": "0.1",
+  "format_version": "0.2",
   "annotations": [
     {
-      "id": 1, // the object id
-      "category_id": 1, // the category id
-      "type": "cuboid", // refers to the annotation type (cuboid)
+      "id": 1,
+      "category_id": 1,
+      "type": "cuboid",
       "position": {
         "x": 0.0,
         "y": 0.2,
@@ -233,17 +229,65 @@ Format of the `attributes` field in [`client.get_label()`](../../python-sdk.md#g
         "y": 1,
         "z": 1
       },
-      "yaw": 1.63
+      "yaw": 1.63,
+      "track_id": 1,  // only in sequences
+      "is_keyframe": true,  // only in sequences
+      "index": 0,  // only in sequences 
     }
   ]
 }
 ```
 
+| Name             | Type                                                              | Description                     |
+| ---------------- | ----------------------------------------------------------------- | ------------------------------- |
+| `format_version` | `string`                                                          | Format version.                 |
+| `annotations`    | `array` of [cuboid annotations](label-types.md#cuboid-annotation) | List of the cuboid annotations. |
+
+### Cuboid annotation
+
+A cuboid annotation represents a single cuboid in a point cloud (frame).
+
+```json
+{
+  "id": 1,
+  "category_id": 1,
+  "type": "cuboid",
+  "position": {
+    "x": 0.0,
+    "y": 0.2,
+    "z": 0.5
+  },
+  "dimensions": {
+    "x": 1.2,
+    "y": 1,
+    "z": 1
+  },
+  "yaw": 0.63,
+  "track_id": 1,  // only in sequences
+  "is_keyframe": true,  // only in sequences
+  "index": 0,  // only in sequences 
+}
+```
+
+| Name          | Type                                                                                                                              | Description                                                                                                                                                                                                                                                                              |
+| ------------- | --------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `id`          | `integer`                                                                                                                         | Object id.                                                                                                                                                                                                                                                                               |
+| `category_id` | `integer`                                                                                                                         | Category id.                                                                                                                                                                                                                                                                             |
+| `type`        | `string`                                                                                                                          | Object type, which is always "cuboid" for cuboid annotations.                                                                                                                                                                                                                            |
+| `position`    | <p><code>object</code>: {<br>    "x": <code>float</code>,<br>    "y": <code>float</code>,<br>    "z": <code>float</code><br>}</p> | XYZ position of the center of the cuboid in world coordinates.                                                                                                                                                                                                                           |
+| `dimensions`  | <p><code>object</code>: {<br>    "x": <code>float</code>,<br>    "y": <code>float</code>,<br>    "z": <code>float</code><br>}</p> | Dimensions of the cuboid. "x" corresponds to the length, "y" to the width, and "z" to the height. See diagram 1.                                                                                                                                                                         |
+| `yaw`         | `float`                                                                                                                           | Cuboid rotation along the z-axis in radians between \[-π, π]. 0 yaw corresponds to a cuboid aligned with the x-axis pointing to increasing x-values. The yaw value increases with a counter-clockwise rotation up to π, and decreases with a clockwise rotation up to -π. See diagram 2. |
+| `track_id`    | `integer`                                                                                                                         | Track ID of the object. This ID is used to track an object over multiple frames. Only relevant for sequences.                                                                                                                                                                            |
+| `is_keyframe` | `boolean`                                                                                                                         | Whether this cuboid annotation is a keyframe or an interpolated frame. Only relevant for sequences.                                                                                                                                                                                      |
+| `index`       | `integer`                                                                                                                         | The frame index. Only relevant for sequences.                                                                                                                                                                                                                                            |
+
+![Diagram 1: x and y attributes of the cuboid dimensions. The red arrow shows the cuboid heading.](<../../.gitbook/assets/dimensions-diagram (1).png>)
+
+![Diagram 2: yaw rotation of a cuboid. The red arrow shows the cuboid heading. yaw = π/2 corresponds to a heading in the direction of increasing y values, while yaw = -π/2 corresponds to a heading in the direction of decreasing y values.](../../.gitbook/assets/yaw-diagram.png)
+
 ## 3D point cloud sequence
 
-### Segmentation labels
-
-Format of the `attributes` field in [`client.get_label()`](../../python-sdk.md#get-a-label):
+### Segmentation label
 
 ```jsonp
 {
@@ -282,9 +326,7 @@ Where each frames object has the following format:
 }
 ```
 
-### Cuboid labels
-
-Format of the `attributes` field in [`client.get_label()`](../../python-sdk.md#get-a-label):
+### Cuboid label
 
 ```jsonp
 {
@@ -297,52 +339,10 @@ Format of the `attributes` field in [`client.get_label()`](../../python-sdk.md#g
 }
 ```
 
-Where each frames object has the following format:
-
-```jsonp
-{
-  "format_version": "0.2",
-  "timestamp": "00001", // this field is only included if the sample has a timestamp
-  "annotations": [
-    {
-      "id": 1, // the object id
-      "category_id": 1, // the category id
-      "type": "cuboid", // refers to the annotation type (cuboid)
-      "position": {
-        "x": 0.0,
-        "y": 0.2,
-        "z": 0.5
-      },
-      "dimensions": {
-        "x": 1.2,
-        "y": 1,
-        "z": 1
-      },
-      "yaw": 1.63,
-      "is_keyframe": true, // whether this frame is a keyframe
-      "track_id": 6, // this id is used to links objects across frames
-    },
-    {
-      "id": 2,
-      "category_id": 2,
-      "type": "cuboid",
-      "position": {
-        "x": 0.0,
-        "y": 0.2,
-        "z": 0.5
-      },
-      "dimensions": {
-        "x": 1.2,
-        "y": 1,
-        "z": 1
-      },
-      "yaw": 1.63,
-      "is_keyframe": false,
-      "track_id": 7
-    }
-  ]
-},
-```
+| Name             | Type                                                     |                                                        |
+| ---------------- | -------------------------------------------------------- | ------------------------------------------------------ |
+| `format_version` | `string`                                                 | Format version.                                        |
+| `frames`         | `array` of [cuboid labels](label-types.md#cuboid-labels) | List of cuboid labels (one per frame in the sequence). |
 
 ## Text
 
