@@ -8,7 +8,7 @@ When you create a dataset, you have to choose the sample and label type. For exa
 
 ## Sample
 
-A **sample** is a data point you want to label, like an image, 3D point cloud, or a [sequence](main-concepts.md#undefined). The different sample types are defined in [sample-types](../reference/sample-types/ "mention").
+A **sample** is a data point you want to label, like an image, 3D point cloud, or a [sequence](sequences.md). The different sample types are defined in [sample-types](../reference/sample-types/ "mention").
 
 ## Label
 
