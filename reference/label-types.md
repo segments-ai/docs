@@ -1,12 +1,16 @@
-# Label types
+# Label formats
 
-When downloading or uploading labels using the [Python SDK](../../python-sdk.md), the format of the`attributes` field depends on the type of label. The different formats are described here.
+When you label a sample and press the save button, you've created a [label](../background/main-concepts.md#label) for that sample. Labels come in different types, with the available options determined by the type of the corresponding sample.&#x20;
+
+When downloading or uploading labels using the [Python SDK](../python-sdk.md), the format of the `attributes` field depends on the type of label. The different formats are described here.
+
+A label can additionally also contain [#object-attributes](label-types.md#object-attributes "mention") and [#image-attributes](label-types.md#image-attributes "mention").
 
 ## Image
 
 ### Segmentation labels
 
-Format of the `attributes` field in [`client.get_label()`](../../python-sdk.md#get-a-label):
+Format of the `attributes` field in [`client.get_label()`](../python-sdk.md#get-a-label):
 
 ```javascript
 {
@@ -52,7 +56,7 @@ For a full example of uploading model-generated labels to Segments.ai, please re
 
 ### Vector labels (bounding box, polygon, polyline, keypoint)
 
-Format of the `attributes` field in [`client.get_label()`](../../python-sdk.md#get-a-label):
+Format of the `attributes` field in [`client.get_label()`](../python-sdk.md#get-a-label):
 
 ```javascript
 {
@@ -111,7 +115,7 @@ Coming soon.
 
 ### Vector labels (bounding box, polygon, polyline, keypoint)
 
-Format of the `attributes` field in [`client.get_label()`](../../python-sdk.md#get-a-label):
+Format of the `attributes` field in [`client.get_label()`](../python-sdk.md#get-a-label):
 
 ```jsonp
 {
@@ -281,9 +285,9 @@ A cuboid annotation represents a single cuboid in a point cloud (frame).
 | `is_keyframe` | `boolean`                                                                                                                         | Whether this cuboid annotation is a keyframe or an interpolated frame. Only relevant for sequences.                                                                                                                                                                                      |
 | `index`       | `integer`                                                                                                                         | The frame index. Only relevant for sequences.                                                                                                                                                                                                                                            |
 
-![Diagram 1: x and y attributes of the cuboid dimensions. The red arrow shows the cuboid heading.](<../../.gitbook/assets/dimensions-diagram (1).png>)
+![Diagram 1: x and y attributes of the cuboid dimensions. The red arrow shows the cuboid heading.](<../.gitbook/assets/dimensions-diagram (1).png>)
 
-![Diagram 2: yaw rotation of a cuboid. The red arrow shows the cuboid heading. yaw = π/2 corresponds to a heading in the direction of increasing y values, while yaw = -π/2 corresponds to a heading in the direction of decreasing y values.](../../.gitbook/assets/yaw-diagram.png)
+![Diagram 2: yaw rotation of a cuboid. The red arrow shows the cuboid heading. yaw = π/2 corresponds to a heading in the direction of increasing y values, while yaw = -π/2 corresponds to a heading in the direction of decreasing y values.](../.gitbook/assets/yaw-diagram.png)
 
 ## 3D point cloud sequence
 
@@ -348,7 +352,7 @@ Where each frames object has the following format:
 
 ### Named entity recognition and span categorization
 
-Format of the `attributes` field in [`client.get_label()`](../../python-sdk.md#get-a-label):
+Format of the `attributes` field in [`client.get_label()`](../python-sdk.md#get-a-label):
 
 ```json
 {
@@ -375,7 +379,7 @@ Format of the `attributes` field in [`client.get_label()`](../../python-sdk.md#g
 
 ## Object attributes
 
-Objects in the annotations list can optionally also contain an attributes field to store object-level attributes. Make sure to properly [configure the label editor](../../configure-label-editor.md) if you're using object-level attributes.
+Objects in the annotations list can optionally also contain an attributes field to store object-level attributes. Make sure to properly [configure the label editor](../configure-label-editor.md) if you're using object-level attributes.
 
 ```javascript
 {
@@ -412,7 +416,7 @@ Objects in the annotations list can optionally also contain an attributes field 
 
 ## Image attributes
 
-You can also define image-level attributes. These can be useful in image classification tasks. Make sure to properly [configure the label editor](../../configure-label-editor.md) if you're using image-level attributes.
+You can also define image-level attributes. These can be useful in image classification tasks. Make sure to properly [configure the label editor](../configure-label-editor.md) if you're using image-level attributes.
 
 ```javascript
 {

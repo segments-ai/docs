@@ -80,6 +80,8 @@ Returns:
 
 ### Create a dataset
 
+See [sample-and-label-types.md](reference/sample-and-label-types.md "mention") for an overview of the available task types.
+
 #### Example
 
 ```python
@@ -90,18 +92,6 @@ task_type = "segmentation-bitmap"
 dataset = client.add_dataset(dataset_name, description, task_type)
 print(dataset)
 ```
-
-| Task type                                 | Value                              |
-| ----------------------------------------- | ---------------------------------- |
-| Image segmentation labels (bitmap)        | `segmentation-bitmap`              |
-| Image bounding box labels                 | `bboxes`                           |
-| Image vector labels                       | `vector`                           |
-| Pointcloud cuboid labels                  | `pointcloud-cuboid`                |
-| Pointcloud cuboid labels (sequence)       | `pointcloud-cuboid-sequence`       |
-| Pointcloud segmentation labels            | `pointcloud-segmentation`          |
-| Pointcloud segmentation labels (sequence) | `pointcloud-segmentation-sequence` |
-| Text named entity labels                  | `text-named-entities`              |
-| Text span categorization labels           | `text-span-categorization`         |
 
 #### Signature
 
@@ -250,6 +240,8 @@ Returns:
 
 ### Get a sample
 
+See [sample-types](reference/sample-types/ "mention") for the format of the `attributes` for a certain sample type.
+
 #### Example
 
 ```python
@@ -275,10 +267,14 @@ Returns:
 
 ### Create a sample
 
-The content of the `attributes` field depends on the [sample type](reference/sample-and-label-types/sample-types.md).
+See [sample-types](reference/sample-types/ "mention") for the format of the `attributes` for a certain sample type.
 
 {% hint style="info" %}
-If the image file is on your local computer, you should first upload it to a cloud storage service like Amazon S3, Google Cloud Storage, Imgur, or [our asset storage service](python-sdk.md#upload-a-file-as-an-asset).
+If the image file is on your local computer, you should first upload it to [our asset storage service](python-sdk.md#upload-a-file-as-an-asset) (using [`upload_asset()`](python-sdk.md#upload-a-file-as-an-asset)) or to another cloud storage service.
+{% endhint %}
+
+{% hint style="warning" %}
+If you create a sample with a URL from a public S3 bucket and you see an error on the platform, make sure to [properly configure your bucket's CORS settings](https://docs.aws.amazon.com/AmazonS3/latest/dev/cors.html).
 {% endhint %}
 
 #### Example
@@ -323,11 +319,9 @@ Returns:
 """
 ```
 
-{% hint style="warning" %}
-If you create a sample with a URL from a public S3 bucket and you see an error on the platform, make sure to [properly configure your bucket's CORS settings](https://docs.aws.amazon.com/AmazonS3/latest/dev/cors.html).
-{% endhint %}
-
 ### Update a sample
+
+See [sample-types](reference/sample-types/ "mention") for the format of the `attributes` for a certain sample type.
 
 #### Example
 
@@ -387,6 +381,8 @@ Args:
 
 ### Get a label
 
+See [label-types.md](reference/label-types.md "mention") for the content of the `attributes` for a certain label type.
+
 #### Example
 
 ```python
@@ -416,7 +412,7 @@ Returns:
 
 A label is added to a sample in relation to a _label set_, such as the default _ground-truth_ label set, or a newly created label set for [uploading model predictions](guides/upload-model-predictions.md). You can create a new label set by clicking the "Add new label set" link on the Samples tab.
 
-The content of the `attributes` field depends on the [label type](reference/sample-and-label-types/label-types.md).
+See [label-types.md](reference/label-types.md "mention") for the content of the `attributes` for a certain label type.
 
 #### Example
 
@@ -461,6 +457,8 @@ Returns:
 ```
 
 ### Update a label
+
+See [label-types.md](reference/label-types.md "mention") for the content of the `attributes` for a certain label type.
 
 #### Example
 

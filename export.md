@@ -52,7 +52,7 @@ Each sample entry contains information about the sample (name, image URL, ...) a
 
 ### Label
 
-The `attributes` field of a label contains all the info about the labeled objects. Its contents depend on the type of the label (image segmentation, cuboid,...). See [label-types.md](reference/sample-and-label-types/label-types.md "mention") for an overview of the attributes per label type. Each label also contains basic information such as the time it was created, the user who created it, its status (e.g. LABELED).
+The `attributes` field of a label contains all the info about the labeled objects. Its contents depend on the type of the label (image segmentation, cuboid,...). See [label-types.md](reference/label-types.md "mention") for an overview of the attributes per label type. Each label also contains basic information such as the time it was created, the user who created it, its status (e.g. LABELED).
 
 {% code title="" %}
 ```bash

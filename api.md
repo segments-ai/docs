@@ -371,7 +371,7 @@ PUT /labels/:sample_uuid/:labelset
 
 | Name           | Type     | Description                                                                                                                                                               |
 | -------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `attributes`   | `object` | Label data. Format depends on the label type, see [label formats](reference/sample-and-label-types/label-types.md).                                                       |
+| `attributes`   | `object` | Label data. Format depends on the label type, see [label formats](reference/label-types.md).                                                                              |
 | `label_status` | `string` | <p>Status of the label.</p><p></p><p>Can be one of: <code>LABELED</code>, <code>REVIEWED</code>, <code>REJECTED</code>, <code>PRELABELED</code>, <code>SKIPPED</code></p> |
 | `score`        | `float`  | Prediction score.                                                                                                                                                         |
 

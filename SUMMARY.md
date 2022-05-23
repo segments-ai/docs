@@ -38,15 +38,16 @@
 ## Background
 
 * [Main concepts](background/main-concepts.md)
+* [Sequences](background/sequences.md)
 * [Label queue mechanics](background/label-queue-mechanics.md)
 * [Security](background/security.md)
 
 ## Reference
 
-* [Sample and label types](reference/sample-and-label-types/README.md)
-  * [Sample types](reference/sample-and-label-types/sample-types.md)
-  * [Label types](reference/sample-and-label-types/label-types.md)
-  * [File formats](reference/sample-and-label-types/file-formats.md)
-* [Categories and task attributes](reference/categories-and-task-attributes.md)
 * [Python SDK](python-sdk.md)
+* [Task types](reference/sample-and-label-types.md)
+* [Sample formats](reference/sample-types/README.md)
+  * [Supported file formats](reference/sample-types/supported-file-formats.md)
+* [Label formats](reference/label-types.md)
+* [Categories and task attributes](reference/categories-and-task-attributes.md)
 * [API](api.md)

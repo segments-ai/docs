@@ -1,6 +1,6 @@
 # Use track IDs in sequences
 
-A **track ID** is an identifier assigned to each labeled object in a [sequence](../../background/main-concepts.md#sequences). This track ID can be used to track an object over multiple frames.
+A **track ID** is an identifier assigned to each labeled object in a [sequence](../../background/sequences.md). This track ID can be used to track an object over multiple frames.
 
 ![](<../../.gitbook/assets/image (24) (1).png>)
 
