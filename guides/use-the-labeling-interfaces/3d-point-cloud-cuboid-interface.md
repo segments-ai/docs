@@ -55,7 +55,7 @@ If you've set up the default dimensions for your categories (see [#categories](.
 
 1. Select the "Select and edit" tool by clicking on the pointer icon in the toolbar on the left, or by pressing the hotkey (`Esc` by default).
 2. Select the cuboid you want to rotate.
-3. Click and drag the yellow rotation circle to rotate the cuboid.
+3. Click and drag the red rotation plane in front of the cuboid to rotate the cuboid.
 
 ### Change the heading of a cuboid
 
