@@ -51,7 +51,7 @@ A remove-keyframe is a visual indication of where an object was removed from the
 1. Select the object.
 2. The delete-keyframes are now visible in the timeline at the bottom of the editor. A delete-keyframe is indicated as a grey circle with a cross.
 
-![](<../../.gitbook/assets/image (23).png>)
+![](<../../.gitbook/assets/image (23) (1).png>)
 
 ### Add a remove-keyframe
 

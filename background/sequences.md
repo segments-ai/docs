@@ -14,5 +14,5 @@ In the context of interpolation, a **keyframe** is a marker that indicates that 
 
 A **remove-keyframe** is a visual indication of where an object was removed from the sample. A remove-keyframe means that the object is not present in that frame and all frames before the next normal keyframe.
 
-![An example of keyframes (blue diamonds) and a remove-keyframe (grey circle with cross). The yellow color indicates the frames in which the object is present.](<../.gitbook/assets/image (25).png>)
+![An example of keyframes (blue diamonds) and a remove-keyframe (grey circle with cross). The yellow color indicates the frames in which the object is present.](<../.gitbook/assets/image (25) (1).png>)
 

@@ -23,6 +23,7 @@
 ## How to manage and annotate <a href="#guides" id="guides"></a>
 
 * [Add collaborators to a dataset](guides/add-collaborators-to-a-dataset.md)
+* [Create an organization](guides/create-an-organization.md)
 * [Configure the label editor](configure-label-editor.md)
 * [Customize hotkeys](guides/customize-hotkeys.md)
 * [Customize label queue priority](guides/customize-label-queue-priority.md)

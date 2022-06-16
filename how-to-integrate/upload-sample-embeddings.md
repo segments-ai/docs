@@ -6,4 +6,4 @@ This feature is currently in beta. Please [contact us](https://segments.ai/conta
 
 
 
-![Browse similar samples based on the vector similarity between their embeddings.](<../.gitbook/assets/image (23) (1).png>)
+![Browse similar samples based on the vector similarity between their embeddings.](<../.gitbook/assets/image (23) (1) (1).png>)

@@ -13,7 +13,7 @@ If you want to know how to interact programmatically with Segments.ai, follow th
 
 First, make sure you've [created an account](https://segments.ai/join) and are logged in. Clicking on the Segments.ai logo in the upper left corner, takes you to your home screen:
 
-![On the home screen you see a list of all your own datasets, and the datasets of others in which you're a collaborator.](<../.gitbook/assets/image (25) (1).png>)
+![On the home screen you see a list of all your own datasets, and the datasets of others in which you're a collaborator.](<../.gitbook/assets/image (25) (1) (1).png>)
 
 ## Create a new dataset
 
@@ -33,7 +33,7 @@ Now that you've created a new dataset, let's add some images to it. In your data
 A sample can be an image, video or 3D pointcloud. In this tutorial we're working with images.
 {% endhint %}
 
-![](<../.gitbook/assets/image (24) (1) (1).png>)
+![](<../.gitbook/assets/image (24) (1) (1) (1).png>)
 
 Select a few images and upload them. The images appear as thumbnails in the Samples tab.
 

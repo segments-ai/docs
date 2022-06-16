@@ -1,6 +1,6 @@
 # Work with issues
 
-When labeling or reviewing a sample, you can create a new issue by clicking the ![](<../.gitbook/assets/image (8).png>) icon in the top navigation bar. The issues functionality works as follows:
+When labeling or reviewing a sample, you can create a new issue by clicking the ![](<../.gitbook/assets/image (8) (1).png>) icon in the top navigation bar. The issues functionality works as follows:
 
 * Both labelers and reviewers can open a new issue on a sample. For example, a labeler could open an issue because he's uncertain about how to label something, and a reviewer because he discovered a mistake in a labeled sample.
 * When an issue is created, it automatically becomes an "open" issue, as indicated by the red icon.
