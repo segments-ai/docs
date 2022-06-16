@@ -410,7 +410,7 @@ Returns:
 
 ### Create a label
 
-A label is added to a sample in relation to a _label set_, such as the default _ground-truth_ label set, or a newly created label set for [uploading model predictions](guides/upload-model-predictions.md). You can create a new label set by clicking the "Add new label set" link on the Samples tab.
+A label is added to a sample in relation to a _label set_, such as the default _ground-truth_ label set, or a newly created label set for [uploading model predictions](how-to-integrate/upload-model-predictions.md). You can create a new label set by clicking the "Add new label set" link on the Samples tab.
 
 See [label-types.md](reference/label-types.md "mention") for the content of the `attributes` for a certain label type.
 
@@ -527,7 +527,7 @@ Args:
 
 ## Label sets
 
-A label is added to a sample in relation to a _label set_, such as the default _ground-truth_ label set, or a newly created label set for [uploading model predictions](guides/upload-model-predictions.md).
+A label is added to a sample in relation to a _label set_, such as the default _ground-truth_ label set, or a newly created label set for [uploading model predictions](how-to-integrate/upload-model-predictions.md).
 
 ### List label sets
 

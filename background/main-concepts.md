@@ -18,8 +18,8 @@ When you label a sample and press the save button, you've created a **label** fo
 
 A **label** is linked to a sample in relation to a **label set**. When you label a sample and press the save button, the label is saved in the default _ground-truth_ label set.
 
-You can optionally create additional label sets to [upload your model predictions](../guides/upload-model-predictions.md).
+You can optionally create additional label sets to [upload your model predictions](../how-to-integrate/upload-model-predictions.md).
 
 ## Release
 
-A **release** is a snapshot of a dataset at a specific point in time. Create a new release if you want to [export your data](../export.md).
+A **release** is a snapshot of a dataset at a specific point in time. Create a new release if you want to [export your data](../how-to-integrate/export/).

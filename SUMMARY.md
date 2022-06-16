@@ -8,13 +8,28 @@
 * [Python SDK quickstart](tutorials/python-sdk-quickstart.md)
 * [Model-assisted labeling](tutorials/model-assisted-labeling.md)
 
-## How-to guides <a href="#guides" id="guides"></a>
+## How to integrate
 
-* [Import data](guides/import-data/README.md)
-  * [Cloud integrations](cloud-integration.md)
-* [Export data](export.md)
-* [Upload model predictions](guides/upload-model-predictions.md)
+* [Import data](how-to-integrate/import-data/README.md)
+  * [Cloud integrations](how-to-integrate/import-data/cloud-integration.md)
+* [Export data](how-to-integrate/export/README.md)
+  * [Structure of the release file](how-to-integrate/export/structure-of-the-release-file.md)
+  * [Exporting the release file to different formats](how-to-integrate/export/exporting-the-release-file-to-different-formats.md)
+* [Create an API key](how-to-integrate/create-an-api-key.md)
+* [Upload model predictions](how-to-integrate/upload-model-predictions.md)
+* [Upload sample embeddings](how-to-integrate/upload-sample-embeddings.md)
+* [Set up webhooks](how-to-integrate/webhooks.md)
+
+## How to manage and annotate <a href="#guides" id="guides"></a>
+
+* [Add collaborators to a dataset](guides/add-collaborators-to-a-dataset.md)
 * [Configure the label editor](configure-label-editor.md)
+* [Customize hotkeys](guides/customize-hotkeys.md)
+* [Customize label queue priority](guides/customize-label-queue-priority.md)
+* [Search within a dataset](search-functionality.md)
+* [Clone a dataset](guides/clone-a-dataset.md)
+* [Work with issues](guides/work-with-issues.md)
+* [Bulk change label status](guides/bulk-change-label-status.md)
 * [Use the labeling interfaces](guides/use-the-labeling-interfaces/README.md)
   * [3D point cloud segmentation interface](guides/use-the-labeling-interfaces/3d-point-cloud-segmentation-interface.md)
   * [3D point cloud cuboid interface](guides/use-the-labeling-interfaces/3d-point-cloud-cuboid-interface.md)
@@ -24,16 +39,6 @@
   * [Text span categorization interface](guides/use-the-labeling-interfaces/text-span-categorization-interface.md)
   * [Use track IDs in sequences](guides/use-the-labeling-interfaces/use-track-ids-in-sequences.md)
   * [Use keyframe interpolation](guides/use-the-labeling-interfaces/use-keyframe-interpolation.md)
-* [Customize hotkeys](guides/customize-hotkeys.md)
-* [Add collaborators to a dataset](guides/add-collaborators-to-a-dataset.md)
-* [Search within a dataset](search-functionality.md)
-* [Clone a dataset](guides/clone-a-dataset.md)
-* [Customize label queue priority](guides/customize-label-queue-priority.md)
-* [Work with issues](guides/work-with-issues.md)
-* [Bulk change label status](guides/bulk-change-label-status.md)
-* [Create an API key](guides/create-an-api-key.md)
-* [Set up webhooks](guides/webhooks.md)
-* [Upload sample embeddings](guides/upload-sample-embeddings.md)
 
 ## Background
 
