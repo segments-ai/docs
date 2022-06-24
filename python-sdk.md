@@ -110,7 +110,8 @@ Args:
     readme (str, optional): The dataset readme. Defaults to ''.
     enable_skip_labeling (bool, optional): Enable the skip button in the labeling workflow. Defaults to True.
     enable_skip_reviewing (bool, optional): Enable the skip button in the reviewing workflow. Defaults to False.
-    enable_ratings: Enable star-ratings for labeled images. Defaults to False.
+    enable_ratings (bool, optional): Enable star-ratings for labeled images. Defaults to False.
+    organization (str, optional): The username of the organization for which this dataset should be created. None will create a dataset for the current user. Defaults to None.
 
 Returns:
     dict: a dictionary representing the newly created dataset.
