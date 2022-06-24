@@ -8,6 +8,6 @@ When labeling or reviewing a sample, you can create a new issue by clicking the 
 * Everyone can add replies to an issue. This allows for back-and-forth communication between labeler and reviewer. Note that rejected samples always go back to the original labeler, and corrected samples go back to the original reviewer.
 * Reviewers and admins have access to an issues tab, where they can see the list of all open and resolved issues.
 
-![](<../.gitbook/assets/image (20).png>)
+![](<../.gitbook/assets/image (20) (1).png>)
 
 ![](<../.gitbook/assets/image (3) (1).png>)

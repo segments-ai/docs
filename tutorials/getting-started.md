@@ -23,7 +23,7 @@ Choose "Segmentation (bitmap)" for the task type in this tutorial. We will be la
 
 Finally, click "Create dataset".
 
-![](<../.gitbook/assets/image (14).png>)
+![](<../.gitbook/assets/image (14) (1).png>)
 
 ## Upload images
 

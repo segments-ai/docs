@@ -57,3 +57,9 @@ There are only two organization roles, _member_ or _administrator_. Their permis
 When creating a new dataset within an organization, all organization members will be added as collaborators to these datasets according to their _default dataset role_. Dataset collaborator roles are described in [add-collaborators-to-a-dataset.md](add-collaborators-to-a-dataset.md "mention").
 
 Choose “None (do not add)” if you don’t want to add a member as a collaborator to new datasets by default.
+
+## Leave an organization
+
+As a member you can leave an organization by going to the _organizations_ tab on your own settings page, and clicking the "Leave organization" button.
+
+![](<../.gitbook/assets/image (20).png>)
