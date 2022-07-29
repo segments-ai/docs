@@ -14,7 +14,7 @@ In the labeling workflow, you can press these buttons:
 The ordering of the label queue is determined as follows:
 
 1. If there's a sample that you labeled but which got rejected in the reviewing step, that sample is returned first so you can immediately correct it.
-2. If no such samples exist, _unlabeled_ samples are returned ordered by priority first (descending) and file name second (ascending). Read more about how you can [customize the queue priority](../guides/customize-label-queue-priority.md).
+2. If no such samples exist, _unlabeled_ and _prelabeled_ samples are returned ordered by priority first (descending) and file name second (ascending). Read more about how you can [customize the queue priority](../guides/customize-label-queue-priority.md).
 3. If no such samples exist, the label queue is empty and no more samples need to be labeled.
 
 ### Review queue
