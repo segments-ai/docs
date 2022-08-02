@@ -70,7 +70,7 @@ Supported image formats:  jpeg, png, bmp.
             "qw": 0.9997181192298087
         }
     },
-    "default_z": -1 // optional, 0 by default
+    "default_z": -1 // optional, 0.5 by default
 }
 ```
 

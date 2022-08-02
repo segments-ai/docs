@@ -51,10 +51,11 @@
 
 ## Reference
 
-* [Python SDK](python-sdk.md)
+* [Python SDK](https://sdkdocs.segments.ai/en/latest/client.html)
 * [Task types](reference/sample-and-label-types.md)
 * [Sample formats](reference/sample-types/README.md)
   * [Supported file formats](reference/sample-types/supported-file-formats.md)
 * [Label formats](reference/label-types.md)
 * [Categories and task attributes](reference/categories-and-task-attributes.md)
 * [API](api.md)
+* [Python SDK (old v0.x)](python-sdk.md)
