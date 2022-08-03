@@ -61,7 +61,7 @@ task_attributes = {
 }
 
 dataset = client.add_dataset(name, description, task_type, task_attributes)
-print(json.dumps(dataset, indent=4))
+print(dataset)
 ```
 
 ## Add samples to a dataset
@@ -69,7 +69,7 @@ print(json.dumps(dataset, indent=4))
 Now let's upload some images to this dataset using [`client.add_sample()`](../python-sdk.md#create-a-sample).
 
 ```python
-dataset = 'jane/pets' # a dataset is always referred to as user/dataset.
+dataset_identifier = 'jane/pets' # a dataset is always referred to as user/dataset.
 
 images = [
     {
@@ -93,15 +93,15 @@ for image in images:
           'url': image['url'] 
         }
     }
-    sample = client.add_sample(dataset, name, attributes)
-    print(json.dumps(sample, indent=4))
+    sample = client.add_sample(dataset_identifier, name, attributes)
+    print(sample)
 ```
 
 We can verify that the dataset now contains 3 images using [`client.get_samples()`](../python-sdk.md#list-samples).
 
 ```python
 samples = client.get_samples(dataset)
-print(json.dumps(samples, indent=4))
+print(samples)
 ```
 
 Now switch to the Segments.ai web platform and label the three images you just uploaded by pressing the "Start labeling" button.
@@ -114,8 +114,8 @@ Once you've labeled some samples, you can programmatically retrieve their labels
 dataset = 'jane/pets'
 sample = client.get_samples(dataset)[0]
 
-label = client.get_label(sample['uuid'], labelset='ground-truth')
-print(json.dumps(label, indent=4))
+label = client.get_label(sample.uuid, labelset='ground-truth')
+print(label)
 ```
 
 ## Optional: visualize the instance and semantic labels
@@ -128,9 +128,9 @@ import matplotlib.pyplot as plt
 from segments.utils import load_image_from_url, load_label_bitmap_from_url, get_semantic_bitmap
 
 # Load the labels as numpy arrays
-image = load_image_from_url(sample['attributes']['image']['url'])
-instance_bitmap = load_label_bitmap_from_url(label['attributes']['segmentation_bitmap']['url'])
-semantic_bitmap = get_semantic_bitmap(instance_bitmap, label['attributes']['annotations'])
+image = load_image_from_url(sample.attributes.image.url)
+instance_bitmap = load_label_bitmap_from_url(label.attributes.segmentation_bitmap.url)
+semantic_bitmap = get_semantic_bitmap(instance_bitmap, label.attributes.annotations)
 
 # Visualize
 plt.imshow(image)
