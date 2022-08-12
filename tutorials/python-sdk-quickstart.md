@@ -8,7 +8,7 @@ description: >-
 # Python SDK quickstart
 
 {% hint style="info" %}
-This tutorial walks you through the most common Python SDK functions. The complete list of functions is documented in detail in the [Python SDK reference](../python-sdk.md).
+This tutorial walks you through the most common Python SDK functions. The complete list of functions is documented in detail in the [Python SDK reference](https://sdkdocs.segments.ai/).
 {% endhint %}
 
 First install the Segments.ai Python SDK using pip:
