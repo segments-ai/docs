@@ -97,6 +97,10 @@ for image in images:
     print(sample)
 ```
 
+{% hint style="warning" %}
+If the image file is on your local computer, you should first upload it to [our asset storage service](../python-sdk.md#upload-a-file-as-an-asset) (using [`upload_asset()`](python-sdk-quickstart.md#upload-a-file-as-an-asset)) or to another cloud storage service.
+{% endhint %}
+
 We can verify that the dataset now contains 3 images using [`client.get_samples()`](../python-sdk.md#list-samples).
 
 ```python
