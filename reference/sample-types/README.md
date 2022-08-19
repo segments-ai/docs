@@ -70,17 +70,17 @@ Supported image formats:  jpeg, png, bmp.
             "qw": 0.9997181192298087
         }
     },
-    "default_z": -1 // optional, 0.5 by default
+    "default_z": -1 // optional, 0 by default
 }
 ```
 
-| Name        | Type                             | Description                                                                                                                                                                                    |
-| ----------- | -------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `pcd`       | [Point cloud data](./#undefined) | **Required.** Point cloud data.                                                                                                                                                                |
-| `name`      | `string`                         | Name of the sample.                                                                                                                                                                            |
-| `timestamp` | `string`                         | Timestamp of the sample.                                                                                                                                                                       |
-| `ego_pose`  | [Ego pose](./#ego-pose)          | Pose of the sensor that captured the point cloud data.                                                                                                                                         |
-| `default_z` | `float`                          | Default z-value of a cuboid. 0.5 by default. Only valid in the point cloud cuboid editor. A cuboid has a height of 1 by default, so the ground plane is located 0.5 under the default z-value. |
+| Name        | Type                             | Description                                                                                                                                                                                                                                               |
+| ----------- | -------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `pcd`       | [Point cloud data](./#undefined) | **Required.** Point cloud data.                                                                                                                                                                                                                           |
+| `name`      | `string`                         | Name of the sample.                                                                                                                                                                                                                                       |
+| `timestamp` | `string`                         | Timestamp of the sample.                                                                                                                                                                                                                                  |
+| `ego_pose`  | [Ego pose](./#ego-pose)          | Pose of the sensor that captured the point cloud data.                                                                                                                                                                                                    |
+| `default_z` | `float`                          | Default z-value of the ground plane. 0 by default. Only valid in the point cloud cuboid editor. New cuboids will be drawn on top of the ground plane, i.e. the default z-position of a new cuboid is 0.5 (since the default height of a new cuboid is 1). |
 
 ### Point cloud data
 
