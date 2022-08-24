@@ -88,7 +88,7 @@ Hold the hotkey (`Ctrl/cmd` by default) and click and drag.
 
 #### Only in the perspective view
 
-* Use the keyboard navigation (by default: `w` to move forward, `a` to move left, `s` to move backward, and `d` to move right).
+* Use the keyboard navigation (by default: `w` to move forward, `a` to move left, `s` to move backward, `d` to move right, `q` to move up, `e` to move down).
 
 ### Rotate/orbit the camera in the perspective view
 

@@ -50,7 +50,7 @@ You can quickly draw a cuboid with an arbitrary rotation using our 3-click cuboi
 
 1. Select the "Select and edit" tool by clicking on the pointer icon in the toolbar on the left, or by pressing the hotkey (`Esc` by default).
 2. Select the cuboid you want to change.
-3. Change the cuboid's dimensions:
+3. Change the cuboid's dimensions by using the hotkeys (`i`, `j`, `k`, `l`, `u`, `o` by default) or by using your mouse:
    * In the perspective view: click and drag a face of the cuboid.
    * In a side view: click and drag one of the edges of the cuboid.
 
@@ -58,14 +58,15 @@ You can quickly draw a cuboid with an arbitrary rotation using our 3-click cuboi
 
 1. Select the "Select and edit" tool by clicking on the pointer icon in the toolbar on the left, or by pressing the hotkey (`Esc` by default).
 2. Select the cuboid you want to translate.
-3. Click and drag the yellow cube in the middle of the cuboid to translate the cuboid freely.\
-   Hover over the yellow cube in the middle to see the translation axe. Click and drag on an axis to translate the cuboid along the selected axis.
+3. Translate the cuboid by using the hotkeys (`w`, `a`, `s`, `d`, `q`, `e` by default) or by using your mouse:
+   * Click and drag the yellow cube in the middle of the cuboid to translate the cuboid freely.
+   * Hover over the yellow cube in the middle to see the translation axes. Click and drag on an axis to translate the cuboid along the selected axis.
 
 ### Rotate a cuboid
 
 1. Select the "Select and edit" tool by clicking on the pointer icon in the toolbar on the left, or by pressing the hotkey (`Esc` by default).
 2. Select the cuboid you want to rotate.
-3. Click and drag the red rotation plane in front of the cuboid to rotate the cuboid, or use the hotkeys:
+3. Click and drag the red rotation plane in front of the cuboid to rotate the cuboid or use the hotkeys:
    * Rotate 1° counterclockwise: `f` by default
    * Rotate 1° clockwise: `g` by default
    * Rotate 45° counterclockwise: `Shift + F` by default
@@ -108,7 +109,7 @@ Hold the hotkey (`Ctrl/cmd` by default) and click and drag.
 
 #### Only in the perspective view
 
-* Use the keyboard navigation (by default: `w` to move forward, `a` to move left, `s` to move backward, and `d` to move right).
+* Use the keyboard navigation (by default: `w` to move forward, `a` to move left, `s` to move backward, `d` to move right, `q` to move up, `e` to move down).
 
 ### Rotate/orbit the camera in the perspective view
 
