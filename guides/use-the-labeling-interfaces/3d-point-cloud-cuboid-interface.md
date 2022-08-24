@@ -8,17 +8,27 @@ When [creating a dataset](../../python-sdk.md#create-a-dataset) through the Pyth
 
 ### Create a new cuboid
 
+{% hint style="info" %}
+**August 24th, 2022**\
+We changed the method for drawing cuboids. Using our new 3-click method, you can now quickly draw cuboids with arbitrary rotations. Cuboids with default dimensions can be drawn by double clicking. \
+Learn more below ⬇️
+{% endhint %}
+
 #### Create a cuboid with default dimensions
 
-If you've set up the default dimensions for your categories (see [#categories](../../reference/categories-and-task-attributes.md#categories "mention")), you can create a cuboid with default dimensions in one click.
+If you've set up the default dimensions for your categories (see [#categories](../../reference/categories-and-task-attributes.md#categories "mention")), you can create a cuboid with default dimensions by double clicking.
 
 1. Select the "Create cuboid" tool by clicking on the box icon in the toolbar on the left, or by pressing the hotkey (`b` by default).
-2. Click in the perspective view or in the top view to create a new cuboid. This cuboid will have the default dimensions of the current category. When you change the category, the dimensions of the cuboid will change as well, given that you have not altered the dimensions of the cuboid yet.
+2. Double click in the perspective view or in the top view to create a new cuboid. This cuboid will have the default dimensions of the current category. When you change the category, the dimensions of the cuboid will change as well, given that you have not altered the dimensions of the cuboid yet.
 
 #### Draw a cuboid with custom dimensions
 
+You can quickly draw a cuboid with an arbitrary rotation using our 3-click cuboid drawing method.&#x20;
+
 1. Select the "Create cuboid" tool by clicking on the box icon in the toolbar on the left, or by pressing the hotkey (`b` by default).
-2. Click and drag in the perspective view or in the top view to draw a new cuboid. When you release the mouse, the new cuboid is added to the objects sidebar on the right.
+2. Click in the perspective view or in the top view to set the back corner of the new cuboid.
+3. When you move your mouse, the back side of the cuboid will follow your mouse position. Click to set the second corner of the cuboid.&#x20;
+4. Next, you can extend the cuboid by moving your mouse. Click to complete the cuboid. After clicking, the new cuboid is added to the objects sidebar on the right.
 
 ### Remove a cuboid
 
