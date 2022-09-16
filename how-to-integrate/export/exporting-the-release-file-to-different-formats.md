@@ -13,6 +13,7 @@ You can export the release file to different formats with the Python SDK. Use th
 | `semantic`       | Grayscale PNGs (8-bit) where the values correspond to category ids                                                                                                                              |
 | `instance-color` | Colored PNGs where the colors correspond to different instances                                                                                                                                 |
 | `semantic-color` | <p>Colored PNGs where the colors correspond to different categories, with colors<br>as configured in the <a href="../../configure-label-editor.md">label editor settings</a> when available</p> |
+| `polygon`        | For exporting segmentation bitmap labels to polygons                                                                                                                                            |
 
 Example:
 
