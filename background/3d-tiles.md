@@ -9,8 +9,8 @@ To solve these issues, we've introduced an option to split your point clouds int
 ## Why use 3D tiles?
 
 * Upload and label point clouds with **no limits on the point cloud size**
-* Enable a [merged point cloud view](../how-to-annotate/use-the-3d-point-cloud-labeling-interfaces/merged-point-cloud-view.md) when labeling sequences of point clouds
-* Enable the [batch mode](../how-to-annotate/use-the-3d-point-cloud-labeling-interfaces/batch-mode-for-dynamic-objects.md) for labeling dynamic objects in point cloud sequences
+* Enable a [merged point cloud view](../how-to-annotate/label-3d-point-clouds/merged-point-cloud-view.md) when labeling sequences of point clouds
+* Enable the [batch mode](../how-to-annotate/label-3d-point-clouds/batch-mode-for-dynamic-objects.md) for labeling dynamic objects in point cloud sequences
 
 ## How to enable 3D tiles
 

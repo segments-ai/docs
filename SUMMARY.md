@@ -8,18 +8,24 @@
 * [Python SDK quickstart](tutorials/python-sdk-quickstart.md)
 * [Model-assisted labeling](tutorials/model-assisted-labeling.md)
 
-## How to integrate
+## How to annotate
 
-* [Import data](how-to-integrate/import-data/README.md)
-  * [Cloud integrations](how-to-integrate/import-data/cloud-integration.md)
-* [Export data](how-to-integrate/export/README.md)
-  * [Structure of the release file](how-to-integrate/export/structure-of-the-release-file.md)
-  * [Exporting the release file to different formats](how-to-integrate/export/exporting-the-release-file-to-different-formats.md)
-* [Integrate with Hugging Face](how-to-integrate/integrate-with-hugging-face.md)
-* [Create an API key](how-to-integrate/create-an-api-key.md)
-* [Upload model predictions](how-to-integrate/upload-model-predictions.md)
-* [Upload sample embeddings](how-to-integrate/upload-sample-embeddings.md)
-* [Set up webhooks](how-to-integrate/webhooks.md)
+* [Label images](how-to-annotate/label-images/README.md)
+  * [Image segmentation interface](how-to-annotate/label-images/image-segmentation-interface.md)
+  * [Image vector interface](how-to-annotate/label-images/image-vector-interface.md)
+* [Label 3D point clouds](how-to-annotate/label-3d-point-clouds/README.md)
+  * [View and navigate in the 3D interface](how-to-annotate/label-3d-point-clouds/view-and-navigate-in-the-3d-interface.md)
+  * [3D point cloud segmentation interface](how-to-annotate/label-3d-point-clouds/3d-point-cloud-segmentation-interface.md)
+  * [3D point cloud cuboid interface](how-to-annotate/label-3d-point-clouds/3d-point-cloud-cuboid-interface.md)
+  * [Batch mode (for dynamic objects)](how-to-annotate/label-3d-point-clouds/batch-mode-for-dynamic-objects.md)
+  * [Merged point cloud view](how-to-annotate/label-3d-point-clouds/merged-point-cloud-view.md)
+* [Label sequences of data](how-to-annotate/label-sequences-of-data/README.md)
+  * [Use track IDs in sequences](how-to-annotate/label-sequences-of-data/use-track-ids-in-sequences.md)
+  * [Use keyframe interpolation](how-to-annotate/label-sequences-of-data/use-keyframe-interpolation.md)
+* [Label text](how-to-annotate/label-text/README.md)
+  * [Text span categorization interface](how-to-annotate/label-text/text-span-categorization-interface.md)
+  * [Text named entities interface](how-to-annotate/label-text/text-named-entities-interface.md)
+* [Customize hotkeys](how-to-annotate/customize-hotkeys.md)
 
 ## How to manage <a href="#guides" id="guides"></a>
 
@@ -32,24 +38,18 @@
 * [Work with issues](guides/work-with-issues.md)
 * [Bulk change label status](guides/bulk-change-label-status.md)
 
-## How to annotate
+## How to integrate
 
-* [Use the 3D point cloud labeling interfaces](how-to-annotate/use-the-3d-point-cloud-labeling-interfaces/README.md)
-  * [View and navigate in the 3D interface](how-to-annotate/use-the-3d-point-cloud-labeling-interfaces/view-and-navigate-in-the-3d-interface.md)
-  * [3D point cloud segmentation interface](how-to-annotate/use-the-3d-point-cloud-labeling-interfaces/3d-point-cloud-segmentation-interface.md)
-  * [3D point cloud cuboid interface](how-to-annotate/use-the-3d-point-cloud-labeling-interfaces/3d-point-cloud-cuboid-interface.md)
-  * [Batch mode (for dynamic objects)](how-to-annotate/use-the-3d-point-cloud-labeling-interfaces/batch-mode-for-dynamic-objects.md)
-  * [Merged point cloud view](how-to-annotate/use-the-3d-point-cloud-labeling-interfaces/merged-point-cloud-view.md)
-* [Use the text labeling interfaces](how-to-annotate/use-the-text-labeling-interfaces/README.md)
-  * [Text span categorization interface](how-to-annotate/use-the-text-labeling-interfaces/text-span-categorization-interface.md)
-  * [Text named entities interface](how-to-annotate/use-the-text-labeling-interfaces/text-named-entities-interface.md)
-* [Label sequences of data](how-to-annotate/label-sequences-of-data/README.md)
-  * [Use track IDs in sequences](how-to-annotate/label-sequences-of-data/use-track-ids-in-sequences.md)
-  * [Use keyframe interpolation](how-to-annotate/label-sequences-of-data/use-keyframe-interpolation.md)
-* [Customize hotkeys](how-to-annotate/customize-hotkeys.md)
-* [Use the image labeling interfaces](how-to-annotate/use-the-image-labeling-interfaces/README.md)
-  * [Image segmentation interface](how-to-annotate/use-the-image-labeling-interfaces/image-segmentation-interface.md)
-  * [Image vector interface](how-to-annotate/use-the-image-labeling-interfaces/image-vector-interface.md)
+* [Import data](how-to-integrate/import-data/README.md)
+  * [Cloud integrations](how-to-integrate/import-data/cloud-integration.md)
+* [Export data](how-to-integrate/export/README.md)
+  * [Structure of the release file](how-to-integrate/export/structure-of-the-release-file.md)
+  * [Exporting the release file to different formats](how-to-integrate/export/exporting-the-release-file-to-different-formats.md)
+* [Integrate with Hugging Face](how-to-integrate/integrate-with-hugging-face.md)
+* [Create an API key](how-to-integrate/create-an-api-key.md)
+* [Upload model predictions](how-to-integrate/upload-model-predictions.md)
+* [Upload sample embeddings](how-to-integrate/upload-sample-embeddings.md)
+* [Set up webhooks](how-to-integrate/webhooks.md)
 
 ## Background
 

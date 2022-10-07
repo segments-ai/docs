@@ -43,7 +43,7 @@ Select a few images and upload them. The images appear as thumbnails in the Samp
 
 Press the "Start labeling" button. This brings you into the labeling workflow, where you will be presented with unlabeled images until the labeling queue is empty.&#x20;
 
-Label all objects in the image and press "Submit", until all images are labeled. More details on effectively using the segmentation interface can be found [here](../how-to-annotate/use-the-image-labeling-interfaces/image-segmentation-interface.md).
+Label all objects in the image and press "Submit", until all images are labeled. More details on effectively using the segmentation interface can be found [here](../how-to-annotate/label-images/image-segmentation-interface.md).
 
 ![](<../.gitbook/assets/image (7) (1).png>)
 
