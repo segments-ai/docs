@@ -4,9 +4,9 @@ A **sequence** is a sample comprised of multiple frames. Each frame represents a
 
 A sequence has a number of unique features:
 
-* A track ID is assigned to each labeled object in a sequence. This track ID can be used to track an object over multiple frames. Learn how to use track IDs [here](../guides/use-the-labeling-interfaces/use-track-ids-in-sequences.md).
+* A track ID is assigned to each labeled object in a sequence. This track ID can be used to track an object over multiple frames. Learn how to use track IDs [here](../how-to-annotate/label-sequences-of-data/use-track-ids-in-sequences.md).
 * A sequence is assigned to a single labeler. This can increase the consistency of the labels between the frames in the sequence.
-* The image vector labeling interface and 3D point cloud cuboid interface allow you to use keyframe interpolation. This reduces the number of frames you need to label manually, which can decrease the labeling time significantly. Learn how to use keyframe interpolation [here](../guides/use-the-labeling-interfaces/use-keyframe-interpolation.md).
+* The image vector labeling interface and 3D point cloud cuboid interface allow you to use keyframe interpolation. This reduces the number of frames you need to label manually, which can decrease the labeling time significantly. Learn how to use keyframe interpolation [here](../how-to-annotate/label-sequences-of-data/use-keyframe-interpolation.md).
 
 ### Keyframes and remove-keyframes
 

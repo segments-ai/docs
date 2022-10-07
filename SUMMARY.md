@@ -21,32 +21,42 @@
 * [Upload sample embeddings](how-to-integrate/upload-sample-embeddings.md)
 * [Set up webhooks](how-to-integrate/webhooks.md)
 
-## How to manage and annotate <a href="#guides" id="guides"></a>
+## How to manage <a href="#guides" id="guides"></a>
 
 * [Add collaborators to a dataset](guides/add-collaborators-to-a-dataset.md)
 * [Create an organization](guides/create-an-organization.md)
 * [Configure the label editor](configure-label-editor.md)
-* [Customize hotkeys](guides/customize-hotkeys.md)
 * [Customize label queue priority](guides/customize-label-queue-priority.md)
 * [Search within a dataset](search-functionality.md)
 * [Clone a dataset](guides/clone-a-dataset.md)
 * [Work with issues](guides/work-with-issues.md)
 * [Bulk change label status](guides/bulk-change-label-status.md)
-* [Use the labeling interfaces](guides/use-the-labeling-interfaces/README.md)
-  * [3D point cloud segmentation interface](guides/use-the-labeling-interfaces/3d-point-cloud-segmentation-interface.md)
-  * [3D point cloud cuboid interface](guides/use-the-labeling-interfaces/3d-point-cloud-cuboid-interface.md)
-  * [Image segmentation interface](guides/use-the-labeling-interfaces/image-segmentation-interface.md)
-  * [Image vector interface](guides/use-the-labeling-interfaces/image-vector-interface.md)
-  * [Text named entities interface](guides/use-the-labeling-interfaces/text-named-entities-interface.md)
-  * [Text span categorization interface](guides/use-the-labeling-interfaces/text-span-categorization-interface.md)
-  * [Use track IDs in sequences](guides/use-the-labeling-interfaces/use-track-ids-in-sequences.md)
-  * [Use keyframe interpolation](guides/use-the-labeling-interfaces/use-keyframe-interpolation.md)
+
+## How to annotate
+
+* [Use the 3D point cloud labeling interfaces](how-to-annotate/use-the-3d-point-cloud-labeling-interfaces/README.md)
+  * [View and navigate in the 3D interface](how-to-annotate/use-the-3d-point-cloud-labeling-interfaces/view-and-navigate-in-the-3d-interface.md)
+  * [3D point cloud segmentation interface](how-to-annotate/use-the-3d-point-cloud-labeling-interfaces/3d-point-cloud-segmentation-interface.md)
+  * [3D point cloud cuboid interface](how-to-annotate/use-the-3d-point-cloud-labeling-interfaces/3d-point-cloud-cuboid-interface.md)
+  * [Batch mode (for dynamic objects)](how-to-annotate/use-the-3d-point-cloud-labeling-interfaces/batch-mode-for-dynamic-objects.md)
+  * [Merged point cloud view](how-to-annotate/use-the-3d-point-cloud-labeling-interfaces/merged-point-cloud-view.md)
+* [Use the text labeling interfaces](how-to-annotate/use-the-text-labeling-interfaces/README.md)
+  * [Text span categorization interface](how-to-annotate/use-the-text-labeling-interfaces/text-span-categorization-interface.md)
+  * [Text named entities interface](how-to-annotate/use-the-text-labeling-interfaces/text-named-entities-interface.md)
+* [Label sequences of data](how-to-annotate/label-sequences-of-data/README.md)
+  * [Use track IDs in sequences](how-to-annotate/label-sequences-of-data/use-track-ids-in-sequences.md)
+  * [Use keyframe interpolation](how-to-annotate/label-sequences-of-data/use-keyframe-interpolation.md)
+* [Customize hotkeys](how-to-annotate/customize-hotkeys.md)
+* [Use the image labeling interfaces](how-to-annotate/use-the-image-labeling-interfaces/README.md)
+  * [Image segmentation interface](how-to-annotate/use-the-image-labeling-interfaces/image-segmentation-interface.md)
+  * [Image vector interface](how-to-annotate/use-the-image-labeling-interfaces/image-vector-interface.md)
 
 ## Background
 
 * [Main concepts](background/main-concepts.md)
 * [Sequences](background/sequences.md)
 * [Label queue mechanics](background/label-queue-mechanics.md)
+* [3D Tiles](background/3d-tiles.md)
 * [Security](background/security.md)
 
 ## Reference
