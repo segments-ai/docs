@@ -48,7 +48,7 @@ This feature is only available in the 3D point cloud cuboid interface.
 1. Click/hover over the tachometer icon in the toolbar on the right.
 2. Drag the slider to adjust the key pan speed, i.e. the speed the camera moves when using keyboard navigation.
 
-## View the synced images
+## View synced camera images
 
 If you uploaded one or more [camera images](../../reference/sample-types/#camera-image) to your sample, you can view them directly in the interface, or in a separate browser tab (which you can e.g. move to a second screen).
 
