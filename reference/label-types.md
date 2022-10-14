@@ -35,9 +35,11 @@ Format of the `attributes` field in [`client.get_label()`](../python-sdk.md#get-
 }
 ```
 
-{% hint style="info" %}
-The`segmentation_bitmap_url`refers to a 32-bit RGBA png image which contains the segmentation masks. The alpha channel is set to 255, and the remaining 24-bit values in the RGB channels correspond to the object ids in the `annotations` list. Unlabeled regions should have a value of 0. Because of the large dynamic range, these png images may appear black in an image viewer.
+{% hint style="warning" %}
+The`segmentation_bitmap_url`refers to a 32-bit RGBA png image which contains the segmentation masks. The alpha channel is set to 255, and the remaining 24-bit values in the RGB channels correspond to the object ids in the `annotations` list. Unlabeled regions should have a value of 0. Because of the large dynamic range, **these png images may appear black in an image viewer.**
+{% endhint %}
 
+{% hint style="info" %}
 **When downloading a label**, you can use the utility function `utils.load_label_bitmap_from_url(url)` in the Python SDK to load the label bitmap as a numpy array containing object ids.
 
 **When uploading a label**, the easiest way to transform a segmentation bitmap into this format and upload it is by using the util function`bitmap2file`:
