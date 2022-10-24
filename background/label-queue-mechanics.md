@@ -32,11 +32,11 @@ If a labeler presses the "Start labeling" button, they will get samples from the
 
 1. Samples which they started labeling but didn't finish yet. Only if the _save_ button is enabled.
 2. Samples they labeled but which were rejected in the reviewing step, and now need to be corrected.
-3. Unlabeled or prelabeled samples which are specifically assigned to this user, through the `assigned_labeler` field.
+3. Unlabeled or prelabeled samples which are [specifically assigned](../guides/customize-label-queue.md#assign-a-specific-labeler-or-reviewer) to this user, through the `assigned_labeler` field.
 4. Unlabeled or prelabeled samples which are not assigned to a specific user.
 5. If no such samples exist, the label queue is empty and no more samples need to be labeled.
 
-Within each step, samples with higher priority are returned first. Read more about how you can [customize the queue priority](../guides/customize-label-queue-priority.md).
+Within each step, samples with higher priority are returned first. Read more about how you can [customize the queue priority](../guides/customize-label-queue.md).
 
 ### Review queue
 
@@ -53,8 +53,8 @@ If a reviewer presses the _Start reviewing_ button, they will get samples from t
 
 1. Samples which they started reviewing but didn't finish yet. Only if the save button is enabled.
 2. Samples they rejected before and have now been corrected by the original labeler, so they need to be reviewed again.
-3. Labeled samples which are specifically assigned to this user, through the `assigned_reviewer` field.
+3. Labeled samples which are [specifically assigned](../guides/customize-label-queue.md#assign-a-specific-labeler-or-reviewer) to this user, through the `assigned_reviewer` field.
 4. Labeled samples which are not assigned to a specific user, and which haven’t been labeled by this user (to avoid reviewing their own labeled samples if a team participates in both labeling and reviewing).
 5. Labeled samples which are not assigned to a specific user, independent of who labeled them before (to prevent deadlock if a single user wants to both label and review a dataset).
 
-Within each step, samples with higher priority are returned first. Read more about how you can [customize the queue priority](../guides/customize-label-queue-priority.md).
+Within each step, samples with higher priority are returned first. Read more about how you can [customize the queue priority](../guides/customize-label-queue.md#set-sample-priority).
