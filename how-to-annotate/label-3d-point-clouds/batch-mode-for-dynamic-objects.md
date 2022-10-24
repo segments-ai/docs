@@ -25,7 +25,12 @@ To exit batch mode, either:
 
 ## Select a frame
 
-1. Select a frame by clicking somewhere in the frame. If you want to select the previous or next frame, press the back or forward arrow, respectively.
+Clicking somewhere in a frame to select the frame. If you want to select the previous or next frame, press the back or forward arrow, respectively.
+
+## Zoom in/out
+
+* Double-click a view to zoom in on that view.
+* Press the hotkey (`Shift` by default) + double-click a view to zoom out on that view.
 
 ## Edit the object
 

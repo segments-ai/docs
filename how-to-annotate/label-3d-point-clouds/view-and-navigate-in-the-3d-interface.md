@@ -12,6 +12,10 @@ Hold the hotkey (`Ctrl/cmd` by default) and click and drag, or simply click and 
 
 Hold the hotkey (`Shift` by default) and click and drag.
 
+## Zoom in/out
+
+To zoom in or out, scroll using the mouse wheel.
+
 ## Zoom to an object
 
 1. Select the object.
