@@ -30,6 +30,8 @@ You can learn about adding, moving, and removing keyframes on this page:
 [use-keyframe-interpolation.md](../label-sequences-of-data/use-keyframe-interpolation.md)
 {% endcontent-ref %}
 
+<figure><img src="../../.gitbook/assets/image (25) (1).png" alt=""><figcaption><p>An example of keyframes (blue diamonds) and a remove-keyframe (grey circle with cross).</p></figcaption></figure>
+
 ## How to find objects
 
 In order to find objects to label, you can use the main point cloud viewer. You can move through the interface either by using your mouse or the hotkeys (wasd by default). Learn more about navigating on the following page:
@@ -51,6 +53,8 @@ If the point cloud sequence has images associated with it, they can often be hel
     Tip: you can use the [batch mode](batch-mode-for-dynamic-objects.md) for navigating through a sequence faster
 6. [Remove the cuboid](3d-point-cloud-cuboid-interface.md#remove-a-cuboid) in the frame where the object disappears
 
+<figure><img src="../../.gitbook/assets/merged-view-compr.gif" alt="Merged point cloud view"><figcaption><p>Use the merged point cloud view to see the full dimensions of a static object. </p></figcaption></figure>
+
 ## How to label a dynamic object
 
 1. Go to the first frame where the static object is visible
@@ -61,7 +65,13 @@ If the point cloud sequence has images associated with it, they can often be hel
 6. [Open the batch mode](batch-mode-for-dynamic-objects.md#switch-to-the-batch-mode)
 7. Adjust the object in the frames where the cuboid’s position is the farthest away from the real object’s position
 8. When the sequence is roughly labeled, go through the sequence by using the arrow keys and make fine adjustments using keyboard hotkeys
+9. [Close the batch mode](batch-mode-for-dynamic-objects.md#exit-batch-mode)
+
+<figure><img src="../../.gitbook/assets/batch-compr.gif" alt=""><figcaption><p>Use batch mode to quickly adjust a cuboid in a point cloud sequence.</p></figcaption></figure>
 
 ## How to label a static object that starts moving
 
-Labeling a static object that starts moving is basically the same as labeling a dynamic object. To label the static part, place a keyframe on the first frame where the object is static. Then add a keyframe to the last frame where the object is static ([by double-clicking under the frame](../label-sequences-of-data/use-keyframe-interpolation.md#in-a-different-frame)). This way, you make sure that the object remains static between the keyframes.
+Labeling a static object that starts moving is basically the same as labeling a dynamic object. To label the static part:
+
+1. Place a keyframe on the first frame where the object is static.
+2. Add a keyframe to the last frame where the object is static ([by double-clicking under the frame](../label-sequences-of-data/use-keyframe-interpolation.md#in-a-different-frame)). This way, you make sure that the object remains static between the keyframes.
