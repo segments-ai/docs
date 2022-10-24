@@ -56,5 +56,6 @@ If a reviewer presses the _Start reviewing_ button, they will get samples from t
 3. Labeled samples which are [specifically assigned](../guides/customize-label-queue.md#assign-a-specific-labeler-or-reviewer) to this user, through the `assigned_reviewer` field.
 4. Labeled samples which are not assigned to a specific user, and which haven’t been labeled by this user (to avoid reviewing their own labeled samples if a team participates in both labeling and reviewing).
 5. Labeled samples which are not assigned to a specific user, independent of who labeled them before (to prevent deadlock if a single user wants to both label and review a dataset).
+6. If no such samples exist, the review queue is empty and no more samples need to be reviewed.
 
 Within each step, samples with higher priority are returned first. Read more about how you can [customize the queue priority](../guides/customize-label-queue.md#set-sample-priority).
