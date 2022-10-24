@@ -73,5 +73,7 @@ If the point cloud sequence has images associated with it, they can often be hel
 
 Labeling a static object that starts moving is basically the same as labeling a dynamic object. To label the static part:
 
-1. Place a keyframe on the first frame where the object is static.
-2. Add a keyframe to the last frame where the object is static ([by double-clicking under the frame](../label-sequences-of-data/use-keyframe-interpolation.md#in-a-different-frame)). This way, you make sure that the object remains static between the keyframes.
+1. Place a keyframe on the first frame where the object is static
+2. Add a keyframe to the last frame where the object is static ([by double-clicking under the frame](../label-sequences-of-data/use-keyframe-interpolation.md#in-a-different-frame))
+
+This way, you make sure that the object remains static between the keyframes
