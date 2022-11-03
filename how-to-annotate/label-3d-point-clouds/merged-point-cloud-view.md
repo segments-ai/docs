@@ -1,5 +1,14 @@
 # Merged point cloud view
 
+{% hint style="info" %}
+Batch mode is only available for [3D tiles datasets](../../background/3d-tiles.md). \
+[Contact us](https://segments.ai/contact) to enable 3D tiles for your point clouds!&#x20;
+{% endhint %}
+
+{% hint style="info" %}
+Tip: [use your GPU in Chrome](https://sixth-smell-48e.notion.site/How-to-use-your-GPU-in-Chrome-2b95e19fb77c456c87f798013769a98a) to make sure the 3D point cloud interface runs smoothly.
+{% endhint %}
+
 ## Toggle the merged point cloud view
 
 Click on the "layers" icon in the right toolbar to toggle the merged point cloud view.

@@ -1,15 +1,19 @@
 # Batch mode (for dynamic objects)
 
+{% hint style="info" %}
+Batch mode is only available for [3D tiles datasets](../../background/3d-tiles.md). \
+[Contact us](https://segments.ai/contact) to enable 3D tiles for your point clouds!&#x20;
+{% endhint %}
+
+{% hint style="info" %}
+Tip: [use your GPU in Chrome](https://sixth-smell-48e.notion.site/How-to-use-your-GPU-in-Chrome-2b95e19fb77c456c87f798013769a98a) to make sure the 3D point cloud interface runs smoothly.
+{% endhint %}
+
 When labeling or reviewing dynamic objects in 3D point cloud sequences, working object by object is usually the most efficient way to obtain precise annotations. However, this means navigating through the different frames in a sequence constantly. To make this process more efficient, we developed batch mode. Batch mode shows you an object in multiple frames at the same time. This way, you can easily choose where to make adjustments to label an object, and easily review an object by simply scrolling through the frames.
 
 {% embed url="https://youtu.be/om5w69OErVs?t=121" %}
 This video shows how you can use batch mode to quickly adjust a cuboid.
 {% endembed %}
-
-{% hint style="info" %}
-Batch mode is only available for [3D tiles datasets](../../background/3d-tiles.md). \
-[Contact us](https://segments.ai/contact) to enable 3D tiles for your point clouds!&#x20;
-{% endhint %}
 
 ## Switch to the batch mode
 

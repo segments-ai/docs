@@ -8,6 +8,10 @@ description: >-
 
 ## General tips
 
+### Use your GPU in Chrome for better performance
+
+[Use your GPU in Chrome](https://sixth-smell-48e.notion.site/How-to-use-your-GPU-in-Chrome-2b95e19fb77c456c87f798013769a98a) to make sure the 3D point cloud interface runs smoothly.
+
 ### Label object by object
 
 By labeling object by object, we mean first labeling an object in the whole sequence, before moving on to the next object. This is typically easier and faster than labeling all objects on the first frame, then all objects on the second frame, and so on.
