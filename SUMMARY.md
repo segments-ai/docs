@@ -1,7 +1,6 @@
 # Table of contents
 
-* [Page 1](README.md)
-* [Introduction](<README (1).md>)
+* [Introduction](README.md)
 
 ## Tutorials
 
