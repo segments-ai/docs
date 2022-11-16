@@ -9,7 +9,7 @@ Tip: [use your GPU in Chrome](https://sixth-smell-48e.notion.site/How-to-use-you
 {% endhint %}
 
 {% embed url="https://youtu.be/om5w69OErVs" %}
-This video shows you how to label cuboids in 3D point cloud sequences on Segments.ai. Specifically, we'll use the [merged point cloud view](merged-point-cloud-view.md) to easily label static objects, and [batch mode](batch-mode-for-dynamic-objects.md) to label dynamic objects.
+This video shows you how to label cuboids in 3D point cloud sequences on Segments.ai. Specifically, we'll use the [merged point cloud view](merged-point-cloud-view-for-static-objects.md) to easily label static objects, and [batch mode](batch-mode-for-dynamic-objects.md) to label dynamic objects.
 {% endembed %}
 
 ## Create a new cuboid

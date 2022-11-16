@@ -49,7 +49,7 @@ If the point cloud sequence has images associated with it, they can often be hel
 ## How to label a static object
 
 1. Go to the first frame where the static object is visible
-2. [Toggle the merged point cloud](merged-point-cloud-view.md#toggle-the-merged-point-cloud-view) view if it is available
+2. [Toggle the merged point cloud](merged-point-cloud-view-for-static-objects.md#toggle-the-merged-point-cloud-view) view if it is available
 3. [Draw a cuboid](3d-point-cloud-cuboid-interface.md#create-a-new-cuboid) around the object
 4. Disable the merged point cloud view
 5.  Go through the sequence to find the frame where the object disappears

@@ -295,6 +295,56 @@ A cuboid annotation represents a single cuboid in a point cloud (frame).
 
 ![Diagram 2: yaw rotation of a cuboid. The red arrow shows the cuboid heading. yaw = π/2 corresponds to a heading in the direction of increasing y values, while yaw = -π/2 corresponds to a heading in the direction of decreasing y values.](../.gitbook/assets/yaw-diagram.png)
 
+### Vector label (polygon, polyline, keypoint)
+
+```json
+  "format_version": "0.1",
+  "annotations": [
+    {
+      "id": 2,
+      "category_id": 2,
+      "type": "polygon", // refers to the annotation type (polygon)
+      "points": [
+        [12.34, 56.78, 0], // x0, y0, z0 (starting point of the polygon)
+        [90.12, 34.56, 0], // x1, y1, z1
+        [78.91, 23.45, 0], // x2, y2, z2
+        [67.89, 98.76, 0], // x3, y3, z3
+        [54.32, 10.01, 0]  // x4, y4, z4
+      ],
+      "track_id": 2, // only in sequences
+      "is_keyframe": true, // only in sequences
+      "index": 0 // only in sequences 
+    },
+    {
+      "id": 3, 
+      "category_id": 3,
+      "type": "polyline", // refers to the annotation type (polyline)
+      "points": [
+        [12.34, 56.78, 0], // x0, y0, z0 (starting point of the polyline)
+        [90.12, 34.56, 0], // x1, y1, z1
+        [78.91, 23.45, 0], // x2, y2, z2
+        [67.89, 98.76, 0], // x3, y3, z3
+        [54.32, 10.01, 0]  // x4, y4, z4
+      ],
+      "track_id": 1, // only in sequences
+      "is_keyframe": false, // only in sequences
+      "index": 1 // only in sequences 
+    },
+    {
+      "id": 4,
+      "category_id": 4,
+      "type": "point", // refers to the annotation type (keypoint)
+      "points": [
+        [12.34, 56.78, 0] // x, y, z (coordinates of keypoint)
+      ],
+      "track_id": 3, // only in sequences
+      "is_keyframe": false, // only in sequences
+      "index": 2 // only in sequences 
+    }
+  ]
+}
+```
+
 ## 3D point cloud sequence
 
 ### Segmentation label
@@ -354,9 +404,56 @@ Where each frames object has the following format:
 | `format_version` | `string`                                                 | Format version.                                        |
 | `frames`         | `array` of [cuboid labels](label-types.md#cuboid-labels) | List of cuboid labels (one per frame in the sequence). |
 
+### Vector label (polygon, polyline, keypoint)
+
+Format of the `attributes` field in [`client.get_label()`](../python-sdk.md#get-a-label):
+
+```json
+{
+  "format_version": "0.2",
+  "frames": [
+    { ... },
+    { ... },
+    { ... }
+  ]
+}
+```
+
+| Name             | Type                                                                              |                                                        |
+| ---------------- | --------------------------------------------------------------------------------- | ------------------------------------------------------ |
+| `format_version` | `string`                                                                          | Format version.                                        |
+| `frames`         | `array` of [vector labels](label-types.md#vector-label-polygon-polyline-keypoint) | List of vector labels (one per frame in the sequence). |
+
 ## Text
 
-### Named entity recognition and span categorization
+### Named entity recognition
+
+Format of the `attributes` field in [`client.get_label()`](../python-sdk.md#get-a-label):
+
+```json
+{
+    "format_version": "0.1",
+    "annotations": [
+        {
+            "start": 0, // the first character index of the label
+            "end": 5, // the last character index of the the label (exclusive)
+            "category_id": 1 // the category id
+        },
+        {
+            "start": 7, 
+            "end": 12, 
+            "category_id": 0
+        },
+        {
+            "start": 20, 
+            "end": 30, 
+            "category_id": 2
+        },
+    ]
+}
+```
+
+### Span categorization
 
 Format of the `attributes` field in [`client.get_label()`](../python-sdk.md#get-a-label):
 
