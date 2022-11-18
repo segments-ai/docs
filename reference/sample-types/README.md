@@ -53,7 +53,7 @@ Supported image formats:  jpeg, png, bmp.
 {
     "pcd": {
         "url": "https://example.com/pointcloud.bin",
-        "type": "kitti"  // optional, "pcd" by default
+        "type": "kitti"
     },
     "images": [
         { ... },
@@ -95,14 +95,14 @@ See [3D point cloud formats](supported-file-formats.md#3d-point-cloud) for the s
 ```json
 {
     "url": "https://example.com/pointcloud.bin",
-    "type": "kitti"  // optional, "pcd" by default
+    "type": "kitti"
 }
 ```
 
-| Name   | Type                                                                        | Description                                                                                                                                                                    |
-| ------ | --------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `url`  | `string`                                                                    | **Required.** URL of the point cloud data.                                                                                                                                     |
-| `type` | `string`: "pcd" \| "binary-xyzi" \| "kitti" \| "binary-xyzir" \| "nuscenes" | Type of the point cloud data. "pcd" by default. See [#3d-point-cloud](supported-file-formats.md#3d-point-cloud "mention") file formats for the list of supported file formats. |
+| Name   | Type                                                                        | Description                                                                                                                                                                |
+| ------ | --------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `url`  | `string`                                                                    | **Required.** URL of the point cloud data.                                                                                                                                 |
+| `type` | `string`: "pcd" \| "binary-xyzi" \| "kitti" \| "binary-xyzir" \| "nuscenes" | **Required.** Type of the point cloud data. See [#3d-point-cloud](supported-file-formats.md#3d-point-cloud "mention") file formats for the list of supported file formats. |
 
 ### Camera image
 
