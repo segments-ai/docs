@@ -42,6 +42,11 @@ Tip: [use your GPU in Chrome](https://sixth-smell-48e.notion.site/How-to-use-you
    * Click on the eraser icon in the left toolbar, and then use the selection tool. The newly selected points will now be removed from the active object.
    * Use the selection tool, and hold the shortcut (`e` by default) to remove points from the active object.
 
+## Remove an object
+
+1. Select the object you want to remove.
+2. Press the hotkey (`Backspace` by default) or click the trash icon next to the object in the objects sidebar on the right.
+
 ## Select an object
 
 #### Using the "View and select" tool

@@ -25,6 +25,17 @@ To zoom in or out, scroll using the mouse wheel.
 1. Select the object.
 2. Press the hotkey (`t` by default).
 
+## Hide objects
+
+### Hide/show a single object
+
+1. Hover over the object you want to hide/show in the objects sidebar.
+2. Press the eye icon.
+
+### Hide/show all unselected instances
+
+Press the hotkey (`h` by default).
+
 ## Pan to a bird's eye view in the perspective view
 
 Press the hotkey (`Ctrl/cmd + b` by default).
