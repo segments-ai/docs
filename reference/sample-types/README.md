@@ -49,6 +49,10 @@ Supported image formats:  jpeg, png, bmp.
 
 ## 3D point cloud
 
+{% hint style="info" %}
+On Segments.ai, the up direction is defined along the z-axis, i.e. the vector (0, 0, 1) points up. If you upload point clouds with a different up direction, you might have trouble navigating the point cloud.
+{% endhint %}
+
 ```json
 {
     "pcd": {
@@ -110,6 +114,10 @@ A calibrated or uncalibrated reference image corresponding to a point cloud. The
 
 {% hint style="info" %}
 Calibrated camera images are a beta feature. The definition of the camera parameters might still change. Contact us if you have any feedback.
+{% endhint %}
+
+{% hint style="info" %}
+The up vector of the camera is defined as (0, 0, 1) on Segments.ai.
 {% endhint %}
 
 ```json
