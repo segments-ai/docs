@@ -16,6 +16,12 @@ Hold the hotkey (`Ctrl/cmd` by default) and click and drag, or simply click and 
 
 Hold the hotkey (`Shift` by default) and click and drag.
 
+## Set the rotation point
+
+* The rotation point is initialized at the center of the point cloud.&#x20;
+* If you [zoom to an object](view-and-navigate-in-the-3d-interface.md#zoom-to-an-object), the rotation point will move to the center of that object.&#x20;
+* You can manually set the rotation point by middle-clicking on any point of the point cloud. The changed rotation point will then be visible for a short time.
+
 ## Zoom in/out
 
 To zoom in or out, scroll using the mouse wheel.
