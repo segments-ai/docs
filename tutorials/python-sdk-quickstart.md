@@ -31,7 +31,7 @@ client = SegmentsClient(api_key)
 
 ## Create a new dataset
 
-Let's create a new image segmentation dataset programmatically using [`client.add_dataset()`](../python-sdk.md#create-a-dataset). Note that this dataset will be created under the user account corresponding to the API key.
+Let's create a new image segmentation dataset programmatically using [`client.add_dataset()`](https://sdkdocs.segments.ai/en/latest/client.html#create-a-dataset). Note that this dataset will be created under the user account corresponding to the API key.
 
 {% hint style="info" %}
 The format of the `task_attributes` field is documented [here](../reference/categories-and-task-attributes.md).
@@ -66,7 +66,7 @@ print(dataset)
 
 ## Add samples to a dataset
 
-Now let's upload some images to this dataset using [`client.add_sample()`](../python-sdk.md#create-a-sample).
+Now let's upload some images to this dataset using [`client.add_sample()`](https://sdkdocs.segments.ai/en/latest/client.html#create-a-sample).
 
 ```python
 dataset_identifier = 'jane/pets' # a dataset is always referred to as user/dataset.
@@ -98,10 +98,10 @@ for image in images:
 ```
 
 {% hint style="warning" %}
-If the image file is on your local computer, you should first upload it to [our asset storage service](../python-sdk.md#upload-a-file-as-an-asset) (using [`upload_asset()`](python-sdk-quickstart.md#upload-a-file-as-an-asset)) or to another cloud storage service.
+If the image file is on your local computer, you should first upload it to our asset storage service (using [`upload_asset()`](https://sdkdocs.segments.ai/en/latest/client.html#upload-an-asset-to-segments-s3-bucket)) or to another cloud storage service.
 {% endhint %}
 
-We can verify that the dataset now contains 3 images using [`client.get_samples()`](../python-sdk.md#list-samples).
+We can verify that the dataset now contains 3 images using [`client.get_samples()`](https://sdkdocs.segments.ai/en/latest/client.html#list-samples).
 
 ```python
 samples = client.get_samples(dataset)
@@ -112,7 +112,7 @@ Now switch to the Segments.ai web platform and label the three images you just u
 
 ## Get the label of a sample
 
-Once you've labeled some samples, you can programmatically retrieve their labels using [`client.get_label()`](../python-sdk.md#get-a-label).
+Once you've labeled some samples, you can programmatically retrieve their labels using [`client.get_label()`](https://sdkdocs.segments.ai/en/latest/client.html#get-a-label).
 
 ```python
 dataset = 'jane/pets'
@@ -152,6 +152,6 @@ plt.show()
 
 ## What's next?
 
-The Python SDK offers many more functions besides the ones that were shown here. Have a look at the [reference](../python-sdk.md) for the full list.
+The Python SDK offers many more functions besides the ones that were shown here. Have a look at the [reference](https://sdkdocs.segments.ai/en/latest/client.html) for the full list.
 
 The Python SDK can also be used to upload labels into Segments.ai. This is particularly useful for setting up [model-assisted labeling](model-assisted-labeling.md) workflows, where you verify and correct model predictions instead of labeling from scratch.
