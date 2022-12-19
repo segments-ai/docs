@@ -46,6 +46,14 @@ Press the hotkey (`h` by default).
 
 Press the hotkey (`Ctrl/cmd + b` by default).
 
+## Switch to an orthographic top view for the main view.
+
+Click on the camera icon in the toolbar on the right, or press the hotkey (`v` by default).&#x20;
+
+{% hint style="info" %}
+This feature is only available in the 3D point cloud cuboid interface.
+{% endhint %}
+
 ## Enable intensity coloring
 
 1. Upload a point cloud with intensity labels.
