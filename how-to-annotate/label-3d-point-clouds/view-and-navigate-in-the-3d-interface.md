@@ -51,7 +51,7 @@ Press the hotkey (`Ctrl/cmd + b` by default).
 Click on the camera icon in the toolbar on the right, or press the hotkey (`v` by default).&#x20;
 
 {% hint style="info" %}
-This feature is only available in the 3D point cloud cuboid interface.
+This feature is only available in the 3D point cloud cuboid and vector interface.
 {% endhint %}
 
 ## Enable intensity coloring
