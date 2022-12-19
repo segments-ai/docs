@@ -1,4 +1,4 @@
-# File formats
+# Supported file formats
 
 ## Image
 
@@ -13,6 +13,10 @@ Following image file formats are supported: jpeg, png, bmp.
 Any other fields will be ignored.
 
 <table><thead><tr><th>Field name</th><th data-type="number">Size (#bytes)</th><th>Type</th><th data-type="checkbox">Required</th></tr></thead><tbody><tr><td>x</td><td>4</td><td>float</td><td>true</td></tr><tr><td>y</td><td>4</td><td>float</td><td>true</td></tr><tr><td>z</td><td>4</td><td>float</td><td>true</td></tr><tr><td>intensity</td><td>4</td><td>float</td><td>false</td></tr><tr><td>rgb</td><td>4</td><td>float</td><td>false</td></tr></tbody></table>
+
+{% hint style="warning" %}
+Please make sure that you supply the values as 32-bit (=4 byte) floats.
+{% endhint %}
 
 ### Binary xyzi(r) (KITTI/nuScenes)
 
