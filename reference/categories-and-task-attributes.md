@@ -20,12 +20,16 @@ When [editing the category and task attribute configuration directly](https://do
 }
 ```
 
-| Name               | Type                                                                  | Description                                                                |
-| ------------------ | --------------------------------------------------------------------- | -------------------------------------------------------------------------- |
-| `categories`       | `array` of [categories](categories-and-task-attributes.md#categories) | **Required.** List of all possible categories for a label in this dataset. |
-| `image_attributes` | `array` of [attributes](categories-and-task-attributes.md#attributes) | List of image-level attributes.                                            |
+| Name               | Type                                                                 | Description                                                                |
+| ------------------ | -------------------------------------------------------------------- | -------------------------------------------------------------------------- |
+| `categories`       | `array` of [categories](categories-and-task-attributes.md#category)  | **Required.** List of all possible categories for a label in this dataset. |
+| `image_attributes` | `array` of [attributes](categories-and-task-attributes.md#attribute) | List of image-level attributes.                                            |
 
-### Categories
+{% hint style="warning" %}
+The `categories` array should contain at least one category.
+{% endhint %}
+
+### Category
 
 ```json
 {
@@ -57,7 +61,7 @@ When [editing the category and task attribute configuration directly](https://do
 | `dimensions`    | <p><code>object</code>: {<br>    "x": <code>float</code>,<br>    "y": <code>float</code>,<br>    "z": <code>float</code><br>}</p> | Default XYZ dimensions of a new cuboid. Only valid in the point cloud cuboid editor (see [#create-a-cuboid-with-default-dimensions](../how-to-annotate/label-3d-point-clouds/3d-point-cloud-cuboid-interface.md#create-a-cuboid-with-default-dimensions "mention")). |
 | ...             | ...                                                                                                                               | Other key-value pairs can be supplied, but will be ignored.                                                                                                                                                                                                          |
 
-### Attributes
+### Attribute
 
 ```json5
 {
