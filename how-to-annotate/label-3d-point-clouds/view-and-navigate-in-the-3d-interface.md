@@ -46,7 +46,11 @@ Press the hotkey (`h` by default).
 
 Press the hotkey (`Ctrl/cmd + b` by default).
 
-## Switch to an orthographic top view for the main view.
+## Pan to initial camera view
+
+Press the hotkey (`Ctrl/cmd + i` by default).
+
+## Switch to an orthographic top view for the main view
 
 Click on the camera icon in the toolbar on the right, or press the hotkey (`v` by default).&#x20;
 
