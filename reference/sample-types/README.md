@@ -18,6 +18,10 @@ Supported image formats:  jpeg, png, bmp.
 }
 ```
 
+{% hint style="warning" %}
+If the image file is on your local computer, you should first upload it to our asset storage service (using [`upload_asset()`](https://sdkdocs.segments.ai/en/latest/client.html#upload-an-asset-to-segments-s3-bucket)) or to another cloud storage service.
+{% endhint %}
+
 ## Image sequence
 
 Supported image formats:  jpeg, png, bmp.
@@ -108,6 +112,10 @@ See [3D point cloud formats](supported-file-formats.md#3d-point-cloud) for the s
 | `url`  | `string`                                                                    | **Required.** URL of the point cloud data.                                                                                                                                 |
 | `type` | `string`: "pcd" \| "binary-xyzi" \| "kitti" \| "binary-xyzir" \| "nuscenes" | **Required.** Type of the point cloud data. See [#3d-point-cloud](supported-file-formats.md#3d-point-cloud "mention") file formats for the list of supported file formats. |
 
+{% hint style="warning" %}
+If the point cloud file is on your local computer, you should first upload it to our asset storage service (using [`upload_asset()`](https://sdkdocs.segments.ai/en/latest/client.html#upload-an-asset-to-segments-s3-bucket)) or to another cloud storage service.
+{% endhint %}
+
 ### Camera image
 
 A calibrated or uncalibrated reference image corresponding to a point cloud. The reference images can be opened in a new tab from within the labeling interface. You can determine the layout of the images by setting the `row` and `col` attributes on each image. If you also supply the calibration parameters, the main point cloud view can be set to the image to obtain a fused view. In this case, your image should be rectified before uploading.
@@ -155,6 +163,10 @@ The up vector of the camera is defined as (0, 0, 1) on Segments.ai.
 | `col`        | `int`                                     | **Required.** Column of this image in the images viewer.                    |
 | `intrinsics` | [Camera intrinsics](./#camera-intrinsics) | Intrinsic parameters of the camera.                                         |
 | `extrinsics` | [Camera extrinsics](./#undefined)         | Extrinsic parameters of the camera relative to the [ego pose](./#ego-pose). |
+
+{% hint style="warning" %}
+If the image file is on your local computer, you should first upload it to our asset storage service (using [`upload_asset()`](https://sdkdocs.segments.ai/en/latest/client.html#upload-an-asset-to-segments-s3-bucket)) or to another cloud storage service.
+{% endhint %}
 
 #### Camera intrinsics
 
