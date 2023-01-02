@@ -5,7 +5,15 @@
 In Segments.ai, keyframe interpolation is used for object labels that change over time. For example, in a sequence with a moving car, the bounding box around the car moves in each frame. With keyframe interpolation, you only need to specify the label at certain key times, and the intermediate labels will be created automatically.
 
 {% hint style="info" %}
-Keyframe interpolation is enabled for 2D bounding box labels, and for 3D cuboid labels.&#x20;
+Keyframe interpolation is available for 2D bounding box labels, and for 3D cuboid labels.&#x20;
+{% endhint %}
+
+{% hint style="warning" %}
+#### [Object attributes](../../reference/label-types.md#object-attributes) and interpolation
+
+Editing an object-level attribute will create a new keyframe, and attribute values are copied between keyframes. This means that if you edit an object-level attribute, its value will be copied until the next existing keyframe.
+
+If want to change an attribute of an object with existing keyframes, make sure to change the value on **all** necessary keyframes.
 {% endhint %}
 
 ## View the keyframes of an object
