@@ -73,6 +73,7 @@ The `categories` array should contain at least one category.
         "red"
     ],
     "default_value": "red" // optional
+    "is_mandatory": true // optional
 }
 ```
 
@@ -85,6 +86,7 @@ The `categories` array should contain at least one category.
 | `max`           | `string`                                               | Valid when `input_type` is `number`. Maximum value the attribute can be.                             |
 | `step`          | `string`                                               | Valid when `input_type` is `number`. Step when incrementing/decrementing the value of the attribute. |
 | `default_value` | `string` \| `boolean` depending on `input_type`        | Default value of the attribute.                                                                      |
+| `is_mandatory`  | `boolean`                                              | Whether the attribute is mandatory. Mandatory attributes raise a warning when not filled in.         |
 
 #### Additional examples
 
@@ -111,7 +113,8 @@ The `categories` array should contain at least one category.
 {
     "name": "is_electric",
     "input_type": "checkbox",
-    "default_value": false // optional
+    "default_value": false, // optional
+    "is_mandatory": true // optional
 }
 ```
 
