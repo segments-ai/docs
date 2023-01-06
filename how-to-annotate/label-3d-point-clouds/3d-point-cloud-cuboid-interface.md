@@ -64,13 +64,17 @@ You can quickly draw a cuboid with an arbitrary rotation using our 3-click cuboi
 
 ## Rotate a cuboid
 
+{% hint style="info" %}
+By default, only yaw rotation (around the z-axis) is enabled. To enable full 3D rotation, visit the dataset settings, select the "Labeling" tab, tick the "Enable 3D cuboid rotation" checkbox, and press "Save".
+{% endhint %}
+
 1. Select the "Select and edit" tool by clicking on the pointer icon in the toolbar on the left, or by pressing the hotkey (`Esc` by default).
 2. Select the cuboid you want to rotate.
-3. Click and drag the red rotation plane in front of the cuboid to rotate the cuboid or use the hotkeys:
-   * Rotate 1° counterclockwise: `f` by default
-   * Rotate 1° clockwise: `g` by default
-   * Rotate 45° counterclockwise: `Shift + F` by default
-   * Rotate 45° clockwise: `Shift + G` by default
+3. Click and drag the red rotation plane attached to the cuboid to rotate the cuboid or use the hotkeys:
+   * Rotate 1° counterclockwise (yaw): `f` by default
+   * Rotate 1° clockwise (yaw): `g` by default
+   * Rotate 45° counterclockwise (yaw): `Shift + F` by default
+   * Rotate 45° clockwise (yaw): `Shift + G` by default
 
 ## Change the heading of a cuboid
 
