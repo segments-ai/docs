@@ -4,13 +4,19 @@
 Tip: [use your GPU in Chrome](https://sixth-smell-48e.notion.site/How-to-use-your-GPU-in-Chrome-2b95e19fb77c456c87f798013769a98a) to make sure the 3D point cloud interface runs smoothly.
 {% endhint %}
 
-## Move the camera
+## Move/pan the camera
 
 Hold the hotkey (`Ctrl/cmd` by default) and click and drag, or simply click and drag the right mouse button.
 
 #### Only in the perspective view
 
 * Use the keyboard navigation (by default: `w` to move forward, `a` to move left, `s` to move backward, `d` to move right, `Shift + W` to move up, `Shift + S` to move down).
+
+## Toggle map panning
+
+When you pan the camera, the camera moves along the ground plane by default. If you disable map panning, the camera instead pans along the camera plane (i.e. moving the mouse up moves the point cloud up as well).
+
+To toggle map panning, click on the map icon in the toolbar on the right.
 
 ## Rotate/orbit the camera in the perspective view
 
