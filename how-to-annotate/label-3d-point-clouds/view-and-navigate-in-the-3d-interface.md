@@ -12,21 +12,9 @@ Hold the hotkey (`Ctrl/cmd` by default) and click and drag, or simply click and 
 
 * Use the keyboard navigation (by default: `w` to move forward, `a` to move left, `s` to move backward, `d` to move right, `Shift + W` to move up, `Shift + S` to move down).
 
-## Toggle map panning
-
-When you pan the camera, the camera moves along the ground plane by default. If you disable map panning, the camera instead pans along the camera plane (i.e. moving the mouse up moves the point cloud up as well).
-
-To toggle map panning, click on the map icon in the toolbar on the right.
-
 ## Rotate/orbit the camera in the perspective view
 
 Hold the hotkey (`Shift` by default) and click and drag.
-
-## Set the rotation point
-
-* The rotation point is initialized at the center of the point cloud.&#x20;
-* If you [zoom to an object](view-and-navigate-in-the-3d-interface.md#zoom-to-an-object), the rotation point will move to the center of that object.&#x20;
-* You can manually set the rotation point by middle-clicking on any point of the point cloud. The changed rotation point will then be visible for a short time.
 
 ## Zoom in/out
 
@@ -36,6 +24,18 @@ To zoom in or out, scroll using the mouse wheel.
 
 1. Select the object.
 2. Press the hotkey (`t` by default).
+
+## Toggle map panning in the perspective view
+
+When you pan the camera, the camera moves along the ground plane by default. If you disable map panning, the camera instead pans along the camera plane (i.e. moving the mouse up moves the point cloud up as well).
+
+To toggle map panning, click on the map icon in the toolbar on the right.
+
+## Set the rotation point
+
+* The rotation point is initialized at the center of the point cloud.&#x20;
+* If you [zoom to an object](view-and-navigate-in-the-3d-interface.md#zoom-to-an-object), the rotation point will move to the center of that object.&#x20;
+* You can manually set the rotation point by middle-clicking on any point of the point cloud. The changed rotation point will then be visible for a short time.
 
 ## Hide objects
 
