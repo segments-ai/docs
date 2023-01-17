@@ -120,14 +120,6 @@ If the point cloud file is on your local computer, you should first upload it to
 
 A calibrated or uncalibrated reference image corresponding to a point cloud. The reference images can be opened in a new tab from within the labeling interface. You can determine the layout of the images by setting the `row` and `col` attributes on each image. If you also supply the calibration parameters, the main point cloud view can be set to the image to obtain a fused view. In this case, your image should be rectified before uploading.
 
-{% hint style="info" %}
-Calibrated camera images are a beta feature. The definition of the camera parameters might still change. Contact us if you have any feedback.
-{% endhint %}
-
-{% hint style="info" %}
-The up vector of the camera is defined as (0, 0, 1) on Segments.ai.
-{% endhint %}
-
 ```json
 {
     "url": "https://example.com/image.jpg",
