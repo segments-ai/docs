@@ -291,9 +291,15 @@ A cuboid annotation represents a single cuboid in a point cloud (frame).
 | `is_keyframe` | `boolean`                                                                                                                         | Whether this cuboid annotation is a keyframe or an interpolated frame. Only relevant for sequences.                                                                                                                                                                                      |
 | `index`       | `integer`                                                                                                                         | The frame index. Only relevant for sequences.                                                                                                                                                                                                                                            |
 
-![Diagram 1: x and y attributes of the cuboid dimensions. The red arrow shows the cuboid heading.](<../.gitbook/assets/dimensions-diagram (1).png>)
+<div>
 
-![Diagram 2: yaw rotation of a cuboid. The red arrow shows the cuboid heading. yaw = π/2 corresponds to a heading in the direction of increasing y values, while yaw = -π/2 corresponds to a heading in the direction of decreasing y values.](../.gitbook/assets/yaw-diagram.png)
+<img src="../.gitbook/assets/dimensions-diagram.png" alt="Diagram 1: x and y attributes of the cuboid dimensions. The red arrow shows the cuboid heading.">
+
+ 
+
+<figure><img src="../.gitbook/assets/yaw-diagram.png" alt=""><figcaption><p>Diagram 2: yaw rotation of a cuboid. The red arrow shows the cuboid heading. yaw = π/2 corresponds to a heading in the direction of increasing y values, while yaw = -π/2 corresponds to a heading in the direction of decreasing y values.</p></figcaption></figure>
+
+</div>
 
 ### Vector label (polygon, polyline, keypoint)
 
