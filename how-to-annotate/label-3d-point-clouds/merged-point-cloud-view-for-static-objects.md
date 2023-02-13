@@ -1,7 +1,7 @@
 # Merged point cloud view (for static objects)
 
 {% hint style="info" %}
-Batch mode is only available for [3D tiles datasets](../../background/3d-tiles.md). [Contact us](https://segments.ai/contact) to enable 3D tiles for your point clouds!&#x20;
+The merged point cloud view is only available for 3D vector labeling (cuboids, polygons, polylines, keypoints).
 {% endhint %}
 
 {% hint style="info" %}
