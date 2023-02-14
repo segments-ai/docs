@@ -76,3 +76,22 @@ A remove-keyframe is a visual indication of where an object was removed from the
 1. Select the object.
 2. In the timeline, click the remove-keyframe you want to remove.
 3. Press the `Backspace` key to remove the remove-keyframe. The interpolation will be recalculated immediately.
+
+## Label occluded objects
+
+Sometimes an object might be occluded, in which case you might want the object to not be present in certain frames and reappear in other frames. There are several ways to obtain this.
+
+One procedure is to ...
+
+1. Label a cuboid
+2. Adjust the cuboid on the first frame where it _reappears_. This will create a keyframe.
+3. Remove the cuboid on the first frame where it _starts being occluded_. The removal will carry through to the next keyframe which is the first frame where it reappears.
+
+Another procedure is to ...
+
+1. Label a cuboid
+2. Remove the cuboid in the first frame where it _starts being occluded_.
+3. Label a _new_ cuboid in the first frame where it _reappears_
+4. Change the track ID of the _new_ cuboid into the track ID of the initial cuboid. This will merge both cuboids together on a single track.
+
+<figure><img src="../../.gitbook/assets/remove.png" alt=""><figcaption></figcaption></figure>
