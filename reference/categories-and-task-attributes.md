@@ -77,16 +77,17 @@ The `categories` array should contain at least one category.
 }
 ```
 
-| Name            | Type                                                   | Description                                                                                                                                           |
-| --------------- | ------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `name`          | `string`                                               | **Required.** Name of the attribute.                                                                                                                  |
-| `input_type`    | `string`: `select` \| `text` \| `number` \| `checkbox` | **Required.** Type of the attribute.                                                                                                                  |
-| `values`        | `array` of `string`s                                   | **Required when** `input_type` **is** `select`**.** List of possible values.                                                                          |
-| `min`           | `string`                                               | Valid when `input_type` is `number`. Minimum value the attribute can be.                                                                              |
-| `max`           | `string`                                               | Valid when `input_type` is `number`. Maximum value the attribute can be.                                                                              |
-| `step`          | `string`                                               | Valid when `input_type` is `number`. Step when incrementing/decrementing the value of the attribute.                                                  |
-| `default_value` | `string` \| `boolean` depending on `input_type`        | Default value of the attribute.                                                                                                                       |
-| `is_mandatory`  | `boolean`                                              | Valid when `input_type` is `select`, `text` or `number`. Whether the attribute is mandatory. Mandatory attributes raise a warning when not filled in. |
+| Name             | Type                                                   | Description                                                                                                                                                                     |
+| ---------------- | ------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `name`           | `string`                                               | **Required.** Name of the attribute.                                                                                                                                            |
+| `input_type`     | `string`: `select` \| `text` \| `number` \| `checkbox` | **Required.** Type of the attribute.                                                                                                                                            |
+| `values`         | `array` of `string`s                                   | **Required when** `input_type` **is** `select`**.** List of possible values.                                                                                                    |
+| `min`            | `string`                                               | Valid when `input_type` is `number`. Minimum value the attribute can be.                                                                                                        |
+| `max`            | `string`                                               | Valid when `input_type` is `number`. Maximum value the attribute can be.                                                                                                        |
+| `step`           | `string`                                               | Valid when `input_type` is `number`. Step when incrementing/decrementing the value of the attribute.                                                                            |
+| `default_value`  | `string` \| `boolean` depending on `input_type`        | Default value of the attribute.                                                                                                                                                 |
+| `is_mandatory`   | `boolean`                                              | Valid when `input_type` is `select`, `text` or `number`. Whether the attribute is mandatory. Mandatory attributes raise a warning when not filled in.                           |
+| `is_track_level` | `boolean`                                              | Valid in sequence datasets. Whether an attribute should remain constant across all frames for an object with a certain track ID. If false, the attribute can change each frame. |
 
 #### Additional examples
 
