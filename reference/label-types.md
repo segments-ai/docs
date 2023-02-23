@@ -278,7 +278,7 @@ A cuboid annotation represents a single cuboid in a point cloud (frame).
     "qy": 0.0491566,
     "qz": 0.3096865,
     "qw": 0.9495672
-  },
+  },  // only when 3D cuboid rotation is enabled in dataset settings
   "track_id": 1,  // only in sequences
   "is_keyframe": true,  // only in sequences
   "index": 0,  // only in sequences 
