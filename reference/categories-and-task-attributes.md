@@ -74,6 +74,7 @@ The `categories` array should contain at least one category.
     ],
     "default_value": "red" // optional
     "is_mandatory": true // optional
+    "is_track_level: true // for sequence interfaces, optional
 }
 ```
 
