@@ -60,8 +60,8 @@ On Segments.ai, the up direction is defined along the z-axis, i.e. the vector (0
 ```json
 {
     "pcd": {
-        "url": "https://example.com/pointcloud.bin",
-        "type": "kitti"
+        "url": "https://example.com/pointcloud.pcd",
+        "type": "pcd"
     },
     "images": [
         { ... },
