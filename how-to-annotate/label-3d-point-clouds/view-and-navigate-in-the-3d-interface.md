@@ -64,11 +64,24 @@ Click on the camera icon in the toolbar on the right, or press the hotkey (`v` b
 This feature is only available in the 3D point cloud cuboid and vector interface.
 {% endhint %}
 
-## Enable intensity coloring
+## Gradient coloring
 
-1. Upload a point cloud with intensity labels.
-2. Click/hover over the sun icon in the toolbar on the right and select "Enable intensity coloring".
-3. _Optional:_ Choose a gradient by clicking on the gradient and selecting one from the list. You can also reverse the gradient by checking the box under "Reverse".
+Gradient coloring allows you to view your point cloud more clearly. Gradient coloring can be used to visualize the height of each point, or the intensity value of each point.
+
+#### Enable height coloring
+
+1. Hover over the sun icon in the toolbar on the right.
+2. Check the "Gradient coloring" checkbox.
+3. Choose "Height" in the "Gradient attribute" dropdown.
+4. _Optional:_ Choose a gradient by clicking on the gradient and selecting one from the list. You can also reverse the gradient by checking the box under "Reverse".
+
+#### Enable intensity coloring
+
+1. Upload a point cloud with intensity values. See [supported-file-formats.md](../../reference/sample-types/supported-file-formats.md "mention").
+2. Hover over the sun icon in the toolbar on the right.
+3. Check the "Gradient coloring" checkbox.
+4. Choose "Height" in the "Gradient attribute" dropdown.
+5. _Optional:_ Choose a gradient by clicking on the gradient and selecting one from the list. You can also reverse the gradient by checking the box under "Reverse".
 
 ## Change the size of the points
 
