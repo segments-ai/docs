@@ -12,7 +12,7 @@ Note that you can also assign a negative priority to a sample.
 
 To change the priority of a group of samples, select the samples you want to update and click the "Edit" button. In the pop-up window, fill in the desired priority value, and press "Update".
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 ### Set the priority programmatically
 
