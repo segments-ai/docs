@@ -18,7 +18,7 @@ Hold the hotkey (`Shift` by default) and click and drag.
 
 ## Zoom in/out
 
-To zoom in or out, scroll using the mouse wheel.
+To zoom in or out, scroll using the mouse wheel, or double-click in the viewer.
 
 ## Zoom to an object
 
