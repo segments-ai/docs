@@ -18,7 +18,7 @@ When you open a sample with images, you can see the thumbnails of the images at 
 {% embed url="https://segments.ai/blog/assets/images/improved-image-viewer/thumbs-trim-compr.mp4" %}
 
 {% hint style="info" %}
-The 3D overlay (of objects and the point cloud) is only visible if you specified the camera parameters of the image.
+The 3D overlay (of objects and the point cloud) is only visible if the camera parameters of the image are specified.
 {% endhint %}
 
 ## Zoom/pan in the image viewer
