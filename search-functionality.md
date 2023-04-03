@@ -6,7 +6,7 @@ description: >-
 
 # Search within a dataset
 
-![Search by metadata attributes and label content](<.gitbook/assets/image (2).png>)
+![Search by metadata attributes and label content](<.gitbook/assets/image (2) (1).png>)
 
 ## Search syntax
 

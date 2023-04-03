@@ -10,7 +10,7 @@ Attributes come in 4 types: select box, text, number, and checkbox. You can opti
 
 In the label editor, the object-level and image-level attributes will be shown in the sidebar on the right. The image-level attributes are always visible, while the object-level attributes are only shown when an object is selected and has a category with object-level attributes.
 
-![](<.gitbook/assets/image (4).png>)
+![](<.gitbook/assets/image (4) (2).png>)
 
 ### Editing the configuration file directly
 

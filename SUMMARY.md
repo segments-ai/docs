@@ -11,6 +11,7 @@
 ## How to annotate
 
 * [Label images](how-to-annotate/label-images/README.md)
+  * [View and navigate in the image interfaces](how-to-annotate/label-images/view-and-navigate-in-the-image-interfaces.md)
   * [Image segmentation interface](how-to-annotate/label-images/image-segmentation-interface.md)
   * [Image vector interface](how-to-annotate/label-images/image-vector-interface.md)
 * [Label 3D point clouds](how-to-annotate/label-3d-point-clouds/README.md)

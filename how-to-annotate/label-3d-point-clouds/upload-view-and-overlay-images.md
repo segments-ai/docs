@@ -70,5 +70,5 @@ You can interact with the images in the grid as follows:
 * To pan an image, click and drag on the image.
 * To open the image viewer in the main labeling window, click the camera icon in the top right corner of the image.&#x20;
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 

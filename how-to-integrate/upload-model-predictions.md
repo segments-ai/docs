@@ -40,7 +40,7 @@ Instead of uploading the labels as pre-labels of the ground truth label set, you
 
 ![](<../.gitbook/assets/image (5).png>)
 
-![](<../.gitbook/assets/image (12).png>)
+![](<../.gitbook/assets/image (12) (1).png>)
 
 First, create a new label set:
 

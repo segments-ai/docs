@@ -12,7 +12,7 @@ Each person that uses Segments signs into a personal account. Multiple personal 
 
 To create a new organization, click the plus-icon in the top navigation bar and select “New organization”. Choose a username for your organization in the next screen.
 
-![](<../.gitbook/assets/image (8) (2).png>)![](<../.gitbook/assets/image (25).png>)
+![](<../.gitbook/assets/image (8) (2) (1).png>)![](<../.gitbook/assets/image (25) (2).png>)
 
 When clicking the “Create organization” button, you will be taken to the organization account page.
 
@@ -20,7 +20,7 @@ When clicking the “Create organization” button, you will be taken to the org
 
 Each member of an organization can quickly access it via the profile button in the top navigation bar.
 
-![](<../.gitbook/assets/image (13).png>)
+![](<../.gitbook/assets/image (13) (1).png>)
 
 ## Create a dataset within an organization
 
