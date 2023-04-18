@@ -94,7 +94,7 @@ If the selected cuboid was created with default dimensions, the dimensions of th
 
 1. Select the cuboid.
 2. Open the category dropdown by clicking on the category name in the objects sidebar on the right, or by pressing the hotkey (`c` by default).
-3. Select a category by clicking on the desired category, **** or by using the arrow keys and pressing `Enter` to confirm.
+3. Select a category by clicking on the desired category, or by using the arrow keys and pressing `Enter` to confirm.
 
 #### Using the category hotkey
 

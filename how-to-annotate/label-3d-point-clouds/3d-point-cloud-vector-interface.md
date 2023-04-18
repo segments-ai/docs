@@ -77,7 +77,7 @@ Hover over a polygon point, a polyline point or a key point. The cursor changes 
 
 1. Select the vector.
 2. Open the category dropdown by clicking on the category name in the objects sidebar on the right, or by pressing the hotkey (`c` by default).
-3. Select a category by clicking on the desired category, **** or by using the arrow keys and pressing `Enter` to confirm.
+3. Select a category by clicking on the desired category, or by using the arrow keys and pressing `Enter` to confirm.
 
 #### Using the category hotkey
 

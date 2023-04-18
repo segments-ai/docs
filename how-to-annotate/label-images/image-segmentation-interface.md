@@ -39,7 +39,7 @@ You can switch seamlessly between drawing tools while labeling
 
 ### Brush
 
-1. Click the ![](<../../.gitbook/assets/image (1).png>)button in the left toolbar or press `b` to select the brush tool
+1. Click the ![](<../../.gitbook/assets/image (1) (2).png>)button in the left toolbar or press `b` to select the brush tool
 2. Change the brush size by adjusting the slider in the top left of the screen, or by scrolling your mouse wheel
 3. Click and drag on the image to draw
 
@@ -51,18 +51,32 @@ You can switch seamlessly between drawing tools while labeling
 
 ### Superpixels
 
-1. Click the ![](<../../.gitbook/assets/image (8).png>)button in the left toolbar or press s to select the superpixel tool
+1. Click the![](<../../.gitbook/assets/image (8).png>)button in the left toolbar or press s to select the superpixel tool
 2. Change the superpixel granularity by adjusting the slider in the top left of the screen, or by scrolling your mouse wheel
 3. Click on a superpixel to select the corresponding region, or drag across multiple superpixels to select more than one at a time
 4. Click a superpixel again to unselect the region
 
+More info in [this blog post](https://segments.ai/blog/superpixels).
+
 ### Autosegment
 
-1. Click the ![](<../../.gitbook/assets/image (25).png>)button in the left toolbar or press `a` to select the autosegment tool
+1. Click the![](<../../.gitbook/assets/image (25).png>)button in the left toolbar or press `a` to select the autosegment tool
 2. Draw a box around an object in the image through click and drag
 3. The object within the box will be automatically segmented
 
+More info in [this blog post](https://segments.ai/blog/autosegment).
+
+### Hover-and-click
+
+* Click the![](<../../.gitbook/assets/image (1).png>)button in the left toolbar or press `d` to select the hover-and-click tool
+* Hover with your mouse over the image to see mask suggestions appear
+* Click to select a suggested mask
+
+More info in [this blog post](https://segments.ai/blog/faster-labeling-with-meta-segment-anything-model).
+
 ## Erase and lock mode
+
+* The object within the box will be automatically segmented
 
 ### Erase mode
 
