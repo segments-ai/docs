@@ -14,4 +14,4 @@ In the label editor, the object-level and image-level attributes will be shown i
 
 ### Editing the configuration file directly
 
-If you click on the "Raw" tab, you can see the configuration in JSON format. You can copy-paste this configuration from one dataset to another, or update it programmatically using the [Python SDK](python-sdk.md#create-a-dataset). The configuration should adhere to the format defined [here](reference/categories-and-task-attributes.md).
+If you click on the "Raw" tab, you can see the configuration in JSON format. You can copy-paste this configuration from one dataset to another, or update it programmatically using the [Python SDK](https://sdkdocs.segments.ai/en/latest/client.html). The configuration should adhere to the format defined [here](reference/categories-and-task-attributes.md).

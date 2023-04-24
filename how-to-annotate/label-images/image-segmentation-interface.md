@@ -39,7 +39,7 @@ You can switch seamlessly between drawing tools while labeling
 
 ### Brush
 
-1. Click the ![](<../../.gitbook/assets/image (1) (2).png>)button in the left toolbar or press `b` to select the brush tool
+1. Click the ![](<../../.gitbook/assets/image (1).png>)button in the left toolbar or press `b` to select the brush tool
 2. Change the brush size by adjusting the slider in the top left of the screen, or by scrolling your mouse wheel
 3. Click and drag on the image to draw
 
@@ -68,7 +68,7 @@ More info in [this blog post](https://segments.ai/blog/autosegment).
 
 ### Hover-and-click
 
-* Click the![](<../../.gitbook/assets/image (1).png>)button in the left toolbar or press `d` to select the hover-and-click tool
+* Click the![](<../../.gitbook/assets/image (1) (1).png>)button in the left toolbar or press `d` to select the hover-and-click tool
 * Hover with your mouse over the image to see mask suggestions appear
 * Click to select a suggested mask
 
