@@ -68,7 +68,7 @@ Hover over a polygon point, a polyline point or a key point. The cursor changes 
 
 ## Remove a point from a vector
 
-1. Hover over a polygon or polyline point. The cursor change to a "grab cursor".
+1. Hover over a polygon or polyline point. The cursor changes to a "grab cursor".
 2. Click to remove this point.
 
 ## Change the category of a vector
