@@ -1,7 +1,7 @@
 # 3D point cloud vector interface
 
 {% hint style="info" %}
-When [creating a dataset](../../python-sdk.md#create-a-dataset) through the Python SDK, choose `pointcloud-vector` or `pointcloud-vector-sequence` as the `task_type` to use this labeling interface
+When [creating a dataset](https://sdkdocs.segments.ai/en/latest/client.html#create-a-dataset) through the Python SDK, choose `pointcloud-vector` or `pointcloud-vector-sequence` as the `task_type` to use this labeling interface
 {% endhint %}
 
 {% hint style="info" %}

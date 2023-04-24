@@ -5,7 +5,7 @@ Batch mode is only available for 3D cuboid labeling.
 {% endhint %}
 
 {% hint style="info" %}
-Tip: [use your GPU in Chrome](https://sixth-smell-48e.notion.site/How-to-use-your-GPU-in-Chrome-2b95e19fb77c456c87f798013769a98a) to make sure the 3D point cloud interface runs smoothly.
+Tip: [use your GPU in Chrome](https://segmentsai.notion.site/How-to-use-your-GPU-in-Chrome-2b95e19fb77c456c87f798013769a98a) to make sure the 3D point cloud interface runs smoothly.
 {% endhint %}
 
 When labeling or reviewing dynamic objects in 3D point cloud sequences, working object by object is usually the most efficient way to obtain precise annotations. However, this means navigating through the different frames in a sequence constantly. To make this process more efficient, we developed batch mode. Batch mode shows you an object in multiple frames at the same time. This way, you can easily choose where to make adjustments to label an object, and easily review an object by simply scrolling through the frames.
