@@ -14,14 +14,14 @@ This video shows you how to label cuboids in 3D point cloud sequences on Segment
 
 ## Create a new cuboid
 
-#### Create a cuboid with default dimensions
+### Create a cuboid with default dimensions
 
 If you've set up the default dimensions for your categories (see [#categories](../../reference/categories-and-task-attributes.md#categories "mention")), you can create a cuboid with default dimensions by double clicking.
 
 1. Select the "Create cuboid" tool by clicking on the box icon in the toolbar on the left, or by pressing the hotkey (`b` by default).
 2. Double click in the perspective view or in the top view to create a new cuboid. This cuboid will have the default dimensions of the current category. When you change the category, the dimensions of the cuboid will change as well, given that you have not altered the dimensions of the cuboid yet.
 
-#### Draw a cuboid with custom dimensions
+### Draw a cuboid with custom dimensions
 
 You can quickly draw a cuboid with an arbitrary rotation using our 3-click cuboid drawing method.&#x20;
 
@@ -37,12 +37,12 @@ You can quickly draw a cuboid with an arbitrary rotation using our 3-click cuboi
 
 ## Select a cuboid
 
-#### Using the "Select and edit" tool
+### Using the "Select and edit" tool
 
 1. Select the "Select and edit" tool by clicking on the pointer icon in the toolbar on the left, or by pressing the hotkey (`Esc` by default).
 2. Click on the cuboid in any view.
 
-#### Using the objects sidebar
+### Using the objects sidebar
 
 1. Click on the object in the objects sidebar to select it.
 
@@ -90,13 +90,13 @@ By default, only yaw rotation (around the z-axis) is enabled. To enable full 3D 
 If the selected cuboid was created with default dimensions, the dimensions of the cuboid will change to the default dimensions of the new category.
 {% endhint %}
 
-#### Using the category dropdown
+### Using the category dropdown
 
 1. Select the cuboid.
 2. Open the category dropdown by clicking on the category name in the objects sidebar on the right, or by pressing the hotkey (`c` by default).
 3. Select a category by clicking on the desired category, or by using the arrow keys and pressing `Enter` to confirm.
 
-#### Using the category hotkey
+### Using the category hotkey
 
 1. Select the cuboid.
 2. Press the hotkey of the desired category (`1` - `9`).

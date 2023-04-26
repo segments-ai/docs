@@ -7,7 +7,8 @@ To speed up labeling, you can use the hotkeys/shortcuts built into our labeling 
 ### Open the hotkey menu
 
 1. Open a labeling interface.
-2. Press the question mark icon (?) in the floating toolbar on the right.
+2. In the image interfaces, press the question mark icon (?) in the floating toolbar on the right.\
+   In the 3D interfaces, open the [3d-interface-settings.md](label-3d-point-clouds/3d-interface-settings.md "mention") and click the "Hotkeys" button.
 
 ### Change a hotkey
 

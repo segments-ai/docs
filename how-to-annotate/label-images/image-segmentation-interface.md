@@ -39,7 +39,7 @@ You can switch seamlessly between drawing tools while labeling
 
 ### Brush
 
-1. Click the ![](<../../.gitbook/assets/image (1).png>)button in the left toolbar or press `b` to select the brush tool
+1. Click the ![](<../../.gitbook/assets/image (1) (2).png>)button in the left toolbar or press `b` to select the brush tool
 2. Change the brush size by adjusting the slider in the top left of the screen, or by scrolling your mouse wheel
 3. Click and drag on the image to draw
 
@@ -84,7 +84,7 @@ When labeling in brush, polygon or autosegment mode, an eraser button ![](<../..
 
 ### Lock mode
 
-Click the![](<../../.gitbook/assets/image (2).png>)button in the left toolbar or press hotkey `r` to toggle the lock mode. When lock mode is enabled, existing objects will not be affected when drawing over them.
+Click the![](<../../.gitbook/assets/image (2) (2).png>)button in the left toolbar or press hotkey `r` to toggle the lock mode. When lock mode is enabled, existing objects will not be affected when drawing over them.
 
 
 

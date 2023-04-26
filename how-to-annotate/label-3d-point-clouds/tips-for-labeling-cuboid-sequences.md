@@ -38,13 +38,17 @@ You can learn about adding, moving, and removing keyframes on this page:
 
 ## How to find objects
 
-In order to find objects to label, you can use the main point cloud viewer. You can move through the interface either by using your mouse or the hotkeys (wasd by default). Learn more about navigating on the following page:
+In order to find objects to label, you can use the main point cloud viewer. You can move through the interface either by using your mouse or the hotkeys (`w`, `a`, `s`, `d` by default). Learn more about navigating the 3D scene on the following page:
 
 {% content-ref url="view-and-navigate-in-the-3d-interface.md" %}
 [view-and-navigate-in-the-3d-interface.md](view-and-navigate-in-the-3d-interface.md)
 {% endcontent-ref %}
 
-If the point cloud sequence has images associated with it, they can often be helpful for locating objects that might otherwise be hard to spot in the point clouds. You can quickly [toggle the image viewer](view-and-navigate-in-the-3d-interface.md#view-synced-camera-images), or [open it in a new window](view-and-navigate-in-the-3d-interface.md#view-synced-camera-images) if you have two screens. When the images are properly calibrated, you can also [display an image directly behind the point cloud](view-and-navigate-in-the-3d-interface.md#display-a-camera-image-behind-the-point-cloud). That way, you can make sure that you’re labeling the correct object in the point cloud.
+If the point cloud sequence has images associated with it, they can often be helpful for locating objects that might otherwise be hard to spot in the point clouds. Learn more about using images in the 3D interface on the following page:
+
+{% content-ref url="upload-view-and-overlay-images.md" %}
+[upload-view-and-overlay-images.md](upload-view-and-overlay-images.md)
+{% endcontent-ref %}
 
 ## How to label a static object
 

@@ -17,6 +17,7 @@
 * [Label 3D point clouds](how-to-annotate/label-3d-point-clouds/README.md)
   * [View and navigate in the 3D interface](how-to-annotate/label-3d-point-clouds/view-and-navigate-in-the-3d-interface.md)
   * [Upload, view, and overlay images](how-to-annotate/label-3d-point-clouds/upload-view-and-overlay-images.md)
+  * [3D interface settings](how-to-annotate/label-3d-point-clouds/3d-interface-settings.md)
   * [3D point cloud segmentation interface](how-to-annotate/label-3d-point-clouds/3d-point-cloud-segmentation-interface.md)
   * [3D point cloud cuboid interface](how-to-annotate/label-3d-point-clouds/3d-point-cloud-cuboid-interface.md)
   * [3D point cloud vector interface](how-to-annotate/label-3d-point-clouds/3d-point-cloud-vector-interface.md)

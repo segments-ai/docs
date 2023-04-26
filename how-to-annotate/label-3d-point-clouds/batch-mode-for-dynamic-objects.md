@@ -14,17 +14,12 @@ When labeling or reviewing dynamic objects in 3D point cloud sequences, working 
 This video shows how you can use batch mode to quickly adjust a cuboid.
 {% endembed %}
 
-## Switch to the batch mode
+## Toggle the batch mode
 
 1. Select the object you want to adjust/review.
-2. Press the blue batch button in the bottom left.
+2. Click on the batch mode icon (![](<../../.gitbook/assets/image (7).png>)) in the right toolbar to toggle batch mode on/off.
 
-## Exit batch mode
-
-To exit batch mode, either:
-
-* Click on the back arrow next to the track name at the top of the page
-* Press the hotkey (`Escape` by default).
+You can also exit batch mode by pressing the hotkey (`Escape` by default).
 
 ## Select a frame
 

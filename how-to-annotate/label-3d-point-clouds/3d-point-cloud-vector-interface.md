@@ -10,9 +10,9 @@ Tip: [use your GPU in Chrome](https://segmentsai.notion.site/How-to-use-your-GPU
 
 ## Create a new vector
 
-You can create three types of vectors: a polygon, polyline and a keypoint.
+You can create three types of vectors: a polygon, polyline, and a keypoint.
 
-#### Create a polygon
+### Create a polygon
 
 1. Select the "Create polygon" tool by clicking on the polygon icon in the toolbar on the left, or by pressing the hotkey (`g` by default).
 2. Click in the perspective or orthographic view to add a point to the polygon (each click adds a new point).
@@ -21,7 +21,7 @@ You can create three types of vectors: a polygon, polyline and a keypoint.
    2. clicking on the first polygon point (this closes the polygon without adding a final point) or by
    3. confirming the object (hotkey `space` by default) - this closes the polygon without adding a final point.
 
-#### Create a polyline
+### Create a polyline
 
 1. Select the "Create polyline" tool by clicking on the line icon in the toolbar on the left, or by pressing the hotkey (`n` by default).
 2. Click in the perspective or orthographic view to add a point to the polyline (each click adds a new point).
@@ -29,7 +29,7 @@ You can create three types of vectors: a polygon, polyline and a keypoint.
    1. by double clicking (this adds a final point and finishes the polyline) or by
    2. confirming the object (press `space` hotkey by default) - this closes the polyline without adding a final point.
 
-#### Create a point
+### Create a point
 
 * Select the "Create point" tool by clicking on the point icon in the toolbar on the left, or by pressing the hotkey (`p` by default).
 * Click in the viewer to add a point.
@@ -41,12 +41,12 @@ You can create three types of vectors: a polygon, polyline and a keypoint.
 
 ## Select a vector
 
-#### Using the "Select and edit" tool
+### Using the "Select and edit" tool
 
 1. Select the "Select and edit" tool by clicking on the pointer icon in the toolbar on the left, or by pressing the hotkey (`Esc` by default).
 2. Click on the vector in any view.
 
-#### Using the objects sidebar
+### Using the objects sidebar
 
 1. Click on the object in the objects sidebar to select it.
 
@@ -73,13 +73,13 @@ Hover over a polygon point, a polyline point or a key point. The cursor changes 
 
 ## Change the category of a vector
 
-#### Using the category dropdown
+### Using the category dropdown
 
 1. Select the vector.
 2. Open the category dropdown by clicking on the category name in the objects sidebar on the right, or by pressing the hotkey (`c` by default).
 3. Select a category by clicking on the desired category, or by using the arrow keys and pressing `Enter` to confirm.
 
-#### Using the category hotkey
+### Using the category hotkey
 
 1. Select the vector.
 2. Press the hotkey of the desired category (`1` - `9`).

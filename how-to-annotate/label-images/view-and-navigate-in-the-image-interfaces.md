@@ -23,5 +23,5 @@ Hover over the ![](<../../.gitbook/assets/image (19).png>) buttons in the top ri
 
 ## Change the image brightness and label opacity
 
-Hover over the ![](<../../.gitbook/assets/image (10).png>) icon in the top right toolbar and adjust the sliders to change the image brightness and label opacity.
+Hover over the ![](<../../.gitbook/assets/image (10) (2).png>) icon in the top right toolbar and adjust the sliders to change the image brightness and label opacity.
 

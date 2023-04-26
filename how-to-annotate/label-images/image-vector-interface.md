@@ -36,7 +36,7 @@ Click the![](<../../.gitbook/assets/image (32).png>)button in the left toolbar t
 
 ### Polyline
 
-Click the![](<../../.gitbook/assets/image (30).png>)button in the left toolbar to draw a polyline. Click on the image to draw polyline points. Double click to finish it.
+Click the![](<../../.gitbook/assets/image (30) (2).png>)button in the left toolbar to draw a polyline. Click on the image to draw polyline points. Double click to finish it.
 
 ### Keypoint
 
