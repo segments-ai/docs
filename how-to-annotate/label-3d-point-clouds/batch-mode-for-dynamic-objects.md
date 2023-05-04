@@ -17,7 +17,7 @@ This video shows how you can use batch mode to quickly adjust a cuboid.
 ## Toggle the batch mode
 
 1. Select the object you want to adjust/review.
-2. Click on the batch mode icon (![](<../../.gitbook/assets/image (7).png>)) in the right toolbar to toggle batch mode on/off.
+2. Click on the batch mode icon (![](<../../.gitbook/assets/image (7) (2).png>)) in the right toolbar to toggle batch mode on/off.
 
 You can also exit batch mode by pressing the hotkey (`Escape` by default).
 

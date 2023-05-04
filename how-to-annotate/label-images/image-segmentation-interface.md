@@ -25,7 +25,7 @@ To add a new object:
 
 ## Remove an object
 
-Select an object and press `Backspace` to remove it. You can also click the ![](<../../.gitbook/assets/image (9).png>) icon in the sidebar to remove an object.
+Select an object and press `Backspace` to remove it. You can also click the ![](<../../.gitbook/assets/image (9) (1).png>) icon in the sidebar to remove an object.
 
 ## Change the category of an object
 
@@ -68,7 +68,7 @@ More info in [this blog post](https://segments.ai/blog/autosegment).
 
 ### Hover-and-click
 
-* Click the![](<../../.gitbook/assets/image (1) (1).png>)button in the left toolbar or press `d` to select the hover-and-click tool
+* Click the![](<../../.gitbook/assets/image (1) (1) (1).png>)button in the left toolbar or press `d` to select the hover-and-click tool
 * Hover with your mouse over the image to see mask suggestions appear
 * Click to select a suggested mask
 

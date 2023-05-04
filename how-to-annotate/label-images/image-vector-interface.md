@@ -18,7 +18,7 @@ To add a new object:
 
 ## Remove an object
 
-Select an object and press `Backspace` to remove it. You can also click the ![](<../../.gitbook/assets/image (9).png>) icon in the sidebar to remove an object.
+Select an object and press `Backspace` to remove it. You can also click the ![](<../../.gitbook/assets/image (9) (1).png>) icon in the sidebar to remove an object.
 
 ## Change the category of an object
 
