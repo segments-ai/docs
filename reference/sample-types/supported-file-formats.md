@@ -12,17 +12,21 @@ Following image file formats are supported: jpeg, png, bmp.
 
 Any other fields will be ignored.
 
-<table><thead><tr><th>Field name</th><th data-type="number">Size (#bytes)</th><th>Type</th><th data-type="checkbox">Required</th></tr></thead><tbody><tr><td>x</td><td>4</td><td>float</td><td>true</td></tr><tr><td>y</td><td>4</td><td>float</td><td>true</td></tr><tr><td>z</td><td>4</td><td>float</td><td>true</td></tr><tr><td>intensity</td><td>4</td><td>float</td><td>false</td></tr><tr><td>rgb</td><td>4</td><td>float</td><td>false</td></tr></tbody></table>
+<table><thead><tr><th>Field name</th><th width="150" data-type="number">Size (#bytes)</th><th width="150">Type</th><th width="150" data-type="checkbox">Required</th></tr></thead><tbody><tr><td>x</td><td>4</td><td>float</td><td>true</td></tr><tr><td>y</td><td>4</td><td>float</td><td>true</td></tr><tr><td>z</td><td>4</td><td>float</td><td>true</td></tr><tr><td>intensity</td><td>4</td><td>float</td><td>false</td></tr><tr><td>rgb</td><td>4</td><td>float</td><td>false</td></tr></tbody></table>
 
 {% hint style="warning" %}
 Please make sure that you supply the values as 32-bit (=4 byte) floats.
+
+Keep in mind that 32-bit floats have limited precision. In fact, only 24 bits can be used to represent the number itself (the significand, excluding the sign bit), or about 7.22 decimal digits. If you want to keep two decimal places, this only leaves 5.22 decimal digits, so the numbers shouldn't be larger than 10^5.22 = 165958.
+
+To avoid rounding problems, it is best practice to subtract the ego position of the first frame from all other ego positions. This way, the first ego position is set to (0, 0, 0) and the subsequent ego positions are relative to (0, 0, 0) . In your export script, you can add the ego position of the first frame back to the object positions.
 {% endhint %}
 
 ### Binary xyzi(r) (KITTI/nuScenes)
 
 We also support the binary point cloud formats used by the [KITTI](http://www.cvlibs.net/datasets/kitti/index.php) and [nuScenes](https://www.nuscenes.org/) datasets. These formats do not contain a header and have a fixed number of fields. When uploading a sample with point clouds in one of these formats, use `binary-xyzi` (alias `kitti`) or `binary-xyzir` (alias `nuscenes`) for the type field.
 
-<table><thead><tr><th>Field name</th><th data-type="number">Size (#bytes)</th><th>Type</th><th data-type="checkbox">Required</th></tr></thead><tbody><tr><td>x</td><td>4</td><td>float</td><td>true</td></tr><tr><td>y</td><td>4</td><td>float</td><td>true</td></tr><tr><td>z</td><td>4</td><td>float</td><td>true</td></tr><tr><td>intensity</td><td>4</td><td>float</td><td>true</td></tr><tr><td>ring index</td><td>4</td><td>float</td><td>false</td></tr></tbody></table>
+<table><thead><tr><th>Field name</th><th width="150" data-type="number">Size (#bytes)</th><th width="150">Type</th><th width="150" data-type="checkbox">Required</th></tr></thead><tbody><tr><td>x</td><td>4</td><td>float</td><td>true</td></tr><tr><td>y</td><td>4</td><td>float</td><td>true</td></tr><tr><td>z</td><td>4</td><td>float</td><td>true</td></tr><tr><td>intensity</td><td>4</td><td>float</td><td>true</td></tr><tr><td>ring index</td><td>4</td><td>float</td><td>false</td></tr></tbody></table>
 
 ## Text
 
