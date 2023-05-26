@@ -61,6 +61,10 @@ If the point cloud sequence has images associated with it, they can often be hel
     Tip: you can use the [batch mode](batch-mode-for-dynamic-objects.md) for navigating through a sequence faster.
 6. [Remove the cuboid](3d-point-cloud-cuboid-interface.md#remove-a-cuboid) in the frame where the object disappears.
 
+### Use an `is_static` attribute
+
+Add an `is_static` track-level attribute to the categories that can be static (see [configure-label-editor.md](../../configure-label-editor.md "mention")). When this attribute is checked, you can edit the position/dimensions/rotation of a cuboid in one frame, and these changes will be applied to all other frames automatically.
+
 <figure><img src="../../.gitbook/assets/merged-view-compr.gif" alt="Merged point cloud view"><figcaption><p>Use the merged point cloud view to see the full dimensions of a static object. </p></figcaption></figure>
 
 ## How to label a dynamic object
