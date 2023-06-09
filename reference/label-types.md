@@ -437,6 +437,22 @@ Format of the `attributes` field in [`client.get_label()`](../python-sdk.md#get-
 | `format_version` | `string`                                                                          | Format version.                                        |
 | `frames`         | `array` of [vector labels](label-types.md#vector-label-polygon-polyline-keypoint) | List of vector labels (one per frame in the sequence). |
 
+## Multi-sensor sequence
+
+```json
+{
+  "sensors": {
+    "Lidar": { ... },
+    "Camera X": { ... },
+    ...
+  }
+}
+```
+
+| Name      | Type                                                                               | Description                                                                                                                                                                                                                                                                                                                                                   |
+| --------- | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `sensors` | <p><code>object</code>: {<br>  sensor_name: <code>object</code>,<br>  ...<br>}</p> | An object containing key-value pairs defining labels for each sensor. The key is the name of the sensor and the value is are the label attributes. Currently, [3D point cloud sequence cuboid labels](label-types.md#cuboid-label-1) and [image sequence vector labels](label-types.md#vector-labels-bounding-box-polygon-polyline-keypoint-1) are supported. |
+
 ## Text
 
 ### Named entity recognition

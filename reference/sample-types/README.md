@@ -248,6 +248,35 @@ To avoid rounding problems, it is best practice to subtract the ego position of 
 | -------- | ----------------------------------------------- | ------------------------------------------------------------ |
 | `frames` | `array` of [3D point clouds](./#3d-point-cloud) | **Required.** List of 3D point cloud frames in the sequence. |
 
+## Multi-sensor sequence
+
+```json
+{
+  "sensors": {
+    "Lidar": { 
+      "task_type": "pointcloud-cuboid-sequence",
+      "attributes": { ... }
+    },
+    "Camera X": { 
+      "task_type": "image-vector-sequence",
+      "attributes": { ... } 
+    },
+    ...
+  }
+}
+```
+
+| Name      | Type                                                                               | Description                                                                                                                                                                                                 |
+| --------- | ---------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `sensors` | <p><code>object</code>: {<br>  sensor_name: <code>object</code>,<br>  ...<br>}</p> | **Required.** An object containing key-value pairs defining the sensors to be labelled. The key is the name of the sensor (which you can choose), and the value is a [Sensor](./#sensor) object, see below. |
+
+#### Sensor
+
+| Name         | Type     | Description                                                                                                                                                                 |
+| ------------ | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `task_type`  | `string` | **Required.** The [task type](../sample-and-label-types.md) of the sensor. Currently, `pointcloud-cuboid-sequence` and `image-vector-sequence` are supported.               |
+| `attributes` | `object` | **Required.** The sample attributes for the sensor. Currently, [3D point cloud sequence](./#3d-point-cloud-sequence) and [image sequence](./#image-sequence) are supported. |
+
 ## Text
 
 ```json
