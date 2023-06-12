@@ -26,6 +26,7 @@ You can currently subscribe to following events:
 | `label.deleted`   | Occurs whenever a label is deleted.                                      |
 | `issue.created`   | Occurs whenever an issue is created.                                     |
 | `issue.updated`   | Occurs whenever an issue has received a reply or a property has changed. |
+| `release.created` | Occurs whenever a new release is successfully created.                   |
 
 The webhook payload looks as follows:
 
