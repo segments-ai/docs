@@ -144,7 +144,15 @@ A calibrated or uncalibrated reference image corresponding to a point cloud. The
             "qz": 0.0036449450274057696,
             "qw": 0.7005017073187271
         }
-    }
+    },
+    "distortion": { // optional
+        "model": "fisheye"
+        "coefficients": {
+            "k1": -0.0539124,
+            "k2": -0.0101993,
+            "k3": -0.00202017,
+            "k4": 0.00120938
+        }
 }
 ```
 
@@ -154,7 +162,8 @@ A calibrated or uncalibrated reference image corresponding to a point cloud. The
 | `row`        | `int`                                     | **Required.** Row of this image in the images viewer.                       |
 | `col`        | `int`                                     | **Required.** Column of this image in the images viewer.                    |
 | `intrinsics` | [Camera intrinsics](./#camera-intrinsics) | Intrinsic parameters of the camera.                                         |
-| `extrinsics` | [Camera extrinsics](./#undefined)         | Extrinsic parameters of the camera relative to the [ego pose](./#ego-pose). |
+| `extrinsics` | [Camera extrinsics](./#camera-extrinsics) | Extrinsic parameters of the camera relative to the [ego pose](./#ego-pose). |
+| `distortion` | [Distortion](./#distortion)               | Distortion parameters of the camera.                                        |
 
 {% hint style="warning" %}
 If the image file is on your local computer, you should first upload it to our asset storage service (using [`upload_asset()`](https://sdkdocs.segments.ai/en/latest/client.html#upload-an-asset-to-segments-s3-bucket)) or to another cloud storage service.
@@ -200,6 +209,36 @@ If the image file is on your local computer, you should first upload it to our a
 | `rotation`    | <p><code>object</code>: {<br>    "qx": <code>float</code>,<br>    "qy": <code>float</code>,<br>    "qz": <code>float</code>,</p><p>    "qw": <code>float</code><br>}</p> | **Required.** Rotation of the camera in lidar coordinates, i.e., relative to the [ego pose](./#ego-pose) (or equivalently: a transformation from camera frame to ego frame). Defined as a [rotation quaternion](https://danceswithcode.net/engineeringnotes/quaternions/quaternions.html). We use the OpenGL/Blender coordinate convention for cameras. +X is right, +Y is up, and +Z is pointing back and away from the camera. -Z is the look-at direction. Other codebases may use the OpenCV convention, where the Y and Z axes are flipped but the +X axis remains the same. See diagram 1. |
 
 <figure><img src="../../.gitbook/assets/camera-axes (1).png" alt=""><figcaption><p>Diagram 1: camera convention for calibrated camera images on Segments.ai.</p></figcaption></figure>
+
+#### Distortion
+
+```json
+// Fisheye
+{ 
+    "model": "fisheye"
+    "coefficients": {
+        "k1": -0.0539124,
+        "k2": -0.0101993,
+        "k3": -0.00202017,
+        "k4": 0.00120938
+}
+// Brown-Conrady
+{ 
+    "model": "brown-conrady"
+    "coefficients": {
+        "k1": -0.2916058942,
+        "k2": 0.0763231072,
+        "k3": 0.0,
+        "p1": 0.0014829263,
+        "p2": -0.0019540316
+    }
+}
+```
+
+| Name            | Type                                                                                                                                                                                                                                                                                                                                                                                                                                            | Description                                                                                                                                                                  |
+| --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `model`         | `string`: "fisheye" \| "brown-conrady"                                                                                                                                                                                                                                                                                                                                                                                                          | **Required.** Type of the distortion model: [fisheye](https://en.wikipedia.org/wiki/Fisheye\_lens) or [Brown-Conrady](https://en.wikipedia.org/wiki/Distortion\_\(optics\)). |
+| `coefficients`  | <p>Fisheye:<br><code>object</code>: {</p><p>    "k1": <code>float</code>,</p><p>    "k2": <code>float</code>,</p><p>    "k3": <code>float</code>,</p><p>    "k4": <code>float</code>,</p><p>}</p><p><br>Brown-Conrady:<br><code>object</code>: {</p><p>    "k1": <code>float</code>,</p><p>    "k2": <code>float</code>,</p><p>    "k3": <code>float</code>,</p><p>    "p1": <code>float</code>,</p><p>    "p2": <code>float</code></p><p>}</p> | **Required.** Coefficients of the distortion model: `k1`, `k2`, `k3`, `k4` for fisheye and `k1`, `k2`, `k3`, `p1`, `p2` for Brown-Conrady.                                   |
 
 ### Ego pose
 
