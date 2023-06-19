@@ -441,17 +441,35 @@ Format of the `attributes` field in [`client.get_label()`](../python-sdk.md#get-
 
 ```json
 {
-  "sensors": {
-    "Lidar": { ... },
-    "Camera X": { ... },
+  "sensors": [
+    {
+      "name": "Lidar", 
+      "task_type": "pointcloud-cuboid-sequence",
+      "attributes": { ... }
+    },
+    {
+      "name": "Camera 1", 
+      "task_type": "image-vector-sequence",
+      "attributes": { ... } 
+    },
     ...
-  }
+  ]
 }
 ```
 
-| Name      | Type                                                                               | Description                                                                                                                                                                                                                                                                                                                                                   |
-| --------- | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `sensors` | <p><code>object</code>: {<br>  sensor_name: <code>object</code>,<br>  ...<br>}</p> | An object containing key-value pairs defining labels for each sensor. The key is the name of the sensor and the value is are the label attributes. Currently, [3D point cloud sequence cuboid labels](label-types.md#cuboid-label-1) and [image sequence vector labels](label-types.md#vector-labels-bounding-box-polygon-polyline-keypoint-1) are supported. |
+| Name      | Type                                        | Description                                |
+| --------- | ------------------------------------------- | ------------------------------------------ |
+| `sensors` | `array` of [sensors](label-types.md#sensor) | List of the sensors with label attributes. |
+
+#### Sensor
+
+| Name         | Type     | Description                                                                                                                                                                          |
+| ------------ | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `name`       | `string` | Name of the sensor.                                                                                                                                                                  |
+| `task_type`  | `string` | The [task type](sample-and-label-types.md) of the sensor. Currently, `pointcloud-cuboid-sequence` and `image-vector-sequence` are supported.                                         |
+| `attributes` | `object` | The label attributes for the sensor. Currently, [3D point cloud sequence](label-types.md#3d-point-cloud-sequence) and [image sequence](label-types.md#image-sequence) are supported. |
+
+
 
 ## Text
 

@@ -118,7 +118,7 @@ If the point cloud file is on your local computer, you should first upload it to
 
 ### Camera image
 
-A calibrated or uncalibrated reference image corresponding to a point cloud. The reference images can be opened in a new tab from within the labeling interface. You can determine the layout of the images by setting the `row` and `col` attributes on each image. If you also supply the calibration parameters, the main point cloud view can be set to the image to obtain a fused view. In this case, your image should be rectified before uploading.
+A calibrated or uncalibrated reference image corresponding to a point cloud. The reference images can be opened in a new tab from within the labeling interface. You can determine the layout of the images by setting the `row` and `col` attributes on each image. If you also supply the calibration parameters (and distortion parameters if necessary), the main point cloud view can be set to the image to obtain a fused view.
 
 ```json
 {
@@ -153,6 +153,7 @@ A calibrated or uncalibrated reference image corresponding to a point cloud. The
             "k3": -0.00202017,
             "k4": 0.00120938
         }
+    }
 }
 ```
 
@@ -291,28 +292,31 @@ To avoid rounding problems, it is best practice to subtract the ego position of 
 
 ```json
 {
-  "sensors": {
-    "Lidar": { 
+  "sensors": [
+    {
+      "name": "Lidar", 
       "task_type": "pointcloud-cuboid-sequence",
       "attributes": { ... }
     },
-    "Camera X": { 
+    {
+      "name": "Camera 1", 
       "task_type": "image-vector-sequence",
       "attributes": { ... } 
     },
     ...
-  }
+  ]
 }
 ```
 
-| Name      | Type                                                                               | Description                                                                                                                                                                                                 |
-| --------- | ---------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `sensors` | <p><code>object</code>: {<br>  sensor_name: <code>object</code>,<br>  ...<br>}</p> | **Required.** An object containing key-value pairs defining the sensors to be labelled. The key is the name of the sensor (which you can choose), and the value is a [Sensor](./#sensor) object, see below. |
+| Name      | Type                            | Description                                            |
+| --------- | ------------------------------- | ------------------------------------------------------ |
+| `sensors` | `array` of [sensors](./#sensor) | **Required.** List of the sensors that can be labeled. |
 
 #### Sensor
 
 | Name         | Type     | Description                                                                                                                                                                 |
 | ------------ | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `name`       | `string` | **Required.** The name of the sensor.                                                                                                                                       |
 | `task_type`  | `string` | **Required.** The [task type](../sample-and-label-types.md) of the sensor. Currently, `pointcloud-cuboid-sequence` and `image-vector-sequence` are supported.               |
 | `attributes` | `object` | **Required.** The sample attributes for the sensor. Currently, [3D point cloud sequence](./#3d-point-cloud-sequence) and [image sequence](./#image-sequence) are supported. |
 
