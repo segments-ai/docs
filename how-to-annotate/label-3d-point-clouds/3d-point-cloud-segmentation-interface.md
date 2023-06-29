@@ -15,10 +15,11 @@ Tip: [use your GPU in Chrome](https://segmentsai.notion.site/How-to-use-your-GPU
 
 ## Select points
 
-### Select points using the brush tool
+### Select points using the depth brush tool
 
-1. Select the brush tool by clicking on the brush icon in the toolbar on the left, or by pressing the hotkey (`b` by default).
-2. Click or click and drag in any view to select points.
+1. Select the depth brush tool by clicking on the brush icon in the toolbar on the left, or by pressing the hotkey (`b` by default).
+2. When hovering over points, the points in the depth range of the brush will be highlighted, and the points outside the brush will be darkened.
+3. Click or click and drag in any view to select the points in the depth range of the brush.
 
 ### Select points using the polygon tool
 
@@ -26,7 +27,7 @@ Tip: [use your GPU in Chrome](https://segmentsai.notion.site/How-to-use-your-GPU
 2. Click in one of the views to place the first polygon point and start drawing the polygon.
 3. Click to add additional points (connected by a straight line) or click and drag to add a line that follows your mouse path.
 4. To close the polygon, either:
-   * Doubleclick the last point
+   * Double-click the last point
    * Click on the first point (indicated by a square)
    * Press the hotkey (`Enter` by default)
 
@@ -77,8 +78,13 @@ Press the hotkey (`Space` by default), or select another object.
 
 ## Change the brush size
 
-1. Select the brush tool by clicking on the brush icon in the toolbar on the left, or by pressing the hotkey (`b` by default).
-2. Drag the brush size slider in the toolbar on the left, or use the hotkey (`Ctrl + scroll` by default).
+1. Select the depth brush tool by clicking on the brush icon in the toolbar on the left, or by pressing the hotkey (`b` by default).
+2. Drag the brush size slider in the toolbar on the left, or use the hotkey (`Ctrl/cmd + scroll` by default).
+
+## Change the brush depth
+
+1. Select the depth brush tool by clicking on the brush icon in the toolbar on the left, or by pressing the hotkey (`b` by default).
+2. Drag the brush depth slider in the toolbar on the left, or use the hotkey (`Ctrl/cmd + Shift + scroll` by default).
 
 ## Use the lock mode
 
