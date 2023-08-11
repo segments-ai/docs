@@ -58,7 +58,6 @@
   * [SceneBox](how-to-integrate/integrations/scenebox.md)
 * [Create an API key](how-to-integrate/create-an-api-key.md)
 * [Upload model predictions](how-to-integrate/upload-model-predictions.md)
-* [Upload sample embeddings](how-to-integrate/upload-sample-embeddings.md)
 * [Set up webhooks](how-to-integrate/webhooks.md)
 
 ## Background

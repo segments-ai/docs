@@ -50,7 +50,7 @@ The organization role determines the role of a user within the organization itse
 
 There are only two organization roles, _member_ or _administrator_. Their permissions are as follows.
 
-<table><thead><tr><th> </th><th data-type="checkbox">Member</th><th data-type="checkbox">Administrator</th></tr></thead><tbody><tr><td>Access the organization account and see other members</td><td>true</td><td>true</td></tr><tr><td>Create new organization datasets</td><td>false</td><td>true</td></tr><tr><td>Manage memberships and settings</td><td>false</td><td>true</td></tr></tbody></table>
+<table><thead><tr><th width="226.48909562299832"> </th><th width="150" data-type="checkbox">Member</th><th data-type="checkbox">Administrator</th></tr></thead><tbody><tr><td>Access the organization account and see other members</td><td>true</td><td>true</td></tr><tr><td>Create new organization datasets</td><td>false</td><td>true</td></tr><tr><td>Manage memberships and settings</td><td>false</td><td>true</td></tr></tbody></table>
 
 ### Default dataset role
 
