@@ -50,7 +50,7 @@ from segments.utils import bitmap2file
 # segmentation_bitmap is a numpy array of type np.uint32, with values corresponding to instance_ids
 file = bitmap2file(segmentation_bitmap)
 asset = client.upload_asset(file, "label.png")
-segmentation_bitmap_url = asset["url"]
+segmentation_bitmap_url = asset.url
 ```
 
 For a full example of uploading model-generated labels to Segments.ai, please refer to [this blogpost](https://segments.ai/blog/speed-up-image-segmentation-with-model-assisted-labeling).
