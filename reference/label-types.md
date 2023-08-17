@@ -113,7 +113,23 @@ Format of the `attributes` field in [`client.get_label()`](../python-sdk.md#get-
 
 ### Segmentation labels
 
-Coming soon.
+Format of the `attributes` field in [`client.get_label()`](../python-sdk.md#get-a-label):
+
+```json
+{
+  "format_version": "0.1",
+  "frames": [
+    { ... },
+    { ... },
+    { ... }
+  ]
+}
+```
+
+| Name             | Type                                                                 |                                                              |
+| ---------------- | -------------------------------------------------------------------- | ------------------------------------------------------------ |
+| `format_version` | `string`                                                             | Format version.                                              |
+| `frames`         | `array` of [segmentation labels](label-types.md#segmentation-labels) | List of segmentation labels (one per frame in the sequence). |
 
 ### Vector labels (bounding box, polygon, polyline, keypoint)
 
