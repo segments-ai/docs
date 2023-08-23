@@ -2,12 +2,13 @@
 
 A **track ID** is an identifier assigned to each labeled object in a [sequence](../../background/sequences.md). This track ID can be used to track an object over multiple frames.
 
-![](<../../.gitbook/assets/image (24) (1) (1).png>)
+<figure><img src="../../.gitbook/assets/image (34).png" alt=""><figcaption></figcaption></figure>
 
 ## View the track ID of an object
 
-1. Select the object.
-2. The track ID of the selected object is now visible in the bottom-right corner, next to the timeline.&#x20;
+The track ID of an object is displayed in the sidebar on the left of the object category.
+
+When an object is selected, it is also displayed on the right of the timeline.
 
 ## Add a track ID to an object
 
@@ -20,14 +21,33 @@ When creating an object in a sequence editor, a track ID is automatically create
 3. Enter the new track ID.
 4. Press the checkmark button next to the track ID to set the new track ID. The new track ID will replace the old track ID in all frames.
 
+## Merge a track into another track
+
+1. Select the object you want to merge into another track.
+2. Click the pencil button next to the track ID in the track editor on the right of the timeline.
+3. Enter the ID of the track you want to merge the current track into.
+4. Click the checkmark button next to the track ID to merge the tracks. The keyframes of both tracks will be combined, and the combined track takes the track ID you just entered.
+
 {% hint style="warning" %}
-You cannot change the track ID to a track ID that is already used by another object in the current frame.
+Merging tracks is only possible when both tracks have no overlapping keyframes.
 {% endhint %}
 
-## Remove a track / remove an object in all frames
+## Remove a track (= remove an object in all frames)
 
-1. Select the object.
-2. Click the "Remove track" button under the track ID. The object will then be removed from all frames.
+1. Select the object you want to remove from the sequence.
+2. Click the "Remove track" button under the track ID in the track editor on the right of the timeline. The object will then be removed from all frames.
+
+## Split a track
+
+Splitting a track will create a new track at the current frame and move all keyframes after the current frame to the new track.
+
+1. Select the object whose track you want to split.
+2. Select the frame where you want the new track to start.&#x20;
+3. Click the "Split track" button under the track ID in the track editor on the right of the timeline.
+
+{% hint style="warning" %}
+Splitting a track is only possible if there are keyframes before the current frame. Otherwise, splitting the track would create an empty track.
+{% endhint %}
 
 ## Enable same-dimensions track constraint
 
