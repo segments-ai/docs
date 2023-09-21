@@ -146,7 +146,7 @@ A calibrated or uncalibrated reference image corresponding to a point cloud. The
         }
     },
     "distortion": { // optional
-        "model": "fisheye"
+        "model": "fisheye",
         "coefficients": {
             "k1": -0.0539124,
             "k2": -0.0101993,
@@ -218,7 +218,7 @@ If the image file is on your local computer, you should first upload it to our a
 ```json
 // Fisheye
 { 
-    "model": "fisheye"
+    "model": "fisheye",
     "coefficients": {
         "k1": -0.0539124,
         "k2": -0.0101993,
@@ -227,7 +227,7 @@ If the image file is on your local computer, you should first upload it to our a
 }
 // Brown-Conrady
 { 
-    "model": "brown-conrady"
+    "model": "brown-conrady",
     "coefficients": {
         "k1": -0.2916058942,
         "k2": 0.0763231072,
@@ -238,10 +238,10 @@ If the image file is on your local computer, you should first upload it to our a
 }
 ```
 
-| Name            | Type                                                                                                                                                                                                                                                                                                                                                                                                                                            | Description                                                                                                                                                                                                                                                                                                                                                                                    |
-| --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `model`         | `string`: "fisheye" \| "brown-conrady"                                                                                                                                                                                                                                                                                                                                                                                                          | **Required.** Type of the distortion model: [fisheye](https://en.wikipedia.org/wiki/Fisheye\_lens) or [Brown-Conrady](https://en.wikipedia.org/wiki/Distortion\_\(optics\)).                                                                                                                                                                                                                   |
-| `coefficients`  | <p>Fisheye:<br><code>object</code>: {</p><p>    "k1": <code>float</code>,</p><p>    "k2": <code>float</code>,</p><p>    "k3": <code>float</code>,</p><p>    "k4": <code>float</code>,</p><p>}</p><p><br>Brown-Conrady:<br><code>object</code>: {</p><p>    "k1": <code>float</code>,</p><p>    "k2": <code>float</code>,</p><p>    "k3": <code>float</code>,</p><p>    "p1": <code>float</code>,</p><p>    "p2": <code>float</code></p><p>}</p> | **Required.** Coefficients of the distortion model: `k1`, `k2`, `k3`, `k4` for fisheye (see the [OpenCV fisheye model](https://docs.opencv.org/4.x/db/d58/group\_\_calib3d\_\_fisheye.html)) and `k1`, `k2`, `k3`, `p1`, `p2` for Brown-Conrady (see the [OpenCV distortion model](https://docs.opencv.org/4.x/d9/d0c/group\_\_calib3d.html), but note that $$k_4$$ and $$k_5$$ are not used). |
+| Name            | Type                                                                                                                                                                                                                                                                                                                                                                                                                                            | Description                                                                                                                                                                                                                                                                                                                                                                                |
+| --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `model`         | `string`: "fisheye" \| "brown-conrady"                                                                                                                                                                                                                                                                                                                                                                                                          | **Required.** Type of the distortion model: [fisheye](https://en.wikipedia.org/wiki/Fisheye\_lens) or [Brown-Conrady](https://en.wikipedia.org/wiki/Distortion\_\(optics\)).                                                                                                                                                                                                               |
+| `coefficients`  | <p>Fisheye:<br><code>object</code>: {</p><p>    "k1": <code>float</code>,</p><p>    "k2": <code>float</code>,</p><p>    "k3": <code>float</code>,</p><p>    "k4": <code>float</code>,</p><p>}</p><p><br>Brown-Conrady:<br><code>object</code>: {</p><p>    "k1": <code>float</code>,</p><p>    "k2": <code>float</code>,</p><p>    "k3": <code>float</code>,</p><p>    "p1": <code>float</code>,</p><p>    "p2": <code>float</code></p><p>}</p> | **Required.** Coefficients of the distortion model: `k1`, `k2`, `k3`, `k4` for fisheye (see the [OpenCV fisheye model](https://docs.opencv.org/4.x/db/d58/group\_\_calib3d\_\_fisheye.html)) and `k1`, `k2`, `k3`, `p1`, `p2` for Brown-Conrady (see the [OpenCV distortion model](https://docs.opencv.org/4.x/d9/d0c/group\_\_calib3d.html), note that $$k_4$$ and $$k_5$$ are not used). |
 
 ### Ego pose
 
