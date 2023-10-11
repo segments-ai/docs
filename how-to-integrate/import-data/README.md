@@ -33,4 +33,4 @@ Keep the data in a private cloud bucket or server, and generate proxied or pre-s
 
 ### **Cross-account access**
 
-Keep the data in a private cloud bucket or server, and grant us cross-account access. In this case, we generate temporary pre-signed URLs whenever the images need to be displayed in the frontend. For setting this up, see [Cloud integrations](./#cross-account-access).
+Keep the data in a private cloud bucket or server, and grant us cross-account access. In this case, we generate temporary pre-signed URLs whenever the images need to be displayed in the frontend. For setting this up, see [Cloud integrations](cloud-integration.md).
