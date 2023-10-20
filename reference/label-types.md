@@ -2,7 +2,7 @@
 
 When you label a sample and press the save button, you've created a [label](../background/main-concepts.md#label) for that sample. Labels come in different types, with the available options determined by the type of the corresponding sample.&#x20;
 
-When downloading or uploading labels using the [Python SDK](../python-sdk.md), the format of the `attributes` field depends on the type of label. The different formats are described here.
+When downloading or uploading labels using the [Python SDK](https://sdkdocs.segments.ai/en/latest/client.html), the format of the `attributes` field depends on the type of label. The different formats are described here.
 
 A label can additionally also contain [#object-attributes](label-types.md#object-attributes "mention") and [#image-attributes](label-types.md#image-attributes "mention").
 

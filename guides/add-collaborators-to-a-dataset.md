@@ -16,4 +16,4 @@ Managers and administrators can add collaborators to a dataset. Note that a mana
 
 ### Adding collaborators programmatically
 
-You can also [add collaborators to a dataset using the Python SDK](../python-sdk.md#add-a-collaborator-to-a-dataset).
+You can also [add collaborators to a dataset using the Python SDK](https://sdkdocs.segments.ai/en/latest/client.html#add-a-dataset-collaborator).

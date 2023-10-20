@@ -1,6 +1,6 @@
 # Sample formats
 
-A [sample](../../background/main-concepts.md#sample) is a data point you want to label. Samples come in different types, like an image, a 3D point cloud, or a video sequence. When uploading ([`client.add_sample()`](../../python-sdk.md#create-a-sample)) or downloading ([`client.get_sample()`](../../python-sdk.md#get-a-sample)) a sample using the [Python SDK](../../python-sdk.md), the format of the `attributes` field depends on the type of sample. The different formats are described here.
+A [sample](../../background/main-concepts.md#sample) is a data point you want to label. Samples come in different types, like an image, a 3D point cloud, or a video sequence. When uploading ([`client.add_sample()`](https://sdkdocs.segments.ai/en/latest/client.html#create-a-sample)) or downloading ([`client.get_sample()`](https://sdkdocs.segments.ai/en/latest/client.html#get-a-sample)) a sample using the [Python SDK](https://sdkdocs.segments.ai/en/latest/client.html), the format of the `attributes` field depends on the type of sample. The different formats are described here.
 
 {% hint style="info" %}
 The section [import-data](../../how-to-integrate/import-data/ "mention") shows how you can obtain URLs for your assets.

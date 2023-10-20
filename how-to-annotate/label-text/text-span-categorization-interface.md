@@ -1,7 +1,7 @@
 # Text span categorization interface
 
 {% hint style="info" %}
-When [creating a dataset](../../python-sdk.md#create-a-dataset) through the Python SDK, choose `text-span-categorization` as the `task_type` to use this labeling interface.
+When [creating a dataset](https://sdkdocs.segments.ai/en/latest/client.html#delete-a-dataset) through the Python SDK, choose `text-span-categorization` as the `task_type` to use this labeling interface.
 {% endhint %}
 
 ## Label text with the mouse

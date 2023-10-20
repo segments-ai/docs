@@ -4,7 +4,7 @@
 
 Once you've trained an initial machine learning model on your labeled data, you can upload the model predictions as _pre-labels_ to further speed up your labeling workflow.
 
-To add a label to a sample programmatically, use the [`client.add_label()`](../python-sdk.md#create-a-label) function in the Python SDK. Note that the format of the `attributes` field depends on the [label type](../reference/label-types.md).
+To add a label to a sample programmatically, use the [`client.add_label()`](https://sdkdocs.segments.ai/en/latest/client.html#create-a-label) function in the Python SDK. Note that the format of the `attributes` field depends on the [label type](../reference/label-types.md).
 
 ```json
 sample_uuid = "602a3eec-a61c-4a77-9fcc-3037ce5e9123"
@@ -49,7 +49,7 @@ First, create a new label set:
 3. Choose a name and optionally a description for the new label set.
 4. Click the "Create" button.
 
-Then, refer to this label set when adding a label to a sample using [`client.add_label()`](../python-sdk.md#create-a-label):
+Then, refer to this label set when adding a label to a sample using [`client.add_label()`](https://sdkdocs.segments.ai/en/latest/client.html#create-a-label):
 
 ```json
 sample_uuid = "602a3eec-a61c-4a77-9fcc-3037ce5e9123"

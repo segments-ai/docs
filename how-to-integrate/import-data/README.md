@@ -21,7 +21,7 @@ See [#upload-a-file-as-an-asset](../../python-sdk.md#upload-a-file-as-an-asset "
 
 ## 2. Keep the data in your cloud bucket
 
-If you want to keep the data in your own cloud bucket or on your own file server, you can use the [Python SDK to submit the URLs](../../python-sdk.md#create-a-sample) to Segments.ai. In this case, no data is copied to our own storage system, only a reference (URL) to the data is stored in our database. This can be done in three ways:
+If you want to keep the data in your own cloud bucket or on your own file server, you can use the [Python SDK to submit the URLs](https://sdkdocs.segments.ai/en/latest/client.html#create-a-sample) to Segments.ai. In this case, no data is copied to our own storage system, only a reference (URL) to the data is stored in our database. This can be done in three ways:
 
 ### **Public but unguessable URLs**
 
