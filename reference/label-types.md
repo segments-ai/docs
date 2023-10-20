@@ -10,7 +10,7 @@ A label can additionally also contain [#object-attributes](label-types.md#object
 
 ### Segmentation labels
 
-Format of the `attributes` field in [`client.get_label()`](../python-sdk.md#get-a-label):
+Format of the `attributes` field in [`client.get_label()`](https://sdkdocs.segments.ai/en/latest/client.html#get-a-label):
 
 ```javascript
 {
@@ -58,7 +58,7 @@ For a full example of uploading model-generated labels to Segments.ai, please re
 
 ### Vector labels (bounding box, polygon, polyline, keypoint)
 
-Format of the `attributes` field in [`client.get_label()`](../python-sdk.md#get-a-label):
+Format of the `attributes` field in [`client.get_label()`](https://sdkdocs.segments.ai/en/latest/client.html#get-a-label):
 
 ```javascript
 {
@@ -113,7 +113,7 @@ Format of the `attributes` field in [`client.get_label()`](../python-sdk.md#get-
 
 ### Segmentation labels
 
-Format of the `attributes` field in [`client.get_label()`](../python-sdk.md#get-a-label):
+Format of the `attributes` field in [`client.get_label()`](https://sdkdocs.segments.ai/en/latest/client.html#get-a-label):
 
 ```json
 {
@@ -133,7 +133,7 @@ Format of the `attributes` field in [`client.get_label()`](../python-sdk.md#get-
 
 ### Vector labels (bounding box, polygon, polyline, keypoint)
 
-Format of the `attributes` field in [`client.get_label()`](../python-sdk.md#get-a-label):
+Format of the `attributes` field in [`client.get_label()`](https://sdkdocs.segments.ai/en/latest/client.html#get-a-label):
 
 ```jsonp
 {
@@ -435,7 +435,7 @@ Where each frames object has the following format:
 
 ### Vector label (polygon, polyline, keypoint)
 
-Format of the `attributes` field in [`client.get_label()`](../python-sdk.md#get-a-label):
+Format of the `attributes` field in [`client.get_label()`](https://sdkdocs.segments.ai/en/latest/client.html#get-a-label):
 
 ```json
 {
@@ -491,7 +491,7 @@ Format of the `attributes` field in [`client.get_label()`](../python-sdk.md#get-
 
 ### Named entity recognition
 
-Format of the `attributes` field in [`client.get_label()`](../python-sdk.md#get-a-label):
+Format of the `attributes` field in [`client.get_label()`](https://sdkdocs.segments.ai/en/latest/client.html#get-a-label):
 
 ```json
 {
@@ -518,7 +518,7 @@ Format of the `attributes` field in [`client.get_label()`](../python-sdk.md#get-
 
 ### Span categorization
 
-Format of the `attributes` field in [`client.get_label()`](../python-sdk.md#get-a-label):
+Format of the `attributes` field in [`client.get_label()`](https://sdkdocs.segments.ai/en/latest/client.html#get-a-label):
 
 ```json
 {
