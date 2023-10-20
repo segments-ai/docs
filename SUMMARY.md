@@ -77,4 +77,3 @@
 * [Label formats](reference/label-types.md)
 * [Categories and task attributes](reference/categories-and-task-attributes.md)
 * [API](api.md)
-* [Python SDK (old v0.x)](python-sdk.md)
