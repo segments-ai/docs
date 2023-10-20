@@ -17,7 +17,7 @@ Within a dataset, click the "Add samples" button or drag and drop files to the p
 
 ### Via the Python SDK
 
-See [#upload-a-file-as-an-asset](../../python-sdk.md#upload-a-file-as-an-asset "mention") in the Python SDK reference.
+See the [Python SDK reference](https://sdkdocs.segments.ai/en/latest/client.html#upload-an-asset-to-segments-s3-bucket).
 
 ## 2. Keep the data in your cloud bucket
 
