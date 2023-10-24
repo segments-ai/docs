@@ -107,10 +107,10 @@ See [3D point cloud formats](supported-file-formats.md#3d-point-cloud) for the s
 }
 ```
 
-| Name   | Type                                                                        | Description                                                                                                                                                                |
-| ------ | --------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `url`  | `string`                                                                    | **Required.** URL of the point cloud data.                                                                                                                                 |
-| `type` | `string`: "pcd" \| "binary-xyzi" \| "kitti" \| "binary-xyzir" \| "nuscenes" | **Required.** Type of the point cloud data. See [#3d-point-cloud](supported-file-formats.md#3d-point-cloud "mention") file formats for the list of supported file formats. |
+| Name   | Type                                                                                 | Description                                                                                                                                                                |
+| ------ | ------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `url`  | `string`                                                                             | **Required.** URL of the point cloud data.                                                                                                                                 |
+| `type` | `string`: "pcd" \| "binary-xyzi" \| "kitti" \| "binary-xyzir" \| "nuscenes" \| "ply" | **Required.** Type of the point cloud data. See [#3d-point-cloud](supported-file-formats.md#3d-point-cloud "mention") file formats for the list of supported file formats. |
 
 {% hint style="warning" %}
 If the point cloud file is on your local computer, you should first upload it to our asset storage service (using [`upload_asset()`](https://sdkdocs.segments.ai/en/latest/client.html#upload-an-asset-to-segments-s3-bucket)) or to another cloud storage service.
