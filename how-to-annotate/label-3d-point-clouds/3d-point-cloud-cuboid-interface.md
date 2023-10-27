@@ -104,3 +104,17 @@ If the selected cuboid was created with default dimensions, the dimensions of th
 ## Cycle between cuboids / select the next cuboid
 
 Press the hotkey (`Tab` by default).
+
+## Copy/paste a cuboid
+
+### Copy a cuboid
+
+1. Select the cuboid.
+2. Press the copy hotkey of your operating system (`Ctrl/cmd + c`).
+
+### Paste a cuboid
+
+Press the paste hotkey of your operating system (`Ctrl/cmd + v`).
+
+* If you paste a cuboid and the same cuboid already exists, a **duplicate** cuboid will be created and its position will be offset from the original cuboid.
+* If you paste a cuboid and the cuboid does not exist yet, the cuboid will keep its [track ID](../label-sequences-of-data/use-track-ids-in-sequences.md) and will not be offset.
