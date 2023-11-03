@@ -16,14 +16,16 @@ When [editing the category and task attribute configuration directly](https://do
         { ... },
         { ... },
         { ... }
-    ]
+    ],
+    "circle_radius": 50 // optional ego circle in 3D vector interfaces
 }
 ```
 
-| Name               | Type                                                                 | Description                                                                |
-| ------------------ | -------------------------------------------------------------------- | -------------------------------------------------------------------------- |
-| `categories`       | `array` of [categories](categories-and-task-attributes.md#category)  | **Required.** List of all possible categories for a label in this dataset. |
-| `image_attributes` | `array` of [attributes](categories-and-task-attributes.md#attribute) | List of image-level attributes.                                            |
+| Name               | Type                                                                 | Description                                                                                                                                                    |
+| ------------------ | -------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `categories`       | `array` of [categories](categories-and-task-attributes.md#category)  | **Required.** List of all possible categories for a label in this dataset.                                                                                     |
+| `image_attributes` | `array` of [attributes](categories-and-task-attributes.md#attribute) | List of image-level attributes.                                                                                                                                |
+| `circle_radius`    | `int`                                                                | The radius of the circle around the ego position in the 3D cuboid and vector interface. Can be used to indicate a region in which objects should be annotated. |
 
 {% hint style="warning" %}
 The `categories` array should contain at least one category.
