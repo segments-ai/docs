@@ -43,6 +43,7 @@
 * [Clone a dataset](guides/clone-a-dataset.md)
 * [Work with issues](guides/work-with-issues.md)
 * [Bulk change label status](guides/bulk-change-label-status.md)
+* [Manage QA processes](guides/manage-qa-processes.md)
 
 ## How to integrate
 
