@@ -75,6 +75,10 @@ The point budget controls the maximum number of points that are displayed. If th
 
 Check the "Show square grid" checkbox to show a helper grid that is fixed to world coordinates.
 
+### Concentric Circles grid
+
+Check the "Show concentric circles grid" checkbox to show a circular helper grid that is attached to the [ego pose](../../reference/sample-types/#ego-pose).
+
 ## Panning settings
 
 ### Panning modes
