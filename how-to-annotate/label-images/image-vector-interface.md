@@ -34,13 +34,15 @@ Click the![](<../../.gitbook/assets/image (21).png>)button in the left toolbar t
 
 Click the![](<../../.gitbook/assets/image (32).png>)button in the left toolbar to draw a polygon. Click on the image to draw polygon points. Double click or click the first point of the polygon to finish it.
 
-After finishing the polygon, it's possible to add a point to it by `Shift + left click` inside the polygon. This will add a point to the edge closest of the cursor. You can also remove a point by `Shift + left click`. A polygon needs at least 3 points.
+After finishing a polygon, you can add a point to it with `Shift + left click`. This will add a point to the edge closest of the cursor. You will see a preview of where the point will be added as soon as you press `Shift`. You can add points to a selected polygon in _view-and-select_ mode, or while still in _draw polygon_ mode after finishing it. \
+You can remove a point by `Shift + left click`. A polygon needs at least 3 points.
 
 ### Polyline
 
 Click the![](<../../.gitbook/assets/image (30) (2).png>)button in the left toolbar to draw a polyline. Click on the image to draw polyline points. Double click to finish it.
 
-After finishing the polyline, it's possible to add a point by `Shift + left click` on the polyline. This will add a point at the position of the cursor. You can also remove a point by `Shift + left click`. A polyline needs at least 2 points.
+After finishing a polyline, you can add a point to it with `Shift + left click`. This will add a point to the edge closest of the cursor. You will see a preview of where the point will be added as soon as you press `Shift`. You can add points to a selected polyline in _view-and-select_ mode, or while still in _draw polygon_ mode after finishing it.\
+You can remove a point by `Shift + left click`. A polyline needs at least 2 points.
 
 ### Keypoint
 
