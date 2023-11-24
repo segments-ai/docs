@@ -86,5 +86,10 @@ When labeling in brush, polygon or autosegment mode, an eraser button ![](<../..
 
 Click the![](<../../.gitbook/assets/image (2) (2).png>)button in the left toolbar or press hotkey `r` to toggle the lock mode. When lock mode is enabled, existing objects will not be affected when drawing over them.
 
+## Ruler mode
 
+1. Click the ![](<../../.gitbook/assets/image (35).png>)button in the right toolbar or press hotkey `u` to toggle the ruler mode
+2. Click in the interface to set the first point
+3. Move your cursor to another point and it will display the measurement in pixels
+4. Click again to go back to select-and-view mode or press `esc`
 
