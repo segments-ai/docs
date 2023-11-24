@@ -69,6 +69,12 @@ The point budget controls the maximum number of points that are displayed. If th
 1. Click/hover over the dot icon in the toolbar on the right.
 2. Enter the maximum amount of points in the point budget input box. If you want to remove the point budget, simply remove the value in the input box.
 
+## Grid settings
+
+### Square grid
+
+Check the "Show square grid" checkbox to show a helper grid that is fixed to world coordinates.
+
 ## Panning settings
 
 ### Panning modes
