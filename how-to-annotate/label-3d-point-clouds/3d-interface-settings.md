@@ -69,15 +69,27 @@ The point budget controls the maximum number of points that are displayed. If th
 1. Click/hover over the dot icon in the toolbar on the right.
 2. Enter the maximum amount of points in the point budget input box. If you want to remove the point budget, simply remove the value in the input box.
 
-## Grid settings
+## Helper objects
 
-### Square grid
+### Grid helpers
+
+#### Square grid
 
 Check the "Show square grid" checkbox to show a helper grid that is fixed to world coordinates.
 
-### Concentric circles grid
+#### Concentric circles grid
 
 Check the "Show concentric circles grid" checkbox to show a circular helper grid that is attached to the [ego pose](../../reference/sample-types/#ego-pose).
+
+### Camera helpers
+
+#### Ego-vehicle model
+
+Check the "Show ego-vehicle model" to show a 3D model of a car to make it easier to orientate in the scene.
+
+#### Camera debugger
+
+Check the "Show camera debugger" to show a list of cameras available in the scene. By default all cameras are toggled on, but you can disable them one by one to see where the cameras are located and how they are oriented. If a name is provided in the [camera image attributes](../../reference/sample-types/#camera-image), these names will be used in the UI. If not, the cameras will be automatically counted and named that way.
 
 ## Panning settings
 

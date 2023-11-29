@@ -122,6 +122,7 @@ A calibrated or uncalibrated reference image corresponding to a point cloud. The
 
 ```json
 {
+    "name": "Camera example 1" // optional
     "url": "https://example.com/image.jpg",
     "row": 0,
     "col": 0,
@@ -160,6 +161,7 @@ A calibrated or uncalibrated reference image corresponding to a point cloud. The
 
 | Name                | Type                                      | Description                                                                                                                                                                                                                                                                                                                                 |
 | ------------------- | ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `name`              | `string`                                  | Name of the camera image.                                                                                                                                                                                                                                                                                                                   |
 | `url`               | `string`                                  | **Required.** URL of the camera image.                                                                                                                                                                                                                                                                                                      |
 | `row`               | `int`                                     | **Required.** Row of this image in the images viewer.                                                                                                                                                                                                                                                                                       |
 | `col`               | `int`                                     | **Required.** Column of this image in the images viewer.                                                                                                                                                                                                                                                                                    |
