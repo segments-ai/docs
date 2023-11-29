@@ -83,3 +83,10 @@ This feature is only available in the 3D point cloud cuboid and vector interface
 {% hint style="info" %}
 This feature is only available in the 3D point cloud segmentation interface.
 {% endhint %}
+
+## Ruler mode
+
+1. Click on the ruler icon (![](<../../.gitbook/assets/image (35).png>)) in the toolbar on the right, or press the hotkey (`u` by default).
+2. Click on the ground plane to starting point.
+3. When you move your cursor to another point on the ground plane the distance measurement will be shown in the bottom right panel of the sidebar. This measurement is in meters if the scale of your point cloud is true to life.
+4. Click again to go back to "Select and edit" tool or press `Esc`.
