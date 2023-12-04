@@ -55,7 +55,7 @@ Gradient coloring allows you to view your point cloud more clearly. Gradient col
 
 1. Upload a point cloud with intensity values. See [supported-file-formats.md](../../reference/sample-types/supported-file-formats.md "mention").
 2. Check the "Gradient coloring" checkbox.
-3. Choose "Height" in the "Gradient attribute" dropdown.
+3. Choose "Intensity" in the "Gradient attribute" dropdown.
 4. _Optional:_ Choose a gradient by clicking on the gradient and selecting one from the list. You can also reverse the gradient by checking the box under "Reverse".
 
 ### Change the point budget
