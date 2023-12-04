@@ -48,7 +48,7 @@ Gradient coloring allows you to view your point cloud more clearly. Gradient col
 
 1. Check the "Gradient coloring" checkbox.
 2. Choose "Height" in the "Gradient attribute" dropdown.
-3. _Optional:_ Check the "Set min/max automatically" checkbox to automatically adjust the range to the bounds of the current point cloud. Or unselect it to set the minimum and maximum height between which the gradient is used.
+3. _Optional:_ Check the "Set min/max automatically" checkbox to automatically adjust the height range to the bounds of the current point cloud. Or unselect it and set the minimum and maximum height manually.
 4. _Optional:_ Choose a gradient by clicking on the gradient and selecting one from the list. You can also reverse the gradient by checking the box under "Reverse".
 
 #### Enable intensity coloring
