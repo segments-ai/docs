@@ -116,5 +116,5 @@ Press the hotkey (`Tab` by default).
 
 Press the paste hotkey of your operating system (`Ctrl/cmd + v`).
 
-* If you paste a cuboid and the same cuboid already exists, a **duplicate** cuboid will be created and its position will be offset from the original cuboid.
-* If you paste a cuboid and the cuboid does not exist yet, the cuboid will keep its [track ID](../label-sequences-of-data/use-track-ids-in-sequences.md) and will not be offset.
+* If you paste a cuboid and the same cuboid already exists (e.g. because you pasted it in the same frame), a **duplicate** cuboid with a new [track ID](../label-sequences-of-data/use-track-ids-in-sequences.md) will be created and its position will be offset from the original cuboid.
+* If you paste a cuboid and the cuboid does not exist yet (e.g because you pasted it in another frame which doesn't have a cuboid with that track ID yet), the cuboid will keep its track ID and will not be offset.
