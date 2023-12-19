@@ -10,6 +10,10 @@ Click on the "Settings" tab in the sidebar on the right to open the 3D interface
 
 Press the "Hotkeys" button to open the hotkey settings. See [customize-hotkeys.md](../customize-hotkeys.md "mention") for more information on how to customize the hotkeys.
 
+## Layout presets
+
+You can choose a layout that best fits your workflow from a list of presets. The preset you picked will be remembered within the dataset type.
+
 ## Object coloring mode
 
 The object coloring toggle allows you to change how different objects in the sample are displayed.&#x20;
