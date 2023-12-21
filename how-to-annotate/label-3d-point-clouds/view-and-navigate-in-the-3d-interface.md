@@ -67,6 +67,10 @@ Press the hotkey (`Ctrl/cmd + b` by default).
 
 Press the hotkey (`Ctrl/cmd + i` by default).
 
+## Open/close camera view
+
+Press the hotkeys `0-9` to open a certain camera view (numbered left to right). Press the same number key or `esc` to close the camera view again.
+
 ## Switch the main view to an orthographic top view
 
 Click on the camera icon (![](<../../.gitbook/assets/image (6).png>)) in the toolbar on the right, or press the hotkey (`v` by default).&#x20;
