@@ -1,8 +1,6 @@
 # Upload, view, and overlay images
 
-{% hint style="info" %}
 See the [view-and-navigate-in-the-3d-interface.md](view-and-navigate-in-the-3d-interface.md "mention") page for basic 3D navigation principles.
-{% endhint %}
 
 ## Upload images along with point clouds
 
@@ -12,14 +10,20 @@ Segments.ai allows you to upload images along with point clouds. Additionally, y
 
 When you open a sample with images, you can see the thumbnails of the images at the bottom of the main labeling window.
 
-* To open the image viewer, click on the thumbnail of the image.
-* To close the image viewer, click on the thumbnail of the image again.
+#### Open the image viewer
 
-{% embed url="https://segments.ai/blog/assets/images/improved-image-viewer/thumbs-trim-compr.mp4" %}
+* Click on the thumbnail of the image
+* Or press the number key (`1` - `9`) corresponding to the image. The images are numbered from left to right.
 
 {% hint style="info" %}
 The 3D overlay (of objects and the point cloud) is only visible if the camera parameters of the image are specified.
 {% endhint %}
+
+#### Close the image viewer
+
+* Click on the thumbnail of the image again
+* Or press `Esc`
+* Or press the number key (`1` - `9`) corresponding to the image again
 
 ## Zoom/pan in the image viewer
 
