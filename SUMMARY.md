@@ -66,6 +66,7 @@
 * [Main concepts](background/main-concepts.md)
 * [Sequences](background/sequences.md)
 * [Label queue mechanics](background/label-queue-mechanics.md)
+* [Labeling metrics](background/labeling-metrics.md)
 * [3D Tiles](background/3d-tiles.md)
 * [Security](background/security.md)
 
