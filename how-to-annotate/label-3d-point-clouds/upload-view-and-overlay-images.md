@@ -57,7 +57,9 @@ To switch between the camera images, press the arrow buttons on the left/right o
 
 You can also zoom/pan in the synchronized image viewer in the same way as in the image viewer (see [above](upload-view-and-overlay-images.md#zoom-pan-in-the-image-viewer)).
 
-{% embed url="https://segments.ai/blog/assets/images/improved-image-viewer/cuboid-carousel-trim-compr.mp4" %}
+
+
+<figure><img src="../../.gitbook/assets/Screenshot 2024-01-24 at 22.32.38.png" alt=""><figcaption></figcaption></figure>
 
 ## View the image grid in a new tab
 
