@@ -20,8 +20,3 @@ Press hotkey `f` to reset to the original pan and zoom level.
 ## Show only the image or only the label
 
 Hover over the ![](<../../.gitbook/assets/image (19).png>) buttons in the top right of the screen to show only the image, label or both (default). You can also hold the hotkeys `i` or `l` to show only the image or only the label.
-
-## Change the image brightness and label opacity
-
-Hover over the ![](<../../.gitbook/assets/image (10) (2).png>) icon in the top right toolbar and adjust the sliders to change the image brightness and label opacity.
-
