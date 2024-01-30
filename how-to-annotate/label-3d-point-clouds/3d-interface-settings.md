@@ -32,6 +32,12 @@ Each category has a color defined in the dataset settings (see [categories-and-t
 
 _E.g. two cars are displayed in the same category color (defined in the dataset settings)._&#x20;
 
+## Cuboid interface-only settings
+
+### Opacity
+
+Drag the slider to change the opacity of the cuboids in the view. This will change the opacity for all cuboids in the scene, including the active cuboid.
+
 ## Point cloud display settings
 
 ### Change the size of the points
@@ -43,6 +49,10 @@ Drag the slider to adjust the point size.
 If you have uploaded one or more calibrated images along your point cloud, you can check the checkbox to choose whether the point cloud should be overlaid on the image in the image viewers.
 
 See [upload-view-and-overlay-images.md](upload-view-and-overlay-images.md "mention") for more information on images in the 3D interfaces.
+
+### Toggle invert selection point color (segmentation-only)
+
+If the default color doesn't contrast enough with the background while selecting points, you can toggle this checkbox to invert the color.
 
 ### Gradient coloring
 
