@@ -24,6 +24,10 @@ Select an object and press `Backspace` to remove it. You can also click the ![](
 
 Select an object and click on its name in the sidebar to select a different category. You can also use hotkey `c` to change the category of the active object.
 
+## Intersect bounding boxes / polygons
+
+To make it easy to draw shapes closely together you can just draw overlapping bounding boxes and polygons. If you then select one of the overlapping shapes you can press the hotkey (default `r` ) to intersect the active shape with the other shapes it overlaps with.
+
 ## Annotation types
 
 ### Bounding box
