@@ -83,19 +83,15 @@ The point budget controls the maximum number of points that are displayed. If th
 1. Click/hover over the dot icon in the toolbar on the right.
 2. Enter the maximum amount of points in the point budget input box. If you want to remove the point budget, simply remove the value in the input box.
 
-## Helper objects settings
+## Camera settings
 
-### Square grid
+### Follow active object (cuboid/vector only)
 
-Check the "Show square grid" checkbox to show a helper grid that is fixed to world coordinates.
+Check the "Follow active object" checkbox to make your camera follow the active cuboid/vector through the sequence.
 
-### Concentric circles grid
+### Change the key pan speed
 
-Check the "Show concentric circles grid" checkbox to show a circular helper grid that is attached to the [ego pose](../../reference/sample-types/#ego-pose).
-
-### Ego-vehicle model
-
-Check the "Show ego-vehicle model" checkbox to show a 3D model of a car that is attached to the [ego pose](../../reference/sample-types/#ego-pose). Note that the orientation of the model might not correspond to the rotation of the ego vehicle.&#x20;
+Drag the slider to adjust the key pan speed, i.e. the speed the camera moves when using keyboard panning.
 
 ### Calibrated camera helpers
 
@@ -119,6 +115,24 @@ The camera pans along the screen, i.e. along the camera plane.&#x20;
 
 _E.g. when you pan up by clicking and dragging, or press `w`, the camera moves up._&#x20;
 
-### Change the key pan speed
+## Helper objects settings
 
-Drag the slider to adjust the key pan speed, i.e. the speed the camera moves when using keyboard panning.
+### Square grid
+
+Check the "Show square grid" checkbox to show a helper grid that is fixed to world coordinates.
+
+### Concentric circles grid
+
+Check the "Show concentric circles grid" checkbox to show a circular helper grid that is attached to the [ego pose](../../reference/sample-types/#ego-pose).
+
+### Ego-vehicle model
+
+Check the "Show ego-vehicle model" checkbox to show a 3D model of a car that is attached to the [ego pose](../../reference/sample-types/#ego-pose). Note that the orientation of the model might not correspond to the rotation of the ego vehicle.&#x20;
+
+### Show all cuboids in active track
+
+Check the "Show all cuboids in active track" checkbox to show all cuboids across all frames in the sequence of the active track.
+
+### Show trajectory line of active track
+
+Check the "Show trajectory line in active track" checkbox to show the trajectory line of the active track across all frames in the sequence.
