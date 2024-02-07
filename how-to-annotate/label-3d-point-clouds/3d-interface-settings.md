@@ -133,6 +133,10 @@ Check the "Show ego-vehicle model" checkbox to show a 3D model of a car that is 
 
 Check the "Show all cuboids in active track" checkbox to show all cuboids across all frames in the sequence of the active track.
 
+<figure><img src="../../.gitbook/assets/Screenshot 2024-02-07 at 13.05.26 (1).png" alt=""><figcaption><p>Cuboids visible across frames</p></figcaption></figure>
+
 ### Show trajectory line of active track
 
 Check the "Show trajectory line in active track" checkbox to show the trajectory line of the active track across all frames in the sequence.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2024-02-07 at 13.02.11.png" alt=""><figcaption><p>Trajectory across all frames of the active cuboid visible</p></figcaption></figure>
