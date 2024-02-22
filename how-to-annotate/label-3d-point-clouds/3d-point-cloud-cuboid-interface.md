@@ -88,7 +88,7 @@ By default, only yaw rotation (around the z-axis) is enabled. To enable full 3D 
 
 When a cuboid is selected you'll see the "Cuboid info" pane pop up at the bottom right. In here you can directly change the numeric inputs of the cuboid for more fine-grained control. In here it's also possible to propagate a certain value to the next and previous frames by clicking on the arrow buttons next to the input field. These buttons are disabled for properties that are already synced across frames.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Cuboid information pane</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (36).png" alt=""><figcaption><p>Cuboid information pane</p></figcaption></figure>
 
 ## Change the category of a cuboid
 
