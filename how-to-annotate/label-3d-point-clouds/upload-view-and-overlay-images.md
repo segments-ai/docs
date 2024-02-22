@@ -66,7 +66,7 @@ You can also zoom/pan in the synchronized image viewer in the same way as in the
 When adding images to a sample, you have to specify a row and column for each image. This information is used to display a grid of your images. You can view this grid in a separate browser tab (which you could move to a second screen).
 
 * To open the image grid in a new tab, press the "Open grid" rectangle next to the camera images at the bottom of the main viewer.\
-  ![](../../.gitbook/assets/image.png)
+  ![](<../../.gitbook/assets/image (1).png>)
 
 You can interact with the images in the grid as follows:
 

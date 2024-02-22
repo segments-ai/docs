@@ -10,7 +10,7 @@ This video shows how you can use the merged point cloud view to draw a perfect c
 
 ## Toggle the merged point cloud view
 
-Click on the merged point cloud icon (![](<../../.gitbook/assets/image (1) (1).png>)) in the right toolbar to toggle the merged point cloud view on/off.
+Click on the merged point cloud icon (![](<../../.gitbook/assets/image (1) (1) (1).png>)) in the right toolbar to toggle the merged point cloud view on/off.
 
 {% hint style="warning" %}
 The merged point cloud view is only available for 3D vector labeling (cuboids, polygons, polylines, keypoints).&#x20;
