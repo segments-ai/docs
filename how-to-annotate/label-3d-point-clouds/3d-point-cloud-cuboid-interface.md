@@ -84,7 +84,7 @@ By default, only yaw rotation (around the z-axis) is enabled. To enable full 3D 
    * In the perspective view: double-click the face where you want the heading to be.
    * In a side view: double-click the edge where you want the heading to be.
 
-## Edit cuboid information with direct inputs
+## Edit cuboid information
 
 When a cuboid is selected you'll see the "Cuboid info" pane pop up at the bottom right. In here you can directly change the numeric inputs of the cuboid for more fine-grained control. In here it's also possible to propagate a certain value to the next and previous frames by clicking on the arrow buttons next to the input field. These buttons are disabled for properties that are already synced across frames.
 
