@@ -240,25 +240,15 @@ The `point_annotations` array contains the object/annotation id for each point i
 ```jsonp
 {
   "format_version": "0.2",
-  "annotations": [
+  "annotations": [ // list of cuboid annotations, see below
     {
       "id": 1,
       "category_id": 1,
       "type": "cuboid",
-      "position": {
-        "x": 0.0,
-        "y": 0.2,
-        "z": 0.5
-      },
-      "dimensions": {
-        "x": 1.2,
-        "y": 1,
-        "z": 1
-      },
-      "yaw": 1.63,
-      "track_id": 1,  // only in sequences
-      "is_keyframe": true,  // only in sequences
-      "index": 0,  // only in sequences 
+      ...
+    },
+    { 
+      ... 
     }
   ]
 }
