@@ -84,6 +84,10 @@ On Segments.ai, the up direction is defined along the z-axis, i.e. the vector (0
         }
     },
     "default_z": -1 // optional, 0 by default
+    "bounds": { // optional
+        "min_z": -1,
+        "max_z": 3
+    }
 }
 ```
 
@@ -95,6 +99,7 @@ On Segments.ai, the up direction is defined along the z-axis, i.e. the vector (0
 | `timestamp` | `int` or `string`                           | Timestamp of the sample. Object kinematics will only be calculated if the timestamp is an integer representing the time in nanoseconds.                                                                                                                   |
 | `ego_pose`  | [Ego pose](./#ego-pose)                     | Pose of the sensor that captured the point cloud data.                                                                                                                                                                                                    |
 | `default_z` | `float`                                     | Default z-value of the ground plane. 0 by default. Only valid in the point cloud cuboid editor. New cuboids will be drawn on top of the ground plane, i.e. the default z-position of a new cuboid is 0.5 (since the default height of a new cuboid is 1). |
+| `bounds`    | `dict`                                      | Point cloud bounds: a `dict` with values `min_z` and `max_z` (`float`). These values are used as the default min/max values for height coloring when provided.                                                                                            |
 
 ### Point cloud data
 
