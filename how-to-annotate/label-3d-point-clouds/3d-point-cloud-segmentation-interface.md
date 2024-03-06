@@ -98,3 +98,39 @@ To toggle the lock mode:
 ## Cycle between objects/ select the next object
 
 Press the hotkey (`Tab` by default).
+
+## Use the limiting cuboid
+
+The limiting cuboid can be used to limit the point cloud to an (oriented) bounding box. Only points in the cuboid can be edited.
+
+### Limit the point cloud to an oriented bounding box
+
+1. Show the limiting cuboid by clicking on the cuboid icon (![](<../../.gitbook/assets/image (47).png>)) in the toolbar on the right.
+2. Adjust the cuboid:
+   * Adjust the cuboid dimensions by clicking and dragging a face of the cuboid.
+   * Rotate the cuboid by clicking and dragging the red rotation plane attached to the cuboid.
+   * Translate the cuboid freely by clicking and dragging the yellow cube in the middle of the cuboid. \
+     Hover over the yellow cube in the middle to see the translation axes. Click and drag on an axis to translate the cuboid along the selected axis.
+3. Apply the changes by clicking on the cuboid icon again or by selecting any of the segmentation tools in the toolbar on the left.&#x20;
+
+{% hint style="info" %}
+In [interface layout presets 1 and 5](3d-interface-settings.md#description-of-the-layout-presets), you can also adjust the limiting cuboid in the side, top, and back views.
+{% endhint %}
+
+### Limit the height of the point cloud
+
+1. Show the limiting cuboid by clicking on the cuboid icon (![](<../../.gitbook/assets/image (47).png>)) in the toolbar on the right.
+2. Adjust the min/max values in the sidebar on the right.
+3. Apply the changes by clicking on the cuboid icon again or by selecting any of the segmentation tools in the toolbar on the left.&#x20;
+
+### Reset the limiting cuboid
+
+1. Show the limiting cuboid by clicking on the cuboid icon (![](<../../.gitbook/assets/image (47).png>)) in the toolbar on the right.
+2. Click on the "Reset limiting cuboid" button located at the center-top of the interface.
+3. Apply the changes by clicking on the cuboid icon again or by selecting any of the segmentation tools in the toolbar on the left.&#x20;
+
+<figure><img src="../../.gitbook/assets/image (43).png" alt=""><figcaption><p>The limiting cuboid is shown as a yellow cuboid with red outlines and includes the whole point cloud by default.</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (45).png" alt=""><figcaption><p>Adjust the limiting cuboid to determine which part of the point cloud will be shown.</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (46).png" alt=""><figcaption><p>The resulting point cloud view. Only the visible points can be edited.</p></figcaption></figure>

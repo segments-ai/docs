@@ -10,9 +10,17 @@ Click on the "Settings" tab in the sidebar on the right to open the 3D interface
 
 Press the "Hotkeys" button to open the hotkey settings. See [customize-hotkeys.md](../customize-hotkeys.md "mention") for more information on how to customize the hotkeys.
 
-## Layout presets
+## Interface layout presets
 
-You can choose a layout that best fits your workflow from a list of presets. The preset you picked will be remembered within the dataset type.
+The interface layout presets allow you to change the layout of the point cloud and image viewers. The preset you picked will be remembered within the dataset type.
+
+### Description of the layout presets
+
+1. This layout contains a large main viewer and below it a top view and a synced image viewer (when calibrated images are present). When selecting a cuboid or vector, the top view splits into a side, top, and back view which are placed in a row. _Default for cuboid datasets._
+2. This layout contains a large main viewer and below it a top view, back view, and a synced image viewer (when calibrated images are present). In segmentation datasets, the top and back view can be switched to other perspectives.
+3. This layout contains a large main viewer and a synced image viewer in the bottom right (when calibrated images are present). _Default for vector and segmentation datasets._
+4. This layout contains a large main viewer, a top view in the bottom left, and a synced image viewer in the bottom right (when calibrated images are present).
+5. This layout contains a large main viewer and right of it a top view and a synced image viewer (when calibrated images are present). When selecting a cuboid or vector, the top view splits into a side, top, and back view which are placed in a column.
 
 ## Object coloring mode
 
@@ -32,12 +40,6 @@ Each category has a color defined in the dataset settings (see [categories-and-t
 
 _E.g. two cars are displayed in the same category color (defined in the dataset settings)._&#x20;
 
-## Cuboid interface-only settings
-
-### Opacity
-
-Drag the slider to change the opacity of the cuboids in the view. This will change the opacity for all cuboids in the scene, including the active cuboid.
-
 ## Point cloud display settings
 
 ### Change the size of the points
@@ -50,7 +52,7 @@ If you have uploaded one or more calibrated images along your point cloud, you c
 
 See [upload-view-and-overlay-images.md](upload-view-and-overlay-images.md "mention") for more information on images in the 3D interfaces.
 
-### Toggle invert selection point color (segmentation-only)
+### Invert selection point color (segmentation datasets only)
 
 If the default color doesn't contrast enough with the background while selecting points, you can toggle this checkbox to invert the color.
 
@@ -75,7 +77,7 @@ Gradient coloring allows you to view your point cloud more clearly. Gradient col
 ### Change the point budget
 
 {% hint style="warning" %}
-This feature is deprecated. It is only available in the 3D point cloud vector interfaces for point clouds do not use 3D tiling.
+This feature is deprecated. It is only available in the 3D point cloud vector interfaces for point clouds that do not use 3D tiling.
 {% endhint %}
 
 The point budget controls the maximum number of points that are displayed. If the point cloud contains more points than the point budget, the point cloud will be randomly subsampled to limit the number of points.&#x20;
@@ -85,7 +87,7 @@ The point budget controls the maximum number of points that are displayed. If th
 
 ## Camera settings
 
-### Follow active object (cuboid/vector only)
+### Follow active object (cuboid/vector datasets only)
 
 Check the "Follow active object" checkbox to make your camera follow the active cuboid/vector through the sequence.
 
@@ -93,9 +95,9 @@ Check the "Follow active object" checkbox to make your camera follow the active 
 
 Drag the slider to adjust the key pan speed, i.e. the speed the camera moves when using keyboard panning.
 
-### Calibrated camera helpers
+### Toggle calibrated camera helpers
 
-Check the "Show calibrated camera helpers" to show a camera helper for each calibrated camera in the scene. When the "Show calibrated camera helpers" is checked, you will see a list of the calibrated cameras in the scene. To disable the camera helper of a calibrated camera, uncheck the checkbox next to the camera name. The camera name can be provided in the [camera image attributes](../../reference/sample-types/#camera-image). If no camera names are provided, the cameras will be labeled as "Camera 1", "Camera 2", etc.
+Check the "Show calibrated camera helpers" to show a camera helper for each calibrated camera in the scene. When the "Show calibrated camera helpers" is checked, you will see a list of the calibrated cameras in the scene. To disable the camera helper of a calibrated camera, untick the checkbox next to the camera name. The camera name can be provided in the [camera image attributes](../../reference/sample-types/#camera-image). If no camera names are provided, the cameras are labeled as "Camera 1", "Camera 2", etc.
 
 ## Panning settings
 
@@ -131,12 +133,22 @@ Check the "Show ego-vehicle model" checkbox to show a 3D model of a car that is 
 
 ### Show all cuboids in active track
 
-Check the "Show all cuboids in active track" checkbox to show all cuboids across all frames in the sequence of the active track.
+Check the "Show all cuboids in active track" checkbox to show all cuboids across all frames in the sequence of the active track. On a keyframe, the cuboid box is orange, while on other frames, it is grey.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2024-02-07 at 13.05.26 (1).png" alt=""><figcaption><p>Cuboids visible across frames</p></figcaption></figure>
+Click on a cuboid to jump to the frame of that cuboid.
+
+<figure><img src="../../.gitbook/assets/image (38).png" alt=""><figcaption></figcaption></figure>
 
 ### Show trajectory line of active track
 
-Check the "Show trajectory line in active track" checkbox to show the trajectory line of the active track across all frames in the sequence.
+Check the "Show trajectory line in active track" checkbox to show the trajectory line of the active track across all frames in the sequence. The position of the cuboid at a certain frame is visualized as a circle, which is orange when the frame is a keyframe, and grey if it is not.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2024-02-07 at 13.02.11.png" alt=""><figcaption><p>Trajectory across all frames of the active cuboid visible</p></figcaption></figure>
+Click on the circle to jump to the frame where the cuboid is positioned at the circle's position.
+
+<figure><img src="../../.gitbook/assets/image (39).png" alt=""><figcaption></figcaption></figure>
+
+## Cuboid settings
+
+### Opacity
+
+Drag the slider to change the opacity of the cuboids in the view. This will change the opacity for all cuboids in the scene, including the active cuboid.
