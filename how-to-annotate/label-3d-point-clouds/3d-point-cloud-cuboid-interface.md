@@ -1,3 +1,22 @@
+---
+cover: ../../.gitbook/assets/Screenshot 2024-03-08 at 13.17.33.png
+coverY: 99.83879093198992
+layout:
+  cover:
+    visible: true
+    size: hero
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # 3D point cloud cuboid interface
 
 {% hint style="info" %}

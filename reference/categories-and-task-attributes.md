@@ -39,6 +39,9 @@ The `categories` array should contain at least one category.
     "id": 1,
     "color": [33, 138, 33], // optional
     "has_instances": true, // optional
+    "lock_dimensions": true, // optional, false by default
+    "lock_rotation": true, // optional, false by default
+    "lock_position": true, // optional, false by default
     "attributes": [ // optional object-level attributes
         { ... },
         { ... },
