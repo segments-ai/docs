@@ -121,11 +121,11 @@ _E.g. when you pan up by clicking and dragging, or press `w`, the camera moves u
 
 ### Square grid
 
-Check the "Show square grid" checkbox to show a helper grid that is fixed to world coordinates.
+Check the "Show square grid" checkbox to show a helper grid that is fixed to the [ego pose](../../reference/sample-types/#ego-pose) (tracks position but not rotation).
 
 ### Concentric circles grid
 
-Check the "Show concentric circles grid" checkbox to show a circular helper grid that is attached to the [ego pose](../../reference/sample-types/#ego-pose).
+Check the "Show concentric circles grid" checkbox to show a circular helper grid that is attached to the [ego pose](../../reference/sample-types/#ego-pose) (tracks position and rotation).
 
 ### Ego-vehicle model
 
