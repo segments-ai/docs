@@ -160,7 +160,8 @@ A calibrated or uncalibrated reference image corresponding to a point cloud. The
             "k4": 0.00120938
         }
     },
-    "camera_convention": "OpenCV" // optional
+    "camera_convention": "OpenCV", // optional
+    "rotation": 1.5708 // optional
 }
 ```
 
@@ -174,6 +175,7 @@ A calibrated or uncalibrated reference image corresponding to a point cloud. The
 | `extrinsics`        | [Camera extrinsics](./#camera-extrinsics) | Extrinsic parameters of the camera relative to the [ego pose](./#ego-pose).                                                                                                                                                                                                                                                                 |
 | `distortion`        | [Distortion](./#distortion)               | Distortion parameters of the camera.                                                                                                                                                                                                                                                                                                        |
 | `camera_convention` | `string`: "OpenGL" \| "OpenCV"            | Convention of the camera coordinates. We use the OpenGL/Blender coordinate convention for cameras. +X is right, +Y is up, and +Z is pointing back and away from the camera. -Z is the look-at direction. Other codebases may use the OpenCV convention, where the Y and Z axes are flipped but the +X axis remains the same. See diagram 1. |
+| `rotation`          | `float`                                   | The rotation that needs to be applied when displaying the image. Valid options are 0, $$\frac{\pi}{4}$$, $$\frac{\pi}{2}$$, and $$\frac{3 \pi}{4}$$. Useful for when a camera is mounted upside-down.                                                                                                                                       |
 
 {% hint style="warning" %}
 If the image file is on your local computer, you should first upload it to our asset storage service (using [`upload_asset()`](https://sdkdocs.segments.ai/en/latest/client.html#upload-an-asset-to-segments-s3-bucket)) or to another cloud storage service.
