@@ -32,7 +32,26 @@ Segments.ai supports the binary point cloud formats used by the [KITTI](http://w
 
 The PLY file format can be used for point clouds by encoding the points as vertices. The PLY header should thus contain a vertex _element_ containing x, y, and z _properties_ and optionally also color or intensity properties. Both binary and ASCII PLY files are supported.&#x20;
 
-<table><thead><tr><th>Property name</th><th>Type</th><th data-type="checkbox">Required</th></tr></thead><tbody><tr><td>x</td><td>float32</td><td>true</td></tr><tr><td>y</td><td>float32</td><td>true</td></tr><tr><td>z</td><td>float32</td><td>true</td></tr><tr><td>red</td><td>uchar</td><td>false</td></tr><tr><td>green</td><td>uchar</td><td>false</td></tr><tr><td>blue</td><td>uchar</td><td>false</td></tr><tr><td>intensity</td><td>float32</td><td>false</td></tr></tbody></table>
+<table><thead><tr><th>Property name</th><th>Type</th><th data-type="checkbox">Required</th></tr></thead><tbody><tr><td>x</td><td>float32</td><td>true</td></tr><tr><td>y</td><td>float32</td><td>true</td></tr><tr><td>z</td><td>float32</td><td>true</td></tr><tr><td>red</td><td>uchar [0, 255]</td><td>false</td></tr><tr><td>green</td><td>uchar [0, 255]</td><td>false</td></tr><tr><td>blue</td><td>uchar [0, 255]</td><td>false</td></tr><tr><td>intensity</td><td>float32</td><td>false</td></tr></tbody></table>
+
+### LAS
+
+{% hint style="warning" %}
+* LAS support is limited to 3D cuboid and 3D vector task types. It is not supported for 3D point cloud segmentation.
+* Unlike other file formats, the uploaded files can only be viewed after the [tiling process](../../background/3d-tiles.md) is completed.
+* The LAS file format is currently only recommended for huge point clouds (e.g. merged maps) that cannot be tiled otherwise.
+{% endhint %}
+
+[Version 1.4](https://www.asprs.org/wp-content/uploads/2019/03/LAS\_1\_4\_r14.pdf) of the LAS file format is supported. Only uncompressed LAS files are currently supported.
+
+Point clouds can optionally include RGB fields, or an intensity field. If both are defined, the intensity will be discarded.
+
+* For point clouds with RGB colors, make sure to set the point format field to 2.
+* For point clouds with intensity values, make sure to set the point format field to 0.
+
+Keep in mind to set the LAS scale/resolution small enough (e.g. 1e-6) to avoid discretization errors.
+
+<table><thead><tr><th>Property name</th><th>Type</th><th data-type="checkbox">Required</th></tr></thead><tbody><tr><td>X</td><td>float32</td><td>true</td></tr><tr><td>Y</td><td>float32</td><td>true</td></tr><tr><td>Z</td><td>float32</td><td>true</td></tr><tr><td>Red</td><td>uint8 [0-255]</td><td>false</td></tr><tr><td>Green</td><td>uint8 [0-255]</td><td>false</td></tr><tr><td>Blue</td><td>uint8 [0-255]</td><td>false</td></tr><tr><td>Intensity</td><td>uint8 [0-255]</td><td>false</td></tr></tbody></table>
 
 ## Text
 
