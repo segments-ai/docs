@@ -18,15 +18,18 @@ Format of the `attributes` field in [`client.get_label()`](https://sdkdocs.segme
   "annotations": [
     {
       "id": 1, // this is an object id. Should be > 0.
-      "category_id": 1 // this is a category id
+      "category_id": 1, // this is a category id
+      "track_id": 1 // only required if part of a sequence sample
     },
     {
       "id": 2, 
-      "category_id": 1
+      "category_id": 1,
+      "track_id": 2,
     },
     {
       "id": 3, 
-      "category_id": 4
+      "category_id": 4,
+      "track_id": 3,
     }
   ],
   "segmentation_bitmap": {
