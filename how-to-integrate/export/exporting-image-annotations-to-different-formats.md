@@ -1,8 +1,8 @@
-# Exporting the release file to different formats
+# Exporting image annotations to different formats
 
-## Exporting the release file to different formats
+## Exporting the release file for image datasets to different formats
 
-You can export the release file to different formats with the Python SDK. Use the `export_dataset`util function for this, setting the `export_format` parameter to one of the following:
+You can export the release file for image datasets to different formats with the Python SDK. Use the `export_dataset`util function for this, setting the `export_format` parameter to one of the following:
 
 | Value            | Description                                                                                                                                                                                     |
 | ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

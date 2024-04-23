@@ -52,7 +52,7 @@
   * [Cloud integrations](how-to-integrate/import-data/cloud-integration.md)
 * [Export data](how-to-integrate/export/README.md)
   * [Structure of the release file](how-to-integrate/export/structure-of-the-release-file.md)
-  * [Exporting the release file to different formats](how-to-integrate/export/exporting-the-release-file-to-different-formats.md)
+  * [Exporting image annotations to different formats](how-to-integrate/export/exporting-image-annotations-to-different-formats.md)
 * [Integrations](how-to-integrate/integrations/README.md)
   * [Hugging Face](how-to-integrate/integrations/hugging-face.md)
   * [W\&B](how-to-integrate/integrations/w-and-b.md)

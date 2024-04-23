@@ -7,6 +7,6 @@ By clicking the download link of a release, you obtain a release file in JSON fo
 This section contains information about
 
 1. [The structure of the release file](structure-of-the-release-file.md)
-2. [How to export the release file to different formats via the SDK](exporting-the-release-file-to-different-formats.md)
+2. [How to export the release file to different formats via the SDK](exporting-image-annotations-to-different-formats.md)
 
 Please refer to [this blog post](https://segments.ai/blog/speed-up-image-segmentation-with-model-assisted-labeling) for an example of training a segmentation model on exported data with some useful code snippets.
