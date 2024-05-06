@@ -25,6 +25,7 @@
   * [Merged point cloud view (for static objects)](how-to-annotate/label-3d-point-clouds/merged-point-cloud-view-for-static-objects.md)
   * [Batch mode (for dynamic objects)](how-to-annotate/label-3d-point-clouds/batch-mode-for-dynamic-objects.md)
   * [Smart cuboid propagation](how-to-annotate/label-3d-point-clouds/smart-cuboid-propagation.md)
+  * [3D to 2D Projection](how-to-annotate/label-3d-point-clouds/3d-to-2d-projection.md)
   * [Tips for labeling cuboid sequences](how-to-annotate/label-3d-point-clouds/tips-for-labeling-cuboid-sequences.md)
 * [Label sequences of data](how-to-annotate/label-sequences-of-data/README.md)
   * [Use track IDs in sequences](how-to-annotate/label-sequences-of-data/use-track-ids-in-sequences.md)

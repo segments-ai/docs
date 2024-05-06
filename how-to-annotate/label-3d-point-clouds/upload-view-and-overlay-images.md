@@ -39,7 +39,7 @@ Hold the hotkey (`Ctrl/cmd` by default) and click and drag.
 
 ## Toggle the point cloud overlay
 
-To toggle the point cloud overlay on and off, press the hotkey (`Ctrl/cmd + q` by default) or toggle it in the [3D interface settings](3d-interface-settings.md#toggle-point-cloud-overlay-on-images). Disabling the point cloud overlay allows you to see the camera image in more detail, while enabling it allows you to see if the camera and lidar are well calibrated.
+To toggle the point cloud overlay on and off, press the hotkey (`Ctrl + q` by default) or toggle it in the [3D interface settings](3d-interface-settings.md#toggle-point-cloud-overlay-on-images). Disabling the point cloud overlay allows you to see the camera image in more detail, while enabling it allows you to see if the camera and lidar are well calibrated.
 
 {% embed url="https://segments.ai/blog/assets/images/improved-image-viewer/pc-overlay-trim-compr.mp4" %}
 
