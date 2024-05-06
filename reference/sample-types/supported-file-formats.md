@@ -30,7 +30,11 @@ Segments.ai supports the binary point cloud formats used by the [KITTI](http://w
 
 ### PLY (Stanford Triangle Format)&#x20;
 
-The PLY file format can be used for point clouds by encoding the points as vertices. The PLY header should thus contain a vertex _element_ containing x, y, and z _properties_ and optionally also color or intensity properties. Both binary and ASCII PLY files are supported.&#x20;
+The PLY file format can be used for point clouds by encoding the points as vertices. The PLY header should thus contain a vertex _element_ containing x, y, and z _properties_ and optionally also color or intensity properties. Both binary and ASCII PLY files are supported.
+
+{% hint style="danger" %}
+PLY Gaussian Splats are not supported
+{% endhint %}
 
 <table><thead><tr><th>Property name</th><th>Type</th><th data-type="checkbox">Required</th></tr></thead><tbody><tr><td>x</td><td>float32</td><td>true</td></tr><tr><td>y</td><td>float32</td><td>true</td></tr><tr><td>z</td><td>float32</td><td>true</td></tr><tr><td>red</td><td>uchar [0, 255]</td><td>false</td></tr><tr><td>green</td><td>uchar [0, 255]</td><td>false</td></tr><tr><td>blue</td><td>uchar [0, 255]</td><td>false</td></tr><tr><td>intensity</td><td>float32</td><td>false</td></tr></tbody></table>
 
@@ -52,6 +56,12 @@ Point clouds can optionally include RGB fields, or an intensity field. If both a
 Keep in mind to set the LAS scale/resolution small enough (e.g. 1e-6) to avoid discretization errors.
 
 <table><thead><tr><th>Property name</th><th>Type</th><th data-type="checkbox">Required</th></tr></thead><tbody><tr><td>X</td><td>float32</td><td>true</td></tr><tr><td>Y</td><td>float32</td><td>true</td></tr><tr><td>Z</td><td>float32</td><td>true</td></tr><tr><td>Red</td><td>uint8 [0-255]</td><td>false</td></tr><tr><td>Green</td><td>uint8 [0-255]</td><td>false</td></tr><tr><td>Blue</td><td>uint8 [0-255]</td><td>false</td></tr><tr><td>Intensity</td><td>uint8 [0-255]</td><td>false</td></tr></tbody></table>
+
+## Gaussian Splat
+
+### .splat
+
+Gaussian splats can only be uploaded as .splat files at the moment. PLY splat files are not supported. If you want to convert your splat file from PLY to .splat, you can either use [SuperSplat](https://playcanvas.com/supersplat/editor), an online splat editor, or the open-source [point-cloud-tool](https://github.com/SpectacularAI/point-cloud-tools) library.
 
 ## Text
 
