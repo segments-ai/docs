@@ -83,7 +83,7 @@ On Segments.ai, the up direction is defined along the z-axis, i.e. the vector (0
             "qw": 0.9997181192298087
         }
     },
-    "default_z": -1 // optional, 0 by default
+    "default_z": -1, // optional, 0 by default
     "bounds": { // optional
         "min_z": -1,
         "max_z": 3
