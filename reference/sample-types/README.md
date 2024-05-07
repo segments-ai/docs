@@ -116,7 +116,7 @@ A calibrated or uncalibrated reference image corresponding to a point cloud. The
 
 ```json
 {
-    "name": "Camera example 1" // optional
+    "name": "Camera example 1", // optional
     "url": "https://example.com/image.jpg",
     "row": 0,
     "col": 0,
