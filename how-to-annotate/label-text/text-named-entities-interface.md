@@ -1,7 +1,7 @@
 # Text named entities interface
 
 {% hint style="info" %}
-When [creating a dataset](https://sdkdocs.segments.ai/en/latest/client.html#create-a-dataset) through the Python SDK, choose `text-named-entities as` the `task_type` to use this labeling interface.
+When [creating a dataset](https://sdkdocs.segments.ai/en/latest/client.html#create-a-dataset) through the Python SDK, choose `text-named-entities` as the `task_type` to use this labeling interface.
 {% endhint %}
 
 ## Label text with the mouse
