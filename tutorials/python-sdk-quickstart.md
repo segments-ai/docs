@@ -104,7 +104,9 @@ If the image file is on your local computer, you should first upload it to our a
 We can verify that the dataset now contains 3 images using [`client.get_samples()`](https://sdkdocs.segments.ai/en/latest/client.html#list-samples).
 
 ```python
-samples = client.get_samples(dataset)
+dataset_identifier = 'jane/pets'
+
+samples = client.get_samples(dataset_identifier)
 print(samples)
 ```
 
@@ -115,8 +117,8 @@ Now switch to the Segments.ai web platform and label the three images you just u
 Once you've labeled some samples, you can programmatically retrieve their labels using [`client.get_label()`](https://sdkdocs.segments.ai/en/latest/client.html#get-a-label).
 
 ```python
-dataset = 'jane/pets'
-sample = client.get_samples(dataset)[0]
+dataset_identifier = 'jane/pets'
+sample = client.get_samples(dataset_identifier)[0]
 
 label = client.get_label(sample.uuid, labelset='ground-truth')
 print(label)
