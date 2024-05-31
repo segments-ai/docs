@@ -1,5 +1,15 @@
 # Image interface settings
 
+## Open the 2D interface settings
+
+Click on the "Settings" tab in the sidebar on the right to open the 2D interface settings.
+
+<div align="left">
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+</div>
+
 ## Object coloring mode
 
 The object coloring toggle allows you to change how different objects in the sample are displayed.&#x20;
