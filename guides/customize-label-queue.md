@@ -4,7 +4,7 @@ You can customize the label queue by setting a sample priority and by assigning 
 
 ## Set sample priority
 
-The priority value of a sample determines its [order in the label queue](../background/label-queue-mechanics.md): samples with a higher priority value are labeled first. When a new sample is added to a dataset, its default priority is 0.
+The priority value of a sample determines its [order in the label queue](../background/label-queue-mechanics.md): samples with a higher priority value are labeled first. For samples with the same priority, the oldest one is returned first. When a new sample is added to a dataset, its default priority is 0.
 
 {% hint style="info" %}
 Note that you can also assign a negative priority to a sample.

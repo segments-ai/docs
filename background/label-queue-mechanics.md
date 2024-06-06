@@ -58,4 +58,4 @@ If a reviewer presses the _Start reviewing_ button, they will get samples from t
 5. Labeled samples which are not assigned to a specific user, independent of who labeled them before (to prevent deadlock if a single user wants to both label and review a dataset).
 6. If no such samples exist, the review queue is empty and no more samples need to be reviewed.
 
-Within each step, samples with higher priority are returned first. Read more about how you can [customize the queue priority](../guides/customize-label-queue.md#set-sample-priority).
+Within each step, samples with higher priority are returned first. For samples with the same priority, the oldest one is returned first. Read more about how you can [customize the queue priority](../guides/customize-label-queue.md#set-sample-priority).
