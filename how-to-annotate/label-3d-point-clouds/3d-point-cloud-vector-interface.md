@@ -48,6 +48,10 @@ You can create three types of vectors: a polygon, polyline, and a keypoint.
    1. by double clicking (this adds a final point and finishes the polyline) or by
    2. confirming the object (press `space` hotkey by default) - this closes the polyline without adding a final point.
 
+{% hint style="info" %}
+It's possible to view the direction of a polyline on orthographic top views. To enable this, open the "Settings" tab, go to the "Helper objects" section and activate "Show polyline arrows".
+{% endhint %}
+
 ### Create a point
 
 * Select the "Create point" tool by clicking on the point icon in the toolbar on the left, or by pressing the hotkey (`p` by default).
