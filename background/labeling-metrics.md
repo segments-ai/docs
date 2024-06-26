@@ -22,8 +22,9 @@ A workunit represents a piece of labeling work done by a dataset collaborator on
 
 A workunit contains the following fields:
 
-* `created_at`: creation time of this workunit. I.e., the time when the user saved or submitted the sample.
-* `created_by`: the user who created this workunit
+* `uuid`: unique id of the workunit.
+* `created_at`: creation time of the workunit. I.e., the time when the user saved or submitted the sample.
+* `created_by`: the user who created the workunit.
 * `work_type`: one of:
   * **label** (sample opened in Start labeling workflow)
   * **review** (sample opened in Start Reviewing workflow)
@@ -32,4 +33,4 @@ A workunit contains the following fields:
 * `inactive_time`: the amount of inactive time during this workunit. Inactive time is defined as the sum of all time intervals between two clicks that are larger than the inactivity threshold (5 minutes).
 * `next_label_status`: the new label status of the label, i.e. after the save/accept/reject/skip button is pressed.
 
-For enterprise users we provide an undocumented API endpoint to fetch the list of workunits of a dataset so you can run your own custom metrics calculations.
+If you want to run your own custom metrics calculations, you can [fetch the list of workunits of a dataset via the Python SDK](https://sdkdocs.segments.ai/en/latest/client.html#list-workunits).
