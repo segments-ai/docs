@@ -40,6 +40,8 @@ You can create three types of vectors: a polygon, polyline, and a keypoint.
    2. clicking on the first polygon point (this closes the polygon without adding a final point) or by
    3. confirming the object (hotkey `space` by default) - this closes the polygon without adding a final point.
 
+When holding `Shift + F`node snapping is activated. This will snap the point you want to add to the nearest handle of an existing vector, within a certain distance threshold.
+
 ### Create a polyline
 
 1. Select the "Create polyline" tool by clicking on the line icon in the toolbar on the left, or by pressing the hotkey (`n` by default).
@@ -51,6 +53,8 @@ You can create three types of vectors: a polygon, polyline, and a keypoint.
 {% hint style="info" %}
 It's possible to view the direction of a polyline on orthographic top views. To enable this, open the "Settings" tab, go to the "Helper objects" section and activate "Show polyline arrows".
 {% endhint %}
+
+
 
 ### Create a point
 
@@ -88,8 +92,6 @@ Hover over a polygon point, a polyline point or a key point. The cursor changes 
 1. Select a vector.
 2. Hover over the middle of a line. A preview point is shown.&#x20;
 3. Click to add this point to the polygon or polyline.
-
-When holding `Shift + F`node snapping is activated. This will snap the point you want to add to the nearest handle of an existing vector, within a certain distance threshold.
 
 ## Remove a point from a vector
 
