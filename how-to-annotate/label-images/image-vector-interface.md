@@ -41,12 +41,16 @@ Click the![](<../../.gitbook/assets/image (32).png>)button in the left toolbar t
 After finishing a polygon, you can add a point to it with `Shift + left click`. This will add a point to the edge closest of the cursor. You will see a preview of where the point will be added as soon as you press `Shift`. You can add points to a selected polygon in _view-and-select_ mode, or while still in _draw polygon_ mode after finishing it. \
 You can remove a point by `Shift + left click`. A polygon needs at least 3 points.
 
+When holding `Shift + F`node snapping is activated. This will snap the point you want to add to the nearest handle of an existing vector, within a certain distance threshold.
+
 ### Polyline
 
 Click the![](<../../.gitbook/assets/image (30) (2).png>)button in the left toolbar to draw a polyline. Click on the image to draw polyline points. Double click to finish it.
 
 After finishing a polyline, you can add a point to it with `Shift + left click`. This will add a point to the edge closest of the cursor. You will see a preview of where the point will be added as soon as you press `Shift`. You can add points to a selected polyline in _view-and-select_ mode, or while still in _draw polygon_ mode after finishing it.\
 You can remove a point by `Shift + left click`. A polyline needs at least 2 points.
+
+When holding `Shift + F`node snapping is activated. This will snap the point you want to add to the nearest handle of an existing vector, within a certain distance threshold.
 
 ### Keypoint
 

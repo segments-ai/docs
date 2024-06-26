@@ -89,6 +89,8 @@ Hover over a polygon point, a polyline point or a key point. The cursor changes 
 2. Hover over the middle of a line. A preview point is shown.&#x20;
 3. Click to add this point to the polygon or polyline.
 
+When holding `Shift + F`node snapping is activated. This will snap the point you want to add to the nearest handle of an existing vector, within a certain distance threshold.
+
 ## Remove a point from a vector
 
 1. Hover over a polygon or polyline point. The cursor changes to a "grab cursor".
