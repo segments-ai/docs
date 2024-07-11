@@ -30,9 +30,6 @@
 * [Label sequences of data](how-to-annotate/label-sequences-of-data/README.md)
   * [Use track IDs in sequences](how-to-annotate/label-sequences-of-data/use-track-ids-in-sequences.md)
   * [Use keyframe interpolation](how-to-annotate/label-sequences-of-data/use-keyframe-interpolation.md)
-* [Label text](how-to-annotate/label-text/README.md)
-  * [Text span categorization interface](how-to-annotate/label-text/text-span-categorization-interface.md)
-  * [Text named entities interface](how-to-annotate/label-text/text-named-entities-interface.md)
 * [Customize hotkeys](how-to-annotate/customize-hotkeys.md)
 
 ## How to manage <a href="#guides" id="guides"></a>

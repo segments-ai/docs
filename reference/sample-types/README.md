@@ -290,17 +290,3 @@ To avoid rounding problems, it is best practice to subtract the ego position of 
 #### Sensor
 
 <table><thead><tr><th>Name</th><th width="253.33333333333331">Type</th><th>Description</th></tr></thead><tbody><tr><td><code>name</code></td><td><code>string</code></td><td><strong>Required.</strong> The name of the sensor.</td></tr><tr><td><code>task_type</code></td><td><code>string</code></td><td><strong>Required.</strong> The <a href="../sample-and-label-types.md">task type</a> of the sensor. Currently, <code>pointcloud-cuboid-sequence</code> and <code>image-vector-sequence</code> are supported.</td></tr><tr><td><code>attributes</code></td><td><code>object</code></td><td><strong>Required.</strong> The sample attributes for the sensor. Currently, <a href="./#3d-point-cloud-sequence">3D point cloud sequence</a> and <a href="./#image-sequence">image sequence</a> are supported.</td></tr></tbody></table>
-
-## Text
-
-```json
-{ 
-    "text": "Example text sample." 
-}
-```
-
-<table><thead><tr><th>Name</th><th width="251.33333333333331">Type</th><th>Description</th></tr></thead><tbody><tr><td><code>text</code></td><td><code>string</code></td><td><strong>Required.</strong> Text data.</td></tr></tbody></table>
-
-{% hint style="info" %}
-To upload text samples in bulk, see [file formats](supported-file-formats.md#text).
-{% endhint %}
