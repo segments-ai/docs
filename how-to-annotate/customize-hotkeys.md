@@ -1,6 +1,6 @@
 # Customize hotkeys
 
-To speed up labeling, you can use the hotkeys/shortcuts built into our labeling interfaces. In the image segmentation interface, the point cloud interfaces, and the text interfaces, you can also customize the hotkeys to your liking.
+To speed up labeling, you can use the hotkeys/shortcuts built into our labeling interfaces. You can also customize the hotkeys to your liking.
 
 ![The hotkey menu of the image segmentation interface.](<../.gitbook/assets/image (24) (1).png>)
 
