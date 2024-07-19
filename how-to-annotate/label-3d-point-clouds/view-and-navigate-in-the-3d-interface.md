@@ -90,3 +90,12 @@ This feature is only available in the 3D point cloud segmentation interface.
 2. Click on the ground plane to starting point.
 3. When you move your cursor to another point on the ground plane the distance measurement will be shown in the bottom right panel of the sidebar. This measurement is in meters if the scale of your point cloud is true to life.
 4. Click again to go back to "Select and edit" tool or press `Esc`.
+
+## Focus beam
+
+The focus beam tool helps you to locate objects in the 3D point cloud via the calibrated camera images. It renders a beam in the 3D space corresponding to a specific location in an image.
+
+1. Open a specific camera image by clicking on the thumbnail or open the image grid.
+2. Move your cursor to a point of interest in the image and press the focus beam hotkey (`Shift + z` by default).
+3. Go back to the 3D point cloud view. A focus beam should have appeared.
+4. To remove the focus beam, press the hotkey again while not hovering over an image.
