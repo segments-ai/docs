@@ -81,7 +81,7 @@ You also need to configure [CORS](https://cloud.google.com/storage/docs/cross-or
 ```
 [
     {
-      "origin": ["https://segments.ai", "https://beta.segments.ai"],
+      "origin": ["https://segments.ai", "https://app.segments.ai", "https://beta.segments.ai"],
       "method": ["GET"],
       "responseHeader": [],
       "maxAgeSeconds": 3600
