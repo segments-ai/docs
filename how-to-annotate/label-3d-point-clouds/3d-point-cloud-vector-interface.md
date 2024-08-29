@@ -89,14 +89,15 @@ Hover over a polygon point, a polyline point or a key point. The cursor changes 
 
 ## Add a point to a vector
 
-1. Select a vector.
-2. Hover over the middle of a line. A preview point is shown.&#x20;
+1. Select a polygon or polyline annotation.
+2. Press `Shift` and move the mouse close to a line segment.
 3. Click to add this point to the polygon or polyline.
+4. Release `Shift` and move the point if necessary.
 
 ## Remove a point from a vector
 
-1. Hover over a polygon or polyline point. The cursor changes to a "grab cursor".
-2. Click to remove this point.
+1. Hover over keypoint or a polygon or polyline point.
+2. Press `Shift` and click to remove the point.
 
 ## Change the category of a vector
 
