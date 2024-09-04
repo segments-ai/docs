@@ -54,3 +54,11 @@ Add a "Verified" label status, intended to support an additional QA round of all
 
 
 <figure><img src="../.gitbook/assets/Screenshot 2023-11-13 at 12.14.55.png" alt="" width="375"><figcaption><p>Enable ratings and add a "Verified" label status in the dataset settings</p></figcaption></figure>
+
+#### Enable validation check to warn users about unlabeled points in the 3D segmentation interface
+
+This feature displays an alert when attempting to save if there are any unlabeled points.&#x20;
+
+This option is only available for datasets with the "Pointcloud" data type and the "Segmentation" task.&#x20;
+
+<figure><img src="../.gitbook/assets/image.png" alt="" width="350"><figcaption><p>The warning is optional and can be enabled through dataset settings</p></figcaption></figure>

@@ -6,7 +6,7 @@ Click on the "Settings" tab in the sidebar on the right to open the 2D interface
 
 <div align="left">
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (48).png" alt=""><figcaption></figcaption></figure>
 
 </div>
 
