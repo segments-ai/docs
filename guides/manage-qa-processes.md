@@ -61,4 +61,4 @@ This feature displays an alert when attempting to save if there are any unlabele
 
 This option is only available for datasets with the "Pointcloud" data type and the "Segmentation" task.&#x20;
 
-<figure><img src="../.gitbook/assets/image.png" alt="" width="350"><figcaption><p>The warning is optional and can be enabled through dataset settings</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt="" width="350"><figcaption><p>The warning is optional and can be enabled through dataset settings</p></figcaption></figure>
