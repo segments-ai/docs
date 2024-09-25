@@ -14,6 +14,8 @@ When an object is selected, it is also displayed on the right of the timeline.
 
 When creating an object in a sequence editor, a track ID is automatically created.
 
+The track ID will always increment with 1 starting from the highest track ID.
+
 ## Change the track ID of an object (in all frames)
 
 1. Select the object.
@@ -36,6 +38,8 @@ Merging tracks is only possible when both tracks have no overlapping keyframes.
 
 1. Select the object you want to remove from the sequence.
 2. Click the "Remove track" button under the track ID in the track editor on the right of the timeline. The object will then be removed from all frames.
+
+If the track ID of the removed track was the highest track ID, then this track ID will be recovered for newly created objects. If the track ID was not the highest track ID, then the track ID will not be recovered when creating new objects, unless explicitly adjusted by the user (see [#change-the-track-id-of-an-object-in-all-frames](use-track-ids-in-sequences.md#change-the-track-id-of-an-object-in-all-frames "mention"))
 
 ## Split a track
 
