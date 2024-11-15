@@ -85,6 +85,13 @@ The point budget controls the maximum number of points that are displayed. If th
 1. Click/hover over the dot icon in the toolbar on the right.
 2. Enter the maximum amount of points in the point budget input box. If you want to remove the point budget, simply remove the value in the input box.
 
+### Limit the amount of frames around the current frame in merged point cloud mode
+
+With this limiter you can choose to limit the frames around the current selected frame in the merged point cloud mode. If you leave before or after empty, it will take all the frames before or after the current frame. So leaving both fields empty (or unchecking the checkbox) will merge all the point clouds in the sequence. The number of frames that are merged, is shown in the timeline with a red indicator whenever the merged point cloud is active.
+
+1. Check the "Limit merged frames around current frame" checkbox
+2. Fill in before and/or after
+
 ## Camera settings
 
 ### Follow active object (cuboid/vector datasets only)
