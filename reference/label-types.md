@@ -17,19 +17,19 @@ Format of the `attributes` field in [`client.get_label()`](https://sdkdocs.segme
   "format_version": "0.1",
   "annotations": [
     {
-      "id": 1, // this is an object id. Should be > 0.
-      "category_id": 1, // this is a category id
-      "track_id": 1 // only required if part of a sequence sample
+      "track_id": 1, // the track id. A single object has the same track_id across frames. 0.
+      "id": 1, // this is a legacy field and is always equal to track_id.
+      "category_id": 1 // this is a category id
     },
     {
-      "id": 2, 
-      "category_id": 1,
       "track_id": 2,
+      "id": 2,
+      "category_id": 1
     },
     {
-      "id": 3, 
-      "category_id": 4,
       "track_id": 3,
+      "id": 3,
+      "category_id": 4
     }
   ],
   "segmentation_bitmap": {
@@ -68,7 +68,8 @@ Format of the `attributes` field in [`client.get_label()`](https://sdkdocs.segme
   "format_version": "0.1",
   "annotations": [
     {
-      "id": 1, // the object id
+      "track_id": 1, // the track id. A single object has the same track_id across frames.
+      "id": 1, // this is a legacy field and is always equal to track_id.
       "category_id": 1, // the category id
       "type": "bbox", // refers to the annotation type (bounding box)
       "points": [
@@ -77,6 +78,7 @@ Format of the `attributes` field in [`client.get_label()`](https://sdkdocs.segme
       ]
     },
     {
+      "track_id": 2,
       "id": 2,
       "category_id": 2,
       "type": "polygon", // refers to the annotation type (polygon)
@@ -89,7 +91,8 @@ Format of the `attributes` field in [`client.get_label()`](https://sdkdocs.segme
       ]
     },
     {
-      "id": 3, 
+      "track_id": 3,
+      "id": 3,
       "category_id": 3,
       "type": "polyline", // refers to the annotation type (polyline)
       "points": [
@@ -102,6 +105,7 @@ Format of the `attributes` field in [`client.get_label()`](https://sdkdocs.segme
     },
     {
       "id": 4,
+      "track_id": 4,
       "category_id": 4,
       "type": "point", // refers to the annotation type (keypoint)
       "points": [
@@ -154,12 +158,12 @@ Where each frames object has the following format:
 ```jsonp
 {
   "format_version": "0.1",
-  "timestamp": "00001", // this field is only included if the sample has a timestamp
+  "timestamp": "00001", // In nanoseconds. This field is only included if the sample has a timestamp
   "annotations": [
     {
-      "id": 1, // the object id
+      "track_id": 1, // the track id. A single object has the same track_id across frames.
+      "id": 1, // this is a legacy field and is always equal to track_id.
       "category_id": 1, // the category id
-      "track_id": 6, // this id is used to links objects across frame
       "is_keyframe": true, // whether this frame is a keyframe
       "type": "bbox", // refers to the annotation type (bounding box)
       "points": [
@@ -168,10 +172,10 @@ Where each frames object has the following format:
       ]
     },
     {
+      "track_id": 2,
       "id": 2,
       "category_id": 2,
-      "track_id": 5, // this id is used to links objects across frame
-      "is_keyframe": true, // whether this frame is a keyframe
+      "is_keyframe": true,
       "type": "polygon", // refers to the annotation type (polygon)
       "points": [
         [12.34, 56.78], // x0, y0 (starting point of the polygon)
@@ -182,10 +186,10 @@ Where each frames object has the following format:
       ]
     },
     {
+      "track_id": 3,
       "id": 3, 
       "category_id": 3,
-      "track_id": 4, // this id is used to links objects across frame
-      "is_keyframe": true, // whether this frame is a keyframe
+      "is_keyframe": true,
       "type": "polyline", // refers to the annotation type (polyline)
       "points": [
         [12.34, 56.78], // x0, y0 (starting point of the polyline)
@@ -196,10 +200,10 @@ Where each frames object has the following format:
       ]
     },
     {
+      "track_id": 4,
       "id": 4,
       "category_id": 4,
-      "track_id": 3, // this id is used to links objects across frame
-      "is_keyframe": true, // whether this frame is a keyframe
+      "is_keyframe": true,
       "type": "point", // refers to the annotation type (keypoint)
       "points": [
         [12.34, 56.78] // x, y (coordinates of keypoint)
@@ -222,19 +226,22 @@ The `point_annotations` array contains the object/annotation id for each point i
   "format_version": "0.1",
   "annotations": [
     {
-      "id": 1, // the object id
+      "track_id": 1, // the track id. A single object has the same track_id across frames.
+      "id": 1, // this is a legacy field and is always equal to track_id.
       "category_id": 1 // the category id
     },
     {
-      "id": 2, 
+      "track_id": 2,
+      "id": 2,
       "category_id": 1
     },
     {
-      "id": 3, 
+      "track_id": 3,
+      "id": 3,
       "category_id": 4
     }
   ],
-  "point_annotations": [0, 0, 0, 3, 2, 2, 2, 1, 3...], // refers to object ids
+  "point_annotations": [0, 0, 0, 3, 2, 2, 2, 1, 3...], // refers to track ids
 }
 ```
 
@@ -245,8 +252,8 @@ The `point_annotations` array contains the object/annotation id for each point i
   "format_version": "0.2",
   "annotations": [ // list of cuboid annotations, see below
     {
-      "id": 1,
-      "category_id": 1,
+      "track_id": 1, // the track id. A single object has the same track_id across frames.
+      "id": 1, // this is a legacy field and is always equal to track_id
       "type": "cuboid",
       ...
     },
@@ -268,7 +275,8 @@ A cuboid annotation represents a single cuboid in a point cloud (frame).
 
 ```json
 {
-  "id": 1,
+  "track_id": 1, // the track id. A single object has the same track_id across frames.
+  "id": 1, // this is a legacy field and is always equal to track_id
   "category_id": 1,
   "type": "cuboid",
   "position": {
@@ -288,7 +296,6 @@ A cuboid annotation represents a single cuboid in a point cloud (frame).
     "qz": 0.3096865,
     "qw": 0.9495672
   },  // only when 3D cuboid rotation is enabled in dataset settings
-  "track_id": 1,  // only in sequences
   "is_keyframe": true,  // only in sequences
   "index": 0,  // only in sequences 
 }
@@ -307,15 +314,7 @@ A cuboid annotation represents a single cuboid in a point cloud (frame).
 | `is_keyframe` | `boolean`                                                                                                                                                                | Whether this cuboid annotation is a keyframe or an interpolated frame. Only relevant for sequences.                                                                                                                                                                                      |
 | `index`       | `integer`                                                                                                                                                                | The frame index. Only relevant for sequences.                                                                                                                                                                                                                                            |
 
-<div>
-
-<img src="../.gitbook/assets/dimensions-diagram.png" alt="Diagram 1: x and y attributes of the cuboid dimensions. The red arrow shows the cuboid heading.">
-
- 
-
-<figure><img src="../.gitbook/assets/yaw-diagram.png" alt=""><figcaption><p>Diagram 2: yaw rotation of a cuboid. The red arrow shows the cuboid heading. yaw = π/2 corresponds to a heading in the direction of increasing y values, while yaw = -π/2 corresponds to a heading in the direction of decreasing y values.</p></figcaption></figure>
-
-</div>
+<div><img src="../.gitbook/assets/dimensions-diagram.png" alt="Diagram 1: x and y attributes of the cuboid dimensions. The red arrow shows the cuboid heading."> <figure><img src="../.gitbook/assets/yaw-diagram.png" alt=""><figcaption><p>Diagram 2: yaw rotation of a cuboid. The red arrow shows the cuboid heading. yaw = π/2 corresponds to a heading in the direction of increasing y values, while yaw = -π/2 corresponds to a heading in the direction of decreasing y values.</p></figcaption></figure></div>
 
 ### Vector label (polygon, polyline, keypoint)
 
@@ -323,7 +322,8 @@ A cuboid annotation represents a single cuboid in a point cloud (frame).
   "format_version": "0.1",
   "annotations": [
     {
-      "id": 2,
+      "track_id": 1, // the track id. A single object has the same track_id across frames.
+      "id": 1, // this is a legacy field and is always equal to track_id
       "category_id": 2,
       "type": "polygon", // refers to the annotation type (polygon)
       "points": [
@@ -338,7 +338,8 @@ A cuboid annotation represents a single cuboid in a point cloud (frame).
       "index": 0 // only in sequences 
     },
     {
-      "id": 3, 
+      "track_id": 2,
+      "id": 2,
       "category_id": 3,
       "type": "polyline", // refers to the annotation type (polyline)
       "points": [
@@ -353,7 +354,8 @@ A cuboid annotation represents a single cuboid in a point cloud (frame).
       "index": 1 // only in sequences 
     },
     {
-      "id": 4,
+      "track_id": 3,
+      "id": 3,
       "category_id": 4,
       "type": "point", // refers to the annotation type (keypoint)
       "points": [
@@ -389,17 +391,20 @@ Where each frames object has the following format:
   "format_version": "0.2",
   "annotations": [
     {
-      "id": 1, // the object id
+      "track_id": 1, // the track id. A single object has the same track_id across frames.
+      "id": 1, // this is a legacy field and is always equal to track_id
       "category_id": 1, // the category id
       "track_id": 3 // this id is used to link objects across frames
     },
     {
-      "id": 2, 
+      "track_id": 2,
+      "id": 2,
       "category_id": 1,
       "track_id": 4
     },
     {
-      "id": 3, 
+      "track_id": 3,
+      "id": 3,
       "category_id": 4,
       "track_id": 5
     },
