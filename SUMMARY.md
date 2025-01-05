@@ -30,6 +30,7 @@
 * [Label sequences of data](how-to-annotate/label-sequences-of-data/README.md)
   * [Use track IDs in sequences](how-to-annotate/label-sequences-of-data/use-track-ids-in-sequences.md)
   * [Use keyframe interpolation](how-to-annotate/label-sequences-of-data/use-keyframe-interpolation.md)
+* [Annotate object links (beta)](how-to-annotate/annotate-object-links-beta.md)
 * [Customize hotkeys](how-to-annotate/customize-hotkeys.md)
 
 ## How to manage <a href="#guides" id="guides"></a>
