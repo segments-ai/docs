@@ -30,7 +30,7 @@ A workunit contains the following fields:
   * **review** (sample opened in Start Reviewing workflow)
   * **normal** (sample opened directly through the samples tab)
 * `time`: the amount of time in milliseconds since the sample loaded, or since the previous time the save button was pressed, whichever is shorter. Note that this does not include inactive time, see below. A more appropriate name for this field would be `active_time`, but it's `time` because of legacy reasons. The metrics on the Insights tab are calculated using this value.
-* `inactive_time`: the amount of inactive time during this workunit. Inactive time is defined as the sum of all time intervals between two clicks that are larger than the inactivity threshold (5 minutes).
+* `inactive_time`: the amount of inactive time during this workunit. Inactive time is defined as the sum of all time intervals between two mouse clicks or keyboard presses that are larger than the inactivity threshold (5 minutes).
 * `next_label_status`: the new label status of the label, i.e. after the save/accept/reject/skip button is pressed.
 
 If you want to run your own custom metrics calculations, you can [fetch the list of workunits of a dataset via the Python SDK](https://sdkdocs.segments.ai/en/latest/client.html#list-workunits).
