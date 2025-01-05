@@ -34,7 +34,7 @@ client = SegmentsClient(api_key)
 Let's create a new image segmentation dataset programmatically using [`client.add_dataset()`](https://sdkdocs.segments.ai/en/latest/client.html#create-a-dataset). Note that this dataset will be created under the user account corresponding to the API key.
 
 {% hint style="info" %}
-The format of the `task_attributes` field is documented [here](../reference/categories-and-task-attributes.md).
+The format of the `task_attributes` field is documented [here](../reference/categories-and-attributes.md).
 {% endhint %}
 
 ```python

@@ -24,7 +24,7 @@ When a labeler presses the _Start labeling_ button, a single sample is fetched f
 
 In the labeling workflow, there are three buttons:
 
-* **Submit**: set the sample status to _labeled (_moving it to the review queue) and go to the next sample in the queue.
+* **Submit**: set the sample status to _labeled (_&#x6D;oving it to the review queue) and go to the next sample in the queue.
 * **Skip**: set the sample status to _skipped_ and go to the next sample in the queue.
 * **Save** _(only visible if enabled in the dataset settings)_: set the sample status to _labeling in progress_ but don't go to the next sample in the queue yet. Can be helpful when labeling larger samples.
 

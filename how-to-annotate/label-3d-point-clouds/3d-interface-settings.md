@@ -36,7 +36,7 @@ _E.g. two cars each get a different color._
 
 #### By category
 
-Each category has a color defined in the dataset settings (see [categories-and-task-attributes.md](../../reference/categories-and-task-attributes.md "mention")). Every object of the same category is displayed in that category color.
+Each category has a color defined in the dataset settings (see [categories-and-attributes.md](../../reference/categories-and-attributes.md "mention")). Every object of the same category is displayed in that category color.
 
 _E.g. two cars are displayed in the same category color (defined in the dataset settings)._&#x20;
 

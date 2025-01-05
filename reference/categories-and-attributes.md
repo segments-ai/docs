@@ -1,4 +1,4 @@
-# Categories and task attributes
+# Categories and attributes
 
 When [editing the category and task attribute configuration directly](https://docs.segments.ai/guides/configure-label-editor), you need to adhere to the following format:
 
@@ -21,11 +21,11 @@ When [editing the category and task attribute configuration directly](https://do
 }
 ```
 
-| Name               | Type                                                                 | Description                                                                                                                                                    |
-| ------------------ | -------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `categories`       | `array` of [categories](categories-and-task-attributes.md#category)  | **Required.** List of all possible categories for a label in this dataset.                                                                                     |
-| `image_attributes` | `array` of [attributes](categories-and-task-attributes.md#attribute) | List of image-level attributes.                                                                                                                                |
-| `circle_radius`    | `int`                                                                | The radius of the circle around the ego position in the 3D cuboid and vector interface. Can be used to indicate a region in which objects should be annotated. |
+| Name               | Type                                                            | Description                                                                                                                                                    |
+| ------------------ | --------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `categories`       | `array` of [categories](categories-and-attributes.md#category)  | **Required.** List of all possible categories for a label in this dataset.                                                                                     |
+| `image_attributes` | `array` of [attributes](categories-and-attributes.md#attribute) | List of image-level attributes.                                                                                                                                |
+| `circle_radius`    | `int`                                                           | The radius of the circle around the ego position in the 3D cuboid and vector interface. Can be used to indicate a region in which objects should be annotated. |
 
 {% hint style="warning" %}
 The `categories` array should contain at least one category.
@@ -62,7 +62,7 @@ The `categories` array should contain at least one category.
 | `id`            | `int`                                                                                                                             | **Required.** Index of the category.                                                                                                                                                                                                                                 |
 | `color`         | `array` of 3 `float` values in \[0, 255]                                                                                          | RGB color of the category.                                                                                                                                                                                                                                           |
 | `has_instances` | `boolean`                                                                                                                         | Whether the category contains instances (person, car) or not (sky, road)                                                                                                                                                                                             |
-| `attributes`    | `array` of [attributes](categories-and-task-attributes.md#object-attribute-format)                                                | List of object-level attributes.                                                                                                                                                                                                                                     |
+| `attributes`    | `array` of [attributes](categories-and-attributes.md#object-attribute-format)                                                     | List of object-level attributes.                                                                                                                                                                                                                                     |
 | `dimensions`    | <p><code>object</code>: {<br>    "x": <code>float</code>,<br>    "y": <code>float</code>,<br>    "z": <code>float</code><br>}</p> | Default XYZ dimensions of a new cuboid. Only valid in the point cloud cuboid editor (see [#create-a-cuboid-with-default-dimensions](../how-to-annotate/label-3d-point-clouds/3d-point-cloud-cuboid-interface.md#create-a-cuboid-with-default-dimensions "mention")). |
 | ...             | ...                                                                                                                               | Other key-value pairs can be supplied, but will be ignored.                                                                                                                                                                                                          |
 

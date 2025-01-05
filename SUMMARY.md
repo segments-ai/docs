@@ -77,5 +77,5 @@
 * [Sample formats](reference/sample-types/README.md)
   * [Supported file formats](reference/sample-types/supported-file-formats.md)
 * [Label formats](reference/label-types.md)
-* [Categories and task attributes](reference/categories-and-task-attributes.md)
+* [Categories and attributes](reference/categories-and-attributes.md)
 * [API](api.md)
