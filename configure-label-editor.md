@@ -4,11 +4,41 @@ Once you have created a dataset, you can further configure the labeling interfac
 
 ![](<.gitbook/assets/image (11).png>)
 
-Here you can set the color, name, and description for each category. You can also add one or more object-level attributes to a category by expanding its row, or add image-level attributes by clicking the button "Edit image attributes".&#x20;
+Here you can set the color, name, and description for each category.&#x20;
 
-Attributes come in 4 types: select box, text, number, and checkbox. You can optionally set a default value for each attribute or make them mandatory.
+## Working with attributes
 
-In the label editor, the object-level and image-level attributes will be shown in the sidebar on the right. The image-level attributes are always visible, while the object-level attributes are only shown when an object is selected and has a category with object-level attributes.
+### Object attributes
+
+You can add one or more object-level attributes or _object attributes_ to a category by expanding its row.
+
+Attributes come in 4 types:&#x20;
+
+* Select box
+* Multi-select box
+* Checkbox
+* Text
+* Number
+
+You can optionally configure following settings for each object attribute:
+
+* **Default value**: default value of the attribute.
+* **Mandatory**: whether the attribute is mandatory. Mandatory attributes raise a warning when not filled in.
+* **Synced across frames ("Sequence-level")**: Only in sequence datasets. Whether an attribute should remain constant across all frames for an object with a certain track ID. If false, the attribute can change on each frame.
+* **Synced across sensors ("Across sensors")**: Only in multi-sensor datasets. Whether an attribute should remain constant across all sensors for an object with a certain track ID. If false, the attribute can change on each sensor.
+* **Sensors**: Only in multi-sensor datasets. Whether an attribute applies to 2D sensors, 3D sensors, or all sensors.
+
+### Scene attributes
+
+You can add scene attributes by clicking the "Edit image attributes" button. Scene attributes are not linked to a specific object, but rather to a frame or the scene as a whole.
+
+### Link attributes
+
+Todo
+
+### In the labeling interface
+
+When labeling, the object and scene attributes will be shown in the sidebar on the right. Scene attributes are always visible, while object attributes are only shown when an object is selected which has a category with object attributes.
 
 ![](<.gitbook/assets/image (4) (2).png>)
 
