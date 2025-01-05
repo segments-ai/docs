@@ -34,3 +34,7 @@ A workunit contains the following fields:
 * `next_label_status`: the new label status of the label, i.e. after the save/accept/reject/skip button is pressed.
 
 If you want to run your own custom metrics calculations, you can [fetch the list of workunits of a dataset via the Python SDK](https://sdkdocs.segments.ai/en/latest/client.html#list-workunits).
+
+## View the workunits of a sample
+
+You can view the workunits of a specific sample in the webapp by going to the Samples tab, hovering over a sample, clicking the little info icon, and switching to the _History_ tab.
