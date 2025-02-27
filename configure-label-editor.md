@@ -32,10 +32,6 @@ You can optionally configure following settings for each object attribute:
 
 You can add scene attributes by clicking the "Edit image attributes" button. Scene attributes are not linked to a specific object, but rather to a frame or the scene as a whole.
 
-### Link attributes
-
-Todo
-
 ### In the labeling interface
 
 When labeling, the object and scene attributes will be shown in the sidebar on the right. Scene attributes are always visible, while object attributes are only shown when an object is selected which has a category with object attributes.
