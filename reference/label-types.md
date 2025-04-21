@@ -333,7 +333,6 @@ A cuboid annotation represents a single cuboid in a point cloud (frame).
         [67.89, 98.76, 0], // x3, y3, z3
         [54.32, 10.01, 0]  // x4, y4, z4
       ],
-      "track_id": 2, // only in sequences
       "is_keyframe": true, // only in sequences
       "index": 0 // only in sequences 
     },
@@ -349,7 +348,6 @@ A cuboid annotation represents a single cuboid in a point cloud (frame).
         [67.89, 98.76, 0], // x3, y3, z3
         [54.32, 10.01, 0]  // x4, y4, z4
       ],
-      "track_id": 1, // only in sequences
       "is_keyframe": false, // only in sequences
       "index": 1 // only in sequences 
     },
@@ -361,7 +359,6 @@ A cuboid annotation represents a single cuboid in a point cloud (frame).
       "points": [
         [12.34, 56.78, 0] // x, y, z (coordinates of keypoint)
       ],
-      "track_id": 3, // only in sequences
       "is_keyframe": false, // only in sequences
       "index": 2 // only in sequences 
     }
@@ -394,19 +391,16 @@ Where each frames object has the following format:
       "track_id": 1, // the track id. A single object has the same track_id across frames.
       "id": 1, // this is a legacy field and is always equal to track_id
       "category_id": 1, // the category id
-      "track_id": 3 // this id is used to link objects across frames
     },
     {
       "track_id": 2,
       "id": 2,
       "category_id": 1,
-      "track_id": 4
     },
     {
       "track_id": 3,
       "id": 3,
       "category_id": 4,
-      "track_id": 5
     },
   ],
   "point_annotations": [0, 0, 0, 3, 2, 2, 2, 1, 3...], // refers to object ids
