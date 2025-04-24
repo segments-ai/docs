@@ -66,7 +66,7 @@ print(dataset)
 
 ## Add samples to a dataset
 
-Now let's upload some images to this dataset using [`client.add_sample()`](https://sdkdocs.segments.ai/en/latest/client.html#create-a-sample).
+Now let's upload some images to this dataset using [`dataset.add_sample()`](https://sdkdocs.segments.ai/en/latest/client.html#create-a-sample).
 
 ```python
 dataset_identifier = 'jane/pets' # a dataset is always referred to as user/dataset.
@@ -86,6 +86,7 @@ images = [
     }
 ]
 
+dataset = client.get_dataset(dataset_identifier)
 for image in images:    
     name = image['name']
     attributes = {
@@ -93,7 +94,7 @@ for image in images:
           'url': image['url'] 
         }
     }
-    sample = client.add_sample(dataset_identifier, name, attributes)
+    sample = dataset.add_sample(name, attributes)
     print(sample)
 ```
 
@@ -101,12 +102,13 @@ for image in images:
 If the image file is on your local computer, you should first upload it to our asset storage service (using [`upload_asset()`](https://sdkdocs.segments.ai/en/latest/client.html#upload-an-asset-to-segments-s3-bucket)) or to another cloud storage service.
 {% endhint %}
 
-We can verify that the dataset now contains 3 images using [`client.get_samples()`](https://sdkdocs.segments.ai/en/latest/client.html#list-samples).
+We can verify that the dataset now contains 3 images using [`dataset.get_samples()`](https://sdkdocs.segments.ai/en/latest/client.html#list-samples).
 
 ```python
 dataset_identifier = 'jane/pets'
+dataset = client.get_dataset(dataset_identifier)
 
-samples = client.get_samples(dataset_identifier)
+samples = dataset.get_samples()
 print(samples)
 ```
 
@@ -114,13 +116,13 @@ Now switch to the Segments.ai web platform and label the three images you just u
 
 ## Get the label of a sample
 
-Once you've labeled some samples, you can programmatically retrieve their labels using [`client.get_label()`](https://sdkdocs.segments.ai/en/latest/client.html#get-a-label).
+Once you've labeled some samples, you can programmatically retrieve their labels using [`sample.get_label()`](https://sdkdocs.segments.ai/en/latest/client.html#get-a-label).
 
 ```python
 dataset_identifier = 'jane/pets'
-sample = client.get_samples(dataset_identifier)[0]
+sample = client.get_dataset(dataset_identifier).get_samples()[0]
 
-label = client.get_label(sample.uuid, labelset='ground-truth')
+label = sample.get_label(labelset='ground-truth')
 print(label)
 ```
 
