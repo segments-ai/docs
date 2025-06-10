@@ -63,8 +63,7 @@ For a full example of uploading model-generated labels to Segments.ai, please re
 
 Format of the `attributes` field in [`client.get_label()`](https://sdkdocs.segments.ai/en/latest/client.html#get-a-label):
 
-```javascript
-{
+<pre class="language-javascript"><code class="lang-javascript">{
   "format_version": "0.1",
   "annotations": [
     {
@@ -113,8 +112,15 @@ Format of the `attributes` field in [`client.get_label()`](https://sdkdocs.segme
       ]
     },
   ],
+  "links": [
+    {
+      "from_id": 1,
+      "to_id": 2,
+      "attributes": {} // the link attributes
+<strong>    }
+</strong>  ]
 }
-```
+</code></pre>
 
 ## Image sequence
 
@@ -149,6 +155,13 @@ Format of the `attributes` field in [`client.get_label()`](https://sdkdocs.segme
     { ... },
     { ... },
     { ... }
+  ],
+  "links": [
+    {
+      "from_id": 1,
+      "to_id": 2,
+      "attributes": {} // the link attributes
+    }
   ]
 }
 ```
@@ -260,6 +273,13 @@ The `point_annotations` array contains the object/annotation id for each point i
     { 
       ... 
     }
+  ],
+  "links": [
+    {
+      "from_id": 1,
+      "to_id": 2,
+      "attributes": {} // the link attributes
+    }
   ]
 }
 ```
@@ -268,6 +288,7 @@ The `point_annotations` array contains the object/annotation id for each point i
 | ---------------- | ----------------------------------------------------------------- | ------------------------------- |
 | `format_version` | `string`                                                          | Format version.                 |
 | `annotations`    | `array` of [cuboid annotations](label-types.md#cuboid-annotation) | List of the cuboid annotations. |
+| `links`          | `array` of [link annotations](label-types.md#links)               | List of the links               |
 
 ### Cuboid annotation
 
@@ -420,7 +441,7 @@ Where each frames object has the following format:
 }
 ```
 
-| Name             | Type                                                     |                                                        |
+| Name             | Type                                                     | Description                                            |
 | ---------------- | -------------------------------------------------------- | ------------------------------------------------------ |
 | `format_version` | `string`                                                 | Format version.                                        |
 | `frames`         | `array` of [cuboid labels](label-types.md#cuboid-labels) | List of cuboid labels (one per frame in the sequence). |
@@ -436,6 +457,13 @@ Format of the `attributes` field in [`client.get_label()`](https://sdkdocs.segme
     { ... },
     { ... },
     { ... }
+  ],
+  "links": [
+    {
+      "from_id": 1,
+      "to_id": 2,
+      "attributes": {} // the link attributes
+    }
   ]
 }
 ```
@@ -444,6 +472,7 @@ Format of the `attributes` field in [`client.get_label()`](https://sdkdocs.segme
 | ---------------- | --------------------------------------------------------------------------------- | ------------------------------------------------------ |
 | `format_version` | `string`                                                                          | Format version.                                        |
 | `frames`         | `array` of [vector labels](label-types.md#vector-label-polygon-polyline-keypoint) | List of vector labels (one per frame in the sequence). |
+| `links`          | `array` of [link annotations](label-types.md#links)                               | List of the links                                      |
 
 ## Multi-sensor sequence
 
@@ -461,13 +490,21 @@ Format of the `attributes` field in [`client.get_label()`](https://sdkdocs.segme
       "attributes": { ... } 
     },
     ...
+  ],
+  "links": [
+    {
+      "from_id": 1,
+      "to_id": 2,
+      "attributes": {} // the link attributes
+    }
   ]
 }
 ```
 
-| Name      | Type                                        | Description                                |
-| --------- | ------------------------------------------- | ------------------------------------------ |
-| `sensors` | `array` of [sensors](label-types.md#sensor) | List of the sensors with label attributes. |
+| Name      | Type                                                | Description                                |
+| --------- | --------------------------------------------------- | ------------------------------------------ |
+| `sensors` | `array` of [sensors](label-types.md#sensor)         | List of the sensors with label attributes. |
+| `links`   | `array` of [link annotations](label-types.md#links) | List of the links                          |
 
 #### Sensor
 
@@ -528,3 +565,25 @@ You can also define image-level attributes. These can be useful in image classif
   }
 }
 ```
+
+### Links
+
+The links are stored at the top level of the annotations.
+
+```
+[
+  {
+    "from_id": 1,
+    "to_id": 2,
+    "attributes": {
+      "side": "left",
+      "strength": 10
+    }
+]
+```
+
+| Name         | Type     | Description                     |
+| ------------ | -------- | ------------------------------- |
+| `from_id`    | `number` | Link's object/track origin      |
+| `to_id`      | `number` | Link's object/track destination |
+| `attributes` | `object` | The link attributes.            |
