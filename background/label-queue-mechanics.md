@@ -32,7 +32,7 @@ If a labeler presses the "Start labeling" button, they will get samples from the
 
 1. Samples which they started labeling but didn't finish yet. Only if the _save_ button is enabled.
 2. Samples they labeled but which were rejected in the reviewing step, and now need to be corrected.
-3. Unlabeled or prelabeled samples which are [specifically assigned](../guides/customize-label-queue.md#assign-a-specific-labeler-or-reviewer) to this user, through the `assigned_labeler` field.
+3. Unlabeled, prelabeled or rejected samples which are [specifically assigned](../guides/customize-label-queue.md#assign-a-specific-labeler-or-reviewer) to this user, through the `assigned_labeler` field.
 4. Unlabeled or prelabeled samples which are not assigned to a specific user.
 5. If no such samples exist, the label queue is empty and no more samples need to be labeled.
 
