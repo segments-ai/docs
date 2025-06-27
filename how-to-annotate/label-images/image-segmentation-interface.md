@@ -45,13 +45,13 @@ You can switch seamlessly between drawing tools while labeling
 
 ### Polygon
 
-1. Click the ![](<../../.gitbook/assets/image (4).png>)button in the left toolbar or press `p` to select the polygon tool
+1. Click the ![](<../../.gitbook/assets/image (4).png>)button in the left toolbar or press `g` to select the polygon tool
 2. Click on the image to draw polygon points. You can also click and drag to draw free-form lines
 3. Double click or click the first point of the polygon to finish it. The region within the polygon will now be annotated
 
 ### Superpixels
 
-1. Click the![](<../../.gitbook/assets/image (8).png>)button in the left toolbar or press s to select the superpixel tool
+1. Click the![](<../../.gitbook/assets/image (8).png>)button in the left toolbar or press `s` to select the superpixel tool
 2. Change the superpixel granularity by adjusting the slider in the top left of the screen, or by scrolling your mouse wheel
 3. Click on a superpixel to select the corresponding region, or drag across multiple superpixels to select more than one at a time
 4. Click a superpixel again to unselect the region
