@@ -6,7 +6,7 @@ Both labelers and reviewers can open a new issue on a sample by clicking the <im
 
 When an issue is created, it automatically becomes an "open" issue, indicated by a red number next to to message icon.
 
-An issue must include a description. You can also optionally link screenshots and specific fields like sensor, frame, object, track, attributes, or a location. Any available fields will be pre-filled based on your current selection (e.g., the current sensor).&#x20;
+An issue must include a description. You can also optionally add screenshots and link an issue to specific context like sensor, frame, object, track, attributes, or a location. Any available fields will be pre-filled based on your current selection (e.g., the current sensor).&#x20;
 
 When visualizing an issue, a user can see all the data linked to it. By clicking on the tag, the user is brought directly to the relevant context (e.g., frame, sensor).
 
@@ -24,16 +24,17 @@ Reviewers and admins have access to an issues panel, where they can filter issue
 
 <figure><img src="../.gitbook/assets/Screenshot 2025-06-25 at 13.56.28.png" alt=""><figcaption></figcaption></figure>
 
-### Anchoring Issues (optional)
+### Anchoring Issues
 
-As mentioned above, for more precision, optional tools are available for linking an issue to specific elements (not available in 2d segmentation).
+{% hint style="warning" %}
+This functionality is not yet available in the image segmentation interface
+{% endhint %}
 
-1. To an object/track
-2.  To a location
+For more precision, optional tools are available to anchor an issue to specific elements. An issue can be linked to:
 
-    Point an issue to a specific point or pixel (using a selection tool )
+1. A track (and optionally a specific track attribute)
+2. A specific location in the point cloud or image
+3. The scene itself (and optionally a specific scene attribute)
 
-<figure><img src="../.gitbook/assets/Screenshot 2025-06-25 at 16.57.07.png" alt="" width="563"><figcaption></figcaption></figure>
-
-1. To a scene attribute
+<figure><img src="../.gitbook/assets/Screenshot 2025-06-25 at 16.57.07.png" alt="" width="563"><figcaption><p>Link an issue to a specific point or pixel</p></figcaption></figure>
 
