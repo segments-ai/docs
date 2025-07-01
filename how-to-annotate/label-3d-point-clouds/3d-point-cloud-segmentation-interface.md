@@ -34,11 +34,11 @@ Tip: [use your GPU in Chrome](https://segmentsai.notion.site/How-to-use-your-GPU
 
 ## Select points
 
-### Select points using the depth brush tool
+### Select points using the brush tool
 
-1. Select the depth brush tool by clicking on the brush icon in the toolbar on the left, or by pressing the hotkey (`b` by default).
-2. When hovering over points, the points in the depth range of the brush will be highlighted, and the points outside the brush will be darkened.
-3. Click or click and drag in any view to select the points in the depth range of the brush.
+1. Select the brush tool by clicking on the brush icon in the toolbar on the left, or by pressing the hotkey (`b` by default).
+2. Change the brush size by using the slider in the toolbar on the top left, or use the hotkey (`Ctrl/cmd + scroll` by default).
+3. Click or click and drag in any view to select the points within the radius of the brush.
 
 ### Select points using the polygon tool
 
@@ -94,16 +94,6 @@ Press the hotkey (`Space` by default), or select another object.
 
 1. Select the object.
 2. Press the hotkey of the desired category (`1` - `9`).
-
-## Change the brush size
-
-1. Select the depth brush tool by clicking on the brush icon in the toolbar on the left, or by pressing the hotkey (`b` by default).
-2. Drag the brush size slider in the toolbar on the left, or use the hotkey (`Ctrl/cmd + scroll` by default).
-
-## Change the brush depth
-
-1. Select the depth brush tool by clicking on the brush icon in the toolbar on the left, or by pressing the hotkey (`b` by default).
-2. Drag the brush depth slider in the toolbar on the left, or use the hotkey (`Ctrl/cmd + Shift + scroll` by default).
 
 ## Use the lock mode
 
