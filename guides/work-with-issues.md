@@ -12,7 +12,7 @@ When visualizing an issue, a user can see all the data linked to it. By clicking
 
 ### Managing Issues
 
-Reviewers and admins can "resolve" issues by clicking the checkmark icon. A resolved issue is indicated with a green icon.
+Everyone can "resolve" issues by clicking the checkmark icon. A resolved issue is indicated with a green icon.
 
 Issue authors and admins can edit an issue's description or delete an issue by clicking the ellipsis icon and choosing the action from the dropdown menu.&#x20;
 
