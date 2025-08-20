@@ -3,12 +3,14 @@
 There are two ways to import the data you want to label:
 
 1. Upload the data to Segments.ai's asset storage service via the web interface or Python SDK.
-2. Keep the data in your own cloud bucket and submit the URLs to Segments.ai via the Python SDK.
+2. **Recommended**: Keep the data in your own cloud bucket and submit the URLs to Segments.ai via the Python SDK.
 
 ## 1. Upload data to Segments.ai's asset storage service
 
 {% hint style="warning" %}
 The maximum file size for our asset storage service is 100MB and gets stored in an AWS S3 bucket in eu-west-2 (London). The uploaded data is accessible via [public but unguessable URLs](./#public-but-unguessable-urls).
+
+For production use cases, we always recommend to [keep the data in your own cloud bucket](./#id-2.-keep-the-data-in-your-cloud-bucket).
 {% endhint %}
 
 ### Via the web interface
