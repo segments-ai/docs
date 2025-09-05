@@ -12,7 +12,7 @@ Note that a single [sample ](main-concepts.md#sample)can either be an _individua
 
 When you upload a new sample, its initial status is _unlabeled_. Samples are always either _unlabeled_, _prelabeled_, _labeled (or labeling in progress)_, _reviewed (or reviewing in progress)_, _rejected_, or _skipped_.
 
-Dataset **administrators** can open any sample directly via the _Samples_ tab. They can update the label and freely change the label status.
+Dataset **administrators and managers** can open any sample directly via the _Samples_ tab. They can update the label and freely change the label status.
 
 Dataset **labelers and reviewers** don't have access to the _Samples_ tab. They can only click the blue _Start labeling_ or _Start reviewing_ buttons. This brings them in a workflow where they are automatically assigned samples from the label or review queue in a certain order, as explained below.
 
