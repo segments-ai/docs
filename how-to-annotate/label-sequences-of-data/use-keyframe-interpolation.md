@@ -21,21 +21,14 @@ If want to change an attribute of an object with existing keyframes, make sure t
 In the context of interpolation, a **keyframe** is a marker that indicates that at that frame, the state of the object is defined by the user. In other frames (that are not keyframes), the state of the object label is calculated automatically through interpolation.&#x20;
 
 1. Select the object.
-2. The keyframes are now visible in the timeline at the bottom of the editor. A normal keyframe is shown as a blue diamond under the frame it belongs to.
+2. The keyframes are visible in the timeline at the bottom of the editor. Each track is present or not in the current frame. A present track in a frame is represented by a colored bar.  A keyframe is shown as a white diamond icon on top of a colored bar for the corresponding frame.
 
-![](<../../.gitbook/assets/image (22).png>)
+<figure><img src="../../.gitbook/assets/Screenshot 2025-08-26 at 11.47.19 (3).png" alt=""><figcaption></figcaption></figure>
 
 ## Add a keyframe
 
-### In the current frame
-
 1. Select the object.
 2. Make a change to the object in the editor. A keyframe containing the new changes is added automatically.
-
-### In a different frame
-
-1. Select the object.
-2. In the timeline, double-click the space under the frame where you want to add a keyframe. The keyframe captures the state of the object label at that frame. This means the object will not change.
 
 ## Move a keyframe
 
@@ -44,38 +37,43 @@ In the context of interpolation, a **keyframe** is a marker that indicates that 
 
 ## Remove a keyframe
 
-1. Select the object.
-2. In the timeline, click the keyframe you want to remove.
-3. Press the `Backspace` key to remove the keyframe. The interpolation will be recalculated immediately.
+1. Select the object and a frame **where it contains a keyframe**.
+2. Press the `Backspace` key to remove the keyframe. The interpolation will be recalculated immediately.
 
 {% hint style="info" %}
 When there exists only one keyframe, this keyframe cannot be removed.
 {% endhint %}
 
-## View the remove-keyframes of an object
 
-A remove-keyframe is a visual indication of where an object was removed from the sample. A remove-keyframe means that the object is not present in that frame and all frames before the next normal keyframe.&#x20;
 
-1. Select the object.
-2. The delete-keyframes are now visible in the timeline at the bottom of the editor. A delete-keyframe is indicated as a grey circle with a cross.
+## View the deleted-keyframes of an object
 
-![](<../../.gitbook/assets/image (23) (1).png>)
+A deleted-keyframe is a visual indication of where an object was explicitly removed from the sample. A deleted-keyframe means that the object is not present in that frame and all frames before the next standard keyframe.
 
-## Add a remove-keyframe
+1. Select the object and a frame **where it contains no keyframe**.
+2. The deleted-keyframes are visible in the timeline at the bottom of the editor. Each track is present or not in the current frame. A non-present track in a frame is represented by a blank dark space.  A deleted-keyframe is shown as a white cross icon on top of a blank space.
 
-1. Select the object.
-2. Remove the object from the current frame (see [Use the labeling interfaces](broken-reference)). A remove-keyframe is added automatically.
 
-## Move a remove-keyframe
 
-1. Select the object.
-2. In the timeline, click and drag the remove-keyframe. When you release your mouse, the changes will be applied.
+<figure><img src="../../.gitbook/assets/Screenshot 2025-08-26 at 11.56.24 (2).png" alt=""><figcaption></figcaption></figure>
 
-## Remove a remove-keyframe
+
+
+## Add a deleted-keyframe
 
 1. Select the object.
-2. In the timeline, click the remove-keyframe you want to remove.
-3. Press the `Backspace` key to remove the remove-keyframe. The interpolation will be recalculated immediately.
+2. Remove the object from the current frame (see [Use the labeling interfaces](broken-reference)). A deleted-keyframe is added automatically.
+
+## Move a deleted-keyframe
+
+1. Select the object.
+2. In the timeline, click and drag the deleted-keyframe. When you release your mouse, the changes will be applied.
+
+## Remove a deleted-keyframe
+
+1. Select the object.
+2. In the timeline, click the deleted-keyframe you want to remove.
+3. Press the `Backspace` key to remove the deleted-keyframe. The interpolation will be recalculated immediately.
 
 ## Label occluded objects
 
@@ -94,4 +92,6 @@ Another procedure is to ...
 3. Label a _new_ cuboid in the first frame where it _reappears_
 4. Change the track ID of the _new_ cuboid into the track ID of the initial cuboid. This will merge both cuboids together on a single track.
 
-<figure><img src="../../.gitbook/assets/remove.png" alt=""><figcaption></figcaption></figure>
+
+
+<figure><img src="../../.gitbook/assets/Screenshot 2025-08-28 at 11.36.43.png" alt=""><figcaption></figcaption></figure>

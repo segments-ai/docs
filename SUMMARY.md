@@ -28,6 +28,7 @@
   * [3D to 2D Projection](how-to-annotate/label-3d-point-clouds/3d-to-2d-projection.md)
   * [Tips for labeling cuboid sequences](how-to-annotate/label-3d-point-clouds/tips-for-labeling-cuboid-sequences.md)
 * [Label sequences of data](how-to-annotate/label-sequences-of-data/README.md)
+  * [Track timeline](how-to-annotate/label-sequences-of-data/track-timeline.md)
   * [Use track IDs in sequences](how-to-annotate/label-sequences-of-data/use-track-ids-in-sequences.md)
   * [Use keyframe interpolation](how-to-annotate/label-sequences-of-data/use-keyframe-interpolation.md)
 * [Annotate object links (beta)](how-to-annotate/annotate-object-links-beta.md)
