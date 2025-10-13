@@ -17,15 +17,21 @@ When [editing the category and task attribute configuration directly](https://do
         { ... },
         { ... }
     ],
-    "circle_radius": 50 // optional ego circle in 3D vector interfaces
+    "circle_radius": 50, // optional ego circle in 3D vector interfaces
+    "warning_rules": [ // optional set of rules that trigger warnings
+        { ... },
+        { ... },
+        { ... }
+    ]
 }
 ```
 
-| Name               | Type                                                            | Description                                                                                                                                                    |
-| ------------------ | --------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `categories`       | `array` of [categories](categories-and-attributes.md#category)  | **Required.** List of all possible categories for a label in this dataset.                                                                                     |
-| `image_attributes` | `array` of [attributes](categories-and-attributes.md#attribute) | List of image-level attributes.                                                                                                                                |
-| `circle_radius`    | `int`                                                           | The radius of the circle around the ego position in the 3D cuboid and vector interface. Can be used to indicate a region in which objects should be annotated. |
+| Name               | Type                                                                   | Description                                                                                                                                                    |
+| ------------------ | ---------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `categories`       | `array` of [categories](categories-and-attributes.md#category)         | **Required.** List of all possible categories for a label in this dataset.                                                                                     |
+| `image_attributes` | `array` of [attributes](categories-and-attributes.md#attribute)        | List of image-level attributes.                                                                                                                                |
+| `circle_radius`    | `int`                                                                  | The radius of the circle around the ego position in the 3D cuboid and vector interface. Can be used to indicate a region in which objects should be annotated. |
+| `warning_rules`    | `array` of  [warning rules](categories-and-attributes.md#warning-rule) | List of rules that should generate warnings running a check on a sample                                                                                        |
 
 {% hint style="warning" %}
 The `categories` array should contain at least one category.
@@ -119,6 +125,76 @@ The `categories` array should contain at least one category.
     "name": "is_electric",
     "input_type": "checkbox",
     "default_value": false // optional
+}
+```
+
+### Warning rule
+
+Different warning rules can be configured. Each rule type can be added multiple times for different categories / category groups according to the rule specifications. Currently, the following list of options is allowed
+
+* `intersecting-cuboids`
+* `cuboid-dimension-limits`
+
+Each rule has its own set of properties to fully configure it.
+
+#### Intersecting cuboids
+
+An intersecting cuboids rule should either have an `excluded_set_of_categories`  prop or an `excluded_categories` prop, not both.
+
+<table><thead><tr><th width="233">Name</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td><code>name</code></td><td><code>string: intersecting-cuboids</code></td><td><strong>required:</strong> Set this property to <code>intersecting-cuboids</code> when adding a rule to warn for intersecting cuboids.    </td></tr><tr><td><code>excluded_set_of_categories</code></td><td><code>array of numbers</code></td><td>Add categories to this list that are allowed to intersect with each other.<br>Note that intersections between elements of the exact same category will still raise warnings.</td></tr><tr><td><code>excluded_categories</code></td><td><code>array of numbers</code></td><td>Add categories to this list that should not trigger warnings when they intersect with any category (including their own category).</td></tr></tbody></table>
+
+```json
+
+// Activate the rule without exclusions
+{
+    "name": "intersecting-cuboids",
+    "excluded_categories": [],
+}
+
+// Activate the rule, but exclude intersections between categories 1 and 3, 1 and 5,
+// and between 3 and 5 from raising warnings
+{
+    "name": "intersecting-cuboids",
+    "excluded_set_of_categories": [1, 3, 5],
+}
+
+// Activate the rule, but don't raise warnings when category 3 intersects
+{
+    "name": "intersecting-cuboids",
+    "excluded_categories": [3],
+}
+```
+
+#### Cuboid dimension limits
+
+An intersecting cuboids rule should either have an `excluded_set_of_categories`  prop or an `excluded_categories` prop, not both.
+
+<table><thead><tr><th width="169">Name</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td><code>name</code></td><td><code>string: cuboid-dimension-limits</code></td><td><strong>required:</strong> Set this property to <code>cuboid-dimension-limits</code> when adding a rule to warn for invalid dimensions on cuboids.    </td></tr><tr><td><code>categories</code></td><td><code>array of numbers</code></td><td>Add categories to this list for which this rule should apply.<br>Pass an empty array to apply this rule to all categories.</td></tr><tr><td><code>min</code></td><td><code>object: {</code><br>    <code>"x": float | undefined,</code><br>    <code>"y": float | undefined,</code><br>    <code>"z": float | undefined</code><br><code>}</code></td><td>Set the minimum dimensions allowed for cuboids.<br>It is not required to set all x, y and z values. Only set the values that you want to be warned for.</td></tr><tr><td><code>max</code></td><td><code>object: {</code><br>    <code>"x": float | undefined,</code><br>    <code>"y": float | undefined,</code><br>    <code>"z": float | undefined</code><br><code>}</code></td><td>Set the maximum dimensions allowed for cuboids.<br>It is not required to set all x, y and z values. Only set the values that you want to be warned for.</td></tr></tbody></table>
+
+
+
+```json
+
+// Activate the rule and warn for any cuboid with an x value larger than 10
+{
+    "name": "cuboid-dimension-limits",
+    "max" {
+        "x": 10
+    }
+}
+
+// Activate the rule and warn for any cuboid in category 1 or 2
+// with an x or y value smaller than or a z value larger than 3
+{
+    "name": "cuboid-dimension-limits",
+    "categories": [1, 2],
+    "min": {
+        "x": 0.5,
+        "y": 0.5
+    },
+    "max" {
+        "x": 3
+    }
 }
 ```
 
