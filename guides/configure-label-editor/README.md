@@ -2,7 +2,7 @@
 
 Once you have created a dataset, you can further configure the labeling interface under **Settings** -> **Labeling** -> **Categories:**
 
-![](<.gitbook/assets/image (11).png>)
+![](<../../.gitbook/assets/image (11).png>)
 
 Here you can set the color, name, and description for each category.&#x20;
 
@@ -36,8 +36,8 @@ You can add scene attributes by clicking the "Edit image attributes" button. Sce
 
 When labeling, the object and scene attributes will be shown in the sidebar on the right. Scene attributes are always visible, while object attributes are only shown when an object is selected which has a category with object attributes.
 
-![](<.gitbook/assets/image (4) (2).png>)
+![](<../../.gitbook/assets/image (4) (2).png>)
 
 ### Editing the configuration file directly
 
-If you click on the "Raw" tab, you can see the configuration in JSON format. You can copy-paste this configuration from one dataset to another, or update it programmatically using the [Python SDK](https://sdkdocs.segments.ai/en/latest/client.html). The configuration should adhere to the format defined [here](reference/categories-and-attributes.md).
+If you click on the "Raw" tab, you can see the configuration in JSON format. You can copy-paste this configuration from one dataset to another, or update it programmatically using the [Python SDK](https://sdkdocs.segments.ai/en/latest/client.html). The configuration should adhere to the format defined [here](../../reference/categories-and-attributes.md).

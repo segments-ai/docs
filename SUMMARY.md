@@ -32,13 +32,15 @@
   * [Use track IDs in sequences](how-to-annotate/label-sequences-of-data/use-track-ids-in-sequences.md)
   * [Use keyframe interpolation](how-to-annotate/label-sequences-of-data/use-keyframe-interpolation.md)
 * [Annotate object links (beta)](how-to-annotate/annotate-object-links-beta.md)
+* [Use the warning system](how-to-annotate/use-the-warning-system.md)
 * [Customize hotkeys](how-to-annotate/customize-hotkeys.md)
 
 ## How to manage <a href="#guides" id="guides"></a>
 
 * [Add collaborators to a dataset](guides/add-collaborators-to-a-dataset.md)
 * [Create an organization](guides/create-an-organization.md)
-* [Configure the label editor](configure-label-editor.md)
+* [Configure the label editor](guides/configure-label-editor/README.md)
+  * [Configure rules](guides/configure-label-editor/configure-rules.md)
 * [Customize label queue](guides/customize-label-queue.md)
 * [Search within a dataset](search-functionality.md)
 * [Clone a dataset](guides/clone-a-dataset.md)

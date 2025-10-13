@@ -516,7 +516,7 @@ Format of the `attributes` field in [`client.get_label()`](https://sdkdocs.segme
 
 ## Object attributes
 
-Objects in the annotations list can optionally also contain an attributes field to store object-level attributes. Make sure to properly [configure the label editor](../configure-label-editor.md) if you're using object-level attributes.
+Objects in the annotations list can optionally also contain an attributes field to store object-level attributes. Make sure to properly [configure the label editor](../guides/configure-label-editor/) if you're using object-level attributes.
 
 ```javascript
 {
@@ -553,7 +553,7 @@ Objects in the annotations list can optionally also contain an attributes field 
 
 ## Image attributes
 
-You can also define image-level attributes. These can be useful in image classification tasks. Make sure to properly [configure the label editor](../configure-label-editor.md) if you're using image-level attributes.
+You can also define image-level attributes. These can be useful in image classification tasks. Make sure to properly [configure the label editor](../guides/configure-label-editor/) if you're using image-level attributes.
 
 ```javascript
 {

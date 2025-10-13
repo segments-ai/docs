@@ -4,16 +4,16 @@
 
 You can export the release file for image datasets to different formats with the Python SDK. Use the `export_dataset`util function for this, setting the `export_format` parameter to one of the following:
 
-| Value            | Description                                                                                                                                                                                     |
-| ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `coco-instance`  | [COCO instance](https://cocodataset.org/#format-data) segmentation format                                                                                                                       |
-| `coco-panoptic`  | [COCO panoptic](https://cocodataset.org/#format-data) segmentation format                                                                                                                       |
-| `yolo`           | [Yolo Darknet](https://github.com/AlexeyAB/darknet) object detection format                                                                                                                     |
-| `instance`       | Grayscale PNGs (16-bit) where the values correspond to instance ids                                                                                                                             |
-| `semantic`       | Grayscale PNGs (8-bit) where the values correspond to category ids                                                                                                                              |
-| `instance-color` | Colored PNGs where the colors correspond to different instances                                                                                                                                 |
-| `semantic-color` | <p>Colored PNGs where the colors correspond to different categories, with colors<br>as configured in the <a href="../../configure-label-editor.md">label editor settings</a> when available</p> |
-| `polygon`        | For exporting segmentation bitmap labels to polygons                                                                                                                                            |
+| Value            | Description                                                                                                                                                                                          |
+| ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `coco-instance`  | [COCO instance](https://cocodataset.org/#format-data) segmentation format                                                                                                                            |
+| `coco-panoptic`  | [COCO panoptic](https://cocodataset.org/#format-data) segmentation format                                                                                                                            |
+| `yolo`           | [Yolo Darknet](https://github.com/AlexeyAB/darknet) object detection format                                                                                                                          |
+| `instance`       | Grayscale PNGs (16-bit) where the values correspond to instance ids                                                                                                                                  |
+| `semantic`       | Grayscale PNGs (8-bit) where the values correspond to category ids                                                                                                                                   |
+| `instance-color` | Colored PNGs where the colors correspond to different instances                                                                                                                                      |
+| `semantic-color` | <p>Colored PNGs where the colors correspond to different categories, with colors<br>as configured in the <a href="../../guides/configure-label-editor/">label editor settings</a> when available</p> |
+| `polygon`        | For exporting segmentation bitmap labels to polygons                                                                                                                                                 |
 
 Example:
 

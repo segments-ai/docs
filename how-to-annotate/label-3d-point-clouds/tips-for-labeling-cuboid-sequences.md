@@ -63,7 +63,7 @@ If the point cloud sequence has images associated with it, they can often be hel
 
 ### Use an `is_static` attribute
 
-Add an `is_static` track-level attribute to the categories that can be static (see [configure-label-editor.md](../../configure-label-editor.md "mention")). When this attribute is checked, you can edit the position/dimensions/rotation of a cuboid in one frame, and these changes will be applied to all other frames automatically.
+Add an `is_static` track-level attribute to the categories that can be static (see [configure-label-editor](../../guides/configure-label-editor/ "mention")). When this attribute is checked, you can edit the position/dimensions/rotation of a cuboid in one frame, and these changes will be applied to all other frames automatically.
 
 <figure><img src="../../.gitbook/assets/merged-view-compr.gif" alt="Merged point cloud view"><figcaption><p>Use the merged point cloud view to see the full dimensions of a static object. </p></figcaption></figure>
 
