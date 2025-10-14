@@ -20,7 +20,7 @@ When the warnings sidebar is opened, you can click "Check sample" to verify the 
 
 In the warning list, you can see an overview of the potential issues.&#x20;
 
-<figure><img src="../.gitbook/assets/warning-list.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/warning-list (2).jpg" alt=""><figcaption></figcaption></figure>
 
 Individual warnings can be dismissed by clicking the 'x' icon on the top right of a warning. Re-running the check will re-add any dismissed warnings if they are still present in the sample.
 
@@ -28,7 +28,11 @@ To quickly jump to the context of a warning, you can click on the last pill butt
 
 To facilitate going through the set of warnings and treating them in an organised manner, you can filter the list to only display warnings matching the current sensor / frame / active object, or filter to display only a specific warning type.
 
-<figure><img src="../.gitbook/assets/filter.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/warnings-filter.jpg" alt=""><figcaption></figcaption></figure>
+
+In addition to this, you can also group the warnings by type, sensor, or track. The grouping can be combined with an active filter to fully tailor the warning list to your needs. &#x20;
+
+<figure><img src="../.gitbook/assets/warnings-groupby.jpg" alt=""><figcaption></figcaption></figure>
 
 ## Save flow
 
