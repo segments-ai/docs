@@ -62,4 +62,6 @@ Choose “None (do not add)” if you don’t want to add a member as a collabor
 
 As a member you can leave an organization by going to the _organizations_ tab on your own settings page, and clicking the "Leave organization" button.
 
+Removing a member from an organization only revokes the access rights of that user. The user's previous labeling work is not affected, and their username will still be present in the Insights tab and sample history.
+
 ![](<../.gitbook/assets/image (20).png>)
