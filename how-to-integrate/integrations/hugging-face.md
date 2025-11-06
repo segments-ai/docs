@@ -1,4 +1,8 @@
-# Integrate with Hugging Face
+---
+hidden: true
+---
+
+# Hugging Face
 
 [Hugging Face (🤗) Datasets](https://huggingface.co/docs/datasets/index) is a library for accessing and sharing machine learning datasets. It features powerful data processing methods to quickly get your dataset ready for training deep learning models.
 
@@ -18,7 +22,7 @@ release = client.get_release("jane/flowers", "v0.1")
 hf_dataset = release2dataset(release)
 ```
 
-The returned object is a [🤗 Dataset object](https://huggingface.co/docs/datasets/package\_reference/main\_classes#datasets.Dataset). The columns of the exported dataset depend on the task type of the dataset, and closely follow our documented sample and label formats. The columns can be inspected as follows:
+The returned object is a [🤗 Dataset object](https://huggingface.co/docs/datasets/package_reference/main_classes#datasets.Dataset). The columns of the exported dataset depend on the task type of the dataset, and closely follow our documented sample and label formats. The columns can be inspected as follows:
 
 ```python
 >>> dataset.features
