@@ -41,6 +41,7 @@
 * [Create an organization](guides/create-an-organization.md)
 * [Configure the label editor](guides/configure-label-editor/README.md)
   * [Configure rules](guides/configure-label-editor/configure-rules.md)
+  * [Configure region of interest](guides/configure-label-editor/configure-region-of-interest.md)
 * [Customize label queue](guides/customize-label-queue.md)
 * [Search within a dataset](search-functionality.md)
 * [Clone a dataset](guides/clone-a-dataset.md)

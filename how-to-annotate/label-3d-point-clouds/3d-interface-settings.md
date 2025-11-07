@@ -157,6 +157,14 @@ Click on the circle to jump to the frame where the cuboid is positioned at the c
 
 <figure><img src="../../.gitbook/assets/image (39).png" alt=""><figcaption></figcaption></figure>
 
+
+
+### Show ROI
+
+Check the "Show ROI" checkbox to show the region of interest. To adjust the shape and the dimensions, go to Dataset Settings > Labeling tab > Enable region of interest. More info [here](https://app.gitbook.com/o/nAEpl593xwZqipzOfJti/s/HczBG7NHgAtEe4ql1rXH/~/changes/341/guides/configure-label-editor/region-of-interest).
+
+<figure><img src="../../.gitbook/assets/Screenshot 2025-11-07 at 10.16.56.png" alt=""><figcaption></figcaption></figure>
+
 ## Cuboid settings
 
 ### Opacity
