@@ -56,14 +56,8 @@
 * [Export data](how-to-integrate/export/README.md)
   * [Structure of the release file](how-to-integrate/export/structure-of-the-release-file.md)
   * [Exporting image annotations to different formats](how-to-integrate/export/exporting-image-annotations-to-different-formats.md)
-* [Integrations](how-to-integrate/integrations/README.md)
-  * [Hugging Face](how-to-integrate/integrations/hugging-face.md)
-  * [W\&B](how-to-integrate/integrations/w-and-b.md)
-  * [Databricks](how-to-integrate/integrations/databricks.md)
-  * [SceneBox](how-to-integrate/integrations/scenebox.md)
 * [Create an API key](how-to-integrate/create-an-api-key.md)
 * [Upload model predictions](how-to-integrate/upload-model-predictions.md)
-* [Upload model predictions (old)](how-to-integrate/upload-model-predictions-old.md)
 * [Set up webhooks](how-to-integrate/webhooks.md)
 
 ## Background
