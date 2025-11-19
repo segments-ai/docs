@@ -4,13 +4,18 @@ For multi-sensor labeling, utilizing the ‘Project cuboids to camera sensors’
 
 <figure><img src="../../.gitbook/assets/3d_to_2d_projection.gif" alt=""><figcaption><p> </p></figcaption></figure>
 
-Click on the 3-dot icon next to lidar sensor, to access ‘Project cuboids to camera sensors’.
+{% hint style="info" %}
+The sensors list has been moved to a dropdown in the top part of the right sidebar.
+{% endhint %}
 
-<figure><img src="../../.gitbook/assets/Screenshot 2024-03-27 at 2.43.24 PM.png" alt="" width="343"><figcaption></figcaption></figure>
+Open the sensors dropdown to access ‘Project cuboids to camera sensors’.
 
-## **Overwrite existing tracks**
+<figure><img src="../../.gitbook/assets/Screenshot 2025-11-18 at 16.52.15.png" alt="" width="375"><figcaption></figcaption></figure>
+
+### **Overwrite existing tracks**
 
 * If this option is checked, it will use the 3D cuboids to overwrite existing 2D bounding box objects.
 * If you made adjustments to the 2D bounding boxes and want to project additional objects from 3D to 2D, make sure this option is unchecked.
 
 <figure><img src="../../.gitbook/assets/Screenshot 2024-03-27 at 12.48.06 PM.png" alt="" width="296"><figcaption></figcaption></figure>
+
