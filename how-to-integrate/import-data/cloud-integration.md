@@ -81,6 +81,8 @@ You also need to configure [CORS](https://docs.aws.amazon.com/AmazonS3/latest/us
 6. Verify the CORS configuration with the command `gsutil cors get gs://<bucket-name>`
 7. Please [share the name of your bucket with us](https://segments.ai/contact), so we can enable the integration on our side
 
+Once this is set up, you can start using `gs://` URLs in your samples, pointing to files in your private bucket.
+
 ## Azure
 
 ### Granting cross-account access
