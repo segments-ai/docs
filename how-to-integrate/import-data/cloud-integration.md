@@ -70,25 +70,45 @@ You also need to configure [CORS](https://docs.aws.amazon.com/AmazonS3/latest/us
 
 ### Granting cross-account access
 
-Please [contact us](https://segments.ai/contact) to help you set this up.
-
-### CORS configuration
-
-You also need to configure [CORS](https://cloud.google.com/storage/docs/cross-origin) for your Cloud Storage bucket, using this JSON file:
-
-```
-[
-    {
-      "origin": ["https://*.segments.ai"],
-      "method": ["GET"],
-      "responseHeader": [],
-      "maxAgeSeconds": 3600
-    }
-]
-```
-
-
+1. Please [contact us](https://segments.ai/contact) to request a Service Account Email ID for this GCP integration.
+2. In your GCS account, go to your **GCS bucket permissions**.
+3. Click **Add permissions** and paste the Service Account Email ID that we shared with you in the **New principals** field.
+4. Select **Cloud Storage -> Storage Object Viewer** as the role, and press Save.
+5. Configure **CORS** on your bucket as follows:
+   1. Click the **Activate Cloud Shell** button (a terminal window icon) in the top-right corner
+   2. In Cloud Shell, create a JSON file containing the CORS configuration by entering the command `echo '[{"origin":["https://*.`[`segments.ai`](http://segments.ai/)`"],"method":["GET"],"responseHeader":["*"]}]' > cors-config.json`
+   3. Apply the CORS configuration to the bucket with the command `gsutil cors set cors-config.json gs://<bucket-name>`
+6. Verify the CORS configuration with the command `gsutil cors get gs://<bucket-name>`
+7. Please [share the name of your bucket with us](https://segments.ai/contact), so we can enable the integration on our side
 
 ## Azure
 
-Please [contact us](https://segments.ai/contact) to help you set this up.
+### Granting cross-account access
+
+1. Sign in to the [Azure Portal](https://portal.azure.com/).
+2. In the search bar at the top, type **Microsoft Entra ID.**
+3. Copy the **Tenant ID** on the **Overview** page and [share it with us](https://segments.ai/contact).
+4. Install the **Segments.ai Blob Link Service app** into your tenant by running `az ad sp create --id d47021c7-05d1-44c3-a594-93c2c30c68fc` ([Azure docs](https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/create-service-principal-cross-tenant?pivots=azure-cli)).
+5. Grant the app access to your storage account:
+   1. In the Azure Portal, go to the **Storage Account** you want to share.
+   2. In the left menu, select **Access control (IAM)**.
+   3. Click **+ Add → Add role assignment**.
+   4. Choose **Storage Blob Data Reader** as the role (= read access only).
+   5. Select **Assign access to → User, group, or service principal**.
+   6. Find the **Enterprise application** you just created for the Segments.ai - Blob Link Service app.
+   7. Save the assignment.
+
+### CORS configuration
+
+You also need to configure [CORS](https://learn.microsoft.com/en-us/cli/azure/storage/cors?view=azure-cli-latest) by running this Azure CLI command:
+
+```
+az storage cors add
+--services b
+--methods GET
+--origins https://app.segments.ai https://webgpu.segments.ai
+--max-age 3600
+--account-name <yourStorageAccountName>
+```
+
+You can also [configure CORS via the Azure Portal](https://learn.microsoft.com/en-us/azure/container-apps/cors?tabs=arm\&pivots=azure-portal).
