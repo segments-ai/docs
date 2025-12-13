@@ -71,15 +71,20 @@ You also need to configure [CORS](https://docs.aws.amazon.com/AmazonS3/latest/us
 ### Granting cross-account access
 
 1. Please [contact us](https://segments.ai/contact) to request a Service Account Email ID for this GCP integration.
-2. In your GCS account, go to your **GCS bucket permissions**.
-3. Click **Add permissions** and paste the Service Account Email ID that we shared with you in the **New principals** field.
-4. Select **Cloud Storage -> Storage Object Viewer** as the role, and press Save.
-5. Configure **CORS** on your bucket as follows:
+2. **Create a new role** for the principal as follows:
+   1. In your GCS account, go to **Roles** and click **Create Role**
+   2. Give the role a title, ID and description
+   3. Click **Add permissions** and select the `storage.objects.get` permission
+   4. Click the **Create** button
+3. In your GCS account, go to your **GCS bucket permissions**.
+4. Click **Grant access** under the **View by principals** section and paste the Service Account Email ID that we shared with you in the **New principals** field.
+5. **Select the custom role** you just created as the role, and press Save.
+6. Configure **CORS** on your bucket as follows:
    1. Click the **Activate Cloud Shell** button (a terminal window icon) in the top-right corner
    2. In Cloud Shell, create a JSON file containing the CORS configuration by entering the command `echo '[{"origin":["https://*.`[`segments.ai`](http://segments.ai/)`"],"method":["GET"],"responseHeader":["*"]}]' > cors-config.json`
    3. Apply the CORS configuration to the bucket with the command `gsutil cors set cors-config.json gs://<bucket-name>`
-6. Verify the CORS configuration with the command `gsutil cors get gs://<bucket-name>`
-7. Please [share the name of your bucket with us](https://segments.ai/contact), so we can enable the integration on our side
+7. Verify the CORS configuration with the command `gsutil cors get gs://<bucket-name>`
+8. Please [share the name of your bucket with us](https://segments.ai/contact), so we can enable the integration on our side
 
 Once this is set up, you can start using `gs://` URLs in your samples, pointing to files in your private bucket.
 
