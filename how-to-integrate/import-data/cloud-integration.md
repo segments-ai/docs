@@ -74,7 +74,7 @@ You also need to configure [CORS](https://docs.aws.amazon.com/AmazonS3/latest/us
 2. **Create a new role** for the principal as follows:
    1. In your GCS account, go to **Roles** and click **Create Role**
    2. Give the role a title, ID and description
-   3. Click **Add permissions** and select the `storage.objects.get` and `iam.serviceAccounts.signBlob` permissions
+   3. Click **Add permissions** and select the `storage.objects.get` permission
    4. Click the **Create** button
 3. In your GCS account, go to your **GCS bucket permissions**.
 4. Click **Grant access** under the **View by principals** section and paste the Service Account Email ID that we shared with you in the **New principals** field.
