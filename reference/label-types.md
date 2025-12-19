@@ -476,6 +476,10 @@ Format of the `attributes` field in [`client.get_label()`](https://sdkdocs.segme
 
 ## Multi-sensor sequence
 
+{% hint style="warning" %}
+When uploading pre-labels for multi-sensor samples, make sure that the order of the sensors is the same in the label as in the sample. It is **not** sufficient for the sensors to have the same name, the order must also match.
+{% endhint %}
+
 ```json
 {
   "sensors": [
