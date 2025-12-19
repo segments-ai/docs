@@ -62,7 +62,7 @@ A deleted-keyframe is a visual indication of where an object was explicitly remo
 ## Add a deleted-keyframe
 
 1. Select the object.
-2. Remove the object from the current frame (see [Use the labeling interfaces](broken-reference)). A deleted-keyframe is added automatically.
+2. Remove the object from the current frame (see [Use the labeling interfaces](/broken/pages/033ukZNH0qA9bDAoqHGh)). A deleted-keyframe is added automatically.
 
 ## Move a deleted-keyframe
 

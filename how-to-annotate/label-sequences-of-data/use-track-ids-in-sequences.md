@@ -39,7 +39,7 @@ The track ID will always increment with 1 starting from the highest track ID.
 Merging tracks is only possible when both tracks have no overlapping keyframes.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/Screenshot 2025-08-28 at 11.44.11.png" alt=""><figcaption><p>Update and merge track id view</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2025-12-19 at 09.17.14.png" alt=""><figcaption></figcaption></figure>
 
 ## Remove a track (= remove an object in all frames)
 
