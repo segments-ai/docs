@@ -4,8 +4,7 @@ With the object linking feature you can annotate _relations_ or _links_ between 
 
 This feature is in beta. Current limitations:
 
-* In 3D interfaces, links are rendered for cuboids. \
-  In 2D interfaces, links can be created between any vector objects (bboxes, polygons, polylines, keypoints).
+* In 3D interfaces, links are only rendered for cuboids.&#x20;
 
 The format of the link annotations in the exported label attributes is documented [here](../reference/label-types.md#links).
 
