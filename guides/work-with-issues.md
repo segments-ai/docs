@@ -11,9 +11,19 @@ attributes, or a location. Any available fields will be pre-filled based on your
 
 When visualizing an issue, a user can see all the data linked to it. By clicking on the tag, the user is brought directly to the relevant context (e.g., frame, sensor).
 
-## Tags
+### Tags
 
-If your dataset has issue tags configured (see [configure-label-editor](configure-label-editor/ "mention")), you can assign one or more tags when creating or editing an issue. Tags appear as colored badges on the issue. When more than two tags are assigned, the extra tags are collapsed with a "+N" indicator.
+You can configure issue tags to help categorize and triage issues on your dataset. Click the "Issue Tags" section under Settings → Labeling to manage tags.
+
+Each tag has:
+
+* Name: a short label for the tag (must be unique within the dataset)
+* Color: choose from 10 preset colors or pick a custom color
+* Description (optional): a longer explanation of when to use the tag
+
+Tags can be edited or deleted at any time. Deleting a tag does not remove it from existing issues — it will appear as an orphaned tag with reduced opacity.
+
+Once configured, tags become available in the issue creation and editing forms within the labeling interface. Tags appear as colored badges on the issue. When more than two tags are assigned, the extra tags are collapsed with a "+N" indicator.
 
 Tags help categorize and triage issues — for example, you might use tags like "unclear boundary", "missing object", or "wrong category" to distinguish different types of problems.
 
