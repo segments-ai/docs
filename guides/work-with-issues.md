@@ -6,9 +6,16 @@ Both labelers and reviewers can open a new issue on a sample by clicking the <im
 
 When an issue is created, it automatically becomes an "open" issue, indicated by a red number next to to message icon.
 
-An issue must include a description. You can also optionally add screenshots and link an issue to specific context like sensor, frame, object, track, attributes, or a location. Any available fields will be pre-filled based on your current selection (e.g., the current sensor).&#x20;
+An issue must include a description or at least one tag. You can also optionally add screenshots, assign tags for categorization, and link an issue to specific context like sensor, frame, object, track,\
+attributes, or a location. Any available fields will be pre-filled based on your current selection (e.g., the current sensor).&#x20;
 
 When visualizing an issue, a user can see all the data linked to it. By clicking on the tag, the user is brought directly to the relevant context (e.g., frame, sensor).
+
+## Tags
+
+If your dataset has issue tags configured (see [configure-label-editor](configure-label-editor/ "mention")), you can assign one or more tags when creating or editing an issue. Tags appear as colored badges on the issue. When more than two tags are assigned, the extra tags are collapsed with a "+N" indicator.
+
+Tags help categorize and triage issues — for example, you might use tags like "unclear boundary", "missing object", or "wrong category" to distinguish different types of problems.
 
 ### Managing Issues
 
@@ -18,7 +25,7 @@ Issue authors and admins can edit an issue's description or delete an issue by c
 
 Everyone can add replies to an issue, and only reply authors can delete their own replies. This feature enables back-and-forth communication between labelers and reviewers. Remember that rejected samples always return to the original labeler, while corrected samples go back to the original reviewer.
 
-Reviewers and admins have access to an issues panel, where they can filter issues by "resolved," "unresolved," or "all."
+Reviewers and admins have access to an issues panel with a filter dropdown. You can filter issues by status (open or closed) and by tags. When filtering by tags, issues matching any of the selected tags are shown. An active filter is indicated by a dot on the filter button.
 
 <figure><img src="../.gitbook/assets/Screenshot 2025-06-25 at 13.54.21.png" alt="" width="375"><figcaption></figcaption></figure>
 
