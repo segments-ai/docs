@@ -35,6 +35,20 @@ You can quickly draw a cuboid with an arbitrary rotation using our 3-click cuboi
 3. When you move your mouse, the back side of the cuboid will follow your mouse position. Click to set the second corner of the cuboid.&#x20;
 4. Next, you can extend the cuboid by moving your mouse. Click to complete the cuboid. After clicking, the new cuboid is added to the objects sidebar on the right.
 
+### Smart cuboid initializaition
+
+Instead of manually placing a cuboid, you can automatically create one from a point selection:
+
+1. Switch to cuboid mode
+2. Hold Alt and drag to draw a selection box over the point cloud
+3. On release, the system analyzes the selected points and creates a fitted 3D cuboid with the correct position, dimensions, and rotation
+
+A `"Creating cuboid..."` indicator appears while the cuboid is being computed.
+
+{% hint style="info" %}
+This works best when you select a cluster of points belonging to a single object. Outliers are handled automatically.
+{% endhint %}
+
 ## Remove a cuboid
 
 1. Select the cuboid you want to remove.
@@ -58,6 +72,19 @@ You can quickly draw a cuboid with an arbitrary rotation using our 3-click cuboi
 3. Change the cuboid's dimensions by using the hotkeys (`i`, `j`, `k`, `l`, `u`, `o` by default) or by using your mouse:
    * In the perspective view: click and drag a face of the cuboid.
    * In a side view: click and drag one of the edges of the cuboid.
+
+### Auto-adjust cuboid
+
+To automatically refine a cuboid so it fits the enclosed points more tightly:
+
+1. Select the cuboid you want to adjust
+2. Press Q
+
+The system collects the point cloud points inside the cuboid and snaps it to a tighter fit — position, dimensions, and rotation are all updated.
+
+{% hint style="info" %}
+Useful after manually placing a cuboid or after propagation — press Q to quickly tighten the fit without dragging faces.
+{% endhint %}
 
 ## Translate a cuboid
 
