@@ -26,8 +26,6 @@ You can create three types of vectors: a polygon, polyline, and a keypoint.
    2. clicking on the first polygon point (this closes the polygon without adding a final point) or by
    3. confirming the object (hotkey `space` by default) - this closes the polygon without adding a final point.
 
-When holding `Shift + F`node snapping is activated. This will snap the point you want to add to the nearest handle of an existing vector, within a certain distance threshold.
-
 ### Create a polyline
 
 1. Select the "Create polyline" tool by clicking on the line icon in the toolbar on the left, or by pressing the hotkey (`n` by default).
@@ -84,6 +82,16 @@ Hover over a polygon point, a polyline point or a key point. The cursor changes 
 
 1. Hover over keypoint or a polygon or polyline point.
 2. Press `Shift` and click to remove the point.
+
+## Node snapping
+
+When creating or editing a polygon or polyline, hold `Shift + F` to activate node snapping. This snaps the point you add to the nearest handle of an existing vector, within a certain distance threshold.
+
+Points snapped this way share exact coordinates with the original handle, making them co-located. Co-located points stay linked across tracks:
+
+* Dragging a co-located point moves all points at the same coordinates together
+* Undo/redo applies atomically across all affected tracks
+* Unsnapping: hold `Shift` and click a co-located point to break the link — the point will move independently afterward
 
 ## Change the category of a vector
 
