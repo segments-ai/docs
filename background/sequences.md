@@ -16,3 +16,57 @@ A **remove-keyframe** is a visual indication of where an object was removed from
 
 ![An example of keyframes (blue diamonds) and a remove-keyframe (grey circle with cross). The yellow color indicates the frames in which the object is present.](<../.gitbook/assets/image (25) (1).png>)
 
+## Timeline interface
+
+The timeline is always visible at the bottom of the editor and provides a visual representation of all tracks and their states across the sequence.
+
+### What the timeline shows
+
+The timeline displays tracks as horizontal rows with:
+
+* **Track information** on the left (track ID and category name)
+* **Frame columns** showing the track's state across time
+* **Visual indicators** for keyframes and object presence
+
+### Visual indicators
+
+| Element            | Appearance                | Meaning                                     |
+| ------------------ | ------------------------- | ------------------------------------------- |
+| Colored bar        | Continuous horizontal bar | Track is visible in these frames            |
+| White diamond (◆)  | Icon on colored bar       | Keyframe (user-defined object state)        |
+| White cross (×)    | Icon on blank space       | Remove-keyframe (object explicitly removed) |
+| Highlighted column | Vertical highlight        | Active frame (current position)             |
+
+### Timeline views
+
+The timeline adapts to show different information:
+
+**When no track is selected:**
+
+* Switch between viewing all tracks or scene attributes using the View dropdown
+
+**When a track is selected:**
+
+* Shows only that track with its associated track attributes
+
+This dynamic display helps you focus on relevant information while labeling.
+
+### Attributes in the timeline
+
+The timeline can display two types of attributes:
+
+**Scene attributes** - Properties that apply to the entire scene or individual frames:
+
+* Example: Weather conditions, lighting, time of day
+* Visible when no track is selected (Scene attributes view)
+
+**Track attributes** - Properties specific to individual tracks:
+
+* Example: Vehicle speed, object confidence score
+* Visible when a track is selected
+
+Attributes can be frame-level (changing per frame) or sequence-level (constant across frames).
+
+{% hint style="info" %}
+For detailed instructions on using the timeline interface, see Track timeline. For keyframe operations, see Use keyframe interpolation.
+{% endhint %}

@@ -38,6 +38,59 @@ When labeling, the object and scene attributes will be shown in the sidebar on t
 
 ![](<../../.gitbook/assets/image (4) (2).png>)
 
+## Timeline display (sequences only)
+
+For sequence datasets, user-defined attributes also appear in the timeline interface at the bottom of the editor, allowing you to view and edit them directly while navigating through frames.
+
+### How attributes appear in the timeline
+
+The timeline displays attributes differently based on whether they have a category:
+
+**Track attributes** (attributes with a category):
+
+* Visible when you select a track in the viewer
+* Display as rows below the track row in the timeline
+* Each row shows the attribute values across frames
+
+**Scene attributes** (attributes without a category):
+
+* Visible when you select "Scene attributes" from the View dropdown (when no track is selected)
+* Display as rows at the top of the timeline
+
+### Attribute behavior in timeline
+
+Attributes can be configured along two independent dimensions:
+
+**Dimension 1: Frame-level vs Sequence-level** (Synced across frames setting)
+
+* **Frame-level** (Synced across frames = disabled): Each frame can have a different value. The timeline displays one cell per frame that you can edit individually.
+* **Sequence-level** (Synced across frames = enabled): One value applies to all frames. The timeline displays a single value that applies to the entire sequence.
+
+**Dimension 2: Sensor-specific vs Synced across sensors**
+
+* **Sensor-specific**: Each sensor can have different values. In multi-sensor sequences, each sensor's timeline shows its own attribute values.
+* **Synced across sensors**: The same value applies to all sensors. All sensors share the same attribute value.
+
+**Possible combinations:**
+
+These two dimensions create four possible configurations:
+
+1. **Frame-level + Sensor-specific**: Each frame and each sensor has its own value
+2. **Frame-level + Synced across sensors**: Each frame has its own value, but all sensors share the same values
+3. **Sequence-level + Sensor-specific**: One value per sensor for the entire sequence
+4. **Sequence-level + Synced across sensors**: One value for the entire sequence across all sensors
+
+### Benefits of timeline editing
+
+* Edit attribute values without switching between panels
+* See how attribute values change across frames at a glance
+* Quickly identify frames where specific attribute values are set
+* For frame-level attributes, easily compare values across multiple frames
+
+{% hint style="info" %}
+For detailed instructions on editing attributes in the timeline, see Track timeline - Edit attributes.
+{% endhint %}
+
 ### Editing the configuration file directly
 
 If you click on the "Raw" tab, you can see the configuration in JSON format. You can copy-paste this configuration from one dataset to another, or update it programmatically using the [Python SDK](https://sdkdocs.segments.ai/en/latest/client.html). The configuration should adhere to the format defined [here](../../reference/categories-and-attributes.md).

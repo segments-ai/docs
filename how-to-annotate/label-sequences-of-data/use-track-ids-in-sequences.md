@@ -1,79 +1,112 @@
 # Use track IDs in sequences
 
-A **track ID** is an identifier assigned to each labeled object in a [sequence](../../background/sequences.md). This track ID can be used to track an object over multiple frames.
+## Use track IDs in sequences
 
-## View the track ID of an object
+A track ID uniquely identifies an object across multiple frames in a sequence. Track IDs are essential for tracking applications where you need to follow the same object over time.
 
-The track ID of an object is displayed:
+## Understanding track IDs
 
-* in the sidebar on the left of the object category
-* at the left of its category name in the timeline
+When you create an object in a sequence:
 
-## Add a track ID to an object
+* A unique track ID is automatically assigned
+* The track ID remains constant across all frames where the object exists
+* Track IDs increment sequentially, starting from the highest existing ID
 
-When creating an object in a sequence editor, a track ID is automatically created.
+Track IDs are visible:
 
-The track ID will always increment with 1 starting from the highest track ID.
+* In the **sidebar** next to the object category
+* In the **timeline** at the left of each track row
 
-## Change the track ID of an object (in all frames)
-
-1. Select the object.
-2. In the timeline, right click on the track bar to open the contextual menu
-3. Select the `Update track id` option
-4. Enter the new track ID.
-5. Click on merge. The new track ID will replace the old track ID in all frames.
-
-<figure><img src="../../.gitbook/assets/Screenshot 2025-08-28 at 11.43.21.png" alt=""><figcaption><p>Track contextual menu in the timeline</p></figcaption></figure>
-
-
-
-## Merge a track into another track
-
-1. Select the object you want to merge into another track.
-2. In the timeline, right click on the track bar to open the contextual menu
-3. Select the `Update track id` option
-4. Enter the ID of the track you want to merge the current track into.
-5. Click on merge. The keyframes of both tracks will be combined, and the combined track takes the track ID you just entered.
-
-{% hint style="warning" %}
-Merging tracks is only possible when both tracks have no overlapping keyframes.
+{% hint style="info" %}
+The timeline interface is described in detail in Track timeline.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/Screenshot 2025-12-19 at 09.17.14.png" alt=""><figcaption></figcaption></figure>
+## Update a track ID
 
-## Remove a track (= remove an object in all frames)
+Change a track ID across all frames:
 
-1. Select the object you want to remove from the sequence.
-2. In the timeline, right click on the track bar to open the contextual menu
-3. Select the `Remove track` option. The object will then be removed from all frames.
+1. In the timeline, right-click on the track row
+2. Select **Update track ID**
+3. Enter the new track ID in the dialog
+4. Click **Update**
 
-If the track ID of the removed track was the highest track ID, then this track ID will be recovered for newly created objects. If the track ID was not the highest track ID, then the track ID will not be recovered when creating new objects, unless explicitly adjusted by the user (see [#change-the-track-id-of-an-object-in-all-frames](use-track-ids-in-sequences.md#change-the-track-id-of-an-object-in-all-frames "mention"))
+{% hint style="info" %}
+Track IDs must be unique within the sequence. If you enter an existing ID, you'll be prompted to merge the tracks instead.
+{% endhint %}
+
+**Use case:** Fix incorrectly assigned track IDs or align with external tracking data.
+
+## Merge tracks
+
+Combine two tracks that represent the same object:
+
+1. Right-click on the source track row in the timeline
+2. Select **Merge with track**
+3. Choose the target track ID from the dropdown
+4. Confirm the merge
+
+All keyframes from the source track are transferred to the target track, and the source track is removed.
+
+{% hint style="warning" %}
+**Important constraint:** Merging tracks is only possible when both tracks have no overlapping keyframes.
+{% endhint %}
+
+**Use case:** Correct tracking errors where the same object was accidentally assigned multiple track IDs.
 
 ## Split a track
 
-Splitting a track will create a new track at the current frame and move all keyframes after the current frame to the new track.
+Divide a track into two separate tracks at a specific frame:
 
-1. Select the object whose track you want to split.
-2. Select the frame where you want the new track to start.&#x20;
-3. Click the "Split track" button under the track ID in the track editor on the right of the timeline.
+1. Navigate to the frame where you want to split
+2. Right-click on the track row in the timeline
+3. Select **Split track**
+
+The track is divided:
+
+* Frames before the split point keep the original track ID
+* Frames from the split point onward receive a new track ID
 
 {% hint style="warning" %}
-Splitting a track is only possible if there are keyframes before the current frame. Otherwise, splitting the track would create an empty track.
+**Limitation:** Splitting a track is only possible if there are keyframes before the current frame.
 {% endhint %}
-
-## Enable same-dimensions track constraint
-
-The same-dimensions track constraint forces objects to maintain the same dimensions in every frame. When changing the dimensions of an object with a certain track ID in one frame, the dimensions of the object will be updated in all other frames too. This can be useful when you want objects to keep their dimensions, regardless of occlusions or noise.
 
 {% hint style="info" %}
-The same-dimensions track constraint is only available for cuboid sequences.
+The **Split track** action is only available in single-sensor sequences.
 {% endhint %}
 
-You can enable the same-dimensions track constraint as follows:
+**Use case:** Separate objects that were incorrectly tracked as one, or handle scenarios where one object becomes two (e.g., a vehicle splitting into two paths).
 
-1. Open the dataset where you want to activate the constraint.
-2. Open the "Settings" tab.
-3. Click on the "Labeling" section.
-4. Tick the "Enable same-dimensions track constraint" checkbox.
-5. Save the labeling settings.
+## Remove a track
 
+Delete an entire track from the sequence:
+
+1. Right-click on the track row in the timeline
+2. Select **Remove track**
+3. Confirm the deletion
+
+{% hint style="warning" %}
+This deletes all keyframes and annotations associated with the track. Use undo if you need to recover it.
+{% endhint %}
+
+{% hint style="info" %}
+When a track is removed, the highest track ID becomes available for new objects. Lower IDs require manual adjustment if you want to reuse them.
+{% endhint %}
+
+## Same-dimensions constraint
+
+For 3D cuboid sequences, you can enforce consistent object dimensions across all frames:
+
+1. Go to **Settings** > **Labeling**
+2. Enable the **Same-dimensions track constraint** checkbox
+
+When enabled, all keyframes in a track will maintain the same object dimensions (width, height, depth), allowing only position and rotation changes between frames.
+
+{% hint style="info" %}
+**Note:** The same-dimensions track constraint is only available for cuboid sequences.
+{% endhint %}
+
+**Use case:** Label objects with known fixed dimensions (e.g., standard shipping containers, vehicles with known specifications).
+
+{% hint style="info" %}
+For more details on the timeline context menu and interface, see Track timeline.
+{% endhint %}
