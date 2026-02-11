@@ -26,6 +26,8 @@ You can create three types of vectors: a polygon, polyline, and a keypoint.
    2. clicking on the first polygon point (this closes the polygon without adding a final point) or by
    3. confirming the object (hotkey `space` by default) - this closes the polygon without adding a final point.
 
+To reopen a completed polygon for continued drawing, double-click any of its points.
+
 ### Create a polyline
 
 1. Select the "Create polyline" tool by clicking on the line icon in the toolbar on the left, or by pressing the hotkey (`n` by default).
@@ -33,6 +35,8 @@ You can create three types of vectors: a polygon, polyline, and a keypoint.
 3. Close the polyline&#x20;
    1. by double clicking (this adds a final point and finishes the polyline) or by
    2. confirming the object (press `space` hotkey by default) - this closes the polyline without adding a final point.
+
+To reopen a completed polyline, double-click its first or last endpoint. Double-clicking a middle point does not reopen the polyline.
 
 {% hint style="info" %}
 It's possible to view the direction of a polyline on orthographic top views. To enable this, open the "Settings" tab, go to the "Helper objects" section and activate "Show polyline arrows".
