@@ -31,6 +31,10 @@ Here's an example of a configuration.
 
 <figure><img src="../../.gitbook/assets/warnigs-config-intersecting-2.jpg" alt=""><figcaption></figcaption></figure>
 
+It's also possible to configure an overlap threshold.
+
+<figure><img src="../../.gitbook/assets/image (49).png" alt=""><figcaption></figcaption></figure>
+
 ### Cuboid dimensions
 
 Configure rules that can warn users when cuboids exceed certain limits. Only fields that are filled in are checked.
