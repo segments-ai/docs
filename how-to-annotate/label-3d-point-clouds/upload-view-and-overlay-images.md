@@ -29,7 +29,7 @@ The 3D overlay (of objects and the point cloud) is only visible if the camera pa
 
 ### Zoom in/out
 
-To zoom in or out, scroll using the mouse wheel, or double-click in the viewer.
+To zoom in or out, scroll using the mouse wheel.
 
 ### Pan
 
@@ -42,6 +42,12 @@ Hold the hotkey (`Ctrl/cmd` by default) and click and drag.
 To toggle the point cloud overlay on and off, press the hotkey (`Ctrl + q` by default) or toggle it in the [3D interface settings](3d-interface-settings.md#toggle-point-cloud-overlay-on-images). Disabling the point cloud overlay allows you to see the camera image in more detail, while enabling it allows you to see if the camera and lidar are well calibrated.
 
 {% embed url="https://segments.ai/blog/assets/images/improved-image-viewer/pc-overlay-trim-compr.mp4" %}
+
+## Jump to the corresponding 3D location
+
+When you've opened an image by clicking a thumbnail, double click anywhere in the image to jump to the corresponding location in 3D space. A 3D "ray" from the camera to that location is briefly displayed.
+
+Note that this feature only works well if the lidar and camera are well calibrated.
 
 ## Use the **synchronized** image viewer
 
