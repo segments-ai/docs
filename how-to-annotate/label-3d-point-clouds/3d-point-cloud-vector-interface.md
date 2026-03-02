@@ -79,7 +79,7 @@ Hover over a polygon point, a polyline point or a key point. The cursor changes 
 
 1. Select a polygon or polyline annotation.
 2. Press `Shift` and move the mouse close to a line segment.
-3. Click to add this point to the polygon or polyline.
+3. Click to add this point to the polygon or polyline. Note that the new point gets initialized at a height that is linearly interpolated from the height of its two neighboring nodes.
 4. Release `Shift` and move the point if necessary.
 
 ## Remove a point from a vector
