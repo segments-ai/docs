@@ -113,3 +113,9 @@ Points snapped this way share exact coordinates with the original handle, making
 ## Cycle between vectors / select the next vector
 
 Press the hotkey (`Tab` by default).
+
+## Customize the vector visualization
+
+In the Settings sidebar, go to the "Vector" section to change the node size and line width of vector annotations.
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
