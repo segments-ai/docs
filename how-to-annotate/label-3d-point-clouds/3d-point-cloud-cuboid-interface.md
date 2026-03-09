@@ -49,6 +49,14 @@ A `"Creating cuboid..."` indicator appears while the cuboid is being computed.
 This works best when you select a cluster of points belonging to a single object. Outliers are handled automatically.
 {% endhint %}
 
+{% embed url="https://drive.google.com/file/d/10GQZExIXjNDweF7ItMQfe43sgREo6GIs/view?usp=sharing" %}
+
+## Auto-adjust cuboids
+
+Press hotkey `q` to auto-adjust an existing cuboid, to make it fit better to the point cloud points.
+
+{% embed url="https://drive.google.com/file/d/1aGfGTz0X5AQSeeSKAmnIjCq5v7nVHpT6/view?usp=sharing" %}
+
 ## Remove a cuboid
 
 1. Select the cuboid you want to remove.
