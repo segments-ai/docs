@@ -28,6 +28,20 @@ You can optionally configure following settings for each object attribute:
 * **Synced across sensors ("Across sensors")**: Only in multi-sensor datasets. Whether an attribute should remain constant across all sensors for an object with a certain track ID. If false, the attribute can change on each sensor.
 * **Sensors**: Only in multi-sensor datasets. Whether an attribute applies to 2D sensors, 3D sensors, or all sensors.
 
+{% hint style="info" %}
+**Checkbox default values**
+
+Checkbox attributes support three possible default values:
+
+* **Checked** (`true`) — the checkbox is on by default
+* **Unchecked** (`false`) — the checkbox is off by default
+* **Unset** (no default) — the checkbox has no value until the labeler explicitly sets it
+
+When a checkbox attribute is **mandatory** and its value is **unset**, a warning will be raised — just like other mandatory attributes that are left empty. This is useful when you want labelers to make a deliberate choice rather than relying on a pre-filled default.
+
+When no default is configured, the checkbox appears in a neutral "unset" state. The labeler can click the left half to set it to unchecked, or the right half to set it to checked.
+{% endhint %}
+
 ### Scene attributes
 
 You can add scene attributes by clicking the "Edit image attributes" button. Scene attributes are not linked to a specific object, but rather to a frame or the scene as a whole.
