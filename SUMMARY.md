@@ -50,6 +50,7 @@
 * [Work with issues](guides/work-with-issues.md)
 * [Bulk change label status](guides/bulk-change-label-status.md)
 * [Manage QA processes](guides/manage-qa-processes.md)
+* [Open a sample in read-only mode](guides/open-a-sample-in-read-only-mode.md)
 
 ## How to integrate
 
