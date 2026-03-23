@@ -97,6 +97,15 @@ Points snapped this way share exact coordinates with the original handle, making
 * Undo/redo applies atomically across all affected tracks
 * Unsnapping: hold `Shift` and click a co-located point to break the link — the point will move independently afterward
 
+## Annotation placement
+
+In the Settings sidebar, go to the "Annotation placement" section to change how the height of newly created annotations (cuboids and polygon/polyline nodes) is determined:
+
+* **Fixed (default\_z)**: all annotations are initialized at a fixed height, determined by the configurable `default_z` parameter which can be provided when uploading a sample (defaults to 0).
+* **Snap to point cloud**: the height of new annotations is determined dynamically based on the surrounding point cloud points.
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
 ## Change the category of a vector
 
 ### Using the category dropdown
@@ -118,4 +127,4 @@ Press the hotkey (`Tab` by default).
 
 In the Settings sidebar, go to the "Vector" section to change the node size and line width of vector annotations.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
