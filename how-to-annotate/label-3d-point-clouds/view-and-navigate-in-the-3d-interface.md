@@ -84,9 +84,16 @@ This feature is only available in the 3D point cloud cuboid and vector interface
 This feature is only available in the 3D point cloud segmentation interface.
 {% endhint %}
 
+## Crop mode
+
+1. Click on the (![](https://docs.segments.ai/~gitbook/image?url=https%3A%2F%2F1553794111-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FHczBG7NHgAtEe4ql1rXH%252Fuploads%252FCDvewOiZ7SXgfKocq0WV%252Fimage.png%3Falt%3Dmedia%26token%3D61f24d38-36ec-4f22-a24e-10d75d09f971\&width=300\&dpr=3\&quality=100\&sign=33ca4380\&sv=2)) icon in the right toolbar. The view switches to ortho mode.
+2. Click + drag to draw a 2D bounding box around a subregion of the point cloud.
+3. The crop mode is now active and only points within the selected region are shown.
+4. Click the (![](https://docs.segments.ai/~gitbook/image?url=https%3A%2F%2F1553794111-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FHczBG7NHgAtEe4ql1rXH%252Fuploads%252FCDvewOiZ7SXgfKocq0WV%252Fimage.png%3Falt%3Dmedia%26token%3D61f24d38-36ec-4f22-a24e-10d75d09f971\&width=300\&dpr=3\&quality=100\&sign=33ca4380\&sv=2)) icon again to reset and show the full point cloud again.
+
 ## Ruler mode
 
-1. Click on the ruler icon (![](<../../.gitbook/assets/image (35).png>)) in the toolbar on the right, or press the hotkey (`z` by default).
+1. Click on the ruler icon (![](<../../.gitbook/assets/image (35).png>)) in the right toolbar, or press the hotkey (`z` by default).
 2. Click on the ground plane to starting point.
 3. When you move your cursor to another point on the ground plane the distance measurement will be shown in the bottom right panel of the sidebar. This measurement is in meters if the scale of your point cloud is true to life.
 4. Click again to go back to "Select and edit" tool or press `Esc`.

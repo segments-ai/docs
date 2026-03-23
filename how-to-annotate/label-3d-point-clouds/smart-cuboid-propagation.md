@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Smart cuboid propagation
 
 Smart cuboid propagation automatically propagates a cuboid frame by frame. This can help you save time when annotating dynamic objects that do not move linearly. For linear movement, simply use [keyframe interpolation](../label-sequences-of-data/use-keyframe-interpolation.md).
