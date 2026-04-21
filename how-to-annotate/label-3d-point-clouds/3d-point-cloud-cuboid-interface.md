@@ -46,7 +46,19 @@ Instead of manually placing a cuboid, you can automatically create one from a po
 A `"Creating cuboid..."` indicator appears while the cuboid is being computed.
 
 {% hint style="info" %}
-This works best when you select a cluster of points belonging to a single object. Outliers are handled automatically.
+This works best when you select a cluster of points belonging to a single object.
+{% endhint %}
+
+#### Initialization modes
+
+Three modes are available, configurable in the interface settings:
+
+* **Simple.** Fits the smallest cuboid from the selected points, using the direction you dragged as the cuboid's yaw. Fastest option, but it does not filter out ground points nor handle outliers.
+* **Smart (default).** Fits the smallest cuboid from the selected points, trying to predict the orientation of the object. Filters out ground points and outliers before fitting the cuboid. An outlier tolerance slider lets you control how aggressively noise is removed.
+* **AI.** Uses a deep learning detection model to analyze the selection and fit the best (i.e. not necessarily the smallest) cuboid. This methods automatically predicts the rotation and filters out noise. Best use when the points depict only part of the object (e.g. only one side of a vehicle).
+
+{% hint style="info" %}
+Notice the AI mode is still in beta, it can produce unexpected results.
 {% endhint %}
 
 {% embed url="https://drive.google.com/file/d/10GQZExIXjNDweF7ItMQfe43sgREo6GIs/view?usp=sharing" %}
@@ -55,7 +67,11 @@ This works best when you select a cluster of points belonging to a single object
 
 Press hotkey `q` to auto-adjust an existing cuboid, to make it fit better to the point cloud points.
 
-{% embed url="https://drive.google.com/file/d/1aGfGTz0X5AQSeeSKAmnIjCq5v7nVHpT6/view?usp=sharing" %}
+{% hint style="info" %}
+The auto-adjust feature snaps the cuboid to fit the points inside it, while keeping its orientation as it is. It does not filter out ground points or outliers.
+{% endhint %}
+
+{% embed url="https://drive.google.com/file/d/1QUAT-y0SDaFPeT1sDMi2kohcTeeqd0LW/view?usp=sharing" %}
 
 ## Remove a cuboid
 
