@@ -30,6 +30,8 @@
   * [Track timeline](how-to-annotate/label-sequences-of-data/track-timeline.md)
   * [Use track IDs in sequences](how-to-annotate/label-sequences-of-data/use-track-ids-in-sequences.md)
   * [Use keyframe interpolation](how-to-annotate/label-sequences-of-data/use-keyframe-interpolation.md)
+  * [Playback](how-to-annotate/label-sequences-of-data/playback.md)
+  * [Prefetch](how-to-annotate/label-sequences-of-data/prefetch.md)
 * [Label multi-sensor data](how-to-annotate/label-multi-sensor-data/README.md)
   * [3D to 2D Projection](how-to-annotate/label-multi-sensor-data/3d-to-2d-projection.md)
   * [Sensors list](how-to-annotate/label-multi-sensor-data/sensors-list.md)
@@ -51,6 +53,7 @@
 * [Bulk change label status](guides/bulk-change-label-status.md)
 * [Manage QA processes](guides/manage-qa-processes.md)
 * [Open a sample in read-only mode](guides/open-a-sample-in-read-only-mode.md)
+* [Caching assets](guides/caching-assets.md)
 
 ## How to integrate
 
