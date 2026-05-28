@@ -95,6 +95,16 @@ Click the <img src="../../.gitbook/assets/image (58).png" alt="" data-size="line
 
 ### Lock a track
 
-Locking a track freezes a specific object against all edits (move, resize, category change).
+Lock an object to prevent any modification (move, resize, category change). The cursor changes to a lock icon when hovering over a locked object.
 
-Press `Shift + R` or click the lock icon in the sidebar to toggle. Locking is local and temporary — not saved, resets on reload.
+* `Shift + R` — toggle lock on the active object
+* Or click the lock icon in the right sidebar
+
+Note that
+
+* Locking is **local**, meaning others will not see any locks that you've placed on objects
+* Locking is **temporary**, meaning locks are not saved and are reset on reload
+
+Locking can be used for accuracy purposes to avoid unintended modification, or for structured QA processes.
+
+If you want all objects to be locked, you might benefit more from [our read-only mode](../../guides/open-a-sample-in-read-only-mode.md).
