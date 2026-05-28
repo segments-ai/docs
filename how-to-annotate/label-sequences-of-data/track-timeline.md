@@ -153,6 +153,18 @@ Merging is only possible when both tracks have no overlapping keyframes.
 
 See Use track IDs - Merge tracks for details.
 
+### Hide and lock tracks
+
+Click the **eye icon** on a track row to hide it — the track remains saved but invisible in the viewer.
+
+Click the **lock icon** on a track row (or via the right-click context menu) to lock it. A locked track cannot be moved, resized, edited, or have its category changed. The cursor changes to a lock icon when hovering over a locked object in the viewer.
+
+Use **Lock all / Unlock all** in the global timeline menu \[⋮] to lock or unlock all tracks at once.
+
+Locking is local and temporary — not saved to the server, resets on reload.
+
+Shortcut: `Shift + R` — toggle lock on the active track.
+
 ### Remove track
 
 Delete the entire track and all its annotations. This action:

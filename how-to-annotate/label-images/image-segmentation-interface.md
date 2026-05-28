@@ -74,7 +74,7 @@ More info in [this blog post](https://segments.ai/blog/autosegment).
 
 More info in [this blog post](https://segments.ai/blog/faster-labeling-with-meta-segment-anything-model).
 
-## Erase and lock mode
+## Erase and protect mode
 
 * The object within the box will be automatically segmented
 
@@ -82,9 +82,9 @@ More info in [this blog post](https://segments.ai/blog/faster-labeling-with-meta
 
 When labeling in brush, polygon or autosegment mode, an eraser button ![](<../../.gitbook/assets/image (33).png>) will appear in the left toolbar. Click it or hold hotkey `e` to enable the erase mode.
 
-### Lock mode
+### Protect mode
 
-Click the![](<../../.gitbook/assets/image (2) (2).png>)button in the left toolbar or press hotkey `r` to toggle the lock mode. When lock mode is enabled, existing objects will not be affected when drawing over them.
+Click the <img src="../../.gitbook/assets/image (58).png" alt="" data-size="line"> button in the left toolbar or press hotkey `r` to toggle the protect mode. When protect mode is enabled, existing objects will not be affected when drawing over them.
 
 ## Ruler mode
 
@@ -93,3 +93,8 @@ Click the![](<../../.gitbook/assets/image (2) (2).png>)button in the left toolba
 3. Move your cursor to another point and it will display the measurement in pixels
 4. Click again to go back to select-and-view mode or press `esc`
 
+### Lock a track
+
+Locking a track freezes a specific object against all edits (move, resize, category change).
+
+Press `Shift + R` or click the lock icon in the sidebar to toggle. Locking is local and temporary — not saved, resets on reload.

@@ -1,6 +1,27 @@
 ---
 cover: ../../.gitbook/assets/Screenshot 2024-03-08 at 13.20.32.png
 coverY: 0
+layout:
+  width: default
+  cover:
+    visible: true
+    size: hero
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+  actions:
+    visible: true
 ---
 
 # 3D point cloud vector interface
@@ -128,3 +149,12 @@ Press the hotkey (`Tab` by default).
 In the Settings sidebar, go to the "Vector" section to change the node size and line width of vector annotations.
 
 <figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+### Lock a track
+
+Lock an object to prevent any modification (move, resize, category change). The cursor changes to a lock icon when hovering over a locked object.
+
+* `Shift + R` — toggle lock on the active object
+* Or click the lock icon in the right sidebar
+
+Locking is local and temporary — not saved, resets on reload.

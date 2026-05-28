@@ -1,6 +1,27 @@
 ---
 cover: ../../.gitbook/assets/Screenshot 2024-03-08 at 13.17.33.png
 coverY: 99.83879093198992
+layout:
+  width: default
+  cover:
+    visible: true
+    size: hero
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+  actions:
+    visible: true
 ---
 
 # 3D point cloud cuboid interface
@@ -180,3 +201,12 @@ Press the paste hotkey of your operating system (`Ctrl/cmd + v`).
 
 * If you paste a cuboid and the same cuboid already exists (e.g. because you pasted it in the same frame), a **duplicate** cuboid with a new [track ID](../label-sequences-of-data/use-track-ids-in-sequences.md) will be created and its position will be offset from the original cuboid.
 * If you paste a cuboid and the cuboid does not exist yet (e.g because you pasted it in another frame which doesn't have a cuboid with that track ID yet), the cuboid will keep its track ID and will not be offset.
+
+### Lock a track
+
+Lock an object to prevent any modification (move, resize, category change). The cursor changes to a lock icon when hovering over a locked object.
+
+* `Shift + R` — toggle lock on the active object
+* Or click the lock icon in the right sidebar
+
+Locking is local and temporary — not saved, resets on reload.

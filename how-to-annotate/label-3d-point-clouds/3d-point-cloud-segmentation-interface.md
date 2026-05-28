@@ -1,6 +1,27 @@
 ---
 cover: ../../.gitbook/assets/Screenshot 2024-03-08 at 13.18.21.png
 coverY: 0
+layout:
+  width: default
+  cover:
+    visible: true
+    size: hero
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+  actions:
+    visible: true
 ---
 
 # 3D point cloud segmentation interface
@@ -81,14 +102,14 @@ Press the hotkey (`Space` by default), or select another object.
 1. Select the object.
 2. Press the hotkey of the desired category (`1` - `9`).
 
-## Use the lock mode
+## Use the protect mode
 
-When the lock mode is enabled, you cannot select points that are already part of another object.
+When the protect mode is enabled, you cannot select points that are already part of another object.
 
-To toggle the lock mode:
+To toggle the protect mode:
 
 1. Activate one of the selection tools.
-2. Click the lock icon in the toolbar on the left, or use the shortcut (`r` by default) to toggle the lock mode.
+2. Click the <img src="../../.gitbook/assets/image (59).png" alt="" data-size="line"> icon in the toolbar on the left, or use the shortcut (`r` by default) to toggle the protect mode.
 
 ## Cycle between objects/ select the next object
 
@@ -129,3 +150,19 @@ In [interface layout presets 1 and 5](3d-interface-settings.md#description-of-th
 1. Show the limiting cuboid by clicking on the cuboid icon (![](<../../.gitbook/assets/image (47).png>)) in the toolbar on the right.
 2. Click on the "Reset limiting cuboid" button located at the center-top of the interface.
 3. Apply the changes by clicking on the cuboid icon again or by selecting any of the segmentation tools in the toolbar on the left.&#x20;
+
+### Lock a track
+
+Lock an object to prevent any modification (move, resize, category change). The cursor changes to a lock icon when hovering over a locked object.
+
+* `Shift + R` — toggle lock on the active object
+* Or click the lock icon in the right sidebar
+
+Note that
+
+* Locking is **local**, meaning others will not see any locks that you've placed on objects
+* Locking is **temporary**, meaning locks are not saved and are reset on reload
+
+Locking can be used for accuracy purposes to avoid unintended modification, or for structured QA processes.
+
+If you want all objects to be locked, you might benefit more from [our read-only mode](../../guides/open-a-sample-in-read-only-mode.md).
