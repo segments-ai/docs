@@ -97,9 +97,9 @@ With this limiter you can choose to limit the frames around the current selected
 
 ## Camera settings
 
-### Follow active object (cuboid/vector datasets only)
+### Follow active object
 
-Check the "Follow active object" checkbox to make your camera follow the active cuboid/vector through the sequence.
+Check the "Follow active object" checkbox to make your camera follow the active object through the sequence.
 
 ### Change the key pan speed
 
