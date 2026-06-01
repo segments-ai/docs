@@ -1,10 +1,6 @@
-# Annotate object links (beta)
+# Annotate object links
 
 With the object linking feature you can annotate _relations_ or _links_ between objects in the scene. These links can also contain _link attributes_.
-
-This feature is in beta. Current limitations:
-
-* In 3D interfaces, links are only rendered for cuboids.&#x20;
 
 The format of the link annotations in the exported label attributes is documented [here](../reference/label-types.md#links).
 

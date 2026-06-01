@@ -35,7 +35,7 @@
 * [Label multi-sensor data](how-to-annotate/label-multi-sensor-data/README.md)
   * [3D to 2D Projection](how-to-annotate/label-multi-sensor-data/3d-to-2d-projection.md)
   * [Sensors list](how-to-annotate/label-multi-sensor-data/sensors-list.md)
-* [Annotate object links (beta)](how-to-annotate/annotate-object-links-beta.md)
+* [Annotate object links](how-to-annotate/annotate-object-links.md)
 * [Use the warning system](how-to-annotate/use-the-warning-system.md)
 * [Customize hotkeys](how-to-annotate/customize-hotkeys.md)
 
