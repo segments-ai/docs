@@ -43,9 +43,11 @@
 
 * [Add collaborators to a dataset](guides/add-collaborators-to-a-dataset.md)
 * [Create an organization](guides/create-an-organization.md)
-* [Configure the label editor](guides/configure-label-editor/README.md)
+* [Dataset configuration](guides/configure-label-editor/README.md)
+  * [Configure the label editor](guides/configure-label-editor/configure-the-label-editor.md)
   * [Configure rules](guides/configure-label-editor/configure-rules.md)
   * [Configure region of interest](guides/configure-label-editor/configure-region-of-interest.md)
+  * [Dataset tags](guides/configure-label-editor/dataset-tags.md)
 * [Customize label queue](guides/customize-label-queue.md)
 * [Search within a dataset](search-functionality.md)
 * [Clone a dataset](guides/clone-a-dataset.md)
