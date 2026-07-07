@@ -4,7 +4,7 @@ In some cases it can be useful to play through a sequence to help visualize how 
 
 <figure><img src="../../.gitbook/assets/image (50).png" alt=""><figcaption></figcaption></figure>
 
-A prerequisite for a smooth playback is that all assets are available and loaded. To facilitate this, the play functionality will run a [prefetch](/broken/pages/qRgDaqd6MgPtFcy4LvcO) of the needed assets for each frame.
+A prerequisite for a smooth playback is that all assets are available and loaded. To facilitate this, the play functionality will run a [prefetch](https://app.gitbook.com/s/HczBG7NHgAtEe4ql1rXH/reference) of the needed assets for each frame.
 
 Playback speed can be modified from the settings sidebar.
 

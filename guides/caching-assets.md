@@ -6,6 +6,6 @@ For samples in sequence datasets, assets can be proactively [prefetched](../how-
 
 Assets accessed in the past 7 days are retained and the maximum size is capped at 10 GB.
 
-If needed, the cache can be cleared from the settings sidebar.
+If needed, the cache can be refreshed or cleared from the settings sidebar.
 
-<figure><img src="../.gitbook/assets/image (54).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2026-07-07 at 10.56.06.png" alt=""><figcaption></figcaption></figure>

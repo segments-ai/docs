@@ -6,11 +6,11 @@ Segments.ai is the training data platform for computer vision engineers and labe
 
 The documentation is divided into 4 sections:
 
-1. [Tutorials](/broken/pages/MeI959ipVmXBaYrssKO5): end-to-end tutorials where you are guided through a complete project.
+1. [Tutorials](https://app.gitbook.com/s/HczBG7NHgAtEe4ql1rXH/tutorials): end-to-end tutorials where you are guided through a complete project.
 2. How-to guides: recipes to solve specific problems relating to
-   * [Annotating data](/broken/pages/ZDvKkwN3jUeHlkzk3dMm)
-   * [Managing data and collaborators](/broken/pages/u19BUb0N2hzMKONYENQ7)
-   * [Integrating Segments.ai in your workflows and ML pipelines](/broken/pages/u19BUb0N2hzMKONYENQ7)
-3. [Background](/broken/pages/URMpQz3U5P4iaRl5uq4q): provides clarifying background knowledge on certain topics.
-4. [Reference](/broken/pages/qRgDaqd6MgPtFcy4LvcO): description of the full Python SDK functionality and input and output formats.
+   * [Annotating data](https://app.gitbook.com/s/HczBG7NHgAtEe4ql1rXH/how-to-annotate)
+   * [Managing data and collaborators](https://app.gitbook.com/s/HczBG7NHgAtEe4ql1rXH/how-to-integrate)
+   * [Integrating Segments.ai in your workflows and ML pipelines](https://app.gitbook.com/s/HczBG7NHgAtEe4ql1rXH/how-to-integrate)
+3. [Background](https://app.gitbook.com/s/HczBG7NHgAtEe4ql1rXH/background): provides clarifying background knowledge on certain topics.
+4. [Reference](https://app.gitbook.com/s/HczBG7NHgAtEe4ql1rXH/reference): description of the full Python SDK functionality and input and output formats.
 
