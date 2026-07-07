@@ -113,7 +113,7 @@ You also need to configure [CORS](https://learn.microsoft.com/en-us/cli/azure/st
 az storage cors add
 --services b
 --methods GET
---origins https://app.segments.ai https://webgpu.segments.ai
+--origins https://app.segments.ai
 --max-age 3600
 --account-name <yourStorageAccountName>
 ```
