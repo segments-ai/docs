@@ -94,9 +94,10 @@ This feature is only available in the 3D point cloud segmentation interface.
 ## Ruler mode
 
 1. Click on the ruler icon (![](<../../.gitbook/assets/image (35).png>)) in the right toolbar, or press the hotkey (`z` by default).
-2. Click on the ground plane to starting point.
-3. When you move your cursor to another point on the ground plane the distance measurement will be shown in the bottom right panel of the sidebar. This measurement is in meters if the scale of your point cloud is true to life.
-4. Click again to go back to "Select and edit" tool or press `Esc`.
+2. Click anywhere in the point cloud to start measuring.
+3. When you move your cursor to another point the distance measurement along the ground plane will be shown in the bottom right panel of the sidebar. This measurement is in meters if the scale of your point cloud is true to life.
+4. Click again to "lock" the measurement. Both ruler ends can now be moved, including in the vertical direction - via the sideviews available in Layout 2.
+5. Click the "Reset ruler" button at the top of the screen to start over or press `Esc` to exit the ruler tool.
 
 ## Focus beam
 
