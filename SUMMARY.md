@@ -38,6 +38,7 @@
 * [Annotate object links](how-to-annotate/annotate-object-links.md)
 * [Use the warning system](how-to-annotate/use-the-warning-system.md)
 * [Customize hotkeys](how-to-annotate/customize-hotkeys.md)
+* [Object filtering](how-to-annotate/object-filtering.md)
 
 ## How to manage <a href="#guides" id="guides"></a>
 
