@@ -63,7 +63,15 @@ To reopen a completed polyline, double-click its first or last endpoint. Double-
 It's possible to view the direction of a polyline on orthographic top views. To enable this, open the "Settings" tab, go to the "Helper objects" section and activate "Show polyline arrows".
 {% endhint %}
 
+#### Connect polylines (Lane Connection tool)
 
+Use the lane connection tool to instantly create a smooth transition between two existing polylines.
+
+1. Select the Create polyline tool from the toolbar.
+2. Select the Lane Connection tool button that appears right below it.
+3. Click on the first polyline, then click on the second polyline.
+
+A new polyline will automatically be generated following a smooth cubic Bezier curve that connects the two closest endpoints of the selected polylines.
 
 ### Create a point
 
