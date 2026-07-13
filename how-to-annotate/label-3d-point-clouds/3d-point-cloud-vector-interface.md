@@ -160,9 +160,4 @@ In the Settings sidebar, go to the "Vector" section to change the node size and 
 
 ### Lock a track
 
-Lock an object to prevent any modification (move, resize, category change). The cursor changes to a lock icon when hovering over a locked object.
-
-* `Shift + R` — toggle lock on the active object
-* Or click the lock icon in the right sidebar
-
-Locking is local and temporary — not saved, resets on reload.
+See [object-locking.md](../object-locking.md "mention")
