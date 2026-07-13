@@ -14,13 +14,23 @@ To search by sample name, just type the full or partial name of a sample.
 
 To search by metadata attribute, use the `key:value` syntax.
 
-To search by number of objects of a category in a labelset, use the `labelset.category:=value` syntax, or  `labelset.total_count:=value` to search by total number of objects.
+To search by number of objects of a category in a labelset, use the `labelset.category:=value` syntax, or `labelset.total_count:=value` to search by total number of objects.
 
 To search by labeler and reviewer of a sample, use the `labeled-by:username` or `reviewed-by:username` syntax.
 
 For string values, use the `:` operator. For numeric values, use the operators `:=`,`:>`, `:>=`, `:<` and `:<=` to search for values that are equal to, greater than, greater than or equal to, less than, and less than or equal to another value. For list values, use the `:|` operator to search for a value contained in the list.
 
 Queries can be combined by separating them with a space. They will be ANDed together.
+
+## Search from label statistics
+
+On the **Overview** tab, you can click a category name in the label statistics to jump to the **Samples** tab.
+
+The search bar is pre-filled with the corresponding category query.&#x20;
+
+The current search query is also reflected in the page URL through the `?q=` query parameter. For example, `?q=ground-truth.category:>0` opens the **Samples** tab with that filter already applied.
+
+This makes filtered views easy to bookmark and share. The search input and URL stay in sync in both directions: typing in the search bar updates the URL, and opening or editing a URL with `?q=` updates the search field.
 
 ## Examples
 
@@ -35,4 +45,3 @@ Queries can be combined by separating them with a space. They will be ANDed toge
 | **city:london ground-truth.car:>0 my-predictions.car:=0** matches samples where metadata attribute "city" is set to "london" AND the "ground-truth" label contains more than 0 "car" objects AND the "my-predictions" label contains 0 "car" objects. |
 | **tags:\|red** matches samples where metadata attribute "tags" is a list of values \["red", "green", "blue"].                                                                                                                                         |
 | **labeled-by:jane** matches samples labeled by the user with username jane.                                                                                                                                                                           |
-
