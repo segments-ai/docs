@@ -137,10 +137,6 @@ Check the "Show square grid" checkbox to show a helper grid that is fixed to the
 
 Check the "Show concentric circles grid" checkbox to show a circular helper grid that is attached to the [ego pose](../../reference/sample-types/#ego-pose) (tracks position and rotation).
 
-### Ego-vehicle model
-
-Check the "Show ego-vehicle model" checkbox to show a 3D model of a car that is attached to the [ego pose](../../reference/sample-types/#ego-pose). Note that the orientation of the model might not correspond to the rotation of the ego vehicle.&#x20;
-
 ### Show all cuboids in active track
 
 Check the "Show all cuboids in active track" checkbox to show all cuboids across all frames in the sequence of the active track. On a keyframe, the cuboid box is orange, while on other frames, it is grey.

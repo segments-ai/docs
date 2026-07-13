@@ -106,6 +106,13 @@ The auto-adjust feature snaps the cuboid to fit the points inside it, while keep
 1. Select the "Select and edit" tool by clicking on the pointer icon in the toolbar on the left, or by pressing the hotkey (`Esc` by default).
 2. Click on the cuboid in any view.
 
+**Side view auto-centering**
+
+* The side views auto-center on the selected annotation
+* Panning or rotating a side view automatically disables its auto-centering behavior on the active object. Other views will continue to follow the active object normally.
+* A "_Re-cent&#x65;_&#x72;" button appears on the modified view to manually re-enable auto-centering.
+* Auto-centering resets automatically on track or frame change
+
 ### Using the objects sidebar
 
 1. Click on the object in the objects sidebar to select it.
