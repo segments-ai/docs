@@ -441,10 +441,10 @@ Where each frames object has the following format:
 }
 ```
 
-| Name             | Type                                                     | Description                                            |
-| ---------------- | -------------------------------------------------------- | ------------------------------------------------------ |
-| `format_version` | `string`                                                 | Format version.                                        |
-| `frames`         | `array` of [cuboid labels](label-types.md#cuboid-labels) | List of cuboid labels (one per frame in the sequence). |
+| Name             | Type                                                    | Description                                            |
+| ---------------- | ------------------------------------------------------- | ------------------------------------------------------ |
+| `format_version` | `string`                                                | Format version.                                        |
+| `frames`         | `array` of [cuboid labels](label-types.md#cuboid-label) | List of cuboid labels (one per frame in the sequence). |
 
 ### Vector label (polygon, polyline, keypoint)
 
