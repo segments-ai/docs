@@ -43,10 +43,6 @@ Reviewers and admins have access to an issues panel with a filter dropdown. You 
 
 ### Anchoring Issues
 
-{% hint style="warning" %}
-This functionality is not yet available in the image segmentation interface
-{% endhint %}
-
 For more precision, optional tools are available to anchor an issue to specific elements. An issue can be linked to:
 
 1. A track (and optionally a specific track attribute)
