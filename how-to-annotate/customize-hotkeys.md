@@ -2,13 +2,16 @@
 
 To speed up labeling, you can use the hotkeys/shortcuts built into our labeling interfaces. You can also customize the hotkeys to your liking.
 
-![The hotkey menu of the image segmentation interface.](<../.gitbook/assets/image (24) (1).png>)
+<figure><img src="../.gitbook/assets/Screenshot 2026-07-14 at 10.28.15.png" alt=""><figcaption><p> The hotkey menu of the 3D pointcloud vector interface.<br></p></figcaption></figure>
 
 ### Open the hotkey menu
 
 1. Open a labeling interface.
-2. In the image interfaces, press the question mark icon (?) in the floating toolbar on the right.\
-   In the 3D interfaces, open the [3d-interface-settings.md](label-3d-point-clouds/3d-interface-settings.md "mention") and click the "Hotkeys" button.
+2. Press the keyboard icon (![](../.gitbook/assets/keyboard.svg)) in the floating toolbar on the right.
+
+<figure><img src="../.gitbook/assets/Screenshot 2026-07-14 at 10.22.45.png" alt=""><figcaption></figcaption></figure>
+
+
 
 ### Change a hotkey
 
