@@ -24,7 +24,7 @@ The interface layout presets allow you to change the layout of the point cloud a
 
 ## Object coloring mode
 
-The object coloring toggle allows you to change how different objects in the sample are displayed.&#x20;
+The object coloring toggle allows you to change how different objects in the sample are displayed.
 
 Click on a mode to change the object coloring mode.
 
@@ -38,7 +38,7 @@ _E.g. two cars each get a different color._
 
 Each category has a color defined in the dataset settings (see [categories-and-attributes.md](../../reference/categories-and-attributes.md "mention")). Every object of the same category is displayed in that category color.
 
-_E.g. two cars are displayed in the same category color (defined in the dataset settings)._&#x20;
+_E.g. two cars are displayed in the same category color (defined in the dataset settings)._
 
 ## Point cloud display settings
 
@@ -74,7 +74,7 @@ Gradient coloring allows you to view your point cloud more clearly. Gradient col
 2. Check the "Gradient coloring" checkbox.
 3. Choose "Intensity" in the "Gradient attribute" dropdown.
 4. _Optional:_ Set the minimum and maximum intensity manually.
-5. _Optional:_ Toggle option to hide points outside of intensity range.&#x20;
+5. _Optional:_ Toggle option to hide points outside of intensity range.
 6. _Optional:_ Choose a gradient by clicking on the gradient and selecting one from the list. You can also reverse the gradient by checking the box under "Reverse".
 
 ### Change the point budget
@@ -83,7 +83,7 @@ Gradient coloring allows you to view your point cloud more clearly. Gradient col
 This feature is deprecated. It is only available in the 3D point cloud vector interfaces for point clouds that do not use 3D tiling.
 {% endhint %}
 
-The point budget controls the maximum number of points that are displayed. If the point cloud contains more points than the point budget, the point cloud will be randomly subsampled to limit the number of points.&#x20;
+The point budget controls the maximum number of points that are displayed. If the point cloud contains more points than the point budget, the point cloud will be randomly subsampled to limit the number of points.
 
 1. Click/hover over the dot icon in the toolbar on the right.
 2. Enter the maximum amount of points in the point budget input box. If you want to remove the point budget, simply remove the value in the input box.
@@ -107,25 +107,27 @@ Drag the slider to adjust the key pan speed, i.e. the speed the camera moves whe
 
 ### Toggle calibrated camera helpers
 
-Check the "Show calibrated camera helpers" to show a camera helper for each calibrated camera in the scene. When the "Show calibrated camera helpers" is checked, you will see a list of the calibrated cameras in the scene. To disable the camera helper of a calibrated camera, untick the checkbox next to the camera name. The camera name can be provided in the [camera image attributes](../../reference/sample-types/#camera-image). If no camera names are provided, the cameras are labeled as "Camera 1", "Camera 2", etc.
+Check the "Show calibrated camera helpers" option to show a camera helper for each calibrated camera in the scene. Click a camera helper to open its sensor's corresponding image view.
+
+Hovering over an image thumbnail will also always highlight the corresponding camera helper in the scene.
 
 ## Panning settings
 
 ### Panning modes
 
-Click on a panning mode to change how the camera pans in the 3D perspective view.&#x20;
+Click on a panning mode to change how the camera pans in the 3D perspective view.
 
 #### Map panning
 
-The camera pans along the ground plane.&#x20;
+The camera pans along the ground plane.
 
 _E.g. when you pan up by clicking and dragging, or press `w`, the camera moves forwards._
 
 #### Screen panning
 
-The camera pans along the screen, i.e. along the camera plane.&#x20;
+The camera pans along the screen, i.e. along the camera plane.
 
-_E.g. when you pan up by clicking and dragging, or press `w`, the camera moves up._&#x20;
+_E.g. when you pan up by clicking and dragging, or press `w`, the camera moves up._
 
 ## Helper objects settings
 
@@ -152,8 +154,6 @@ Check the "Show trajectory line in active track" checkbox to show the trajectory
 Click on the circle to jump to the frame where the cuboid is positioned at the circle's position.
 
 <figure><img src="../../.gitbook/assets/image (39).png" alt=""><figcaption></figcaption></figure>
-
-
 
 ### Show ROI
 
