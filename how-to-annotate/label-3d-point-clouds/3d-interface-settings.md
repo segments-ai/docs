@@ -40,7 +40,7 @@ Each category has a color defined in the dataset settings (see [categories-and-a
 
 _E.g. two cars are displayed in the same category color (defined in the dataset settings)._
 
-## Point cloud display settings
+## Point cloud display
 
 ### Change the size of the points
 
@@ -95,7 +95,7 @@ With this limiter you can choose to limit the frames around the current selected
 1. Check the "Limit merged frames around current frame" checkbox
 2. Fill in before and/or after
 
-## Camera settings
+## Scene helpers
 
 ### Follow active object
 
@@ -110,8 +110,6 @@ Drag the slider to adjust the key pan speed, i.e. the speed the camera moves whe
 Check the "Show calibrated camera helpers" option to show a camera helper for each calibrated camera in the scene. Click a camera helper to open its sensor's corresponding image view.
 
 Hovering over an image thumbnail will also always highlight the corresponding camera helper in the scene.
-
-## Panning settings
 
 ### Panning modes
 
@@ -129,8 +127,6 @@ The camera pans along the screen, i.e. along the camera plane.
 
 _E.g. when you pan up by clicking and dragging, or press `w`, the camera moves up._
 
-## Helper objects settings
-
 ### Square grid
 
 Check the "Show square grid" checkbox to show a helper grid that is fixed to the [ego pose](../../reference/sample-types/#ego-pose) (tracks position but not rotation).
@@ -138,6 +134,14 @@ Check the "Show square grid" checkbox to show a helper grid that is fixed to the
 ### Concentric circles grid
 
 Check the "Show concentric circles grid" checkbox to show a circular helper grid that is attached to the [ego pose](../../reference/sample-types/#ego-pose) (tracks position and rotation).
+
+### Show ROI
+
+Check the "Show ROI" checkbox to show the region of interest. To adjust the shape and the dimensions, go to Dataset Settings > Labeling tab > Enable region of interest. More info [here](https://app.gitbook.com/o/nAEpl593xwZqipzOfJti/s/HczBG7NHgAtEe4ql1rXH/~/changes/341/guides/configure-label-editor/region-of-interest).
+
+<figure><img src="../../.gitbook/assets/Screenshot 2026-07-16 at 14.50.38.png" alt=""><figcaption></figcaption></figure>
+
+## Label display
 
 ### Show all cuboids in active track
 
@@ -155,14 +159,8 @@ Click on the circle to jump to the frame where the cuboid is positioned at the c
 
 <figure><img src="../../.gitbook/assets/image (39).png" alt=""><figcaption></figcaption></figure>
 
-### Show ROI
 
-Check the "Show ROI" checkbox to show the region of interest. To adjust the shape and the dimensions, go to Dataset Settings > Labeling tab > Enable region of interest. More info [here](https://app.gitbook.com/o/nAEpl593xwZqipzOfJti/s/HczBG7NHgAtEe4ql1rXH/~/changes/341/guides/configure-label-editor/region-of-interest).
 
-<figure><img src="../../.gitbook/assets/Screenshot 2025-11-07 at 10.16.56.png" alt=""><figcaption></figcaption></figure>
-
-## Cuboid settings
-
-### Opacity
+### Cuboid opacity
 
 Drag the slider to change the opacity of the cuboids in the view. This will change the opacity for all cuboids in the scene, including the active cuboid.
