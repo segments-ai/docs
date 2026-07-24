@@ -8,15 +8,27 @@ The format of the link annotations in the exported label attributes is documente
 
 Navigate to the dataset settings and go to the "Labeling" section. At the bottom of the page, check the option "Use object linking". If the option is not present, it means that the dataset is not compatible yet (see limitations above).
 
-## Configure link attributes
+#### Enable category restrictions
+
+With the "Enable category restrictions" flag disabled, links can be created between any two objects. With the flag enabled (default), links can only be created between whitelisted categories. These categories need to be configured in the categories editor.
+
+## Configure link attributes and category restrictions
+
+Link attributes and category restrictions can be configured in the category editor.
+
+<figure><img src="../.gitbook/assets/image (60).png" alt=""><figcaption></figcaption></figure>
+
+#### Category restrictions
+
+Configure which categories can be linked to the current category by adding them in the "Allow linking with these categories" input field. If a category can be linked to itself, it should also be added in the list. Since links have a direction, pay attention to which categories are added to each configuration.
+
+#### Link attributes
 
 Once the feature is activated, it's possible (but not required) to configure link attributes for each category.&#x20;
 
 Note that a link has a direction, _from_ one object _to_ another one. The attributes that will appear when annotating a link from one object to another one are determined by the _from_ category.
 
 Link attributes can also be configured [programmatically](../reference/categories-and-attributes.md#category).
-
-<figure><img src="../.gitbook/assets/localhost_8080_admin-david_demo-object-linking-dev_settings_labeling.png" alt=""><figcaption><p>Link attribute configuration</p></figcaption></figure>
 
 ## Link two objects and edit link attributes
 
