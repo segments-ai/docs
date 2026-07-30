@@ -34,7 +34,7 @@ You can learn about adding, moving, and removing keyframes on this page:
 [use-keyframe-interpolation.md](../label-sequences-of-data/use-keyframe-interpolation.md)
 {% endcontent-ref %}
 
-<figure><img src="../../.gitbook/assets/image (25) (1).png" alt=""><figcaption><p>An example of keyframes (blue diamonds) and a remove-keyframe (grey circle with cross).</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2026-07-16 at 13.20.53.png" alt=""><figcaption><p>An example of keyframes (diamond icons) and a remove-keyframe (circle with cross).</p></figcaption></figure>
 
 ## How to find objects
 

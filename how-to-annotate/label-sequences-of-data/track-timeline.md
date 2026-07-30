@@ -11,25 +11,6 @@ The timeline displays your annotations as horizontal rows (tracks) across time (
 * Keyframe locations (diamond icons)
 * Track attributes (when selected)
 
-## Timeline states
-
-The timeline can be displayed in two states:
-
-**Collapsed view:**
-
-* The timeline appears in a compact form by default
-* Shows basic track information and frame columns
-
-**Expanded view:**
-
-* Click the **Details** button to expand the timeline
-* Reveals additional information and controls
-* Provides more space for viewing tracks and attributes
-
-{% hint style="info" %}
-Use the expanded view when working intensively with keyframes or attributes. Use the collapsed view to maximize space for the main viewer.
-{% endhint %}
-
 ## Timeline views
 
 The timeline adapts its display based on your current selection:
@@ -93,12 +74,14 @@ The timeline automatically switches to single track view when you select an obje
 
 The timeline header provides several ways to move between frames:
 
+
+
 **Navigation buttons:**
 
-* `◄`: Previous frame
-* `►`: Next frame
-* `◄◄`: Jump 5 frames backward
-* `►►`: Jump 5 frames forward
+* ![](../../.gitbook/assets/chevron-left.png): Previous frame
+* ![](../../.gitbook/assets/chevron-right.png): Next frame
+* ![](../../.gitbook/assets/chevron-last.png): Jump to last frame
+* ![](../../.gitbook/assets/chevron-first.png): Jump to first frame
 
 **Direct selection:**
 
