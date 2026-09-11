@@ -164,3 +164,20 @@ Click on the circle to jump to the frame where the cuboid is positioned at the c
 ### Cuboid opacity
 
 Drag the slider to change the opacity of the cuboids in the view. This will change the opacity for all cuboids in the scene, including the active cuboid.
+
+
+
+### Bulk visualization
+
+When in orthographic mode, you can display the **category name** or an **attribute value** on top of every object in the scene. This helps quickly inspect annotations without selecting objects one by one.
+
+Click the bulk visualization button in the right toolbar to enable it. A popover lets you switch between two modes:
+
+* **Category**: shows the category name of every object.
+* **Attributes**: shows the value of a chosen attribute for every object. Use the dropdown to pick which attribute to display. An icon on the right of each option indicates the attribute type (text, number, checkbox, select, or multiselect).
+
+When in attribute mode, you can toggle **Group attributes with same names** to merge attributes that share the same name across categories into a single option.
+
+{% hint style="info" %}
+Bulk visualization is only available in orthographic mode, in the cuboid and vector interfaces. It is not available in the segmentation interface.
+{% endhint %}

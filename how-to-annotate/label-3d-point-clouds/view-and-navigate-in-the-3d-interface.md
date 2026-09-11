@@ -107,3 +107,9 @@ The focus beam tool helps you to locate objects in the 3D point cloud via the ca
 2. Move your cursor to a point of interest in the image and press the focus beam hotkey (`Shift + z` by default).
 3. Go back to the 3D point cloud view. A focus beam should have appeared.
 4. To remove the focus beam, press the hotkey again while not hovering over an image.
+
+## Bulk visualization
+
+In orthographic mode, click the bulk visualization button (<img src="../../.gitbook/assets/Screenshot 2026-09-10 at 10.47.59.png" alt="" data-size="line">) in the right toolbar to overlay category names or attribute values on every object in the scene. Hover over the button to open a popover where you can choose between **Category** and **Attributes** mode, and select which attribute to display.
+
+See 3D interface settings for more details.
