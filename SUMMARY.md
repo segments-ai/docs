@@ -77,6 +77,7 @@
 * [Label queue mechanics](background/label-queue-mechanics.md)
 * [Labeling metrics](background/labeling-metrics.md)
 * [3D Tiles](background/3d-tiles.md)
+* [WebGPU in Linux](background/webgpu-in-linux.md)
 * [Security](background/security.md)
 
 ## Reference
