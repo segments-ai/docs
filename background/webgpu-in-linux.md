@@ -13,9 +13,8 @@ The first step in troubleshooting is to determine if the browser currently recog
 1. Open Google Chrome and navigate to `chrome://gpu`.
 2. Locate the **Graphics Feature Status** section.
 3. Check the status of the **WebGPU** line:
-
-* **Hardware accelerated:** WebGPU is active.
-* **Disabled:** WebGPU is not currently active and requires manual configuration.
+   * **Hardware accelerated:** WebGPU is active.
+   * **Disabled:** WebGPU is not currently active and requires manual configuration.
 
 ***
 
