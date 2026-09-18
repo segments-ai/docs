@@ -91,7 +91,7 @@ On Segments.ai, the up direction is defined along the z-axis, i.e. the vector (0
 }
 ```
 
-<table><thead><tr><th>Name</th><th width="250.33333333333331">Type</th><th>Description</th></tr></thead><tbody><tr><td><code>pcd</code></td><td><a href="./#undefined">Point cloud data</a></td><td><strong>Required.</strong> Point cloud data.</td></tr><tr><td><code>images</code></td><td><code>array</code> of <a href="./#camera-image">camera images</a></td><td>Reference camera images.</td></tr><tr><td><code>name</code></td><td><code>string</code></td><td>Name of the sample.</td></tr><tr><td><code>timestamp</code></td><td><code>int</code>, <code>float</code>, or <code>string</code></td><td>Timestamp of the sample. Should be in nanoseconds for accurate velocity/acceleration calculations. Will also be used for interpolation unless disabled in dataset settings.  </td></tr><tr><td><code>ego_pose</code></td><td><a href="./#ego-pose">Ego pose</a></td><td>Pose of the sensor that captured the point cloud data.</td></tr><tr><td><code>default_z</code></td><td><code>float</code></td><td>Default z-value of the ground plane. 0 by default. Only valid in the point cloud cuboid editor. New cuboids will be drawn on top of the ground plane, i.e. the default z-position of a new cuboid is 0.5 (since the default height of a new cuboid is 1).</td></tr><tr><td><code>bounds</code></td><td><code>dict</code> of &#x3C;<code>string</code>, <code>float</code>></td><td><p>Point cloud bounds: a <code>dict</code> with values that are used to initialize the limiting cuboid. The z-values are also used for height coloring when provided.</p><p></p><p>Supported  values: <code>min_x</code>, <code>max_x</code>, <code>min_y</code>, <code>max_y</code>, <code>min_z</code> and <code>max_z</code>.</p></td></tr></tbody></table>
+<table><thead><tr><th>Name</th><th width="250.33333333333331">Type</th><th>Description</th></tr></thead><tbody><tr><td><code>pcd</code></td><td><a href="./#undefined">Point cloud data</a></td><td><strong>Required.</strong> Point cloud data.</td></tr><tr><td><code>images</code></td><td><code>array</code> of <a href="./#camera-image">camera images</a></td><td>Reference camera images.</td></tr><tr><td><code>ortho_images</code></td><td><code>array</code> of <a href="./#orthographic-images">ortho images</a></td><td>Reference ortho images.</td></tr><tr><td><code>name</code></td><td><code>string</code></td><td>Name of the sample.</td></tr><tr><td><code>timestamp</code></td><td><code>int</code>, <code>float</code>, or <code>string</code></td><td>Timestamp of the sample. Should be in nanoseconds for accurate velocity/acceleration calculations. Will also be used for interpolation unless disabled in dataset settings.  </td></tr><tr><td><code>ego_pose</code></td><td><a href="./#ego-pose">Ego pose</a></td><td>Pose of the sensor that captured the point cloud data.</td></tr><tr><td><code>default_z</code></td><td><code>float</code></td><td>Default z-value of the ground plane. 0 by default. Only valid in the point cloud cuboid editor. New cuboids will be drawn on top of the ground plane, i.e. the default z-position of a new cuboid is 0.5 (since the default height of a new cuboid is 1).</td></tr><tr><td><code>bounds</code></td><td><code>dict</code> of &#x3C;<code>string</code>, <code>float</code>></td><td><p>Point cloud bounds: a <code>dict</code> with values that are used to initialize the limiting cuboid. The z-values are also used for height coloring when provided.</p><p></p><p>Supported  values: <code>min_x</code>, <code>max_x</code>, <code>min_y</code>, <code>max_y</code>, <code>min_z</code> and <code>max_z</code>.</p></td></tr></tbody></table>
 
 ### Point cloud data
 
@@ -223,6 +223,21 @@ If the image file is on your local computer, you should first upload it to our a
 
 <table><thead><tr><th>Name</th><th width="251.33333333333331">Type</th><th>Description</th></tr></thead><tbody><tr><td><code>model</code></td><td><code>string</code>: "fisheye" | "brown-conrady"</td><td><strong>Required.</strong> Type of the distortion model: <a href="https://en.wikipedia.org/wiki/Fisheye_lens">fisheye</a> or <a href="https://en.wikipedia.org/wiki/Distortion_(optics)">Brown-Conrady</a>.</td></tr><tr><td><code>coefficients</code> </td><td><p>Fisheye:<br><code>object</code>: {</p><p>    "k1": <code>float</code>,</p><p>    "k2": <code>float</code>,</p><p>    "k3": <code>float</code>,</p><p>    "k4": <code>float</code>,</p><p>}</p><p><br>Brown-Conrady:<br><code>object</code>: {</p><p>    "k1": <code>float</code>,</p><p>    "k2": <code>float</code>,</p><p>    "k3": <code>float</code>,</p><p>    "p1": <code>float</code>,</p><p>    "p2": <code>float</code></p><p>}</p></td><td><strong>Required.</strong> Coefficients of the distortion model: <code>k1</code>, <code>k2</code>, <code>k3</code>, <code>k4</code> for fisheye (see the <a href="https://docs.opencv.org/4.x/db/d58/group__calib3d__fisheye.html">OpenCV fisheye model</a>) and <code>k1</code>, <code>k2</code>, <code>k3</code>, <code>p1</code>, <code>p2</code> for Brown-Conrady (see the <a href="https://docs.opencv.org/4.x/d9/d0c/group__calib3d.html">OpenCV distortion model</a>, note that <span class="math">k_4</span> and <span class="math">k_5</span> are not used).</td></tr></tbody></table>
 
+### Orthographic images
+
+Additional images can be used to serve as an underlay when using the orthographic view.
+
+```json
+{
+    "url": "url",
+    "corners": {
+        "top_left": {"x": -10, "y": 10},
+        "top_right": {"x": 10, "y": 10},
+        "bottom_right": {"x": 10, "y": -10},
+        "bottom_left": {"x": -10, "y": -10},
+}
+```
+
 ### Ego pose
 
 The pose of the sensor used to capture the 3D point cloud data. This can be helpful if you want to obtain cuboids in world coordinates, or when your sensor is moving. In the latter situation, supplying an ego pose with each frame will ensure that static objects do not move when switching between frames.
@@ -259,11 +274,12 @@ To avoid rounding problems, it is best practice to subtract the ego position of 
     { ... },
     { ... },
     { ... }
-  ]
+  ],
+  "ortho_images": [ ... ]
 } 
 ```
 
-<table><thead><tr><th>Name</th><th width="250.33333333333331">Type</th><th>Description</th></tr></thead><tbody><tr><td><code>frames</code></td><td><code>array</code> of <a href="./#3d-point-cloud">3D point clouds</a></td><td><strong>Required.</strong> List of 3D point cloud frames in the sequence.</td></tr></tbody></table>
+<table><thead><tr><th>Name</th><th width="250.33333333333331">Type</th><th>Description</th></tr></thead><tbody><tr><td><code>frames</code></td><td><code>array</code> of <a href="./#3d-point-cloud">3D point clouds</a></td><td><strong>Required.</strong> List of 3D point cloud frames in the sequence.</td></tr><tr><td><code>ortho_images</code></td><td><code>array</code> of <a href="./#orthographic-images">orthographic images</a></td><td></td></tr></tbody></table>
 
 ## Multi-sensor sequence
 

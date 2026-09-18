@@ -43,6 +43,12 @@ To toggle the point cloud overlay on and off, press the hotkey (`Ctrl + q` by de
 
 {% embed url="https://segments.ai/blog/assets/images/improved-image-viewer/pc-overlay-trim-compr.mp4" %}
 
+## Toggle orthographic underlay
+
+Images can be provided to render underneath the pointcloud when using the orthographic mode. See [#orthographic-images](../../reference/sample-types/#orthographic-images "mention") for information on how to add orthographic images to a sample.
+
+To toggle this on and off, activate the orthographic mode, then in the settings sidebar enable "Show ortho image" in the spatial guides section.
+
 ## Jump to the corresponding 3D location
 
 When you've opened an image by clicking a thumbnail, double click anywhere in the image to jump to the corresponding location in 3D space. A 3D "ray" from the camera to that location is briefly displayed.
