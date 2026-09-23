@@ -31,10 +31,11 @@ In the labeling workflow, there are three buttons:
 If a labeler presses the "Start labeling" button, they will get samples from the label queue in this order:
 
 1. Samples which they started labeling but didn't finish yet. Only if the _save_ button is enabled.
-2. Samples they labeled but which were rejected in the reviewing step, and now need to be corrected.
-3. Unlabeled, prelabeled or rejected samples which are [specifically assigned](../guides/customize-label-queue.md#assign-a-specific-labeler-or-reviewer) to this user, through the `assigned_labeler` field.
+2. Rejected samples that need to be corrected by this user. This includes both samples they labeled themselves which were rejected in the reviewing step, and rejected samples which are specifically assigned to this user through the `assigned_labeler` field (even if someone else labeled them originally).
+3. Unlabeled or prelabeled samples which are [specifically assigned](../guides/customize-label-queue.md#assign-a-specific-labeler-or-reviewer) to this user, through the `assigned_labeler` field.
 4. Unlabeled or prelabeled samples which are not assigned to a specific user.
-5. If no such samples exist, the label queue is empty and no more samples need to be labeled.
+
+If no such samples exist, the label queue is empty and no more samples need to be labeled.
 
 Within each step, samples with higher priority are returned first. Read more about how you can [customize the queue priority](../guides/customize-label-queue.md).
 
