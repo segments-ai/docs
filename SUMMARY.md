@@ -29,7 +29,7 @@
 * [Label sequences of data](how-to-annotate/label-sequences-of-data/README.md)
   * [Track timeline](how-to-annotate/label-sequences-of-data/track-timeline.md)
   * [Use track IDs in sequences](how-to-annotate/label-sequences-of-data/use-track-ids-in-sequences.md)
-  * [Use keyframe interpolation](how-to-annotate/label-sequences-of-data/use-keyframe-interpolation.md)
+  * [Use keyframe interpolation and extrapolation](how-to-annotate/label-sequences-of-data/use-keyframe-interpolation.md)
   * [Playback](how-to-annotate/label-sequences-of-data/playback.md)
   * [Prefetch](how-to-annotate/label-sequences-of-data/prefetch.md)
 * [Label multi-sensor data](how-to-annotate/label-multi-sensor-data/README.md)

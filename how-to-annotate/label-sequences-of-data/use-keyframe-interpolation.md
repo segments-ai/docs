@@ -1,9 +1,9 @@
-# Use keyframe interpolation
+# Use keyframe interpolation and extrapolation
 
 Keyframe interpolation is the process of creating intermediate values between a set of keyframes. In Segments.ai, this technique applies to object labels that change across video frames, such as a moving car's bounding box. Users set labels at key moments, and the system automatically generates intermediate values.
 
 {% hint style="info" %}
-Keyframe interpolation is available for 2D bounding box labels, and for 3D cuboid labels.
+Keyframe interpolation is available for 2D bounding box labels and 3D cuboid labels. Keyframe extrapolation is available for 3D cuboid labels only.
 {% endhint %}
 
 ## Understanding keyframes
@@ -14,6 +14,26 @@ A **remove-keyframe** marks a frame where you've explicitly removed an object. I
 
 {% hint style="info" %}
 Keyframes are managed through the timeline interface at the bottom of the editor. See Track timeline for details on the timeline interface.
+{% endhint %}
+
+## Extrapolate after the last keyframe
+
+For 3D cuboid labels, keyframe extrapolation predicts an object's position after its last keyframe. It continues the motion defined by the last two keyframes at a constant speed and direction. This can help you label moving objects as you advance through a sequence.
+
+Extrapolation is disabled by default. To enable it:
+
+1. Open the dataset's **Settings** → **Labeling**.
+2. Select **Enable keyframe extrapolation**.
+3. Confirm the change and save the settings.
+
+A track needs at least two keyframes with a defined position. With only one keyframe, its position stays constant. Extrapolation changes only the cuboid's center position; rotation, dimensions, and attributes retain their last values.
+
+Review the predicted positions and adjust the cuboid when needed to create another keyframe. Add a [remove-keyframe](#add-a-deleted-keyframe) where the object disappears to stop extrapolation from that frame onward.
+
+When **Use timestamps for interpolation and extrapolation** is enabled, motion is calculated using frame timestamps. Otherwise, it uses frame indices.
+
+{% hint style="warning" %}
+Enabling or disabling extrapolation can affect existing labels after their last keyframe. Review affected sequences after changing this setting. When disabled, cuboids stay at their last keyframe position.
 {% endhint %}
 
 ## Object attributes and interpolation

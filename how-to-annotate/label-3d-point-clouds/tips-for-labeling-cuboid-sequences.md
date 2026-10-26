@@ -80,6 +80,8 @@ Add an `is_static` track-level attribute to the categories that can be static (s
 8. When the sequence is roughly labeled, go through the sequence by using the arrow keys and make fine adjustments using keyboard hotkeys.
 9. [Close the batch mode](batch-mode-for-dynamic-objects.md#exit-batch-mode).
 
+For objects moving at a roughly constant speed and direction, enable [keyframe extrapolation](../label-sequences-of-data/use-keyframe-interpolation.md#extrapolate-after-the-last-keyframe) to predict positions beyond your latest keyframe. Review the predictions and add corrections as the object's motion changes.
+
 <figure><img src="../../.gitbook/assets/batch-compr.gif" alt=""><figcaption><p>Use batch mode to quickly adjust a cuboid in a point cloud sequence.</p></figcaption></figure>
 
 ## How to label a static object that starts moving

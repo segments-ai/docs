@@ -6,6 +6,18 @@ Once you have created a dataset, you can further configure the labeling interfac
 
 Here you can set the color, name, and description for each category.
 
+## Keyframe interpolation and extrapolation
+
+For sequence datasets, open **Settings** → **Labeling** to configure how labels are calculated across frames:
+
+* **Enable keyframe interpolation**: Automatically calculates intermediate values between keyframes for 2D bounding boxes and 3D cuboids.
+* **Enable keyframe extrapolation**: Predicts 3D cuboid positions after the last keyframe using the motion defined by the last two keyframes. This is disabled by default and does not extrapolate rotation, dimensions, or attributes.
+* **Use timestamps for interpolation and extrapolation**: Uses frame timestamps instead of frame indices to calculate motion.
+
+Changing the extrapolation setting requires confirmation and can affect existing labels. Review affected sequences after saving the change.
+
+See [Use keyframe interpolation and extrapolation](../../how-to-annotate/label-sequences-of-data/use-keyframe-interpolation.md#extrapolate-after-the-last-keyframe) for the workflow and limitations.
+
 ## Working with attributes
 
 ### Object attributes
