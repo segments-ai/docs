@@ -97,6 +97,14 @@ With this limiter you can choose to limit the frames around the current selected
 
 ## Scene helpers
 
+### Ego vehicle visualization
+
+Display the ego vehicle's position in the 3D scene to get an immediate spatial reference while labeling. The ego vehicle is the vehicle used to capture the data.
+
+To enable the visualization, open the **Settings** tab in the sidebar on the right and enable the ego vehicle visualization setting under **Scene helpers**. Disable the setting to hide the vehicle visualization again.
+
+<figure><img src="../../.gitbook/assets/ego-vehicle-visualization.png" alt="Ego vehicle visualization at the center of a 3D point cloud."><figcaption><p>The ego vehicle provides a spatial reference in the 3D scene.</p></figcaption></figure>
+
 ### Follow active object
 
 Check the "Follow active object" checkbox to make your camera follow the active object through the sequence.
